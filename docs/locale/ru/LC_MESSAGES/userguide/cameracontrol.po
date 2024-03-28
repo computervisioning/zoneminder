@@ -206,10 +206,10 @@ msgid ""
 "``/usr/share/perl5/ZoneMinder/Control/`` (in Ubuntu distributions) that "
 "are invoked by ZoneMinder when you invoke a PTZ operation"
 msgstr ""
-"Зонд Минер полагается на \"контрольные протоколы\" для конкретных моделей"
+"ZoneMinder полагается на \"контрольные протоколы\" для конкретных моделей"
 " камер. Эти \"контрольные\" протоколы являются ничем иным, как пакетами "
 "на языке Perl, расположенными в \"/usr/share/perl5/ZoneMinder/Control/\" "
-"(в дистрибутивах Ubuntu), которые вызываются Зонд Минером при выполнении "
+"(в дистрибутивах Ubuntu), которые вызываются ZoneMinderом при выполнении "
 "операции PTZ."
 
 #: ../../userguide/cameracontrol.rst:29

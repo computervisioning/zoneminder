@@ -148,7 +148,7 @@ msgid ""
 msgstr ""
 "Zmrepo предполагает, что у вас установлена базовая распределение **с "
 "использованием официальных средств установки для этой дистрибуции**. "
-"Третьи стороны \"Spins\" могут не работать корректно."
+"\"Spins\" третьих сторон могут не работать корректно."
 
 #: ../../installationguide/redhat.rst:33
 msgid ""
@@ -156,9 +156,9 @@ msgid ""
 "ZoneMinder. While ZoneMinder will play well with many applications, some "
 "invariably will not. Asterisk is one such example."
 msgstr ""
-"ЗондЗеймер предназначен для установки в среде, специально выделенной для "
-"ЗондЗеймера. Хотя ЗондЗеймер будет хорошо работать со многими "
-"приложениями, некоторые из них неизбежно не будут. Астериск - один из "
+"ZoneMinder предназначен для установки в среде, специально выделенной для "
+"ZoneMinder. Хотя ZoneMinder будет хорошо работать со многими "
+"приложениями, некоторые из них неизбежно не будут. Asterisk - один из "
 "таких примеров."
 
 #: ../../installationguide/redhat.rst:35
@@ -181,7 +181,7 @@ msgstr ""
 " чистая. Вам необходимо вручную искать и удалять все связанные с "
 "ZoneMinder файлы (посмотрите в /usr/local). Выполнение команды \"make "
 "uninstall\" помогает, но она не сделает это за вас правильно. У вас "
-"**БУДЕТ** проблемы, если вы проигнорируете этот шаг."
+"**БУДУТ** проблемы, если вы проигнорируете этот шаг."
 
 #: ../../installationguide/redhat.rst:39
 msgid ""
@@ -267,13 +267,13 @@ msgid ""
 "files and will pull in the zoneminder-httpd package for backwards "
 "compatibility."
 msgstr ""
-"Существует виртуальная упаковка под названием ZoneMinder. Эта упаковка не"
+"Существует виртуальный пакет под названием ZoneMinder. Этот пакет не"
 " содержит файлов и будет подтягивать упаковку ZoneMinder-httpd для "
 "обратной совместимости."
 
 #: ../../installationguide/redhat.rst:82
 msgid "Install ZoneMinder for Nginx web server:"
-msgstr "Установите ZoneMinder для веб-сервера Nginx:"
+msgstr "Установка ZoneMinder для веб-сервера Nginx:"
 
 #: ../../installationguide/redhat.rst:89
 msgid ""
@@ -292,7 +292,7 @@ msgstr ""
 msgid ""
 "**ZoneMinder will NOT run without completing the steps shown in the "
 "README!**"
-msgstr "**ЗонаМинер не будет работать без выполнения шагов, описанных в README!**"
+msgstr "**ZoneMinder не будет работать без выполнения шагов, описанных в README!**"
 
 #: ../../installationguide/redhat.rst:94
 msgid "How to Install Nightly Development Builds"
