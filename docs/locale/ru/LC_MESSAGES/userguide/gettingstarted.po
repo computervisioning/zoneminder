@@ -226,8 +226,8 @@ msgid ""
 "Enter new password in :guilabel:`New Password` and :guilabel:`Confirm "
 "Password` boxes."
 msgstr ""
-"Введите новый пароль в поле :gui:`Новый пароль` и поле "
-":gui:`Подтверждение пароля`."
+"Введите новый пароль в поле :guilabel:`Новый пароль` и поле "
+":guilabel:`Подтверждение пароля`."
 
 #: ../../userguide/gettingstarted.rst:68
 msgid "Click :guilabel:`Save` to update password."
