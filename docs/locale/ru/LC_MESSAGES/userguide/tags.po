@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../userguide/tags.rst:2
 msgid "Tags"
-msgstr "!привет"
+msgstr "Теги"
 
 #: ../../userguide/tags.rst:4
 msgid ""

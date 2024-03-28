@@ -135,7 +135,7 @@ msgstr "Правильная настройка журналов в ZoneMinder"
 
 #: ../../userguide/logging.rst:30
 msgid "Other Notes"
-msgstr "!привет"
+msgstr "Прочие замечания"
 
 #: ../../userguide/logging.rst:31
 msgid ""

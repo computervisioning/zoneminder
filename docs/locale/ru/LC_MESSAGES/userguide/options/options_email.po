@@ -87,7 +87,7 @@ msgstr "Токен"
 
 #: ../../userguide/options/options_email.rst:18
 msgid "Description"
-msgstr "!привет"
+msgstr "Описание"
 
 #: ../../userguide/options/options_email.rst:20
 #, python-format

@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../installationguide/packpack.rst:17
 msgid "Background"
-msgstr "!привет"
+msgstr "Бэкграунд"
 
 #: ../../installationguide/packpack.rst:19
 msgid ""

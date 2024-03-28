@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../installationguide/redhat.rst:18
 msgid "Background: Fedora"
-msgstr "!привет"
+msgstr "Бэкграунд: Fedora"
 
 #: ../../installationguide/redhat.rst:20
 msgid ""
@@ -342,7 +342,7 @@ msgstr ""
 
 #: ../../installationguide/redhat.rst:106
 msgid "Background"
-msgstr "!привет"
+msgstr "Бэкграунд"
 
 #: ../../installationguide/redhat.rst:107
 msgid ""

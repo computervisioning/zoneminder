@@ -329,7 +329,7 @@ msgstr "Главная вкладка"
 
 #: ../../userguide/cameracontrol.rst:49
 msgid "Name"
-msgstr "!привет"
+msgstr "Наименование"
 
 #: ../../userguide/cameracontrol.rst:50
 msgid ""
@@ -341,7 +341,7 @@ msgstr ""
 
 #: ../../userguide/cameracontrol.rst:51
 msgid "Type"
-msgstr "!привет"
+msgstr "Тип"
 
 #: ../../userguide/cameracontrol.rst:52
 msgid ""
