@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filtering Events &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Viewing Events" href="viewevents.html" />
+    <link rel="prev" title="Viewing Monitors" href="viewmonitors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Filtering Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#saving-filters">Saving filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-filters-actually-work">How filters actually work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relative-items-in-date-strings">Relative items in date strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#caveat-with-relative-items">Caveat with Relative items</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting-tips">Troubleshooting tips</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">User Guide</a></li>
+      <li class="breadcrumb-item active">Filtering Events</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/filterevents.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="filtering-events">
+<h1>Filtering Events<a class="headerlink" href="#filtering-events" title="Permalink to this heading"></a></h1>
+<p>Filters allow you to define complex conditions with associated actions in ZoneMinder. Examples could include:</p>
+<ul class="simple">
+<li><p>Send an email each time a new event occurs for a specific monitor</p></li>
+<li><p>Delete events that are more than 10 days old</p></li>
+</ul>
+<p>And many more.</p>
+<p>The filter window can be accessed by tapping on the top level filter menu</p>
+<p>You can use the filter window to create your own filters or to modify existing ones. You can even save your favourite filters to re-use at a future date. Filtering itself is fairly simple; you first choose how many expressions you’d like your filter to contain. Changing this value will cause the window to redraw with a corresponding row for each expression. You then select what you want to filter on and how the expressions relate by choosing whether they are ‘and’ or ‘or’ relationships. For filters comprised of many expressions you will also get the option to bracket parts of the filter to ensure you can express it as desired. Then if you like choose how you want your results sorted and whether you want to limit the amount of events displayed.</p>
+<p>Here is what the filter window looks like</p>
+<a class="reference internal image-reference" href="../_images/filter-filterview.png"><img alt="../_images/filter-filterview.png" src="../_images/filter-filterview.png" style="width: 800px;" /></a>
+<ul>
+<li><p><em>A</em>: This is a dropdown list where you can select pre-defined filters. You will notice that ZoneMinder comes with a PurgeWhenFull filter that is configured to delete events if you reach 95% of disk space.</p></li>
+<li><p><em>B</em>: If you are creating a new filter, you can type in a name for your filter here</p></li>
+<li><p><em>C</em>: This is where you specify conditions that need to match before the filter is executed. You use the “+” and “-” buttons to add/delete conditions</p></li>
+<li><p><em>D</em>: This allows you to perform sorting and limiting operations on the output before you take an action</p></li>
+<li><p><em>E</em>: This is where you specify what needs to happen when the conditions match:</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>Archive all matches: sets the archive field to 1 in the Database for the matched events.
+Think of ‘archiving’ as grouping them under a special category - you can view archived
+events later and also make sure archived events don’t get deleted, for example</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>For the “create video” filter, put in more details on how it works, any dependencies etc.</p>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Update used disk space: calculates how much disk space is currently taken by the event and updates the db record.</p></li>
+<li><p>Create video for all matches: creates a video file of all the events that match</p></li>
+<li><dl class="simple">
+<dt>Create video for all matches: ffmpeg will be used to create a video file (mp4) out of all the stored jpgs if using jpeg storage.</dt><dd><ul>
+<li><p>Execute command on all matches: Allows you to execute any arbitrary command on the matched events. You can use replacement tokens as subsequent arguments to the command, the last argument will be the absolute path to the event, preceded by replacement arguments. eg: /usr/bin/script.sh %MN% will execute as /usr/bin/script.sh MonitorName /path/to/event. Please note that urls may contain characters like &amp; that need quoting. So you may need to put quotes around them like /usr/bin/scrupt.sh “%MN%”.</p></li>
+<li><p>Delete all matches: Deletes all the matched events.</p></li>
+<li><p>Email details of all matches: Sends an email to the configured address with details about the event.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Copy all matches: copies the event files to another location, specified in the Copy To dropdown.  The other location must be setup in the Storage Tab under options.</p></li>
+<li><p>Message details of all matches: Uses an email to SMS gateway to send an SMS message for each match.</p></li>
+<li><p>Move all matches: copies the event files to another location, specified in the Move To dropdown.  The other location must be setup in the Storage Tab under options. The files will be delete from the original location.</p></li>
+<li><p>Run filter in background:  When checked, ZoneMinder will make sure the filter is checked regularly. For example, if you want to be notified of new events by email, you should make sure this is checked. Filters that are configured to run in the background have a “*” next to it.</p></li>
+<li><p>Run filter concurrently: Allows this filter to run in its own thread thereby letting other filters run in parallel.</p></li>
+</ul>
+</li>
+<li><p><em>F</em>: Use ‘List Matches’ to ‘test’ your matching conditions. This will just match and show you what filters match. Use ‘Execute’ to actually execute the action after matching your conditions. Use ‘Save’ to save the filter for future use and ‘Reset’ to clear your settings</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More details on filter conditions:</p>
+<blockquote>
+<div><p>There are several different elements to an event that you can filter on, some of which require further explanation. These are as follows,
+* ‘Date/Time’ which must evaluate to a date and a time together,
+* ‘Date’ and ‘Time’ which are variants which may only contain the relevant subsets of this,
+* ‘Weekday’ which as expected is a day of the week.</p>
+<p>All of the preceding elements take a very flexible free format of dates and time based on the PHP strtotime function (<a class="reference external" href="https://www.php.net/manual/en/function.strtotime.php">https://www.php.net/manual/en/function.strtotime.php</a>). This allows values such as ‘last Wednesday’ etc to be entered. We recommend acquainting yourself with this function to see what the allowed formats are. However automated filters are run in perl and so are parsed by the Date::Manip package. Not all date formats are available in both so if you are saved your filter to do automatic deletions or other tasks you should make sure that the date and time format you use is compatible with both methods. The safest type of format to use is ‘-3 day’ or similar with easily parseable numbers and units are in English.</p>
+<p>The other things you can filter on are all fairly self explanatory, except perhaps for ‘Archived’ which you can use to include or exclude Archived events. In general you’ll probably do most filtering on un-archived events. There are also two elements, Disk Blocks and Disk Percent which don’t directly relate to the events themselves but to the disk partition on which the events are stored. These allow you to specify an amount of disk usage either in blocks or in percentage as returned by the ‘df’ command. They relate to the amount of disk space used and not the amount left free. Once your filter is specified, clicking ‘submit’ will filter the events according to your specification. As the disk based elements are not event related directly if you create a filter and include the term ‘DiskPercent &gt; 95’ then if your current disk usage is over that amount when you submit the filter then all events will be listed whereas if it is less then none at all will. As such the disk related terms will tend to be used mostly for automatic filters (see below). If you have created a filter you want to keep, you can name it and save it by clicking ‘Save’.</p>
+<p>If you do this then the subsequent dialog will also allow you specify whether you want this filter automatically applied in order to delete events or upload events via ftp to another server and mail notifications of events to one or more email accounts. Emails and messages (essentially small emails intended for mobile phones or pagers) have a format defined in the Options screen, and may include a variety of tokens that can be substituted for various details of the event that caused them. This includes links to the event view or the filter as well as the option of attaching images or videos to the email itself. Be aware that tokens that represent links may require you to log in to access the actual page, and sometimes may function differently when viewed outside of the general ZoneMinder context. The tokens you can use are as follows.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>%EI%       Id of the event</p></li>
+<li><p>%EID%      Id of the event</p></li>
+<li><p>%EN%       Name of the event</p></li>
+<li><p>%EC%       Cause of the event</p></li>
+<li><p>%ED%       Event description</p></li>
+<li><p>%ET%       Time of the event</p></li>
+<li><p>%EL%       Length of the event</p></li>
+<li><p>%EF%       Number of frames in the event</p></li>
+<li><p>%EFA%      Number of alarm frames in the event</p></li>
+<li><p>%EST%      Total score of the event</p></li>
+<li><p>%ESA%      Average score of the event</p></li>
+<li><p>%ESM%      Maximum score of the event</p></li>
+<li><p>%EP%       Path to the event</p></li>
+<li><p>%EPS%      Path to the event stream</p></li>
+<li><p>%EPF1%     Path to the frame view for the first alarmed event image</p></li>
+<li><p>%EPFM%     Path to the frame view for the (first) event image with the highest score</p></li>
+<li><p>%EPFMOD%   Path to image containing object detection, in frame view</p></li>
+<li><p>%EPFMODG%  Path to image containing object detection animated gif version, in frame view</p></li>
+<li><p>%EPI%      Path to the event images</p></li>
+<li><p>%EPI1%     Path to the first alarmed event image, suitable for use in img tags</p></li>
+<li><p>%EPIM%     Path to the (first) event image with the highest score, suitable for use in img tags</p></li>
+<li><p>%EPIMOD%   Path to image containing object detection, suitable for use in img tags</p></li>
+<li><p>%EPIMODG%  Path to image containing object detection animated gif version, suitable for use in img tags</p></li>
+<li><p>%EPISNAP%  Path to the snapshot image, which should be the frame with the most motion</p></li>
+<li><p>%EI1%      Attach first alarmed event image</p></li>
+<li><p>%EI1A%     Attach first alarmed event analysis image</p></li>
+<li><p>%EIM%      Attach (first) event image with the highest score</p></li>
+<li><p>%EIMA%     Attach (first) event analysis image with the highest score</p></li>
+<li><p>%EIMOD%    Attach image containing object detection</p></li>
+<li><p>%EIMODG%   Attach image containing object detection animated gif version</p></li>
+<li><p>%EISNAP%   Attach the snapshot image, which should be the frame with the most motion</p></li>
+<li><p>%EV%       Attach event mpeg video</p></li>
+<li><p>%EVM%      Attach event mpeg video in phone format</p></li>
+<li><p>%MID%      Monitor Id</p></li>
+<li><p>%MN%       Name of the monitor</p></li>
+<li><p>%MET%      Total number of events for the monitor</p></li>
+<li><p>%MEH%      Number of events for the monitor in the last hour</p></li>
+<li><p>%MED%      Number of events for the monitor in the last day</p></li>
+<li><p>%MEW%      Number of events for the monitor in the last week</p></li>
+<li><p>%MEM%      Number of events for the monitor in the last month</p></li>
+<li><p>%MEA%      Number of archived events for the monitor</p></li>
+<li><p>%MP%       Path to the monitor window</p></li>
+<li><p>%MPS%      Path to the monitor stream</p></li>
+<li><p>%MPI%      Path to the monitor recent image</p></li>
+<li><p>%FID%      Id of the current filter that matched</p></li>
+<li><p>%FN%       Name of the current filter that matched</p></li>
+<li><p>%FP%       Path to the current filter that matched</p></li>
+<li><p>%ZP%       Path to your ZoneMinder console</p></li>
+</ul>
+<blockquote>
+<div><p>Finally you can also specify a script which is run on each matched event. This script should be readable and executable by your web server user. It will get run once per event and the relative path to the directory containing the event in question. Normally this will be of the form &lt;MonitorName&gt;/&lt;EventId&gt; so from this path you can derive both the monitor name and event id and perform any action you wish. Note that arbitrary commands are not allowed to be specified in the filter, for security the only thing it may contain is the full path to an executable. What that contains is entirely up to you however.</p>
+<p>Filtering is a powerful mechanism you can use to eliminate events that fit a certain pattern however in many cases modifying the zone settings will better address this. Where it really comes into its own is generally in applying time filters, so for instance events that happen during weekdays or at certain times of the day are highlighted, uploaded or deleted. Additionally using disk related terms in your filters means you can automatically create filters that delete the oldest events when your disk gets full. Be warned however that if you use this strategy then you should limit the returned results to the amount of events you want deleted in each pass until the disk usage is at an acceptable level. If you do not do this then the first pass when the disk usage is high will match, and then delete, all events unless you have used other criteria inside of limits. ZoneMinder ships with a sample filter already installed, though disabled. The PurgeWhenFull filter can be used to delete the oldest events when your disk starts filling up. To use it you should select and load it in the filter interface, modify it to your requirements, and then save it making you sure you check the ‘Delete all matches’ option. This will then run in the background and ensure that your disk does not fill up with events.</p>
+</div></blockquote>
+</div>
+<section id="saving-filters">
+<h2>Saving filters<a class="headerlink" href="#saving-filters" title="Permalink to this heading"></a></h2>
+<p>When saving filters, if you want the filter to run in the background make sure you select the “Run filter in background” option. When checked, ZoneMinder will make sure the filter is checked regularly. For example, if you want to be notified of new events by email, you should make sure this is checked. Filters that are configured to run in the background have a “*” next to it.</p>
+</section>
+<section id="how-filters-actually-work">
+<h2>How filters actually work<a class="headerlink" href="#how-filters-actually-work" title="Permalink to this heading"></a></h2>
+<p>It is useful to know how filters actually work behind the scenes in ZoneMinder, in the event you find your filter not functioning as intended:</p>
+<ul class="simple">
+<li><p>Each filter set to run in the background will be run in it’s own process called <code class="docutils literal notranslate"><span class="pre">zmfilter.pl</span></code> which retrieves filters from the Filters database table</p></li>
+<li><p>zmfilter.pl runs every FILTER_EXECUTE_INTERVAL seconds (default is 20s, can be changed in Options-&gt;System)</p></li>
+<li><p>after each interval the filter will query the database and apply the action to each matching event.</p></li>
+<li><p>zmfilter.pl also reloads the filter every FILTER_RELOAD_DELAY seconds (default is 300s/5mins, can be changed in Options-&gt;System)</p></li>
+<li><p>In previous versions of ZoneMinder filter changes would not take immediate effect, but now the web ui will start/stop/restart filters as appropriate upon editing a filter.</p></li>
+</ul>
+</section>
+<section id="relative-items-in-date-strings">
+<h2>Relative items in date strings<a class="headerlink" href="#relative-items-in-date-strings" title="Permalink to this heading"></a></h2>
+<p>Relative items adjust a date (or the current date if none) forward or backward. The effects of relative items accumulate. Here are some examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="mi">1</span> <span class="n">year</span>
+<span class="o">*</span> <span class="mi">1</span> <span class="n">year</span> <span class="n">ago</span>
+<span class="o">*</span> <span class="mi">3</span> <span class="n">years</span>
+<span class="o">*</span> <span class="mi">2</span> <span class="n">days</span>
+</pre></div>
+</div>
+<p>The unit of time displacement may be selected by the string ‘year’ or ‘month’ for moving by whole years or months. These are fuzzy units, as years and months are not all of equal duration. More precise units are ‘fortnight’ which is worth 14 days, ‘week’ worth 7 days, ‘day’ worth 24 hours, ‘hour’ worth 60 minutes, ‘minute’ or ‘min’ worth 60 seconds, and ‘second’ or ‘sec’ worth one second. An ‘s’ suffix on these units is accepted and ignored.</p>
+<p>The unit of time may be preceded by a multiplier, given as an optionally signed number. Unsigned numbers are taken as positively signed. No number at all implies 1 for a multiplier. Following a relative item by the string ‘ago’ is equivalent to preceding the unit by a multiplier with value -1.</p>
+<p>The string ‘tomorrow’ is worth one day in the future (equivalent to ‘day’), the string ‘yesterday’ is worth one day in the past (equivalent to ‘day ago’).</p>
+<p>The strings ‘now’ or ‘today’ are relative items corresponding to zero-valued time displacement, these strings come from the fact a zero-valued time displacement represents the current time when not otherwise changed by previous items. They may be used to stress other items, like in ‘12:00 today’. The string ‘this’ also has the meaning of a zero-valued time displacement, but is preferred in date strings like ‘this thursday’.</p>
+<p>When a relative item causes the resulting date to cross a boundary where the clocks were adjusted, typically for daylight saving time, the resulting date and time are adjusted accordingly.</p>
+<p>The fuzz in units can cause problems with relative items. For example, ‘2003-07-31 -1 month’ might evaluate to 2003-07-01, because 2003-06-31 is an invalid date. To determine the previous month more reliably, you can ask for the month before the 15th of the current month. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ date -R
+
+Thu, 31 Jul 2003 13:02:39 -0700
+
+$ date --date=&#39;-1 month&#39; +&#39;Last month was %B?&#39;
+
+Last month was July?
+
+$ date --date=&quot;$(date +%Y-%m-15) -1 month&quot; +&#39;Last month was %B!&#39;
+
+Last month was June!
+</pre></div>
+</div>
+<p>As this applies to ZoneMinder filters, you might want to search  for events in a period of time, or maybe for example create a purge filter that removes events older than 30 days.
+For the later you would want at least two lines in your filter. The first line should be:</p>
+<blockquote>
+<div><p>[&lt;Archive Status&gt; &lt;equal to&gt; &lt;Unarchived Only&gt;]</p>
+</div></blockquote>
+<p>as you don’t want to delete your archived events.</p>
+<p>Your second line to find events older than 30 days would be:</p>
+<blockquote>
+<div><p>[and &lt;Date&gt;&lt;less than&gt; -30 days]</p>
+</div></blockquote>
+<p>You use “less than” to indicate that you want to match events before the specified date, and you specify “-30 days” to indicate a date 30 days before the time the filter is run. Of course you could use 30 days ago as well(?).</p>
+<p>You should always test your filters before enabling any actions based on them to make sure they consistently return the results you want. You can use the submit button to see what events are returned by your query.</p>
+</section>
+<section id="caveat-with-relative-items">
+<span id="relative-caveat"></span><h2>Caveat with Relative items<a class="headerlink" href="#caveat-with-relative-items" title="Permalink to this heading"></a></h2>
+<p>One thing to remember if you specify relative dates like “now” or “1 minute ago”, etc, they are converted to a specific date and time by Zoneminder’s filtering process (zmfilter.pl) when the filters are loaded. They are _NOT_ recomputed each time the filter runs. Filters are re-loaded depending on the value specified by FILTER_RELOAD_DELAY variable in  the Zoneminder Web Console-&gt;Options-&gt;System</p>
+<p>This may cause confusion in the following cases, for example:
+Let’s say a user specifies that he wants to be notified of events via email the moment the event “DateTime” is “less than” “now” as a filter criteria. When the filter first gets loaded by zmfilter.pl, this will translate to “Match events where Start Time &lt; ” + localtime() where local time is the time that is resolved when this filter gets loaded. Now till the time the filter gets reloaded after FILTER_RELOAD_DELAY seconds (which is usually set to 300 seconds, or 5 minutes), that time does not get recomputed, so the filter will not process any new events that occur after that computed date till another 5 minutes, which is probably not what you want.</p>
+</section>
+<section id="troubleshooting-tips">
+<h2>Troubleshooting tips<a class="headerlink" href="#troubleshooting-tips" title="Permalink to this heading"></a></h2>
+<p>If your filter is not working, here are some useful tips:</p>
+<ul class="simple">
+<li><p>Look at Info and Debug logs in Zoneminder</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">zmfilter.pl</span> <span class="pre">-f</span> <span class="pre">&lt;yourfiltername&gt;</span></code> from command line and see the log output</p></li>
+<li><p>Check how long your action is taking - zmfilter.pl will wait for the action to complete before it checks again</p></li>
+<li><p>If you are using relative times like ‘now’ or ‘1 year ago’ etc. remember that zmfilter converts that relative time to an absolute date only when it reloads filters, which is dictated by the FILTER_RELOAD_DELAY duration. So, for example, if you are wondering why your events are not being detected before intervals of 5 minutes and you have used such a relative condition, this is why</p></li>
+<li><p>In the event that you see your new filter is working great when you try it out from the Web Console (using the Submit or Execute button) but does not seem to work when its running in background mode, you might have just chanced upon a compatibility issue between how Perl and PHP translate free form text to dates/times. When you test it via the “Submit” or “Execute” button, you are invoking a PHP function for time conversion. When the filter runs in background mode, zmfilter.pl calls a perl equivalent function. In some cases, depending on the version of Perl and PHP you have, the results may vary. If you face this situation, the best thing to do is to run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">zmfilter.pl</span> <span class="pre">-f</span> <span class="pre">&lt;yourfiltername&gt;</span></code> from a terminal to make sure the filter actually works in Perl as well.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="viewmonitors.html" class="btn btn-neutral float-left" title="Viewing Monitors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="viewevents.html" class="btn btn-neutral float-right" title="Viewing Events" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

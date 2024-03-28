@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tags &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Options" href="options.html" />
+    <link rel="prev" title="Viewing Events" href="viewevents.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tags</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-new-tags">Creating New Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-existing-tags-to-an-event">Adding Existing Tags to an Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removing-tags-from-an-event">Removing Tags from an Event</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#filtering-with-tags">Filtering with Tags</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#current-limitations">Current Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">User Guide</a></li>
+      <li class="breadcrumb-item active">Tags</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/tags.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tags">
+<h1>Tags<a class="headerlink" href="#tags" title="Permalink to this heading"></a></h1>
+<p>Tags are a simple quick way to categorize events so that you can identify them easier.</p>
+<section id="creating-new-tags">
+<h2>Creating New Tags<a class="headerlink" href="#creating-new-tags" title="Permalink to this heading"></a></h2>
+<p>Creating new tags is as easy as typing a word in the tags field (located just above the video).  Pressing the space bar, comma, or Enter will create the new tag and add it to the event.</p>
+</section>
+<section id="adding-existing-tags-to-an-event">
+<h2>Adding Existing Tags to an Event<a class="headerlink" href="#adding-existing-tags-to-an-event" title="Permalink to this heading"></a></h2>
+<p>Clicking in the tags field will show a dropdown list of all of the available tags in descending order of when they were last added to an event.</p>
+<p>An existing tag can be added to the event by clicking it from the dropdown or by using the down/up arrow keys to highlight the desired tag and pressing Enter.</p>
+<p>&lt;Ctrl-Down Arrow&gt; will add the tag most recently added to any event to the current event.</p>
+<p>Typing in the tags field will filter the available tags to the ones that contain the text typed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since you can use the right/left arrows to move between events when the tags field doesn’t have focus, you can quickly add the most recent tag with &lt;Ctrl-Down Arrow&gt; and then move to the next event with Right Arrow.  You can also use the Down Arrow to bring up the available tags to add a different tag before pressing the Right Arrow to move to the next event.</p>
+</div>
+</section>
+<section id="removing-tags-from-an-event">
+<h2>Removing Tags from an Event<a class="headerlink" href="#removing-tags-from-an-event" title="Permalink to this heading"></a></h2>
+<p>Pressing the “x” to the right of a tag will remove it from the event.  When the tag is removed from the last event, the tag will be deleted from the available tags.</p>
+</section>
+</section>
+<section id="filtering-with-tags">
+<h1>Filtering with Tags<a class="headerlink" href="#filtering-with-tags" title="Permalink to this heading"></a></h1>
+<section id="current-limitations">
+<h2>Current Limitations<a class="headerlink" href="#current-limitations" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Filtering for multiple tags is an OR search (Goal is to make this an AND search)</p></li>
+<li><p>Resulting events only display the tags that were searched (Goal is to display all of the tags on the resulting events)</p></li>
+<li><p>There is no way to search for events that don’t have any tag (Goal is to provide search criteria for events with no tag)</p></li>
+<li><p>There is no way to search for events with ONLY the specified tag or tags (Goal is to provide search criteria to search for events with ONLY the specified tag or tags)</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="viewevents.html" class="btn btn-neutral float-left" title="Viewing Events" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="options.html" class="btn btn-neutral float-right" title="Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

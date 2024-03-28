@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Distros - A Docker Way to Build ZoneMinder &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Ubuntu" href="ubuntu.html" />
+    <link rel="prev" title="An Easy To Use Docker Image" href="easydocker.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="easydocker.html">An Easy To Use Docker Image</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">All Distros - A Docker Way to Build ZoneMinder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure">Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#appendix-a-enable-qemu-on-the-host">Appendix A - Enable Qemu On the Host</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ubuntu.html">Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debian.html">Debian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="redhat.html">Redhat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="windows_wsl.html">Windows 10+ using WSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiserver.html">Multi-Server Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dedicateddrive.html">Dedicated Drive, Partition, or Network Share</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Installation Guide</a></li>
+      <li class="breadcrumb-item active">All Distros - A Docker Way to Build ZoneMinder</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/installationguide/packpack.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="all-distros-a-docker-way-to-build-zoneminder">
+<h1><a class="toc-backref" href="#id2" role="doc-backlink">All Distros - A Docker Way to Build ZoneMinder</a><a class="headerlink" href="#all-distros-a-docker-way-to-build-zoneminder" title="Permalink to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are looking for an easy way to run ZoneMinder and not interested in building your own docker image, please refer to <a class="reference internal" href="easydocker.html"><span class="doc">An Easy To Use Docker Image</span></a>.</p>
+</div>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#all-distros-a-docker-way-to-build-zoneminder" id="id2">All Distros - A Docker Way to Build ZoneMinder</a></p>
+<ul>
+<li><p><a class="reference internal" href="#background" id="id3">Background</a></p></li>
+<li><p><a class="reference internal" href="#procedure" id="id4">Procedure</a></p></li>
+<li><p><a class="reference internal" href="#appendix-a-enable-qemu-on-the-host" id="id5">Appendix A - Enable Qemu On the Host</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<p>These instructions represent an alternative way to build ZoneMinder for any supported distro.</p>
+<p>Advantages:</p>
+<ul class="simple">
+<li><p>Fewer steps and therefore much simpler</p></li>
+<li><p>Target distro agnostic - the steps are the same regardless of the target distro</p></li>
+<li><p>Host distro agnostic - the steps described here should work on any host Linux distro capable of running Bash and Docker</p></li>
+</ul>
+<section id="background">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Background</a><a class="headerlink" href="#background" title="Permalink to this heading"></a></h2>
+<p>These instructions leverage the power of the automated build system recently implemented in the ZoneMinder project. Behind the scenes, a project called <a class="reference external" href="https://github.com/packpack/packpack">packpack</a> is utilized, to build ZoneMinder inside a Docker container.</p>
+</section>
+<section id="procedure">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Procedure</a><a class="headerlink" href="#procedure" title="Permalink to this heading"></a></h2>
+<p><strong>Step 1:</strong> Verify the target distro.</p>
+<ul class="simple">
+<li><p>Open the project’s <a class="reference external" href="https://github.com/ZoneMinder/ZoneMinder/blob/master/.travis.yml#L27">.travis.yml file</a> and verify the distro you want to build ZoneMinder for appears in the build matrix. The distros shown in the matrix are those known to build on ZoneMinder. If the distro you desire is in the list then continue to step two.</p></li>
+<li><p>If the desired distro is not in the first list, then open the <a class="reference external" href="https://github.com/packpack/packpack/blob/master/README.md">packpack project README</a> and check if the desired distro is theoretically supported. If it is, then continue to step 2 with the understanding that you are heading out into uncharted territory. There could be problems.</p></li>
+<li><p>If the desired distro does not appear in either list, then unfortunately you cannot use the procedure described here.</p></li>
+<li><p>If the desired distro architecture is arm, refer to <a class="reference internal" href="#appendix-a-enable-qemu-on-the-host">Appendix A - Enable Qemu On the Host</a> to enable qemu emulation on your amd64 host machine.</p></li>
+</ul>
+<p><strong>Step 2:</strong> Install Docker.</p>
+<p>You need to have a working installation of Docker so head over to the <a class="reference external" href="https://docs.docker.com/engine/installation/">Docker site</a> and get it working. Before continuing to the next step, verify you can run the Docker “Hello World” container as a normal user. To run a Docker container as a normal user, issue the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">gpasswd</span> <span class="o">-</span><span class="n">a</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span> <span class="n">docker</span>
+<span class="n">newgrp</span> <span class="n">docker</span>
+</pre></div>
+</div>
+<p>Where &lt;username&gt; is, you guessed it, the user name you log in with.</p>
+<p><strong>Step 3:</strong> Git clone the ZoneMinder project.</p>
+<p>Clone the ZoneMinder project if you have not done so already.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ZoneMinder</span><span class="o">/</span><span class="n">ZoneMinder</span>
+<span class="n">cd</span> <span class="n">ZoneMinder</span>
+</pre></div>
+</div>
+<p>Alternatively, if you have already cloned the repo and wish to update it, do the following.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">ZoneMinder</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+</pre></div>
+</div>
+<p><strong>Step 4:</strong> Checkout the revision of ZoneMinder you wish to build.</p>
+<p>A freshly cloned ZoneMinder git repo already points to the most recent commit in the master branch. If you want the latest development code then continue to the next step. If instead, you want to build a stable release then perform the following step.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">&lt;</span><span class="n">releasename</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where &lt;releasename&gt; is one of the official ZoneMinder releases shown on the <a class="reference external" href="https://github.com/ZoneMinder/ZoneMinder/releases">releases page</a>, such as 1.30.4.</p>
+<p><strong>Step 5:</strong> Build ZoneMinder</p>
+<p>To start the build, simply execute the following command from the root folder of the local git repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OS</span><span class="o">=&lt;</span><span class="n">distroname</span><span class="o">&gt;</span> <span class="n">DIST</span><span class="o">=&lt;</span><span class="n">distrorel</span><span class="o">&gt;</span> <span class="n">utils</span><span class="o">/</span><span class="n">packpack</span><span class="o">/</span><span class="n">startpackpack</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Where &lt;distroname&gt; is the name of the distro you wish to build on, such as fedora, and &lt;distrorel&gt; is the release name or number of the distro you wish to build on. Redhat distros expect a number for &lt;distrorel&gt; while Debian and Ubuntu distros expect a name. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OS</span><span class="o">=</span><span class="n">fedora</span> <span class="n">DIST</span><span class="o">=</span><span class="mi">25</span> <span class="n">utils</span><span class="o">/</span><span class="n">packpack</span><span class="o">/</span><span class="n">startpackpack</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OS</span><span class="o">=</span><span class="n">ubuntu</span> <span class="n">DIST</span><span class="o">=</span><span class="n">hirsute</span> <span class="n">utils</span><span class="o">/</span><span class="n">packpack</span><span class="o">/</span><span class="n">startpackpack</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Once you enter the appropriate command, go get a coffee while a ZoneMinder package is built. When the build finished, you can find the resulting packages under a subfolder called “build”.</p>
+<p>Note that this will build packages with x86_64 architecture. This build method can also build on some distros (debian &amp; ubuntu only at the moment) using i386 architecture. You can do that by adding “ARCH=i386” parameter.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OS</span><span class="o">=</span><span class="n">ubuntu</span> <span class="n">DIST</span><span class="o">=</span><span class="n">hirsute</span> <span class="n">ARCH</span><span class="o">=</span><span class="n">i386</span> <span class="n">utils</span><span class="o">/</span><span class="n">packpack</span><span class="o">/</span><span class="n">startpackpack</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>For advanced users who really want to go out into uncharted waters, it is theoretically possible to build arm packages as well, as long as the host architecture is compatible.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OS</span><span class="o">=</span><span class="n">ubuntu</span> <span class="n">DIST</span><span class="o">=</span><span class="n">hirsute</span> <span class="n">ARCH</span><span class="o">=</span><span class="n">armhfp</span> <span class="n">utils</span><span class="o">/</span><span class="n">packpack</span><span class="o">/</span><span class="n">startpackpack</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Building arm packages in this manner has not been tested by us, however.</p>
+</section>
+<section id="appendix-a-enable-qemu-on-the-host">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Appendix A - Enable Qemu On the Host</a><a class="headerlink" href="#appendix-a-enable-qemu-on-the-host" title="Permalink to this heading"></a></h2>
+<p>If you intend to build ZoneMinder packages for arm on an amd64 host, then Debian users can following these steps to enable transparent Qemu emulation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">binfmt</span><span class="o">-</span><span class="n">support</span> <span class="n">qemu</span> <span class="n">qemu</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">static</span>
+</pre></div>
+</div>
+<p>Verify arm emulation is enabled by issuing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">binfmts</span> <span class="o">--</span><span class="n">enable</span> <span class="n">qemu</span><span class="o">-</span><span class="n">arm</span>
+</pre></div>
+</div>
+<p>You may get a message stating emulation for this processor is already enabled.</p>
+<p>More testing needs to be done for Redhat distros but it appears Fedora users can just run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">systemd</span><span class="o">-</span><span class="n">binfmt</span>
+</pre></div>
+</div>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Verify the details behind enabling qemu emulation on redhat distros. Pull requests are welcome.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="easydocker.html" class="btn btn-neutral float-left" title="An Easy To Use Docker Image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ubuntu.html" class="btn btn-neutral float-right" title="Ubuntu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

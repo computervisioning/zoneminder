@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:2
+msgid "Analysis Tab"
+msgstr "Анализ Таб"
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:4
+msgid "The Analysis tab contains settings relating to motion detection."
+msgstr "Таблица анализа содержит настройки, связанные с обнаружением движения."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:8
+msgid "Monitor Analysis Tab"
+msgstr "Таблица анализа монитора"
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:10
+msgid "**Motion Detection**"
+msgstr "**Датчик движения**"
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:12
+msgid ""
+"None: Do not perform motion detection. Recording can still be triggered "
+"manually."
+msgstr ""
+"Не выполнять обнаружение движения. Запись все еще может быть запущена "
+"вручную."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:13
+msgid "Always: Perform motion detection."
+msgstr "Всегда: Выполнить обнаружение движения."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:15
+msgid "**Analysis Image**"
+msgstr "**Анализ изображения**"
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:17
+msgid "Full Colour: Perform the detection using the full RGB image"
+msgstr ""
+"Полноцвет: Выполните обнаружение с использованием полного цветного "
+"изображения"
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:18
+msgid ""
+"Y-Channel: If the capture process results in an image in YUV format, the "
+"Y channel is a grey scale image. Performing motion detection on just Y "
+"channel uses 1/4 of processing compared to the full colour image."
+msgstr ""
+"Y-Канал: Если процесс захвата приводит к изображению в формате YUV, канал"
+" Y представляет собой изображение в сером цвете. Выполнение обнаружения "
+"движения только по каналу Y использует 1/4 обработки по сравнению с "
+"полным цветным изображением."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:20
+msgid ""
+"**Analysis FPS**: Motion detection is not required on every frame "
+"captured. For a stream captured at 30 FPS, motion detection can be "
+"adequate at 5 FPS for most cases. Motion detection is very CPU intensive "
+"so reducing the Analysis FPS as low as possible allows more cameras to be"
+" added to the system."
+msgstr ""
+"**Анализ FPS**: Для потока, захваченного со скоростью 30 кадров в "
+"секунду, обнаружение движения может быть достаточным со скоростью 5 "
+"кадров в секунду для большинства случаев. Обнаружение движения очень "
+"интенсивно для ЦП, поэтому снижение FPS анализа до минимума позволяет "
+"добавить больше камер в систему."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:21
+#, python-format
+msgid ""
+"**Reference Image Blend %ge**: Each analysed image in ZoneMinder is a "
+"composite of previous images and is formed by applying the current image "
+"as a certain percentage of the previous reference image. Thus, if we "
+"entered the value of 10% here, each image’s part in the reference image "
+"will diminish by a factor of 0.9 each time round. So a typical reference "
+"image will be 10% of the previous image, 9% the one before that and then "
+"8.1%, 7.2%, 6.5% and so on of the rest of the way. An image will "
+"effectively vanish around 25 images later than when it was added. This "
+"blend value is what is specified here and if higher will make slower "
+"progressing events less detectable as the reference image would change "
+"more quickly. Similarly, events will be deemed to be over much sooner as "
+"the reference image adapts to the new images more quickly. In signal "
+"processing terms the higher this value the steeper the event attack and "
+"decay of the signal. Default value is 6.25% for Indoor cameras and 12.5% "
+"for Outdoor cameras."
+msgstr ""
+"**Процентное соотношение смешивания изображений**: Каждое "
+"проанализированное изображение в ZoneMinder является композицией "
+"предыдущих изображений и формируется путем применения текущего "
+"изображения как определенной доли предыдущего эталонного изображения. "
+"Таким образом, если мы введем значение 10% здесь, каждая часть "
+"изображения в эталонном изображении будет уменьшаться на коэффициент 0,9 "
+"каждый раз. Таким образом, типичное эталонное изображение будет "
+"составлять 10% от предыдущего изображения, 9% следующего и затем 8.1%, "
+"7.2%, 6.5% и так далее до конца. Изображение будет эффективно исчезать "
+"примерно через 25 изображений после его добавления. Это значение "
+"смешивания определяется здесь и если оно выше, то менее заметные события "
+"будут менее заметны, поскольку эталонное изображение будет меняться "
+"быстрее. События также будут считаться завершенными намного раньше, "
+"поскольку эталонное изображение быстрее адаптируется к новым "
+"изображениям. В терминах обработки сигналов, чем выше это значение, тем "
+"круче атака и спад сигнала события. Значение по умолчанию составляет "
+"6,25% для внутренних камер и 12,5% для наружных камер."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:22
+#, python-format
+msgid ""
+"**Alarm Reference Image Blend %ge**: This is defined similar to Reference"
+" Image Blend but only applies during alarm states. This allows the alarm "
+"blend to be different than the reference blend."
+msgstr ""
+"**Изображение ссылки для смешивания сигнала %ge**: Это определено "
+"аналогично Смешиванию изображения ссылки, но применяется только во время "
+"состояния тревоги. Это позволяет смешиванию сигнала тревоги отличаться от"
+" смешивания изображения ссылки."
+
+#: ../../userguide/definemonitor/definemonitor_analysis.rst:23
+msgid ""
+"**Linked Monitors**: This field allows you to select other monitors or "
+"zones on your system that act as triggers for this monitor. So if you "
+"have a camera covering one aspect of your property you can force all "
+"cameras to record when that camera detects motion or other events. You "
+"can either directly enter a comma separated list of monitor IDs or click "
+"on :guilabel:`Add Monitor Link` pulldown menu. Be careful not to create "
+"circular dependencies with this feature as it may cause infinitely "
+"persisting alarms. To unlink monitors you can ctrl-click. You can also "
+"enter logical operators here to create more complex logic ( | = OR, & = "
+"AND).  So A | B means record if either A or B is alarmed. A & B means "
+"trigger if both A and B are alarmed."
+msgstr ""
+"**Связанные мониторы**: Это поле позволяет вам выбрать другие мониторы "
+"или зоны на вашей системе, которые служат триггерами для этого монитора. "
+"Таким образом, если у вас есть камера, которая покрывает одну часть "
+"вашего имущества, вы можете заставить все камеры записывать, когда эта "
+"камера обнаруживает движение или другие события. Вы можете либо напрямую "
+"ввести список идентификаторов мониторов, разделенных запятыми, либо "
+"щелкнуть по раскрывающемуся списку :guilabel:`Добавить связь с "
+"монитором`. Будьте осторожны, чтобы не создавать циклические зависимости "
+"с этой функцией, так как это может привести к бесконечным сигналам "
+"тревоги. Чтобы разорвать связь между мониторами, вы можете использовать "
+"сочетание клавиш Ctrl. Вы также можете ввести здесь логические операторы,"
+" чтобы создать более сложную логику ( | = ИЛИ, & = И). Так, A | B "
+"означает запись, если либо A, либо B находится в состоянии тревоги. A & B"
+" означает срабатывание триггера, если оба A и B находятся в состоянии "
+"тревоги."
+

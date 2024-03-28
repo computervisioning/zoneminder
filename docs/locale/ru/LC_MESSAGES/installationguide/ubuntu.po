@@ -1,0 +1,552 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../installationguide/ubuntu.rst:2
+msgid "Ubuntu"
+msgstr "Ubuntu"
+
+#: ../../installationguide/ubuntu.rst:4
+msgid "Contents"
+msgstr "Содержимое"
+
+#: ../../installationguide/ubuntu.rst:7
+msgid "Ubuntu 22.04 (Jammy)"
+msgstr "Ubuntu 22.04 (Jammy)"
+
+#: ../../installationguide/ubuntu.rst:8
+msgid ""
+"These instructions are for a brand new ubuntu 22.04 LTS system which does"
+" not have ZM installed."
+msgstr ""
+"Эти инструкции предназначены для новой системы Ubuntu 22.04 LTS, которая "
+"не имеет ZM установленной."
+
+#: ../../installationguide/ubuntu.rst:10
+msgid "**Step 1:** Update system"
+msgstr "**Шаг 1:** Обновление системы"
+
+#: ../../installationguide/ubuntu.rst:16
+msgid "**Step 2:** Update repositories (Optional)"
+msgstr "**Шаг 2:** Обновите репозитории (Опционально)"
+
+#: ../../installationguide/ubuntu.rst:18
+msgid ""
+"ZoneMinder is part of the current standard Ubuntu repository, but "
+"sometimes the official repository can lag behind. To find out check our "
+"`releases page <https://github.com/ZoneMinder/zoneminder/releases>`_ for "
+"the latest release."
+msgstr ""
+"Зонембер - это часть текущего стандартного репозитория Ubuntu, но иногда "
+"официальный репозиторий может отставать. Чтобы узнать об этом, проверьте "
+"нашу страницу релизов "
+"`<https://github.com/ZoneMinder/zoneminder/releases>`_ для последней "
+"версии."
+
+#: ../../installationguide/ubuntu.rst:21
+msgid ""
+"Alternatively, the ZoneMinder project team maintains a `PPA "
+"<https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-"
+"them>`_, which is updated immediately following a new release of "
+"ZoneMinder. To use this repository instead of the official Ubuntu "
+"repository, enter the following commands:"
+msgstr ""
+"Альтернативно, команда проекта ZoneMinder поддерживает `PPA "
+"<https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-"
+"them>`_, который обновляется сразу после выпуска новой версии ZoneMinder."
+" Чтобы использовать этот репозиторий вместо официального репозитория "
+"Ubuntu, введите следующие команды:"
+
+#: ../../installationguide/ubuntu.rst:30
+msgid "**Step 3:** Install Zoneminder"
+msgstr "**Шаг 3:** Установите Zoneminder"
+
+#: ../../installationguide/ubuntu.rst:37
+msgid "**Step 4:** Configure Apache correctly:"
+msgstr "**Шаг 4:** Правильно настройте Apache:"
+
+#: ../../installationguide/ubuntu.rst:46
+msgid "**Step 5:** Enable and start zoneminder"
+msgstr "**Шаг 5:** Включить и запустить ZoneMinder"
+
+#: ../../installationguide/ubuntu.rst:53
+msgid "**Step 6:** Open Zoneminder"
+msgstr "**Шаг 6:** Откройте Zoneminder"
+
+#: ../../installationguide/ubuntu.rst:55
+msgid ""
+"Open up a browser and go to ``http://hostname_or_ip/zm`` to open the "
+"ZoneMinder Console."
+msgstr ""
+"Откройте браузер и перейдите по ссылке ``http://hostname_or_ip/zm`` для "
+"открытия консоли ZoneMinder."
+
+#: ../../installationguide/ubuntu.rst:58
+msgid "Ubuntu 18.04 (Bionic)"
+msgstr "Ubuntu 18.04 (Бинион)"
+
+#: ../../installationguide/ubuntu.rst:59
+msgid ""
+"These instructions are for a brand new ubuntu 18.04 system which does not"
+" have ZM installed."
+msgstr ""
+"Эти инструкции предназначены для новой системы Ubuntu 18.04, которая не "
+"имеет ZM установленной."
+
+#: ../../installationguide/ubuntu.rst:63
+msgid ""
+"It is recommended that you use an Ubuntu Server install and select the "
+"LAMP option during install to install Apache, MySQL and PHP. If you "
+"failed to do this you can achieve the same result by running:"
+msgstr ""
+"Рекомендуется использовать установку сервера Ubuntu и выбрать опцию LAMP "
+"во время установки для установки Apache, MySQL и PHP. Если вы этого не "
+"сделали, вы можете добиться того же результата, выполнив следующее:"
+
+#: ../../installationguide/ubuntu.rst:72
+msgid ""
+"Installing LAMP is not ZoneMinder specific so you will find plenty of "
+"resources to guide you with a quick search."
+msgstr ""
+"Установка LAMP не специфична для ZoneMinder, поэтому вы найдете множество"
+" ресурсов, которые помогут вам, если проведете быстрый поиск."
+
+#: ../../installationguide/ubuntu.rst:75
+msgid ""
+"**Step 1:** Either run commands in this install using sudo or use the "
+"below to become root ::"
+msgstr ""
+"**Шаг 1:** Выполните команды в этой установке с помощью sudo или "
+"используйте приведенное ниже для перехода в режим root:"
+
+#: ../../installationguide/ubuntu.rst:80
+msgid "**Step 2:** Update Repos"
+msgstr "**Шаг 2:** Обновите репозитории"
+
+#: ../../installationguide/ubuntu.rst:-1
+msgid "Latest Release"
+msgstr "Последняя версия"
+
+#: ../../installationguide/ubuntu.rst:84
+msgid ""
+"ZoneMinder is now part of the current standard Ubuntu repository, but "
+"sometimes the official repository can lag behind. To find out check our "
+"`releases page <https://github.com/ZoneMinder/zoneminder/releases>`_ for "
+"the latest release."
+msgstr ""
+"Зонембер теперь входит в текущий стандартный репозиторий Ubuntu, но "
+"иногда официальный репозиторий может отставать. Чтобы узнать об этом, "
+"проверьте страницу релизов `на нашем сайте "
+"<https://github.com/ZoneMinder/zoneminder/releases>`_."
+
+#: ../../installationguide/ubuntu.rst:89
+msgid ""
+"Alternatively, the ZoneMinder project team maintains a `PPA "
+"<https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-"
+"them>`_, which is updated immediately following a new release of "
+"ZoneMinder. To use this repository instead of the official Ubuntu "
+"repository, enter the following from the command line:"
+msgstr ""
+"Альтернативно, команда проекта ZoneMinder поддерживает `PPA "
+"<https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-"
+"them>`_, который обновляется сразу после выпуска новой версии ZoneMinder."
+" Чтобы использовать этот репозиторий вместо официального репозитория "
+"Ubuntu, введите следующее с командной строки:"
+
+#: ../../installationguide/ubuntu.rst:97
+msgid "Update repo and upgrade."
+msgstr "Обновите репозиторий и обновите."
+
+#: ../../installationguide/ubuntu.rst:105
+msgid "**Step 3:** Configure MySQL"
+msgstr "**Шаг 3:** Настройка MySQL"
+
+#: ../../installationguide/ubuntu.rst:109
+msgid ""
+"The MySQL default configuration file (/etc/mysql/mysql.cnf) is read "
+"through several symbolic links beginning with /etc/mysql/my.cnf as "
+"follows:"
+msgstr ""
+"Файл конфигурации MySQL по умолчанию (/etc/mysql/mysql.cnf) читается "
+"через несколько символьных ссылок, начинающихся с /etc/mysql/my.cnf, "
+"следующим образом:"
+
+#: ../../installationguide/ubuntu.rst
+msgid "/etc/mysql/my.cnf -> /etc/alternatives/my.cnf"
+msgstr "/etc/mysql/my.cnf -> /etc/alternatives/my.cnf"
+
+#: ../../installationguide/ubuntu.rst
+msgid "/etc/alternatives/my.cnf -> /etc/mysql/mysql.cnf"
+msgstr "/etc/alternatives/my.cnf -> /etc/mysql/mysql.cnf"
+
+#: ../../installationguide/ubuntu.rst
+msgid "/etc/mysql/mysql.cnf is a basic file"
+msgstr "/etc/mysql/mysql.cnf - это базовый файл"
+
+#: ../../installationguide/ubuntu.rst:116
+msgid ""
+"Certain new defaults in MySQL 5.7 cause some issues with ZoneMinder < "
+"1.32.0, the workaround is to modify the sql_mode setting of MySQL. Please"
+" note that these changes are NOT required for ZoneMinder 1.32+ and some "
+"people have reported them causing problems in 1.32.0."
+msgstr ""
+"Некоторые новые настройки по умолчанию в MySQL 5.7 вызывают некоторые "
+"проблемы с ZoneMinder < 1.32.0, обходной путь - изменить настройку "
+"sql_mode MySQL. Пожалуйста, обратите внимание, что эти изменения НЕ "
+"требуются для ZoneMinder 1.32+ и некоторые люди сообщили о проблемах с "
+"ними в 1.32.0."
+
+#: ../../installationguide/ubuntu.rst:121
+msgid ""
+"To better manage the MySQL server it is recommended to copy the sample "
+"config file and replace the default my.cnf symbolic link."
+msgstr ""
+"Для более эффективного управления сервером MySQL рекомендуется "
+"скопировать образец конфигурационного файла и заменить символическую "
+"ссылку my.cnf по умолчанию."
+
+#: ../../installationguide/ubuntu.rst:129
+msgid "To change MySQL settings:"
+msgstr "Для изменения настроек MySQL:"
+
+#: ../../installationguide/ubuntu.rst:135
+msgid "In the [mysqld] section add the following"
+msgstr "В разделе [mysqld] добавьте следующее"
+
+#: ../../installationguide/ubuntu.rst:141
+#: ../../installationguide/ubuntu.rst:199
+msgid "CTRL+o then [Enter] to save"
+msgstr "!CTRL+o затем [Ввод] для сохранения"
+
+#: ../../installationguide/ubuntu.rst:143
+#: ../../installationguide/ubuntu.rst:201
+msgid "CTRL+x to exit"
+msgstr "CTRL+x для выхода"
+
+#: ../../installationguide/ubuntu.rst:145
+msgid "Restart MySQL"
+msgstr "Перезапустить MySQL"
+
+#: ../../installationguide/ubuntu.rst:152
+msgid "**Step 4:** Install ZoneMinder"
+msgstr "**Шаг 4:** Установите ZoneMinder"
+
+#: ../../installationguide/ubuntu.rst:158
+msgid "**Step 5:** Configure the ZoneMinder Database"
+msgstr "**Шаг 5:** Настройка базы данных ZoneMinder "
+
+#: ../../installationguide/ubuntu.rst:160
+msgid "This step should not be required on ZoneMinder 1.32.0."
+msgstr "Этот шаг не должен быть необходим для ZoneMinder 1.32.0."
+
+#: ../../installationguide/ubuntu.rst:168
+msgid "**Step 6:** Set permissions"
+msgstr "**Шаг 6:** Установите разрешения"
+
+#: ../../installationguide/ubuntu.rst:170
+msgid "Set /etc/zm/zm.conf to root:www-data 740 and www-data access to content"
+msgstr ""
+"Установите /etc/zm/zm.conf в root:www-data 740 и предоставьте доступ www-"
+"data к содержимому"
+
+#: ../../installationguide/ubuntu.rst:177
+msgid "**Step 7:** Configure Apache correctly:"
+msgstr "**Шаг 7:** Правильно настройте Apache:"
+
+#: ../../installationguide/ubuntu.rst:185
+msgid ""
+"You may also want to enable to following modules to improve caching "
+"performance"
+msgstr ""
+"Вы также можете включить следующие модули для улучшения "
+"производительности кэширования"
+
+#: ../../installationguide/ubuntu.rst:192
+msgid "**Step 8:** Enable and start Zoneminder"
+msgstr "**Шаг 8:** Включить и запустить Zoneminder"
+
+#: ../../installationguide/ubuntu.rst:203
+msgid "**Step 10:** Reload Apache service"
+msgstr "**Шаг 10:** Перезагрузите службу Apache"
+
+#: ../../installationguide/ubuntu.rst:209
+msgid "**Step 11:** Making sure ZoneMinder works"
+msgstr "**Шаг 11:** Проверка работы ZoneMinder"
+
+#: ../../installationguide/ubuntu.rst:211
+msgid ""
+"Open up a browser and go to ``http://hostname_or_ip/zm`` - should bring "
+"up ZoneMinder Console"
+msgstr ""
+"Откройте браузер и перейдите по ссылке ``http://hostname_or_ip/zm`` - "
+"должен открыться интерфейс ZoneMinder."
+
+#: ../../installationguide/ubuntu.rst:213
+msgid ""
+"(Optional API Check)Open up a tab in the same browser and go to "
+"``http://hostname_or_ip/zm/api/host/getVersion.json``"
+msgstr ""
+"(Проверка API) Откройте новую вкладку в том же браузере и перейдите по "
+"ссылке \"http://имя_хоста_или_ip/zm/api/host/getVersion.json\""
+
+#: ../../installationguide/ubuntu.rst:215
+msgid ""
+"If it is working correctly you should get version information similar to "
+"the example below:"
+msgstr ""
+"Если все работает правильно, вы должны получить информацию о версии, "
+"аналогичную приведенному ниже примеру:"
+
+#: ../../installationguide/ubuntu.rst:224
+msgid "**Congratulations**  Your installation is complete"
+msgstr "**Поздравляю** Ваша установка завершена"
+
+#: ../../installationguide/ubuntu.rst:226
+msgid ""
+"PPA install may need some tweaking of ZMS_PATH in ZoneMinder options. "
+"`Socket_sendto or no live streaming`_"
+msgstr ""
+"Установка PPA может потребовать некоторой настройки ZMS_PATH в настройках"
+" ZoneMinder. `Сокет_отправить или нет живого потокового вещания`"
+
+#: ../../installationguide/ubuntu.rst:230
+msgid "Harder Way: Build Package From Source (Discouraged)"
+msgstr "Сложный способ: сборка пакета из исходного кода (не рекомендуется)"
+
+#: ../../installationguide/ubuntu.rst:231
+msgid ""
+"Historically, installing ZoneMinder onto your system required building "
+"from source code by issuing the traditional configure, make, make install"
+" commands. To get ZoneMinder to build, all of its dependencies had to be "
+"determined and installed beforehand. Init and logrotate scripts had to be"
+" manually copied into place following the build. Optional packages such "
+"as jscalendar and Cambozola had to be manually installed. Uninstalls "
+"could leave stale files around, which could cause problems during an "
+"upgrade. Speaking of upgrades, when it comes time to upgrade all these "
+"manual steps must be repeated again."
+msgstr ""
+"Исторически установка ZoneMinder на вашу систему требовала сборки из "
+"исходного кода путем выполнения традиционных команд конфигурации, "
+"компиляции и установки. Для того чтобы ZoneMinder мог быть построен, все "
+"его зависимости должны были быть определены и установлены заранее. Файлы "
+"init и logrotate должны были быть скопированы вручную в нужное место "
+"после сборки. Дополнительные пакеты, такие как jscalendar и Cambozola, "
+"должны были быть установлены вручную. Удаление могло оставить старые "
+"файлы, что могло вызвать проблемы при обновлении. Говоря об обновлениях, "
+"когда приходит время обновить все эти ручные шаги, их снова нужно "
+"повторить."
+
+#: ../../installationguide/ubuntu.rst:233
+msgid ""
+"Better methods exist today that do much of this for you. The current "
+"development team, along with other volunteers, have taken great strides "
+"in providing the resources necessary to avoid building from source."
+msgstr ""
+"Существуют более совершенные методы, которые позволяют выполнять большую "
+"часть этой работы за вас. Текущая команда разработчиков, а также другие "
+"добровольцы, предприняли значительные усилия для предоставления "
+"необходимых ресурсов, чтобы избежать необходимости разработки из "
+"исходного кода."
+
+#: ../../installationguide/ubuntu.rst:235
+msgid ""
+"(These instructions assume installation from source on a ubuntu 15.x+ "
+"system)"
+msgstr ""
+"(Эти инструкции предполагают установку из источника на системе Ubuntu "
+"15.x+.)"
+
+#: ../../installationguide/ubuntu.rst:237
+msgid "**Step 1:** Grab the package installer script"
+msgstr "**Шаг 1:** Загрузите скрипт установщика пакета"
+
+#: ../../installationguide/ubuntu.rst:245
+msgid "**Step 2:** Update the system"
+msgstr "**Шаг 2:** Обновите систему"
+
+#: ../../installationguide/ubuntu.rst:252
+msgid "**Step 3** Create the package"
+msgstr "**Шаг 3** Создайте пакет"
+
+#: ../../installationguide/ubuntu.rst:254
+msgid "To build the latest master snapshot:"
+msgstr "Для создания последней контрольной точки:"
+
+#: ../../installationguide/ubuntu.rst:261
+msgid "To build the latest stable release:"
+msgstr "Для создания последней стабильной версии:"
+
+#: ../../installationguide/ubuntu.rst:268
+msgid ""
+"Note that the distribution will be guessed using ``lsb_release -a "
+"2>/dev/null | grep Codename | awk '{print $2}'`` which simply extracts "
+"your distribution name - like \"bionic\", \"hirsute\" etc. You can always"
+" specify it using --distro=your distro name if you know it. As far as the"
+" script goes, it checks if your distro is \"trusty\" in which case it "
+"pulls in pre-systemd release configurations and if its not \"trusty\" it "
+"assumes its based on systemd and pulls in systemd related config files."
+msgstr ""
+"Обратите внимание, что распределение будет угадано с помощью команды "
+"`lsb_release -a 2>/dev/null | grep Codename | awk '{print $2}`, которая "
+"просто извлекает имя вашего дистрибутива - например, \"бионичный\", "
+"\"хирург\" и т.д. Вы всегда можете указать его с помощью опции "
+"`--дистрибуция=имя вашего дистрибутива`, если вы знаете его. Что касается"
+" скрипта, он проверяет, является ли ваша версия \"трасти\", в этом случае"
+" он загружает предварительные конфигурации системы до systemd, а если это"
+" не \"трасти\", он предполагает, что это основано на systemd, и загружает"
+" файлы конфигурации systemd."
+
+#: ../../installationguide/ubuntu.rst:275
+msgid ""
+"(At the end the script will ask if you want to retain the checked out "
+"version of ZoneMinder. If you are a developer and are making local "
+"changes, make sure you select \"y\" so that the next time you do the "
+"build process mentioned here, it keeps your changes. Selecting any other "
+"value than \"y\" or \"Y\" will delete the checked out code and only "
+"retain the package)"
+msgstr ""
+"(В конце скрипт спросит, хотите ли вы сохранить версию ZoneMinder, взятую"
+" напрокат. Если вы разработчик и вносите локальные изменения, убедитесь, "
+"что вы выберете \"y\", чтобы при следующем выполнении процесса сборки, "
+"упомянутого здесь, он сохранил ваши изменения. Выбрав любое другое "
+"значение, отличное от \"y\" или \"Y\", вы удалите взятый напрокат код и "
+"сохраните только пакет)"
+
+#: ../../installationguide/ubuntu.rst:281
+msgid "This should now create a bunch of .deb files"
+msgstr "Теперь это должно создать кучу файлов .deb"
+
+#: ../../installationguide/ubuntu.rst:283
+msgid "**Step 4:** Install the package"
+msgstr "**Шаг 4:** Установите пакет"
+
+#: ../../installationguide/ubuntu.rst:291
+msgid ""
+"**This will report DB errors - ignore - you need to configure the DB and "
+"some other stuff**"
+msgstr ""
+"**Это сообщит об ошибках базы данных - игнорировать - вам нужно настроить"
+" базу данных и еще несколько вещей**"
+
+#: ../../installationguide/ubuntu.rst:293
+msgid "**Step 5:** Post install configuration"
+msgstr "**Шаг 5:** После установки конфигурация"
+
+#: ../../installationguide/ubuntu.rst:295
+msgid ""
+"Now that you have installed from your own package you can resume "
+"following the standard install guide for your version, start at the step "
+"after Install Zoneminder."
+msgstr ""
+"Теперь, когда вы установили из своего пакета, вы можете продолжить "
+"следовать стандартному руководству по установке для вашей версии, начиная"
+" с шага после Установка ZoneMinder."
+
+#: ../../installationguide/ubuntu.rst:299
+msgid "Hints"
+msgstr "Hints"
+
+#: ../../installationguide/ubuntu.rst:301
+msgid "Make sure ZoneMinder and APIs work with security"
+msgstr "Убедитесь, что ZoneMinder и API работают с безопасностью"
+
+#: ../../installationguide/ubuntu.rst:303
+msgid "Enable OPT_AUTH in ZoneMinder"
+msgstr "Включить OPT_AUTH в ZoneMinder"
+
+#: ../../installationguide/ubuntu.rst:304
+msgid "Log out of ZoneMinder in browser"
+msgstr "Выход из ZoneMinder в браузере"
+
+#: ../../installationguide/ubuntu.rst:305
+msgid ""
+"Open a new tab in the *same browser* (important) and go to "
+"``http://localhost/zm/api/host/getVersion.json`` - should give you "
+"\"Unauthorized\" along with a lot more of text"
+msgstr ""
+"Откройте новую вкладку в том же браузере (важно) и перейдите по адресу "
+"``http://localhost/zm/api/host/getVersion.json`` - должен дать вам "
+"\"Неавторизованный\" вместе с большим количеством текста"
+
+#: ../../installationguide/ubuntu.rst:308
+msgid "Go to another tab in the SAME BROWSER (important) and log into ZM"
+msgstr "Перейдите на другую вкладку в том же браузере (важно) и войдите в ZM"
+
+#: ../../installationguide/ubuntu.rst:309
+msgid "Repeat step 3 and it should give you the ZM and API version"
+msgstr "Повторите шаг 3, и это должно дать вам ZM и версию API"
+
+#: ../../installationguide/ubuntu.rst:312
+msgid "Socket_sendto or no live streaming"
+msgstr "Сокет_отправить или нет живого стриминга"
+
+#: ../../installationguide/ubuntu.rst:314
+msgid ""
+"After you have setup your camera make sure you can view Monitor streams, "
+"if not check some of the common causes:"
+msgstr ""
+"После того как вы настроили свою камеру, убедитесь, что вы можете "
+"просматривать потоки монитора, если нет, проверьте некоторые из наиболее "
+"распространенных причин:"
+
+#: ../../installationguide/ubuntu.rst:317
+msgid "Check Apache cgi module is enabled."
+msgstr "Проверьте, включена ли модуль Apache cgi."
+
+#: ../../installationguide/ubuntu.rst:318
+msgid ""
+"Check Apache /etc/apache2/conf-enabled/zoneminder.conf ScriptAlias "
+"matches PATH_ZMS."
+msgstr ""
+"Проверьте скрипт /etc/apache2/conf-enabled/zoneminder.conf, который "
+"соответствует перенаправлению PATH_ZMS."
+
+#: ../../installationguide/ubuntu.rst:320
+msgid "ScriptAlias **/zm/cgi-bin** /usr/lib/zoneminder/cgi-bin"
+msgstr "ScriptAlias **/zm/cgi-bin** /usr/lib/zoneminder/cgi-bin"
+
+#: ../../installationguide/ubuntu.rst:322
+msgid ""
+"From console go to ``Options->Path`` and make sure PATH_ZMS is set to "
+"**/zm/cgi-bin/**\\ nph-zms."
+msgstr ""
+"Из консоли перейдите в \"Настройки->Путь\" и убедитесь, что PATH_ZMS "
+"установлен в **/zm/cgi-bin/** \\ nph-zms."
+
+#: ../../installationguide/ubuntu.rst:326
+msgid "Changed Default DB User"
+msgstr "Изменил пользователя по умолчанию для базы данных"
+
+#: ../../installationguide/ubuntu.rst:328
+msgid ""
+"If you have changed your DB login/password from zmuser/zmpass, you need "
+"to update these values in zm.conf."
+msgstr ""
+"Если вы изменили пароль для входа в базу данных с zmuser/zmpass, вам "
+"необходимо обновить эти значения в файле zm.conf."
+
+#: ../../installationguide/ubuntu.rst:331
+msgid "Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS to the values you used."
+msgstr ""
+"Измените файл zm.conf, чтобы изменить ZM_DB_USER и ZM_DB_PASS на "
+"значения, которые вы использовали."
+

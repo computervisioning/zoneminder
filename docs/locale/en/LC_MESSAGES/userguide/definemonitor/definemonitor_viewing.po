@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:2
+msgid "Viewing Tab"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:4
+msgid ""
+"ZoneMinder supplies its own RTSP server that can re-stream RTSP or "
+"attempt to convert the Monitor stream into RTSP. This is useful if you "
+"want to use the ZoneMinder Host machine resources instead of having "
+"multiple clients pulling from a single camera."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:8
+msgid "Monitor Viewing Tab"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:10
+msgid ""
+"**RTSP Server**: Makes the Monitor video stream available to the "
+"ZoneMinder RTSP Server."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:11
+msgid ""
+"**RTSPStreamName**: The path part of the RTSP URL used for this Monitor. "
+"Must be unique. For example, if this is Monitor ID 6, **MIN_RTSP_PORT** "
+"=20000 and RTSPStreamName is set to 'my_camera', the stream can be "
+"accessed at ``rtsp://ZM_HOST:20006/my_camera``."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:12
+msgid ""
+"**RTSP2Web Live Stream**: Attempt to use RTSP2Web streaming server for "
+"h.264/h.265 live view. Experimental, but allows for significantly better "
+"performance."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:13
+msgid ""
+"**RTSP2Web Type**: Select video streaming protocol. Available choices are"
+" HLS (HTTP Live Streaming), MSE (Media Source Extensions) and WebRTC (Web"
+" Real Time Communications)."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:14
+msgid ""
+"**Janus Live Stream**: Enables Janus re-streaming of the video content. "
+"This uses WebRTC to view the stream in h.264 instead of a stream of JPEG "
+"images. It also enables audio in the live feed."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:15
+msgid ""
+"**Default Rate**: When live viewing, you can watch at FPS slower than "
+"ZoneMinder is capturing at. This can be changed during viewing, but this "
+"sets the default."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:16
+msgid ""
+"**Default Scale**: If your Monitor has been defined with a particularly "
+"large or small image size then you can choose a default scale here with "
+"which to view the monitor so it is easier or more visible from the web "
+"interface. A value of Auto will attempt to optimally fill the browser "
+"window."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:18
+msgid "**Default Method For Event View**"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:18
+msgid ""
+"MP4: If the video is h.264 encoded MP4 file you can use the browser's "
+"built in video player."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_viewing.rst:19
+msgid ""
+"MJPEG: If the video is h.265 encoded and can't play the video natively, "
+"we can use ZMS to convert it to MJPEG and view that."
+msgstr ""
+

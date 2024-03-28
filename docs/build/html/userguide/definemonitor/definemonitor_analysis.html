@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analysis Tab &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Recording Tab" href="definemonitor_recording.html" />
+    <link rel="prev" title="Source Tab" href="definemonitor_source.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../definemonitor.html">Defining Monitors</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_add.html">Adding Monitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_general.html">General Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_source.html">Source Tab</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Analysis Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_recording.html">Recording Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_viewing.html">Viewing Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_onvif.html">ONVIF Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_timestamp.html">Timestamp Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_buffers.html">Buffers Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_control.html">Control Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_x10.html">X10 Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_misc.html">Misc Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_mqtt.html">MQTT Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">User Guide</a></li>
+          <li class="breadcrumb-item"><a href="../definemonitor.html">Defining Monitors</a></li>
+      <li class="breadcrumb-item active">Analysis Tab</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/userguide/definemonitor/definemonitor_analysis.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="analysis-tab">
+<h1>Analysis Tab<a class="headerlink" href="#analysis-tab" title="Permalink to this heading"></a></h1>
+<blockquote>
+<div><p>The Analysis tab contains settings relating to motion detection.</p>
+</div></blockquote>
+<figure class="align-default" id="id1">
+<img alt="../../_images/define-monitor-analysis.png" src="../../_images/define-monitor-analysis.png" />
+<figcaption>
+<p><span class="caption-text">Monitor Analysis Tab</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p><strong>Motion Detection</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>None: Do not perform motion detection. Recording can still be triggered manually.</p></li>
+<li><p>Always: Perform motion detection.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Analysis Image</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Full Colour: Perform the detection using the full RGB image</p></li>
+<li><p>Y-Channel: If the capture process results in an image in YUV format, the Y channel is a grey scale image. Performing motion detection on just Y channel uses 1/4 of processing compared to the full colour image.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Analysis FPS</strong>: Motion detection is not required on every frame captured. For a stream captured at 30 FPS, motion detection can be adequate at 5 FPS for most cases. Motion detection is very CPU intensive so reducing the Analysis FPS as low as possible allows more cameras to be added to the system.</p></li>
+<li><p><strong>Reference Image Blend %ge</strong>: Each analysed image in ZoneMinder is a composite of previous images and is formed by applying the current image as a certain percentage of the previous reference image. Thus, if we entered the value of 10% here, each image’s part in the reference image will diminish by a factor of 0.9 each time round. So a typical reference image will be 10% of the previous image, 9% the one before that and then 8.1%, 7.2%, 6.5% and so on of the rest of the way. An image will effectively vanish around 25 images later than when it was added. This blend value is what is specified here and if higher will make slower progressing events less detectable as the reference image would change more quickly. Similarly, events will be deemed to be over much sooner as the reference image adapts to the new images more quickly. In signal processing terms the higher this value the steeper the event attack and decay of the signal. Default value is 6.25% for Indoor cameras and 12.5% for Outdoor cameras.</p></li>
+<li><p><strong>Alarm Reference Image Blend %ge</strong>: This is defined similar to Reference Image Blend but only applies during alarm states. This allows the alarm blend to be different than the reference blend.</p></li>
+<li><p><strong>Linked Monitors</strong>: This field allows you to select other monitors or zones on your system that act as triggers for this monitor. So if you have a camera covering one aspect of your property you can force all cameras to record when that camera detects motion or other events. You can either directly enter a comma separated list of monitor IDs or click on <span class="guilabel">Add Monitor Link</span> pulldown menu. Be careful not to create circular dependencies with this feature as it may cause infinitely persisting alarms. To unlink monitors you can ctrl-click. You can also enter logical operators here to create more complex logic ( | = OR, &amp; = AND).  So A | B means record if either A or B is alarmed. A &amp; B means trigger if both A and B are alarmed.</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="definemonitor_source.html" class="btn btn-neutral float-left" title="Source Tab" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="definemonitor_recording.html" class="btn btn-neutral float-right" title="Recording Tab" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

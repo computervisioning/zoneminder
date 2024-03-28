@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../userguide/options/options_servers.rst:2
+msgid "Options - Servers"
+msgstr "Опции - Серверы"
+
+#: ../../userguide/options/options_servers.rst:4
+msgid "Todo"
+msgstr "Все"
+
+#: ../../userguide/options/options_servers.rst:4
+msgid "needs to be refreshed"
+msgstr "Необходимо обновить"
+
+#: ../../userguide/options/options_servers.rst:8
+msgid ""
+"Servers tab is used for setting up multiple ZoneMinder servers sharing "
+"the same database and using a shared file share for all event data. To "
+"add a new server use the Add Server button. All that is required is a "
+"Name for the Server and Hostname."
+msgstr ""
+"Закладка \"Серверы\" используется для настройки нескольких серверов "
+"ZoneMinder, которые используют одну и ту же базу данных и общий файловый "
+"ресурс для всех событий. Чтобы добавить новый сервер, используйте кнопку "
+"\"Добавить сервер\". Все, что требуется, это имя сервера и доменное имя."
+
+#: ../../userguide/options/options_servers.rst:10
+msgid "To delete a server mark that server and click the Delete button."
+msgstr "Чтобы удалить сервер, отметьте этот сервер и нажмите кнопку \"Удалить\"."
+
+#: ../../userguide/options/options_servers.rst:12
+msgid ""
+"Please note that all servers must have a functional web UI as the live "
+"view must come from the monitor's host server."
+msgstr ""
+"Обратите внимание, что все серверы должны иметь функциональный "
+"веб-интерфейс, поскольку живая трансляция должна поступать от сервера "
+"монитора."
+
+#: ../../userguide/options/options_servers.rst:14
+msgid ""
+"On each server, you will have to edit /etc/zm/zm.conf and set either "
+"ZM_SERVER_NAME="
+msgstr ""
+"На каждом сервере вам придется отредактировать /etc/zm/zm.conf и "
+"установить либо ZM_SERVER_NAME=."
+

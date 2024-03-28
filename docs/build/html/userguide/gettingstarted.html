@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Defining Monitors" href="definemonitor.html" />
+    <link rel="prev" title="Components" href="components.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setting-timezone">Setting Timezone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enabling-authentication">Enabling Authentication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#establish-login-password">Establish Login Password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-the-web-console">Understanding the Web Console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-monitors">Adding Monitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-zones">Adding Zones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#selecting-themes">Selecting Themes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">User Guide</a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/gettingstarted.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h1>
+<p>The intent of this section is to provide a simplified introduction to some of the basic configuration tasks that most ZoneMinder servers will require. This will include setting your Timezone, enabling Authentication, adding a Monitor (camera), adding a Zone and changing the web display Theme. Detailed explanations about each particular item can be found in their respective sections of the ZoneMinder documentation.</p>
+<p>Having followed the <a class="reference internal" href="../installationguide/index.html"><span class="doc">Installation Guide</span></a> for your distribution you should now be able to load the ZoneMinder web interface which can be found at <code class="docutils literal notranslate"><span class="pre">http://hostname-or-ip/zm</span></code>. The image below shows an example of the ZoneMinder Console which is displayed after starting. The ZoneMinder Console is the central location from which all ZoneMinder configuration and functionality can be accessed.</p>
+<figure class="align-default" id="id1">
+<img alt="../_images/getting-started-first-screen.png" src="../_images/getting-started-first-screen.png" />
+<figcaption>
+<p><span class="caption-text">ZoneMinder Console</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that in this guide the notation of <span class="guilabel">Link</span> means that you click on the specified link on the web interface to perform the specified action.</p>
+</div>
+<section id="setting-timezone">
+<span id="timezone-config"></span><h2>Setting Timezone<a class="headerlink" href="#setting-timezone" title="Permalink to this heading"></a></h2>
+<p>ZoneMinder allows you to specify the Timezone in the web interface. Please set up before moving forward so that your saved events, logfiles and timestamp overlays contain correct time information. The Timezone can be changed using the following steps.</p>
+<ul class="simple">
+<li><p>At the top of Console display click on the <span class="guilabel">Options</span> menu link.</p></li>
+<li><p>The Options window opens. Locate and click the <span class="guilabel">System</span> tab link.</p></li>
+<li><p>Locate the <strong>TIMEZONE</strong> parameter and use the pulldown menu to locate your Timezone.</p></li>
+</ul>
+<img alt="../_images/getting-started-timezone.png" src="../_images/getting-started-timezone.png" />
+</section>
+<section id="enabling-authentication">
+<h2>Enabling Authentication<a class="headerlink" href="#enabling-authentication" title="Permalink to this heading"></a></h2>
+<p>We strongly recommend enabling authentication during initial setup of ZoneMinder. There are some situations where certain users don’t enable authentication, such as instances where the server is in a LAN not directly exposed to the Internet. In most cases authentication should be enabled. Follow the steps below.</p>
+<ul class="simple">
+<li><p>Click on the <span class="guilabel">Options</span> link in the top bar of the web interface.</p></li>
+<li><p>You will now be presented with a sidebar full of Option tabs. Click on the <span class="guilabel">System</span> tab and scroll down to the section containing authentication parameters.</p></li>
+</ul>
+<figure class="align-default" id="id2">
+<img alt="../_images/getting-started-enable-auth-1.png" src="../_images/getting-started-enable-auth-1.png" />
+<figcaption>
+<p><span class="caption-text">Authentication Parameters in System Tab</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>OPT_USE_AUTH:</strong> Enable by checking the box. This enables user authentication.</p></li>
+<li><p><strong>AUTH_HASH_SECRET:</strong> Enter a random string. This makes authentication logic more secure.</p></li>
+<li><p>Remaining items should be left as default.</p></li>
+<li><p>Click on <span class="guilabel">Save</span> at the top of list and that’s it! The next time you refresh that page, you will now be presented with a login screen as shown below. Job well done!</p></li>
+</ul>
+<img alt="../_images/getting-started-login.png" class="no-scaled-link" src="../_images/getting-started-login.png" style="width: 350px;" />
+<aside class="sidebar">
+<p class="sidebar-title">Note</p>
+<p>For initial login authentication the default username is <strong>admin</strong> and default password is <strong>admin</strong>.</p>
+</aside>
+</section>
+<section id="establish-login-password">
+<h2>Establish Login Password<a class="headerlink" href="#establish-login-password" title="Permalink to this heading"></a></h2>
+<p>ZoneMinder defines a default user with username of <strong>admin</strong> and password of <strong>admin</strong>. Use these credentials to login to ZoneMinder for the first time. This is not very secure for a server so let’s change this before continuing setting up ZoneMinder. The password for the admin user can be changed by following the steps below.</p>
+<ul class="simple">
+<li><p>Click on the <span class="guilabel">Options</span> link in the top bar of the web interface.</p></li>
+<li><p>Locate and click on the <span class="guilabel">Users</span> tab link.</p></li>
+<li><p>Select and click on user <span class="guilabel">admin</span> to open the edit window.</p></li>
+</ul>
+<figure class="align-default" id="id3">
+<img alt="../_images/getting-started-change-password.png" src="../_images/getting-started-change-password.png" />
+<figcaption>
+<p><span class="caption-text">Changing Password in Users Tab</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Enter new password in <span class="guilabel">New Password</span> and <span class="guilabel">Confirm Password</span> boxes.</p></li>
+<li><p>Click <span class="guilabel">Save</span> to update password.</p></li>
+<li><p>Additional users can be created with flexible levels of access. Refer to <a class="reference internal" href="options/options_users.html"><span class="doc">Options - Users</span></a>.</p></li>
+</ul>
+</section>
+<section id="understanding-the-web-console">
+<h2>Understanding the Web Console<a class="headerlink" href="#understanding-the-web-console" title="Permalink to this heading"></a></h2>
+<p>Before we proceed, let’s spend a few minutes understanding the key functions of the web Console. At any time you can return to the Console by clicking the <span class="guilabel">Console</span> link. For the sake of illustration, we are going to use an existing ZoneMinder server already configured with several Monitors and showing recorded events.</p>
+<figure class="align-default" id="id4">
+<img alt="../_images/getting-started-understand-console.png" src="../_images/getting-started-understand-console.png" />
+<figcaption>
+<p><span class="caption-text">ZoneMinder Console for Existing Configured Server</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>This is the Console window in ZoneMinder and shows a summary of your Monitors, associated events, Zones, server status and links to other available functionality. A brief description of many of these items is given below. Each section has a much more detailed description contained in the ZoneMinder documentation.</p>
+<dl class="simple">
+<dt>[A] Options</dt><dd><p>The Options menu lets you configure many aspects of ZoneMinder. Refer to <a class="reference internal" href="options.html"><span class="doc">Options</span></a>.</p>
+</dd>
+<dt>[B] Log</dt><dd><p>This brings up a color coded log window that shows various system and component level logs. This window is useful if you are trying to diagnose issues. Refer to <a class="reference internal" href="logging.html"><span class="doc">Logging</span></a>.</p>
+</dd>
+<dt>[C] Groups</dt><dd><p>ZoneMinder allows you to group Monitors for logical separation. This option lets you create new groups, associate Monitors to them and edit/delete existing groups.</p>
+</dd>
+<dt>[D] Filters</dt><dd><p>Filters are a powerful mechanism to perform actions when certain conditions are met. ZoneMinder comes with some preset filters that keep a tab of disk space and others. Many users create their own filters for more advanced actions like sending emails when certain events occur and more. Refer to <a class="reference internal" href="filterevents.html"><span class="doc">Filtering Events</span></a>.</p>
+</dd>
+<dt>[E] Cycle</dt><dd><p>The Cycle option allows you to rotate between live views of each configured Monitor.</p>
+</dd>
+<dt>[F] Montage</dt><dd><p>The Montage option shows a collage of your Monitors. You can customize the placement size and location on the web interface.</p>
+</dd>
+<dt>[G] Montage Review</dt><dd><p>Allows you to simultaneously view past events for different Monitors. Note that this is a very resource intensive page and its performance will vary based on your system capabilities.</p>
+</dd>
+<dt>[H] Audit Events Report</dt><dd><p>This is more of a power user feature. This option looks for recording gaps in events and recording issues in mp4 files.</p>
+</dd>
+<dt>[I] Current User</dt><dd><p>This shows the currently logged in user.</p>
+</dd>
+<dt>[J] Run State</dt><dd><p>ZoneMinder allows you to maintain ‘Run States’. A Run State is essentially a snapshot that records the state of each Monitor and you can switch between states easily. For example, you might have a Run State defined that switches all monitors the ‘None’ Record mode while another state that sets some of the monitors to the ‘On Motion’ Record mode. Why would you want this? A great example is to disable recording when you are at home and enable when you are away, based on time of day or other triggers. You can switch states by selecting an appropriate state manually, or do it automatically via cron jobs, for example. An example of using a cron job to automatically switch is provided in the <a class="reference internal" href="../faq.html#runstate-cron-example"><span class="std std-ref">FAQ</span></a>. If you click on the <span class="guilabel">RUNNING</span> link, ZoneMinder displays a popup that allows you to select or define additional Run States. ZoneMinder provides a few pre-defined Run States and you can also add your own Run States here.</p>
+</dd>
+</dl>
+<img alt="../_images/getting-started-runstates.png" class="no-scaled-link align-left" src="../_images/getting-started-runstates.png" style="width: 350px;" />
+<aside class="sidebar">
+<p class="sidebar-title">Run States</p>
+<p>ZoneMinder Run States window allows selection of pre-defined Run States or entry of new Run States. ZoneMinder comes with pre-defined Run States of default, Stop and Restart.</p>
+</aside>
+<dl class="simple">
+<dt>[K] System Info</dt><dd><p>This section shows information about the ZoneMinder server hardware.</p>
+</dd>
+<dt>[L] Function</dt><dd><p>This shows how ZoneMinder deals with Monitor stream capture, analysis and recording. The current state of each Monitor capture, analysis and recording settings is summarized here.</p>
+</dd>
+<dt>[M] Source</dt><dd><p>This is the Source column that tells you the type of the camera - if its an IP camera, a USB camera or more. In this example, they are all IP cameras. Green means the monitor is running. Red means there is something wrong with that camera.</p>
+</dd>
+<dt>[N] Events</dt><dd><p>This is the core of ZoneMinder - recording events. It gives you a count of how many events were recorded over the hour, day, week, month.</p>
+</dd>
+<dt>[O] Zones</dt><dd><p>This indicates number of Zones defined. Click in this link to define Zones for your monitor. Zones are areas within the camera that you mark as ‘hotspots’ for motion detection. Simply put, when you first configure your Monitors (cameras), by default ZoneMinder uses the entire field of view of the camera to detect motion. You may not want this. You may want to create Zones specifically for detecting motion and ignore others. For example, lets consider a room with a fan that spins. You surely don’t want to consider the fan moving continuously a reason for triggering a record? Probably not - in that case, you’d leave the fan out while making your zones. Refer to <a class="reference internal" href="definezone.html"><span class="doc">Defining Zones</span></a>.</p>
+</dd>
+<dt>[P] Console Filter</dt><dd><p>This is a visual filter which lets you filter the console display based on text you enter. While this may not be particularly useful for small systems, ZoneMinder is also used in larger installations with well over 200+ cameras and this visual filter helps reduce the monitors you are viewing at one time.</p>
+</dd>
+</dl>
+</section>
+<section id="adding-monitors">
+<h2>Adding Monitors<a class="headerlink" href="#adding-monitors" title="Permalink to this heading"></a></h2>
+<p>Now that we have a basic understanding of the Console web interface, lets go about adding a new Monitor. In ZoneMinder the source of a video stream is called a Monitor and this can come from many types of sources, most commonly from an IP camera.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Note</p>
+<p>This is meant to be a simple example. For a more detailed explanation of other options available when creating a monitor, please see <a class="reference internal" href="definemonitor.html"><span class="doc">Defining Monitors</span></a></p>
+</aside>
+<p>Prior to adding Monitors in ZoneMinder you will need the following information at minimum: URL to access the video stream, authentication user/password, IP address, video resolution in pixels, frames per second (FPS) and the video stream protocol.</p>
+<p>The generic camera we are using as an example here has the following characteristics: URL of <code class="docutils literal notranslate"><span class="pre">rtsp://username:password&#64;ipaddress:port/videoMain</span></code>, resolution of 1280x960 pixels, 5 frames per second (FPS), RTSP protocol using TCP and an h.264 encoded stream. The specific information for your cameras will be different, of course.</p>
+<p>Determining camera characteristics is one of the challenging aspects of ZoneMinder configuration. There are several ways to find camera information. The primary way would be the camera user manual or manufacturer product support website. The ZoneMinder community also has a frequently updated list <a class="reference external" href="https://wiki.zoneminder.com/index.php/Hardware_Compatibility_List">here</a> that lists information about many cameras. If you don’t find your camera there and can’t seem to find it elsewhere, feel free to register and ask in the <a class="reference external" href="https://forums.zoneminder.com/">user forums</a>.</p>
+<ul class="simple">
+<li><p>Click on the <span class="guilabel">+ADD</span> button in Console window as shown below:</p></li>
+</ul>
+<img alt="../_images/getting-started-add-monitor.png" src="../_images/getting-started-add-monitor.png" />
+<ul class="simple">
+<li><p>This brings up an empty Monitor entry window starting on the General tab:</p></li>
+</ul>
+<figure class="align-default" id="id5">
+<img alt="../_images/getting-started-add-monitor-general-1.png" src="../_images/getting-started-add-monitor-general-1.png" />
+<figcaption>
+<p><span class="caption-text">Configuring Monitor - General Tab</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Name</strong>: Anything can be entered here but a description of location or area is generally useful. This camera is located in a garage so let’s call this ‘Garage’.</p></li>
+<li><p><strong>Source Type:</strong> FFmpeg is the recommended source type for most modern IP cameras and also the default value in ZoneMinder. For this example, FFmpeg is the appropriate choice. There are many choices for Source Type in ZoneMinder. For a detailed description of them please see <a class="reference internal" href="definemonitor.html"><span class="doc">Defining Monitors</span></a>.</p></li>
+<li><p>We are done with the General tab. Move to the next tab by clicking on <span class="guilabel">Source</span>.</p></li>
+</ul>
+<figure class="align-default" id="id6">
+<img alt="../_images/getting-started-add-monitor-source-1.png" src="../_images/getting-started-add-monitor-source-1.png" />
+<figcaption>
+<p><span class="caption-text">Configuring Monitor - Source Tab</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Source Path</strong>: Enter the URL for the camera stream you identified earlier. Note that if your URL contains camera authentication these may be automatically populated into the Username and Password fields.</p></li>
+<li><p><strong>Capture Resolution:</strong> Enter the resolution of the camera stream you are using. This example uses 1280x960 pixel resolution. The pulldown menu for this contains many commonly used camera resolutions or you can enter the horizontal and vertical resolution manually.</p></li>
+<li><p>Other options can be left as the default settings.</p></li>
+<li><p>We are done with the Source tab. Move to the next tab by clicking on <span class="guilabel">Recording</span> tab link.</p></li>
+</ul>
+<figure class="align-default" id="id7">
+<img alt="../_images/getting-started-add-monitor-recording.png" src="../_images/getting-started-add-monitor-recording.png" />
+<figcaption>
+<p><span class="caption-text">Configuring Monitor - Recording Tab</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Recording:</strong> For this example we want to only record events when motion is detected. Select <span class="guilabel">On Motion / Trigger / etc</span> from the dropdown menu.</p></li>
+<li><p><strong>Storage Area:</strong> Select <span class="guilabel">Default</span>.</p></li>
+<li><p>This completes a very simplified Monitor setup. Click on <span class="guilabel">Save</span>. As one can see there are a substantial number of configuration options available. Some additional configuration parameters beyond this simple Getting Started may be needed for your specific camera and hardware setup. Many of these options are discussed in detail later in the Documentation.</p></li>
+<li><p>You now have a configured monitor as seen below in the Console. To see if everything works, click on the <span class="guilabel">Garage</span> monitor you just added and you should be able to see the live feed. If you don’t, inspect your ZoneMinder logs to debug.</p></li>
+</ul>
+<figure class="align-default" id="id8">
+<img alt="../_images/getting-started-add-monitor-ready.png" src="../_images/getting-started-add-monitor-ready.png" />
+<figcaption>
+<p><span class="caption-text">Console with Configured Monitor</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="adding-zones">
+<h2>Adding Zones<a class="headerlink" href="#adding-zones" title="Permalink to this heading"></a></h2>
+<p>After adding a Monitor the next step is to define Zones which will be used for image analysis. By default each added Monitor has one zone defined which covers the full area captured by the camera. In most cases this is not very useful, especially if you intend to capture specific events such as a door opening or an object entering a specific area. Let’s define a new Zone appropriate for this Monitor. This new Zone will help to reduce the number of events captured and space required on your storage system.</p>
+<ul class="simple">
+<li><p>Referring to the Console image above, click on the <span class="guilabel">1</span> on the right side of the Garage Monitor row. This brings up the Zones window for the Garage Monitor shown below.</p></li>
+</ul>
+<figure class="align-default" id="id9">
+<img alt="../_images/getting-started-zones.png" src="../_images/getting-started-zones.png" />
+<figcaption>
+<p><span class="caption-text">Configuring Zones - Zone List</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Click on <span class="guilabel">+ADD NEW ZONE</span> to define a new Zone for this Monitor.</p></li>
+</ul>
+<figure class="align-default" id="id10">
+<img alt="../_images/getting-started-zones-new.png" src="../_images/getting-started-zones-new.png" />
+<figcaption>
+<p><span class="caption-text">Configuring Zones - Defining Zone Analysis and Zone Area</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Name:</strong> Enter a descriptive name for this specific Zone. In this example we want to limit the analysis to the driveway so let’s use that as its name. Having well defined Zone names can be helpful when filtering events or reviewing logfiles.</p></li>
+<li><p><strong>Preset:</strong> For new users of ZoneMinder it is best to start with the available Presets and make changes from there. Zone definition and proper setting of the available parameters to optimize each unique camera stream takes some time to learn. From the Preset pulldown menu, select <span class="guilabel">Best, High Sensitivity</span> for this Zone example.</p></li>
+<li><p><strong>Points:</strong> You can either drag the corner vertex points as required or enter the X and Y coordinates directly in the table. Additional points can be added by clicking the <span class="guilabel">+</span> on any existing point.</p></li>
+<li><p>Click <span class="guilabel">Save</span> to complete the definition for the Driveway Zone.</p></li>
+</ul>
+<figure class="align-default" id="id11">
+<img alt="../_images/getting-started-zones-delete.png" src="../_images/getting-started-zones-delete.png" />
+<figcaption>
+<p><span class="caption-text">Configuring Zones - Deleting the Default All Zone</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Delete the initial default ‘All’ Zone by selecting the <span class="guilabel">Mark</span> checkbox in the ‘All’ Zone row. Click <span class="guilabel">Delete</span> to remove the Zone.</p></li>
+<li><p>Congratulations! You have now defined a Monitor and appropriate Zone for a typical use case.</p></li>
+</ul>
+<figure class="align-default" id="id12">
+<img alt="../_images/getting-started-zones-final.png" src="../_images/getting-started-zones-final.png" />
+<figcaption>
+<p><span class="caption-text">A Fully Configured Zone</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="selecting-themes">
+<h2>Selecting Themes<a class="headerlink" href="#selecting-themes" title="Permalink to this heading"></a></h2>
+<p>When you first install ZoneMinder, the web interface uses what is called the Base theme. It is worthwhile to note that ZoneMinder has Base, Classic and Dark themes available. These themes are controlled by the Skin and CSS settings found in the Options menu.</p>
+<ul class="simple">
+<li><p>Click on the <span class="guilabel">Options</span> link on the top of the web interface Console.</p></li>
+<li><p>This will bring you to the Options window as shown below. Click on the <span class="guilabel">System</span> tab to access the available CSS themes. Changes applied here will remain after you end the session. Note that the theme for the current session will not change, see the next steps to change the theme immediately for the current session.</p></li>
+</ul>
+<img alt="../_images/getting-started-options-system.png" class="no-scaled-link align-center" src="../_images/getting-started-options-system.png" style="width: 500px;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Click <span class="guilabel">Save</span> at the bottom if you decide to change the default theme.</p></li>
+<li><p>Now, switch to the <span class="guilabel">Display</span> tab. Changes applied here will only remain until you end the current session. This allows you to try out the different CSS themes available.</p></li>
+</ul>
+<img alt="../_images/getting-started-options-display.png" class="no-scaled-link align-center" src="../_images/getting-started-options-display.png" style="width: 500px;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p>Click <span class="guilabel">Save</span> at the bottom if you decide to change the session theme.</p></li>
+</ul>
+<figure class="align-default" id="id13">
+<img alt="../_images/getting-started-theme-base.png" src="../_images/getting-started-theme-base.png" />
+<figcaption>
+<p><span class="caption-text">Example of Base Theme Console</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id14">
+<img alt="../_images/getting-started-theme-dark.png" src="../_images/getting-started-theme-dark.png" />
+<figcaption>
+<p><span class="caption-text">Example of Dark Theme Console</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id15">
+<img alt="../_images/getting-started-theme-classic.png" src="../_images/getting-started-theme-classic.png" />
+<figcaption>
+<p><span class="caption-text">Example of Classic Theme Console</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading"></a></h2>
+<p>This was a quick Getting Started guide where you were introduced to the very basics of how to set your Timezone, setup Authentication, add a Monitor (camera), define a Zone and change the ZoneMinder display Theme. We’ve skipped many details to keep this concise. Please refer to <a class="reference internal" href="options.html"><span class="doc">Options</span></a> for details about setting the various Options, <a class="reference internal" href="definemonitor.html"><span class="doc">Defining Monitors</span></a> for details about setting up Monitors and finally <a class="reference internal" href="definezone.html"><span class="doc">Defining Zones</span></a> for details about setting up Zones.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="components.html" class="btn btn-neutral float-left" title="Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="definemonitor.html" class="btn btn-neutral float-right" title="Defining Monitors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

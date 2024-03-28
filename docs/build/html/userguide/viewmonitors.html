@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viewing Monitors &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Filtering Events" href="filterevents.html" />
+    <link rel="prev" title="Defining Zones" href="definezone.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html">Defining Zones</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Viewing Monitors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#monitor-view">Monitor View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cycle">Cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#montage">Montage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#montage-review">Montage Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#monitor-events">Monitor Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">User Guide</a></li>
+      <li class="breadcrumb-item active">Viewing Monitors</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/viewmonitors.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="viewing-monitors">
+<h1>Viewing Monitors<a class="headerlink" href="#viewing-monitors" title="Permalink to this heading"></a></h1>
+<p>Several methods for viewing live streams from monitors are available in ZoneMinder. The common entry points for viewing monitors are highlighted in the Console as shown below.</p>
+<figure class="align-default" id="id1">
+<img alt="../_images/view-monitor-console.png" src="../_images/view-monitor-console.png" />
+<figcaption>
+<p><span class="caption-text">Methods for Viewing Monitors</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<dl class="simple">
+<dt>Monitor View</dt><dd><p>The <a class="reference internal" href="#monitor-view">Monitor View</a> displays a live feed for a single selected monitor. There are several ways to enter the Monitor View.</p>
+<ul class="simple">
+<li><p>Monitor Id: Click on any available monitor Id such as <span class="guilabel">3</span> in the example above to display a live feed.</p></li>
+<li><p>Name: Click on any available monitor Name such as <span class="guilabel">Driveway</span> to display a live feed.</p></li>
+<li><p>Thumbnail: Click on any available monitor thumbnail image to display a live feed.</p></li>
+</ul>
+</dd>
+<dt>Cycle</dt><dd><p>The <a class="reference internal" href="#cycle">Cycle</a> monitor view displays a rotating view for each selected monitor. Click on <span class="guilabel">Cycle</span> to open the Cycle view.</p>
+</dd>
+<dt>Montage</dt><dd><p>The <a class="reference internal" href="#montage">Montage</a> monitor view displays several monitors simultaneously. The Montage view is highly configurable and is useful for applications where a continuous monitor view is needed. Click on <span class="guilabel">Montage</span> to open the Montage view.</p>
+</dd>
+<dt>Montage Review</dt><dd><p>The <a class="reference internal" href="#montage-review">Montage Review</a> monitor view is similar to Montage view but provides access to viewing the available events captured by each monitor. Click on <span class="guilabel">Montage Review</span> to open the Montage Review view.</p>
+</dd>
+</dl>
+<section id="monitor-view">
+<h2>Monitor View<a class="headerlink" href="#monitor-view" title="Permalink to this heading"></a></h2>
+<figure class="align-default" id="id2">
+<img alt="../_images/view-monitor-main.png" src="../_images/view-monitor-main.png" />
+<figcaption>
+<p><span class="caption-text">Monitor View</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Monitor View is useful for continuous viewing of a single monitor live stream. The currently displayed monitor can be changed by selecting a new one in the Monitor input field of the Console Filter. By default, if the Monitor View window is minimized or other windows are in front, the Monitor View will move to the foreground if the monitor enters Alarm state. This behaviour can be disabled with the <strong>WEB_POPUP_ON_ALARM</strong> option. Additionally, a sound can be played when the monitor enters Alarm state. This can be enabled with the <strong>WEB_SOUND_ON_ALARM</strong> and <strong>WEB_ALARM_SOUND</strong> options. A list of events will be shown below the monitor live stream if the monitor has recording enabled. Please refer to the <a class="reference internal" href="viewevents.html"><span class="doc">Viewing Events</span></a> section for information about viewing events as this part of the Monitor View will not be discussed in this section.</p>
+<dl class="simple">
+<dt>[A] Monitor View</dt><dd><p>Shows the selected monitor live view. The view can be adjusted using the mouse as follows. Use left mouse button <kbd class="kbd docutils literal notranslate">LMB</kbd> to zoom in, use <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">CTRL</kbd>-<kbd class="kbd docutils literal notranslate">LMB</kbd></kbd> to zoom out and use <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">SHIFT</kbd>-<kbd class="kbd docutils literal notranslate">LMB</kbd></kbd> to pan.</p>
+</dd>
+<dt>[B] Console Filter</dt><dd><p>The Console Filter is available in the Monitor view at the top of the display. However, the only relevant filter item while in Monitor View is Monitor which can be used to change the live view to another available monitor.</p>
+</dd>
+<dt>[C] Scale</dt><dd><p>Sets the relative size of Monitor live view in the web interface. Scale factors from <span class="guilabel">1/8x</span> to <span class="guilabel">4x</span> are available. Note that the <span class="guilabel">Auto</span> scale will allow the Monitor live view to fill the screen when Fullscreen is activated.</p>
+</dd>
+<dt>[D] Width/Height</dt><dd><p>Allows manual control of the individual width and height of Monitor live view. Various useful sizes based on pixel units are available. Note that this only applies for viewing and does not change the monitor setting.</p>
+</dd>
+<dt>[E] Rate</dt><dd><p>Sets the rate at which monitor live view image is updated. This is useful for reducing the update frequency in order to reduce CPU resources. Rates from <span class="guilabel">1 fps</span> to <span class="guilabel">20 fps</span> are available. The default <span class="guilabel">Unlimited</span> sets the display rate to the monitor’s defined frame rate. Note that this only applies for viewing. This does not change the frame rate of the monitor itself.</p>
+</dd>
+<dt>[F] PTZ Controls Sidebar</dt><dd><p>Activates the PTZ Control Sidebar if the monitor is configured to use Controls. See <a class="reference internal" href="cameracontrol.html"><span class="doc">Camera Control</span></a> for more information about Camera Control.</p>
+</dd>
+<dt>[G] Cycle View Sidebar</dt><dd><p>Activates the Cycle View Sidebar. Essentially this changes viewing mode to <a class="reference internal" href="#cycle">Cycle</a>.</p>
+</dd>
+<dt>[H] Force Alarm</dt><dd><p>Manually triggers an alarm for the monitor. Useful for setup and debug of monitors and events. Click once to trigger the alarm. Second click ends the alarm.</p>
+</dd>
+<dt>[I] Disable Alarms</dt><dd><p>Manually disable alarms for the monitor. Note that this is only for viewing and does not change the monitor settings related to alarm triggering.</p>
+</dd>
+<dt>[J] Local Monitor Settings</dt><dd><p>Access to local monitor settings. Only applies to Local (USB webcam) monitor types and is greyed out for all other monitor types.</p>
+</dd>
+<dt>[K] Refresh</dt><dd><p>Refresh the Monitor View interface.</p>
+</dd>
+<dt>[L] Back</dt><dd><p>Return to previous web interface page.</p>
+</dd>
+<dt>[M] Monitor Status</dt><dd><p>Displays basic monitor status: alarm state, viewing FPS, capturing FPS and analysis FPS. The status has three states: <code class="docutils literal notranslate"><span class="pre">Idle</span></code>, <code class="docutils literal notranslate"><span class="pre">Alarm</span></code> or <code class="docutils literal notranslate"><span class="pre">Alert</span></code> depending on the function of the Monitor and its defined zones. <code class="docutils literal notranslate"><span class="pre">Idle</span></code> is the default state when no activity is detected in the defined zones, <code class="docutils literal notranslate"><span class="pre">Alarm</span></code> means there is an alarm in progress and <code class="docutils literal notranslate"><span class="pre">Alert</span></code> means that an alarm has recently ended. If another alarm is generated during this time it will be appended to the event. The Monitor Status is colour coded in black for <code class="docutils literal notranslate"><span class="pre">Idle</span></code>, red for <code class="docutils literal notranslate"><span class="pre">Alarm</span></code> and amber for <code class="docutils literal notranslate"><span class="pre">Alert</span></code>.</p>
+</dd>
+<dt>[N] Pause/Play</dt><dd><p>Pause live view of monitor by clicking pause icon. Note that this only for viewing and does not change the monitor setting. Play will restart live view streaming of monitor after Pause has been activated.</p>
+</dd>
+<dt>[O] Zoom Out</dt><dd><p>Zoom Out the monitor live view. This is only useful if the view has previously been zoomed in. Zoom Out will stop when the full image size has been reached.</p>
+</dd>
+<dt>[P] Fullscreen</dt><dd><p>Enter Fullscreen monitor display mode. Note that the monitor live stream will not utilize the entire screen as the Pause, Play, Zoom and Exit Fullscreen icons will always be placed at bottom of screen. The monitor event list may also be placed at bottom of screen if Scale or Width/Height is not set to <span class="guilabel">Auto</span>. Press <kbd class="kbd docutils literal notranslate">ESC</kbd> or the Exit Fullscreen icon to exit Fullscreen mode.</p>
+</dd>
+</dl>
+</section>
+<section id="cycle">
+<h2>Cycle<a class="headerlink" href="#cycle" title="Permalink to this heading"></a></h2>
+<figure class="align-default" id="id3">
+<img alt="../_images/view-monitor-cycle.png" src="../_images/view-monitor-cycle.png" />
+<figcaption>
+<p><span class="caption-text">Monitor Cycle View</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Cycle view is essentially the same as the <a class="reference internal" href="#monitor-view">Monitor View</a> except that it sequences through a list of monitors. The example above has monitors <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">6</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code> selected for a Cycle view. The list of monitors to include in a Cycle view are selectable as well as the display time for each monitor. Please note that the functions and control icons remain the same as <a class="reference internal" href="#monitor-view">Monitor View</a> except for the ones listed below.</p>
+<dl class="simple">
+<dt>[A] Display Time</dt><dd><p>Selects length of display time for each monitor before changing to next monitor. Display time can be set between <span class="guilabel">5 seconds</span> and <span class="guilabel">5 minutes</span>.</p>
+</dd>
+<dt>[B] Pause/Play/Back/Forward</dt><dd><p>Pause the Cycle at the currently displayed monitor. Play icon re-starts the rotation of monitor views. Back and forward icons will immediately move to the previous or next monitor live stream.</p>
+</dd>
+<dt>[C] Monitor</dt><dd><p>Currently displayed monitor live stream is highlighted in blue.</p>
+</dd>
+</dl>
+</section>
+<section id="montage">
+<h2>Montage<a class="headerlink" href="#montage" title="Permalink to this heading"></a></h2>
+<figure class="align-default" id="id4">
+<img alt="../_images/view-monitor-montage.png" src="../_images/view-monitor-montage.png" />
+<figcaption>
+<p><span class="caption-text">Monitor Montage View</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Montage view is similar to the <a class="reference internal" href="#monitor-view">Monitor View</a> except that it displays several monitors simultaneously. The Console Filter is fully available and can be used to filter and select the monitors to be included in the Montage view. The example above has monitors <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">6</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code> selected for a Montage view. Please note that the functions and control icons remain the same as <a class="reference internal" href="#monitor-view">Monitor View</a> except for the ones listed below.</p>
+<dl class="simple">
+<dt>[A] Layout</dt><dd><p>Select layout preset arrangement of monitor displays.</p>
+</dd>
+<dt>[B] Edit Layout</dt><dd><p>Customized montage view settings can be edited and saved.</p>
+</dd>
+<dt>[C] Show/Hide Zones</dt><dd><p>Enable or disable overlay of currently defined zone regions on each monitor live stream.</p>
+</dd>
+</dl>
+</section>
+<section id="montage-review">
+<h2>Montage Review<a class="headerlink" href="#montage-review" title="Permalink to this heading"></a></h2>
+<figure class="align-default" id="id5">
+<img alt="../_images/view-monitor-montage-review.png" src="../_images/view-monitor-montage-review.png" />
+<figcaption>
+<p><span class="caption-text">Monitor Montage View</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Montage Review view builds upon the <a class="reference internal" href="#montage">Montage</a> view by adding access to saved events. The example above has monitors <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">6</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code> selected for a Montage Review view. The Montage Review provides flexible methods for reviewing saved events. The primary method to set the timeline for reviewing events is to use the timeline icons to set the scope of the timeline. The secondary method is to use the calendar pop-up function from the Start Date/Time entry box to set specific dates and times for the scope of the timeline.</p>
+<dl class="simple">
+<dt>[A] Speed</dt><dd><p>Adjusts the playback speed for the monitor views using a slider. Playback speed can be adjusted between <span class="guilabel">0.10x</span> and <span class="guilabel">50.00x</span>. To pause the display, select <span class="guilabel">0.00x</span>.</p>
+</dd>
+<dt>[B] Archive Status</dt><dd><p>Selection to display only <span class="guilabel">Archived</span> or <span class="guilabel">Unarchived</span> events using a pull-down menu. Default setting is <span class="guilabel">All</span> which will display both Archived and Unarchived events in the timeline.</p>
+</dd>
+</dl>
+<figure class="align-right" id="id6" style="width: 200px">
+<img alt="../_images/view-monitor-datetime.png" src="../_images/view-monitor-datetime.png" />
+<figcaption>
+<p><span class="caption-text">Calendar Input for Date/Time</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<dl class="simple">
+<dt>[C] Start Date/Time &gt;= and Start Date/Time &lt;=</dt><dd><p>Displays the timeline span in terms of date and time. Default setting for the timeline is a one-hour span that ends with the current time. The start and end times for the span can be manually selected by clicking on the entry form. A calendar window will pop up to define the desired date and time.</p>
+</dd>
+<dt>[D] Timeline Controls</dt><dd><p>Control functions are available to set the timeline span (<span class="guilabel">24 HOUR</span>, <span class="guilabel">8 HOUR</span>, <span class="guilabel">1 HOUR</span>, and <span class="guilabel">ALL EVENTS</span>) as well as pan and zoom (<span class="guilabel">&lt; PAN</span>, <span class="guilabel">PAN &gt;</span>, <span class="guilabel">IN +</span>, <span class="guilabel">OUT -</span>). Switch to monitor live-streaming view using <span class="guilabel">LIVE</span>.</p>
+</dd>
+<dt>[D] Scale/Fit</dt><dd><p>Changes the display size of the monitor views using a slider when <span class="guilabel">SCALE</span> is clicked. Scale values of <span class="guilabel">0.10x</span> to <span class="guilabel">1.00x</span> are available. This is useful to either reduce or increase the relative size of the monitor views to fit better on the Montage Review view. Use the <span class="guilabel">FIT</span> button to automatically fit the monitor views to the Montage Review display. Note that the <span class="guilabel">FIT</span> button is only available after <span class="guilabel">SCALE</span> has been activated.</p>
+</dd>
+<dt>[E] Download Video</dt><dd><p>Downloads the events shown in the timeline. A filename will be automatically generated. Select between <code class="docutils literal notranslate"><span class="pre">tar</span></code> and <code class="docutils literal notranslate"><span class="pre">zip</span></code> archive formats for the file export.</p>
+</dd>
+<dt>[F] Timeline</dt><dd><p>Displays the events available in the currently selected span. Events for each monitor are indicated by a distinct colour band. The timeline pointer indicated by yellow box indicates the currently displayed events in the monitor views. If there are no events within the timeline pointer, a <strong>No Event</strong> overlay is shown in the monitor view. In this case, the monitor view may display the final frame of previously viewed event.</p>
+</dd>
+<dt>[G] Monitor Display</dt><dd><p>Displays the currently selected event based on the timeline pointer. If there are no events within the timeline pointer, a <strong>No Event</strong> overlay is shown in the monitor view. In this case, the monitor view may display the final frame of previously played event.</p>
+</dd>
+</dl>
+</section>
+<section id="monitor-events">
+<h2>Monitor Events<a class="headerlink" href="#monitor-events" title="Permalink to this heading"></a></h2>
+<figure class="align-default" id="id7">
+<img alt="../_images/view-monitor-events.png" src="../_images/view-monitor-events.png" />
+<figcaption>
+<p><span class="caption-text">Monitor View Events List</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If recorded events are available, they will be presented below the monitor images for both Monitor View and Cycle modes. This section will only introduce some of the features of the Monitor Events list. For a more in-depth description of Monitor Events, please see the <a class="reference internal" href="viewevents.html"><span class="doc">Viewing Events</span></a> section of the User Guide.</p>
+<dl class="simple">
+<dt>[A] Refresh</dt><dd><p>Refresh the Monitor Events list.</p>
+</dd>
+<dt>[B] Event Columns</dt><dd><p>Add or remove columns for the Monitor Events list.</p>
+</dd>
+<dt>[C] Download Event Information</dt><dd><p>Download a file containing the monitor event list. Various file formats are available.</p>
+</dd>
+<dt>[D] Delete Event</dt><dd><p>Delete individual event.</p>
+</dd>
+<dt>[E] Display Event</dt><dd><p>Display event image stream by selecting either event Id or Name.</p>
+</dd>
+<dt>[F] Display Frames</dt><dd><p>Display a list of frames for the event.</p>
+</dd>
+<dt>[G] Max. Score</dt><dd><p>Display frame with maximum alarm score.</p>
+</dd>
+<dt>[H] Thumbnail</dt><dd><p>Display event image stream by clicking on thumbnail image.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="definezone.html" class="btn btn-neutral float-left" title="Defining Zones" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="filterevents.html" class="btn btn-neutral float-right" title="Filtering Events" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Options - Logging &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Options - Network" href="options_network.html" />
+    <link rel="prev" title="Options - Images" href="options_images.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../options.html">Options</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="options_display.html">Options - Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_system.html">Options - System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_config.html">Options - Config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_api.html">Options - API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_servers.html">Options - Servers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_storage.html">Options - Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_storage.html#s3-storage-setup">S3 storage setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_web.html">Options - Web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_images.html">Options - Images</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Options - Logging</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#logging-example">Logging example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-more-comprehensive-explanation-of-the-various-log-options">A more comprehensive explanation of the various log options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="options_network.html">Options - Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_email.html">Options - Email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_upload.html">Options - Upload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_x10.html">Options - X10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_bw.html">Options - High, Medium and Low B/W</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_users.html">Options - Users</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">User Guide</a></li>
+          <li class="breadcrumb-item"><a href="../options.html">Options</a></li>
+      <li class="breadcrumb-item active">Options - Logging</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/userguide/options/options_logging.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="options-logging">
+<h1>Options - Logging<a class="headerlink" href="#options-logging" title="Permalink to this heading"></a></h1>
+<p>ZoneMinder has a powerful logging system. Understanding how to configure logging will help you track issues better. The logging options are accessed via <code class="docutils literal notranslate"><span class="pre">Options-&gt;Logging</span></code>. Let’s follow along with an example. But before that, here is a basic construct of how logging works:</p>
+<ul class="simple">
+<li><p>Every component of ZoneMinder can generate different types of logs. Typically, <code class="docutils literal notranslate"><span class="pre">ERR</span></code> refers to an error condition that you should look at (in some cases, they are transient during startup/shutdown in which case they are usually benign). <code class="docutils literal notranslate"><span class="pre">INF</span></code> logs are informational, <code class="docutils literal notranslate"><span class="pre">WAR</span></code> are warning logs that might have a potential to cause issues, whilst <code class="docutils literal notranslate"><span class="pre">DBG</span></code> are debug logs that are useful when you need to debug a problems</p></li>
+<li><p>You can decide where these logs are written. Typically ZoneMinder writes logs to multiple sources:
+* Syslog
+* Database
+* individual files belonging to each component inside the logging folder configured</p></li>
+</ul>
+<p>Consider for example, that you are trying to figure out why your “zmc 11” (i.e. Monitor 11) is not working. Obviously, you need to enable debug logs if you are not able to figure out what is going on with standard info logs. But you wouldn’t want to write debug logs to the Database. Maybe, you also don’t want it polluting your syslog and only want to write debug logs to the debug file of _that_ component (<code class="docutils literal notranslate"><span class="pre">/var/log/zm/zmc_m11.log</span></code> for example). That is where customizing your logging is useful.</p>
+<section id="logging-example">
+<h2>Logging example<a class="headerlink" href="#logging-example" title="Permalink to this heading"></a></h2>
+<img alt="../../_images/Options_Logging_A.png" src="../../_images/Options_Logging_A.png" />
+<p>In the example above, I’ve configured my logging as follows:</p>
+<ul class="simple">
+<li><p>I only want to log INFO level logs to Syslog</p></li>
+<li><p>I want DEBUG logs to only go to the conmponent file</p></li>
+<li><p>When it comes to my WEBLOG (what I see in the ZM Log window) and Database log, I only want FATAL logs (you may want to set this to WAR or INF)</p></li>
+<li><p>I don’t want to save FFMPEG logs (this was a new feature added). FFMPEG generates a log of logs on its own that you should only enable if you are trying to figure out video playback related issues</p></li>
+<li><p>I have enabled LOG_DEBUG (unless you enable this, DEBUG logs won’t be logged)</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">LOG_DEBUG_TARGET</span></code> is useful if you don’t want to enable DEBUG logs for every component. In this case, I’m only interested in debugging the ZM Event Server and Monitor 11. Nothing else will have debug logs enabled.</p></li>
+<li><p>I prefer to keep the <code class="docutils literal notranslate"><span class="pre">LOG_DEBUG_FILE</span></code> to empty. This creates nicely separate files in my log folder with component names</p></li>
+</ul>
+<p>The other logging parameters are left to their defaults, like so:</p>
+<img alt="../../_images/Options_Logging_B.png" src="../../_images/Options_Logging_B.png" />
+</section>
+<section id="a-more-comprehensive-explanation-of-the-various-log-options">
+<h2>A more comprehensive explanation of the various log options<a class="headerlink" href="#a-more-comprehensive-explanation-of-the-various-log-options" title="Permalink to this heading"></a></h2>
+<p>LOG_LEVEL_SYSLOG - ZoneMinder logging is now more integrated between components and allows you to specify the destination for logging output and the individual levels for each. This option lets you control the level of logging output that goes to the system log. ZoneMinder binaries have always logged to the system log but now scripts and web logging is also included. To preserve the previous behaviour you should ensure this value is set to Info or Warning. This option controls the maximum level of logging that will be written, so Info includes Warnings and Errors etc. To disable entirely, set this option to None. You should use caution when setting this option to Debug as it can severely affect system performance. If you want debug you will also need to set a level and component below</p>
+<p>LOG_LEVEL_FILE - ZoneMinder logging is now more integrated between components and allows you to specify the destination for logging output and the individual levels for each. This option lets you control the level of logging output that goes to individual log files written by specific components. This is how logging worked previously and although useful for tracking down issues in specific components it also resulted in many disparate log files. To preserve this behaviour you should ensure this value is set to Info or Warning. This option controls the maximum level of logging that will be written, so Info includes Warnings and Errors etc. To disable entirely, set this option to None. You should use caution when setting this option to Debug as it can severely affect system performance though file output has less impact than the other options. If you want debug you will also need to set a level and component below</p>
+<p>LOG_LEVEL_WEBLOG - ZoneMinder logging is now more integrated between components and allows you to specify the destination for logging output and the individual levels for each. This option lets you control the level of logging output from the web interface that goes to the httpd error log. Note that only web logging from PHP and JavaScript files is included and so this option is really only useful for investigating specific issues with those components. This option controls the maximum level of logging that will be written, so Info includes Warnings and Errors etc. To disable entirely, set this option to None. You should use caution when setting this option to Debug as it can severely affect system performance. If you want debug you will also need to set a level and component below</p>
+<p>LOG_LEVEL_DATABASE - ZoneMinder logging is now more integrated between components and allows you to specify the destination for logging output and the individual levels for each. This option lets you control the level of logging output that is written to the database. This is a new option which can make viewing logging output easier and more intuitive and also makes it easier to get an overall impression of how the system is performing. If you have a large or very busy system then it is possible that use of this option may slow your system down if the table becomes very large. Ensure you use the LOG_DATABASE_LIMIT option to keep the table to a manageable size. This option controls the maximum level of logging that will be written, so Info includes Warnings and Errors etc. To disable entirely, set this option to None. You should use caution when setting this option to Debug as it can severely affect system performance. If you want debug you will also need to set a level and component below</p>
+<p>LOG_DATABASE_LIMIT - If you are using database logging then it is possible to quickly build up a large number of entries in the Logs table. This option allows you to specify how many of these entries are kept. If you set this option to a number greater than zero then that number is used to determine the maximum number of rows, less than or equal to zero indicates no limit and is not recommended. You can also set this value to time values such as ‘&lt;n&gt; day’ which will limit the log entries to those newer than that time. You can specify ‘hour’, ‘day’, ‘week’, ‘month’ and ‘year’, note that the values should be singular (no ‘s’ at the end). The Logs table is pruned periodically so it is possible for more than the expected number of rows to be present briefly in the meantime.</p>
+<p>LOG_DEBUG” - ZoneMinder components usually support debug logging available to help with diagnosing problems. Binary components have several levels of debug whereas more other components have only one. Normally this is disabled to minimise performance penalties and avoid filling logs too quickly. This option lets you switch on other options that allow you to configure additional debug information to be output. Components will pick up this instruction when they are restarted.</p>
+<p>LOG_DEBUG_TARGET - There are three scopes of debug available. Leaving this option blank means that all components will use extra debug (not recommended). Setting this option to ‘_&lt;component&gt;’, e.g. _zmc, will limit extra debug to that component only. Setting this option to ‘_&lt;component&gt;_&lt;identity&gt;’, e.g. ‘_zmc_m1’ will limit extra debug to that instance of the component only. This is ordinarily what you probably want to do. To debug scripts use their names without the .pl extension, e.g. ‘_zmvideo’ and to debug issues with the web interface use ‘_web’. You can specify multiple targets by separating them with ‘|’ characters.</p>
+<p>LOG_DEBUG_LEVEL - There are 9 levels of debug available, with higher numbers being more debug and level 0 being no debug. However not all levels are used by all components. Also if there is debug at a high level it is usually likely to be output at such a volume that it may obstruct normal operation. For this reason you should set the level carefully and cautiously until the degree of debug you wish to see is present. Scripts and the web interface only have one level so this is an on/off type option for them.</p>
+<p>LOG_DEBUG_FILE - This option allows you to specify a different target for debug output. All components have a default log file which will norally be in /tmp or /var/log and this is where debug will be written to if this value is empty. Adding a path here will temporarily redirect debug, and other logging output, to this file. This option is a simple filename and you are debugging several components then they will all try and write to the same file with undesirable consequences. Appending a ‘+’ to the filename will cause the file to be created with a ‘.&lt;pid&gt;’ suffix containing your process id. In this way debug from each run of a component is kept separate. This is the recommended setting as it will also prevent subsequent runs from overwriting the same log. You should ensure that permissions are set up to allow writing to the file and directory specified here.</p>
+<p>LOG_CHECK_PERIOD - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to indicate what period of historical events are used in this calculation. This value is expressed in seconds and is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>LOG_ALERT_WAR_COUNT - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to specify how many warnings must have occurred within the defined time period to generate an overall system alert state. A value of zero means warnings are not considered. This value is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>LOG_ALERT_ERR_COUNT - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to specify how many errors must have occurred within the defined time period to generate an overall system alert state. A value of zero means errors are not considered. This value is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>LOG_ALERT_FAT_COUNT - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to specify how many fatal errors (including panics) must have occurred within the defined time period to generate an overall system alert state. A value of zero means fatal errors are not considered. This value is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>LOG_ALARM_WAR_COUNT - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to specify how many warnings must have occurred within the defined time period to generate an overall system alarm state. A value of zero means warnings are not considered. This value is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>LOG_ALARM_ERR_COUNT - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to specify how many errors must have occurred within the defined time period to generate an overall system alarm state. A value of zero means errors are not considered. This value is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>LOG_ALARM_FAT_COUNT - When ZoneMinder is logging events to the database it can retrospectively examine the number of warnings and errors that have occurred to calculate an overall state of system health. This option allows you to specify how many fatal errors (including panics) must have occurred within the defined time period to generate an overall system alarm state. A value of zero means fatal errors are not considered. This value is ignored if LOG_LEVEL_DATABASE is set to None.</p>
+<p>RECORD_EVENT_STATS - This version of ZoneMinder records detailed information about events in the Stats table. This can help in profiling what the optimum settings are for Zones though this is tricky at present. However in future releases this will be done more easily and intuitively, especially with a large sample of events. The default option of ‘yes’ allows this information to be collected now in readiness for this but if you are concerned about performance you can switch this off in which case no Stats information will be saved.</p>
+<p>RECORD_DIAG_IMAGES - In addition to recording event statistics you can also record the intermediate diagnostic images that display the results of the various checks and processing that occur when trying to determine if an alarm event has taken place. There are several of these images generated for each frame and zone for each alarm or alert frame so this can have a massive impact on performance. Only switch this setting on for debug or analysis purposes and remember to switch it off again once no longer required.</p>
+<p>RECORD_DIAG_IMAGES_FIFO - Adds fifo options for diagnostic images for much lower impact diagnostics mode. Diagnostic images are only written when there is a client (like a web browser) listening for them. If there is no active client connected, FIFO images are skipped. Note that this feature also needs RECORD_DIAG_IMAGES to be on.  <strong>Note:</strong> Your monitor needs to be in some recording mode (modect/mocord/etc.)</p>
+<p>In addition to creating diagnostic images, this feature also adds a json stream for the detection data so you can see in real time the pixels or blobs detected for the motion. This allows for easy real time stream of both delta and reference images (as video streams) along with the detection numbers.</p>
+<p>Once you turn on <code class="docutils literal notranslate"><span class="pre">RECORD_DIAG_IMAGES</span></code> and the new <code class="docutils literal notranslate"><span class="pre">RECORD_DIAG_IMAGES_FIFO</span></code> in the logging options you can then use 3 new remote stream urls:</p>
+<ul class="simple">
+<li><p>The delta images as an MJPEG stream (great to see where it is seeing the motion!): <code class="docutils literal notranslate"><span class="pre">https://portal/zm/cgi-bin/nph-zms?mode=jpeg&amp;bitrate=2&amp;buffer=0&amp;source=fifo&amp;format=delta&amp;monitor=1&amp;maxfps=5&amp;&lt;auth&gt;</span></code> (change monitor, portal to your values. <code class="docutils literal notranslate"><span class="pre">&lt;auth&gt;</span></code> could be <code class="docutils literal notranslate"><span class="pre">&amp;user=user&amp;pass=pass</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;auth=authval</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;token=access_token</span></code>)</p></li>
+<li><p>The reference images as an MJPEG stream: <code class="docutils literal notranslate"><span class="pre">https://portal/zm/cgi-bin/nph-zms?mode=jpeg&amp;bitrate=2&amp;buffer=0&amp;source=fifo&amp;format=reference&amp;monitor=1&amp;maxfps=5&amp;&lt;auth&gt;</span></code> (change monitor, portal to your values. <code class="docutils literal notranslate"><span class="pre">&lt;auth&gt;</span></code> could be <code class="docutils literal notranslate"><span class="pre">&amp;user=user&amp;pass=pass</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;auth=authval</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;token=access_token</span></code>)</p></li>
+<li><p>text json raw stream: <code class="docutils literal notranslate"><span class="pre">https://portal/zm/cgi-bin/nph-zms?&amp;buffer=0&amp;source=fifo&amp;format=raw&amp;monitor=1&amp;&lt;auth&gt;</span></code> (change monitor, portal to your values, <code class="docutils literal notranslate"><span class="pre">&lt;auth&gt;</span></code> could be <code class="docutils literal notranslate"><span class="pre">&amp;user=user&amp;pass=pass</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;auth=authval</span></code> or <code class="docutils literal notranslate"><span class="pre">&amp;token=access_token</span></code>)</p></li>
+</ul>
+<p>This will output a text stream on the browser like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;zone&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;ALRM&quot;</span><span class="p">,</span><span class="s2">&quot;pixels&quot;</span><span class="p">:</span><span class="mi">778661</span><span class="p">,</span><span class="s2">&quot;avg_diff&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;zone&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;FILT&quot;</span><span class="p">,</span><span class="s2">&quot;pixels&quot;</span><span class="p">:</span><span class="mi">762704</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;zone&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;RBLB&quot;</span><span class="p">,</span><span class="s2">&quot;pixels&quot;</span><span class="p">:</span><span class="mi">728102</span><span class="p">,</span><span class="s2">&quot;blobs&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;zone&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;FBLB&quot;</span><span class="p">,</span><span class="s2">&quot;pixels&quot;</span><span class="p">:</span><span class="mi">728021</span><span class="p">,</span><span class="s2">&quot;blobs&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;zone&quot;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;ALRM&quot;</span><span class="p">,</span><span class="s2">&quot;pixels&quot;</span><span class="p">:</span><span class="mi">130844</span><span class="p">,</span><span class="s2">&quot;avg_diff&quot;</span><span class="p">:</span><span class="mi">44</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;zone&quot;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;FILT&quot;</span><span class="p">,</span><span class="s2">&quot;pixels&quot;</span><span class="p">:</span><span class="mi">128608</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>There are four types of events right now: Alarm (ALRM), Filter (FILT), Raw Blob (RBLB) and Filtered Blobs (FBLB) that correspond to those stages of analysis. It will show the number of pixels detected (along with average pixel difference against the threshold) and number of blobs at each stage.</p>
+<p>For example, here is a delta image stream from one of my monitors showing in live mode:</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://myserver/cgi-bin/nph-zms?mode=jpeg&amp;bitrate=2&amp;buffer=0&amp;source=fifo&amp;format=delta&amp;monitor=8&amp;maxfps=5&amp;user=admin&amp;pass=mypass</span></code></p>
+<img alt="../../_images/Options_FIFO.gif" src="../../_images/Options_FIFO.gif" />
+<p>DUMP_CORES - When an unrecoverable error occurs in a ZoneMinder binary process is has traditionally been trapped and the details written to logs to aid in remote analysis. However in some cases it is easier to diagnose the error if a core file, which is a memory dump of the process at the time of the error, is created. This can be interactively analysed in the debugger and may reveal more or better information than that available from the logs. This option is recommended for advanced users only otherwise leave at the default. Note using this option to trigger core files will mean that there will be no indication in the binary logs that a process has died, they will just stop, however the zmdc log will still contain an entry. Also note that you may have to explicitly enable core file creation on your system via the ‘ulimit -c’ command or other means otherwise no file will be created regardless of the value of this option.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="options_images.html" class="btn btn-neutral float-left" title="Options - Images" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="options_network.html" class="btn btn-neutral float-right" title="Options - Network" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

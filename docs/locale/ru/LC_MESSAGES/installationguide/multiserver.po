@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../installationguide/multiserver.rst:2
+msgid "Multi-Server Install"
+msgstr "Установка на несколько серверов"
+
+#: ../../installationguide/multiserver.rst:4
+msgid ""
+"It is possible to run multiple ZoneMinder servers and manage them from a "
+"single interface. To achieve this each zoneminder server is connected to "
+"a single shared database server and shares file storage for event data."
+msgstr ""
+"Можно запустить несколько серверов ZoneMinder и управлять ими через "
+"единый интерфейс. Для этого каждый сервер ZoneMinder подключен к единому "
+"серверу базы данных и совместно использует хранилище файлов для данных "
+"событий."
+
+#: ../../installationguide/multiserver.rst:9
+msgid "Topology Design Notes"
+msgstr "Заметки по проектированию топологии"
+
+#: ../../installationguide/multiserver.rst:11
+msgid ""
+"Device symbols represent separate logical functions, not necessarily "
+"separate hardware. For example, the Database Server and a ZoneMinder "
+"Server, can reside on the same physical hardware."
+msgstr ""
+"Символы устройств представляют отдельные логические функции, не "
+"обязательно отдельные аппаратные средства. Например, сервер базы данных и"
+" сервер ZoneMinder могут находиться на одном физическом оборудовании."
+
+#: ../../installationguide/multiserver.rst:13
+msgid ""
+"Configure each ZoneMinder Server to use the same, remote Database Server "
+"(Green)."
+msgstr ""
+"Настройте каждый сервер ZoneMinder на использование одного и того же "
+"удаленного сервера базы данных (Зеленый)."
+
+#: ../../installationguide/multiserver.rst:15
+msgid ""
+"The Storage Server (Red) represents shared storage, accessible by all "
+"ZoneMinder Servers, mounted under each server’s events folder."
+msgstr ""
+"Сервер хранения (Красный) представляет общую память, доступную для всех "
+"серверов ZoneMinder, которая монтируется под папку событий каждого "
+"сервера."
+
+#: ../../installationguide/multiserver.rst:17
+msgid ""
+"Create at least two networks for best performance. Dedicate a Storage LAN"
+" for communication with the Storage and Database Servers. Make use of "
+"multipath and jumbo frames if possible. Keep all other traffic off the "
+"Storage LAN! Dedicate the second LAN, called the Video LAN in the "
+"diagram, for all other traffic."
+msgstr ""
+"Создайте как минимум две сети для наилучшей производительности. Выделите "
+"сеть для хранения данных для общения с серверами хранения и баз данных. "
+"Используйте мультиплексирование и большие пакеты, если это возможно. "
+"Держите весь остальной трафик подальше от сети хранения! Выделите вторую "
+"сеть, называемую сетью видео, для всего остального трафика."
+
+#: ../../installationguide/multiserver.rst:20
+msgid "New installs"
+msgstr "Новые установки"
+
+#: ../../installationguide/multiserver.rst:22
+msgid ""
+"Follow the normal instructions for your distro for installing ZoneMinder "
+"onto all the ZoneMinder servers in the normal fashion. Only a single "
+"database will be needed either as standalone, or on one of the ZoneMinder"
+" Servers."
+msgstr ""
+"Следуйте обычным инструкциям для вашей дистрибуции для установки "
+"ZoneMinder на все серверы ZoneMinder в обычном порядке. Только одна база "
+"данных потребуется, либо как автономная, либо на одном из серверов "
+"ZoneMinder."
+
+#: ../../installationguide/multiserver.rst:-1
+msgid "Note"
+msgstr "Заметка"
+
+#: ../../installationguide/multiserver.rst:26
+msgid ""
+"For systemd based linux distros, inspect the zoneminder service file, "
+"typically found under /lib/systemd/system. Changes may be required for "
+"multiserver to function correctly. For example, the service file may "
+"check for a running instance of mysql or mariadb running locally on the "
+"server. This check will need to be removed. Rather than edit the service "
+"file directly, copy the service file to /etc/systemd/system and edit the "
+"file in that location."
+msgstr ""
+"Для систем, основанных на системе systemd, изучите файл службы "
+"ZoneMinder, обычно находящийся в /lib/systemd/system. Могут потребоваться"
+" изменения для правильной работы многосерверной системы. Например, файл "
+"службы может проверять наличие работающего экземпляра MySQL или MariaDB "
+"локально на сервере. Эта проверка должна быть удалена. Вместо "
+"редактирования файла службы напрямую скопируйте файл службы в "
+"/etc/systemd/system и отредактируйте файл в этом расположении."
+
+#: ../../installationguide/multiserver.rst:28
+msgid ""
+"On each ZoneMinder server, edit zm.conf. Find the ZM_DB_HOST variable and"
+" set it to the name or ip address of your Database Server. Find the "
+"ZM_SERVER_HOST and enter a name for this ZoneMinder server. Use a name "
+"easily recognizable by you. This name is not used by ZoneMinder for dns "
+"or any other form of network connectivity."
+msgstr ""
+"На каждом сервере ZoneMinder, отредактируйте файл zm.conf. Найдите "
+"переменную ZM_DB_HOST и установите ее в имя или IP-адрес вашего сервера "
+"базы данных. Найдите переменную ZM_SERVER_HOST и введите имя для этого "
+"сервера ZoneMinder. Используйте имя, легко узнаваемое вами. Это имя не "
+"используется ZoneMinder для DNS или любого другого типа сетевого "
+"подключения."
+
+#: ../../installationguide/multiserver.rst:30
+msgid ""
+"Copy the file /usr/share/zoneminder/db/zm_create.sql from one of the "
+"ZoneMinder Servers to the machine targeted as the Database Server."
+msgstr ""
+"Скопируйте файл /usr/share/zoneminder/db/zm_create.sql с одного из "
+"серверов ZoneMinder на машину, которая будет использоваться в качестве "
+"сервера базы данных."
+
+#: ../../installationguide/multiserver.rst:32
+msgid "Install mysql/mariadb server onto the Database Server."
+msgstr "Установите сервер MySQL/MariaDB на сервер базы данных."
+
+#: ../../installationguide/multiserver.rst:34
+msgid ""
+"It is advised to run \"mysql_secure_installation\" to help secure the "
+"server."
+msgstr ""
+"Рекомендуется запустить \"mysql_secure_installation\", чтобы помочь "
+"обезопасить сервер."
+
+#: ../../installationguide/multiserver.rst:36
+msgid ""
+"Using the password for the root account set during the previous step, "
+"create the ZoneMinder database and configure a database account for "
+"ZoneMinder to use:"
+msgstr ""
+"Используя пароль для учетной записи root, созданной на предыдущем шаге, "
+"создайте базу данных ZoneMinder и настройте учетную запись базы данных "
+"для использования ZoneMinder:"
+
+#: ../../installationguide/multiserver.rst:44
+msgid ""
+"The database account credentials, zmuser/zmpass, are arbitrary. Set them "
+"to anything that suits your environment. Note that these commands are "
+"just an example and might not be secure enough for your environment."
+msgstr ""
+"Пароль и имя пользователя базы данных, zmuser/zmpass, произвольны. "
+"Установите их на что-нибудь, что подходит для вашей среды. Обратите "
+"внимание, что эти команды являются всего лишь примером и могут не быть "
+"достаточно безопасными для вашей среды."
+
+#: ../../installationguide/multiserver.rst:47
+msgid ""
+"If you have chosen to change the ZoneMinder database account credentials "
+"to something other than zmuser/zmpass, you must now update zm.conf on "
+"each ZoneMinder Server. Change ZM_DB_USER and ZM_DB_PASS to the values "
+"you created in the previous step."
+msgstr ""
+"Если вы решили изменить учетные данные базы данных ZoneMinder с "
+"zmuser/zmpass на что-то другое, вам теперь необходимо обновить файл "
+"zm.conf на каждом сервере ZoneMinder. Измените ZM_DB_USER и ZM_DB_PASS на"
+" значения, которые вы создали в предыдущем шаге."
+
+#: ../../installationguide/multiserver.rst:49
+msgid ""
+"All ZoneMinders Servers must share a common events folder. This can be "
+"done in any manner supported by the underlying operating system. From the"
+" Storage Server, share/export a folder to be used for ZoneMinder events."
+msgstr ""
+"Все серверы ZoneMinders должны иметь общую папку событий. Это можно "
+"сделать любым способом, поддерживаемым подсистемой операционной системы. "
+"С сервера хранения поделитесь/экспортируйте папку, которую можно "
+"использовать для событий ZoneMinder."
+
+#: ../../installationguide/multiserver.rst:51
+msgid ""
+"From each ZoneMinder Server, mount the shared events folder on the "
+"Storage Server to the events folder on the local ZoneMinder Server."
+msgstr ""
+"С каждого сервера ZoneMinder, подключите общую папку событий к папке "
+"событий на локальном сервере ZoneMinder."
+
+#: ../../installationguide/multiserver.rst:55
+msgid ""
+"The location of the ZoneMinder events folder varies by distro. This "
+"folder is often found under \"/var/lib/zoneminder/events\" for RedHat "
+"based distros and \"/var/cache/zoneminder/events\" for Debian based "
+"distros. This folder is NOT a Symbolic Link!"
+msgstr ""
+"Расположение папки с событиями ZoneMinder зависит от дистрибутива. Эта "
+"папка часто находится по адресу \"/var/lib/zoneminder/events\" для "
+"дистрибутивов на основе RedHat и \"/var/cache/zoneminder/events\" для "
+"дистрибутивов на основе Debian. Эта папка НЕ является Символьным Ссылкой!"
+
+#: ../../installationguide/multiserver.rst:57
+msgid ""
+"Open your browser and point it to the web console on any of the "
+"ZoneMinder Servers (they will all be the same). Open Options, click the "
+"Servers tab,and populate this screen with all of your ZoneMinder Servers."
+" Each server has a field for its name and its hostname. The name is what "
+"you used for ZM_SERVER_HOST in step 2. The hostname is the network name "
+"or ip address ZoneMinder should use."
+msgstr ""
+"Откройте свой браузер и направьте его на консоль веб-обозревателя на "
+"любом из серверов ZoneMinder (они будут одинаковыми). Откройте настройки,"
+" щелкните вкладку \"Серверы\" и заполните это окно всеми вашими серверами"
+" ZoneMinder. У каждого сервера есть поле для его имени и доменного имени."
+" Имя - это то, что вы использовали для ZM_SERVER_HOST в шаге 2. Имя хоста"
+" - это сетевое имя или IP-адрес, который ZoneMinder должен использовать."
+
+#: ../../installationguide/multiserver.rst:59
+msgid ""
+"When creating a new Monitor, remember to select the server the camera "
+"will be assigned to from the Server drop down box."
+msgstr ""
+"При создании нового Монитора помните, что необходимо выбрать сервер, к "
+"которому будет назначена камера, из выпадающего списка Сервер."
+

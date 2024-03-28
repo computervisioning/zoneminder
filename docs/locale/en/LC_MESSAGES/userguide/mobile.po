@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../userguide/mobile.rst:2
+msgid "Mobile Devices"
+msgstr ""
+
+#: ../../userguide/mobile.rst:4
+msgid "Here are some options for using ZoneMinder on Mobile devices:"
+msgstr ""
+
+#: ../../userguide/mobile.rst:7
+msgid "Third party mobile clients"
+msgstr ""
+
+#: ../../userguide/mobile.rst:9
+msgid ""
+"zmNinja  (`source code <https://github.com/zoneminder/zmNinja>`__,  needs"
+" APIs to be installed to work)"
+msgstr ""
+
+#: ../../userguide/mobile.rst:9
+msgid ""
+"Available in App Store, Play Store and for Desktops - `website "
+"<https://zmninja.zoneminder.com/>`__"
+msgstr ""
+
+#: ../../userguide/mobile.rst:12
+msgid "Using the existing web console"
+msgstr ""
+
+#: ../../userguide/mobile.rst:13
+msgid ""
+"You can directly use the ZoneMinder interface by launching a browser and "
+"going to the ZoneMinder server just like you do on the Desktop"
+msgstr ""
+
+#: ../../userguide/mobile.rst:16
+msgid "Discontinued clients"
+msgstr ""
+
+#: ../../userguide/mobile.rst:17
+msgid ""
+"The following are a list of clients that do not work and have not been "
+"updated:"
+msgstr ""
+
+#: ../../userguide/mobile.rst:19
+msgid "eyeZM"
+msgstr ""
+
+#: ../../userguide/mobile.rst:20
+msgid "zmView"
+msgstr ""
+

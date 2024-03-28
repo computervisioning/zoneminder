@@ -1,0 +1,567 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:5
+msgid "Source Tab"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:7
+msgid ""
+"The Source tab contains parameters related to the video stream as well as"
+" selection of capture and decode methods. The parameters listed in the "
+"Source tab depend on the **Source Type** specified in the General tab."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:9
+msgid ""
+"For documentation purposes we have split the Source tab information into "
+"two parts:"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:11
+msgid ""
+"**Common Source Parameters**: All source types except Web Site contain "
+"these listed parameters. They are shown in the "
+":ref:`common_source_parameters` section just below and can be entered "
+"first."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:12
+msgid ""
+"**Specific Source Parameters**: Each source type has a dedicated section "
+"that contains their unique parameters. The common source parameters are "
+"not listed again in these sections."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:17
+msgid "Common Source Parameters"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:21
+msgid "Common Parameters for all Source Types (other than Web Site)"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:23
+msgid "**Capturing**"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:25
+msgid ""
+"**None**: The ZoneMinder Capture daemon (zmc) is disabled. Event "
+"recording is not possible."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:26
+msgid ""
+"**On Demand**: The ZoneMinder Capture daemon (zmc) is enabled but will "
+"wait for a viewer to start the stream capture. Viewer is defined as "
+"either a live view, thumbnail or RTSP server connection."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:27
+msgid ""
+"**Always**: This is the normal mode of operation.  A ZoneMinder Capture "
+"daemon (zmc) will run and constantly capture video."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:29
+msgid "**Decoding**"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:31
+msgid ""
+"**None**: No frames will be decoded, live view and thumbnails will not be"
+" available."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:32
+msgid "**On Demand**: Only enable decoding when someone is watching."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:33
+msgid ""
+"**KeyFrames**: Only keyframes will be decoded. Viewing frame rate will be"
+" very low depending on the keyframe interval set in the camera."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:34
+msgid ""
+"**KeyFrames + On Demand**: Keyframes will be decoded when someone is "
+"watching."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:35
+msgid ""
+"**Always**: Every frame will be decoded, live view and thumbnails will be"
+" available."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:37
+msgid ""
+"**Target Colorspace**: Specify the color depth or bits per pixel in the "
+"captured image. Most modern cameras support 32 bit depth. This has no "
+"controlling effect on the camera."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:39
+msgid ""
+"**32 bit colour**: The default setting. Most modern cameras support 32 "
+"bit color depth."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:40
+msgid ""
+"**24 bit colour**: Try this setting for older cameras if 32 bit is not "
+"supported."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:41
+msgid ""
+"**8 bit greyscale**: For non-color streams. This can reduce both CPU and "
+"storage requirements."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:43
+msgid ""
+"**Capture Resolution**: Resolution is the dimensions in bits of the video"
+" stream provided by camera. It is important that the entered capture "
+"resolution matches the camera stream. The pulldown menu contains most "
+"commonly used resolutions up to 4K and is the recommended way to enter "
+"resolution. Resolution can also be entered manually if necessary."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:44
+msgid ""
+"**Preserve Aspect Ratio**: Enable this checkbox to ensure that the width "
+"preserves ratio to the height, or vice versa. Enter either width or "
+"height and the other dimension will be calculated. The default ratio is "
+"4:3 but can be amended globally via the :guilabel:`Options` -> "
+":guilabel:`Config` -> :guilabel:`DEFAULT_ASPECT_RATIO` setting."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:45
+msgid ""
+"**Orientation**: Use this option if the camera stream is not oriented as "
+"desired and cannot be changed directly in the camera firmware. Usually "
+"this is needed when the camera is not installed with correct physical "
+"orientation. This incurs an additional processing overhead in ZoneMinder."
+" Remember to swap the height and width fields so that they apply "
+"correctly after rotation."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:46
+msgid ""
+"**Deinterlacing**: Only required for processing streams from interlaced "
+"sources so that the video is converted to progressive frames. Select the "
+"desired deinterlacing type from the dropdown menu."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:47
+msgid ""
+"**Maximum FPS**: For modern streaming IP cameras, *do not use this field "
+"to reduce the frame rate*. It is recommended to leave this blank which "
+"implies no Maximum FPS limit. ZoneMinder will use the FPS as provided "
+"from the camera stream. This option is only useful for local devices or "
+"older IP cameras that support snapshot mode."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:48
+msgid ""
+"**Alarm Maximum FPS**: For modern streaming IP cameras, *do not use this "
+"field to reduce the frame rate*. It is recommended to leave this blank "
+"which implies no Alarm Maximum FPS limit. ZoneMinder will use the FPS as "
+"provided from the camera stream. This option is only useful for local "
+"devices or older IP cameras that support snapshot mode."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:50
+msgid ""
+"Do not use the Maximum FPS parameters unless you know what you are doing."
+" Setting these parameters may have undesirable results for network IP "
+"cameras."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:53
+#: ../../userguide/definemonitor/definemonitor_source.rst:59
+msgid "Source Tab for FFmpeg"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:55
+msgid ""
+"This is the **recommended** source type for most modern networked IP "
+"cameras."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:61
+msgid ""
+"Listed below are the parameters unique to FFmpeg Source. Please also see "
+":ref:`common_source_parameters` section above for information related to "
+"the common source parameters which also need to be entered."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:63
+msgid ""
+"**Source Path**: Use this field to enter the full URL of the camera "
+"stream or file. There are several methods to learn this:"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:65
+msgid "Camera user manual or manufacturer support website"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:66
+msgid "Use ONVIF Probe feature in ZoneMinder by clicking on the related icon"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:67
+msgid ""
+"Look for the camera in the `ZoneMinder Hardware Compatibility wiki "
+"<https://wiki.zoneminder.com/Hardware_Compatibility_List>`__"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:68
+msgid ""
+"Look for the camera or ask questions in the `ZoneMinder Hardware "
+"Compatibility Forum "
+"<https://forums.zoneminder.com/viewforum.php?f=10&sid=1778ce18ebd267e36da01158e502cd11>`__"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:69
+msgid ""
+"Use a third party website with camera database such as `Camera Connection"
+" Database <https://www.ispyconnect.com/cameras>`__"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:71
+msgid ""
+"**Username**: The username of camera stream. Note that if your URL "
+"contains camera authentication these may be automatically populated into "
+"the Username and Password fields."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:72
+msgid ""
+"**Password**: The password of camera stream. Note that if your URL "
+"contains camera authentication these may be automatically populated into "
+"the Username and Password fields."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:73
+msgid "**Method**:"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:75
+msgid ""
+"**TCP**: This is the default and preferred option. TCP is a reliable but "
+"slower protocol as it has more overhead. Some older cameras do not "
+"support it."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:76
+msgid ""
+"**UDP**: UDP is an faster but less reliable protocol. Some cameras will "
+"display smearing effects due to lost or out of order packets. These can "
+"be fixed by either using TCP, or specify ``reorder_queue_size=xx`` in "
+"Options."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:77
+msgid ""
+"**UDP Multicast**: Multicast is when the camera broadcasts the video once"
+" on the network and ZoneMinder subscribes to and receives the video. This"
+" is more efficient when there are multiple viewers."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:78
+msgid "**HTTP Tunnel**: Tunnel RTSP over HTTP."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:80
+msgid ""
+"**Options**: Here you can pass various settings to the FFmpeg libraries. "
+"Common options include ``reorder_queue_size`` and "
+"``allowed_media_types``."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:81
+msgid ""
+"**SourceSecondPath**: This can be used to define a second stream for this"
+" Monitor. Enter URL path for second stream. The target use case is for a "
+"low resolution substream to use for analysis which can trigger recording "
+"on the main high resolution stream."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:83
+msgid "New Feature in ZoneMinder 1.37"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:85
+msgid ""
+"Note that the **SourceSecondPath** feature was added in ZoneMinder 1.37 "
+"and is not yet fully supported. Use at your own risk with expectation "
+"that functionality may change in the future."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:87
+msgid ""
+"**Decoder**: Selection of the FFmpeg decoder. In most cases leave at "
+"default Auto setting. The pulldown menu lists the available decoders."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:88
+msgid ""
+"**DecoderHWAccelName**: Option to support GPU hardware acceleration. This"
+" is equivalent to the ``ffmpeg -hwaccels <device>`` command line option. "
+"With Intel graphics support, use ``vaapi``. For NVIDIA cuda support use "
+"``cuda``. To check for support, run ``ffmpeg -hwaccels`` on the command "
+"line."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:89
+msgid ""
+"**DecoderHWAccelDevice**: Option to support GPU hardware acceleration. "
+"This is equivalent to the ``ffmpeg -hwaccels <device>`` command line "
+"option. You should only have to specify this if you have multiple GPUs. A"
+" typical value for Intel VAAPI would be ``/dev/dri/renderD128``."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:93
+msgid ""
+"Limited GPU support. Note that GPU support has not yet been fully "
+"implemented in ZoneMinder. Use at your own risk with expectation that "
+"functionality may change in the future."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:96
+msgid "Source Tab for libVLC"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:98
+msgid ""
+"The fields for the LibVLC source type are configured the same way as the "
+"FFmpeg source type. We recommend only using this source type if issues "
+"are experienced with the FFmpeg type."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:101
+#: ../../userguide/definemonitor/definemonitor_source.rst:107
+msgid "Source Tab for Remote"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:103
+msgid ""
+"The Remote source type is mainly used for older IP cameras that stream "
+"using HTTP protocol. Past use of this source type supported RTSP "
+"protocol. The Remote -> RTSP method is no longer being maintained and may"
+" be removed in the future. If camera supports RTSP we recommend using "
+"FFmpeg source type."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:109
+msgid ""
+"Listed below are the parameters unique to Remote Source. Please also see "
+":ref:`common_source_parameters` section above for information related to "
+"the common source parameters which also need to be entered."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:111
+msgid ""
+"**Username**: Enter username of remote device if one is needed for "
+"authentication."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:112
+msgid ""
+"**Password**: Enter password of remote device if one is needed for "
+"authentication."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:113
+msgid ""
+"**Protocol**: Choices are currently HTTP and RTSP. Before RTSP became the"
+" industry standard, many IP cameras streamed directly from their web "
+"interface using HTTP. If the IP camera does not speak RTSP then choose "
+"HTTP here. *If the camera does speak RTSP then change your source type to"
+" FFmpeg instead of selecting RTSP here.* The Remote -> RTSP method is no "
+"longer being maintained and may be removed in the future."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:114
+msgid ""
+"**Method**: Choices are currently Simple and Regexp. Simple is the "
+"default and preferred method. Methods related to RTSP have been removed, "
+"please use FFmpeg for RTSP streaming support."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:116
+msgid ""
+"Example URL for Remote Source Type: "
+"``http://username:password@hostname.com:port/videoMain``"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:118
+msgid ""
+"**Host Name**: Enter the domain part of the URL which is ``hostname.com``"
+" for this example."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:119
+msgid ""
+"**Port**: Enter port part of the URL which is ``port`` (HTTP commonly "
+"uses 80)."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:120
+msgid ""
+"**Path**: Enter path part of the URL which is ``videoMain`` for this "
+"example."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:122
+msgid "Todo"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:122
+msgid "Check status of Remote RTSP support in ZoneMinder version 1.37+"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:125
+#: ../../userguide/definemonitor/definemonitor_source.rst:131
+msgid "Source Tab for Local"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:127
+msgid ""
+"The Local source type is mainly used for locally attached USB cameras or "
+"video capture cards."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:133
+msgid ""
+"Listed below are the parameters unique to Local Source. Please also see "
+":ref:`common_source_parameters` section above for information related to "
+"the common source parameters which also need to be entered."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:135
+msgid ""
+"**Device Path**: Enter the full path to the device file that your camera "
+"is attached. Most likely it will be one of ``/dev/video0`` through "
+"``/dev/video63``. Look for the camera in the `ZoneMinder Hardware "
+"Compatibility wiki "
+"<https://wiki.zoneminder.com/Hardware_Compatibility_List>`__ to see if "
+"your capture card or USB webcam is supported or not and any extra "
+"settings that may be needed."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:136
+msgid "**Capture Method**: Currently available selection is Video For Linux V2"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:137
+msgid "**Multi Buffering**: Available choices are Yes, No and Use Config Value."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:138
+msgid ""
+"**Captures Per Frame**: Default is 1. Acts as a FPS divisor and is mainly"
+" useful for video capture cards connected to multiple cameras to slow FPS"
+" down."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:141
+#: ../../userguide/definemonitor/definemonitor_source.rst:147
+msgid "Source Tab for File"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:143
+msgid ""
+"The File source type is used for periodically loading an image file. This"
+" is useful for the case where a device or script writes single files "
+"instead of the more common stream that the other Source types handle. A "
+"description of this can be found in the `ZoneMinder wiki "
+"<https://wiki.zoneminder.com/index.php/How_to_use_ZoneMinder_with_cameras_it_may_not_directly_support>`__."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:149
+msgid ""
+"Listed below are the parameters unique to File Source. Please also see "
+":ref:`common_source_parameters` section above for information related to "
+"the common source parameters which also need to be entered."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:151
+msgid ""
+"**Source Path**: Enter a path from the file system such as "
+"``/mnt/images/foo.jpg``."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:154
+#: ../../userguide/definemonitor/definemonitor_source.rst:160
+msgid "Source Tab for Web Site"
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:156
+msgid ""
+"The Web Site Source Type allows one to configure an arbitrary website as "
+"a non-recordable, fully interactive Monitor in ZoneMinder. Note that "
+"sites with self-signed certificates will not display until the end user "
+"first manually navigates to the site and accepts the unsigned "
+"certificate. Also note that some sites will set an X-Frame option in the "
+"header, which discourages their site from being displayed within a frame."
+" ZoneMinder will detect this condition and present a warning in the log. "
+"When this occurs, the end user can choose to install a browser plugin or "
+"extension to workaround this issue."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:162
+msgid ""
+"Listed below are the parameters unique to Web Site Source. Please also "
+"see :ref:`common_source_parameters` section above for information related"
+" to the common source parameters which also need to be entered."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:164
+msgid ""
+"**Website URL**: Enter full HTTP or HTTPS URL such as "
+"``http://hostname.com``."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:165
+msgid ""
+"**Width (pixels)**: Enter page width in pixels. This may take some "
+"experimentation."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:166
+msgid ""
+"**Height (pixels)**: Enter page height in pixels. This may take some "
+"experimentation."
+msgstr ""
+
+#: ../../userguide/definemonitor/definemonitor_source.rst:167
+msgid ""
+"**Web Site Refresh**: If the website in question has static content, "
+"optionally enter a time period in seconds for ZoneMinder to refresh the "
+"content."
+msgstr ""
+

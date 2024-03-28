@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../installationguide/packpack.rst:2
+msgid "All Distros - A Docker Way to Build ZoneMinder"
+msgstr "Все дистрибутивы - Docker-способ создания ZoneMinder"
+
+#: ../../installationguide/packpack.rst:4
+msgid ""
+"If you are looking for an easy way to run ZoneMinder and not interested "
+"in building your own docker image, please refer to :doc:`easydocker`."
+msgstr ""
+"Если вы ищете простой способ запуска ZoneMinder и не заинтересованы в "
+"создании собственного образа Docker, пожалуйста, обратитесь к "
+":doc:`easydocker`."
+
+#: ../../installationguide/packpack.rst:6
+msgid "Contents"
+msgstr "Содержимое"
+
+#: ../../installationguide/packpack.rst:8
+msgid ""
+"These instructions represent an alternative way to build ZoneMinder for "
+"any supported distro."
+msgstr ""
+"Эти инструкции представляют собой альтернативный способ сборки ZoneMinder"
+" для любой поддерживаемой дистрибутивы."
+
+#: ../../installationguide/packpack.rst:10
+msgid "Advantages:"
+msgstr "Преимущества:"
+
+#: ../../installationguide/packpack.rst:12
+msgid "Fewer steps and therefore much simpler"
+msgstr "Меньше шагов, а значит, намного проще"
+
+#: ../../installationguide/packpack.rst:13
+msgid ""
+"Target distro agnostic - the steps are the same regardless of the target "
+"distro"
+msgstr ""
+"!Операционная система-мишень безразлична - шаги одинаковы независимо от "
+"целевой операционной системы"
+
+#: ../../installationguide/packpack.rst:14
+msgid ""
+"Host distro agnostic - the steps described here should work on any host "
+"Linux distro capable of running Bash and Docker"
+msgstr ""
+"Хост-независимый дистрибутив - описанные здесь шаги должны работать на "
+"любом хост-дистрибутиве Linux, способном запускать Bash и Docker"
+
+#: ../../installationguide/packpack.rst:17
+msgid "Background"
+msgstr "!привет"
+
+#: ../../installationguide/packpack.rst:19
+msgid ""
+"These instructions leverage the power of the automated build system "
+"recently implemented in the ZoneMinder project. Behind the scenes, a "
+"project called `packpack <https://github.com/packpack/packpack>`_ is "
+"utilized, to build ZoneMinder inside a Docker container."
+msgstr ""
+"Эти инструкции используют мощь автоматизированной системы сборки, недавно"
+" внедренной в проект ZoneMinder. За кулисами используется проект под "
+"названием `packpack <https://github.com/packpack/packpack>`_, чтобы "
+"собрать ZoneMinder внутри контейнера Docker."
+
+#: ../../installationguide/packpack.rst:22
+msgid "Procedure"
+msgstr "Процедура"
+
+#: ../../installationguide/packpack.rst:24
+msgid "**Step 1:** Verify the target distro."
+msgstr "**Шаг 1:** Проверьте целевую ОС."
+
+#: ../../installationguide/packpack.rst:26
+msgid ""
+"Open the project's `.travis.yml file "
+"<https://github.com/ZoneMinder/ZoneMinder/blob/master/.travis.yml#L27>`_ "
+"and verify the distro you want to build ZoneMinder for appears in the "
+"build matrix. The distros shown in the matrix are those known to build on"
+" ZoneMinder. If the distro you desire is in the list then continue to "
+"step two."
+msgstr ""
+"Откройте файл `.travis.yml` проекта "
+"<https://github.com/ZoneMinder/ZoneMinder/blob/master/.travis.yml#L27>`_ "
+"и проверьте, появляется ли дистрибутив, для которого вы хотите собрать "
+"ZoneMinder, в матрице сборки. Дистрибутивы, показанные в матрице, - это "
+"те, которые известны как работающие на ZoneMinder. Если дистрибутив, "
+"который вы хотите, есть в списке, переходите к шагу два."
+
+#: ../../installationguide/packpack.rst:28
+msgid ""
+"If the desired distro is not in the first list, then open the `packpack "
+"project README "
+"<https://github.com/packpack/packpack/blob/master/README.md>`_ and check "
+"if the desired distro is theoretically supported. If it is, then continue"
+" to step 2 with the understanding that you are heading out into uncharted"
+" territory. There could be problems."
+msgstr ""
+"Если желаемая дистрибутива не входит в первый список, откройте README "
+"проекта `packpack "
+"<https://github.com/packpack/packpack/blob/master/README.md>` и "
+"проверьте, теоретически ли поддерживается желаемая дистрибутива. Если да,"
+" то продолжайте шаг 2 с пониманием того, что вы идете в неизведанные "
+"воды. Могут возникнуть проблемы."
+
+#: ../../installationguide/packpack.rst:30
+msgid ""
+"If the desired distro does not appear in either list, then unfortunately "
+"you cannot use the procedure described here."
+msgstr ""
+"Если желаемая дистрибутива не появляется ни в одном из списков, то, к "
+"сожалению, вы не можете использовать описанную здесь процедуру."
+
+#: ../../installationguide/packpack.rst:32
+msgid ""
+"If the desired distro architecture is arm, refer to `Appendix A - Enable "
+"Qemu On the Host`_ to enable qemu emulation on your amd64 host machine."
+msgstr ""
+"Если желаемая архитектура дистрибутива - arm, обратитесь к разделу "
+"`Приложение A - Включение Qemu на хосте`_, чтобы включить эмуляцию qemu "
+"на вашей машине с архитектурой amd64."
+
+#: ../../installationguide/packpack.rst:34
+msgid "**Step 2:** Install Docker."
+msgstr "**Шаг 2:** Установите Docker."
+
+#: ../../installationguide/packpack.rst:36
+msgid ""
+"You need to have a working installation of Docker so head over to the "
+"`Docker site <https://docs.docker.com/engine/installation/>`_ and get it "
+"working. Before continuing to the next step, verify you can run the "
+"Docker \"Hello World\" container as a normal user. To run a Docker "
+"container as a normal user, issue the following:"
+msgstr ""
+"Вам необходимо иметь работающую установку Docker, поэтому перейдите на "
+"страницу `Docker <https://docs.docker.com/engine/installation/>` и "
+"сделайте ее рабочей. Прежде чем переходить к следующему шагу, убедитесь, "
+"что вы можете запустить контейнер Docker \"Привет, мир\" как обычный "
+"пользователь. Чтобы запустить контейнер Docker как обычный пользователь, "
+"выполните следующее:"
+
+#: ../../installationguide/packpack.rst:43
+msgid "Where <username> is, you guessed it, the user name you log in with."
+msgstr ""
+"Где <имя пользователя>, вы догадались, имя пользователя, с которым вы "
+"входите."
+
+#: ../../installationguide/packpack.rst:45
+msgid "**Step 3:** Git clone the ZoneMinder project."
+msgstr "**Шаг 3:** Загрузите проект ZoneMinder с помощью Git."
+
+#: ../../installationguide/packpack.rst:47
+msgid "Clone the ZoneMinder project if you have not done so already."
+msgstr "Скопируйте проект ZoneMinder, если вы этого еще не сделали."
+
+#: ../../installationguide/packpack.rst:54
+msgid ""
+"Alternatively, if you have already cloned the repo and wish to update it,"
+" do the following."
+msgstr ""
+"Альтернативно, если вы уже клонировали репозиторий и хотите его обновить,"
+" выполните следующие действия."
+
+#: ../../installationguide/packpack.rst:62
+msgid "**Step 4:** Checkout the revision of ZoneMinder you wish to build."
+msgstr "**Шаг 4:** Проверьте версию ZoneMinder, которую вы хотите собрать."
+
+#: ../../installationguide/packpack.rst:64
+msgid ""
+"A freshly cloned ZoneMinder git repo already points to the most recent "
+"commit in the master branch. If you want the latest development code then"
+" continue to the next step. If instead, you want to build a stable "
+"release then perform the following step."
+msgstr ""
+"Только что клонированный репозиторий ZoneMinder git уже указывает на "
+"самую последнюю коммитацию в ветке master. Если вы хотите последнюю "
+"версию разработки, перейдите к следующему шагу. Если вместо этого вы "
+"хотите создать стабильную версию, выполните следующий шаг."
+
+#: ../../installationguide/packpack.rst:70
+msgid ""
+"Where <releasename> is one of the official ZoneMinder releases shown on "
+"the `releases page <https://github.com/ZoneMinder/ZoneMinder/releases>`_,"
+" such as 1.30.4."
+msgstr ""
+"Где <releasename> является одним из официальных релизов ZoneMinder, "
+"показанных на странице `releases "
+"<https://github.com/ZoneMinder/ZoneMinder/releases>` , таких как 1.30.4."
+
+#: ../../installationguide/packpack.rst:72
+msgid "**Step 5:** Build ZoneMinder"
+msgstr "**Шаг 5:** Постройте ZoneMinder"
+
+#: ../../installationguide/packpack.rst:74
+msgid ""
+"To start the build, simply execute the following command from the root "
+"folder of the local git repo:"
+msgstr ""
+"Для начала сборки просто выполните следующую команду из корневой папки "
+"локального репозитория git:"
+
+#: ../../installationguide/packpack.rst:80
+msgid ""
+"Where <distroname> is the name of the distro you wish to build on, such "
+"as fedora, and <distrorel> is the release name or number of the distro "
+"you wish to build on. Redhat distros expect a number for <distrorel> "
+"while Debian and Ubuntu distros expect a name. For example:"
+msgstr ""
+"Где <имя_дистрибутива> - это имя дистрибутива, который вы хотите "
+"построить, например fedora, и <номер_выпуска_дистрибутива> - это номер "
+"выпуска или номер дистрибутива, который вы хотите построить. Дистрибутивы"
+" Redhat ожидают номер для <номер_выпуска_дистрибутива>, а дистрибутивы "
+"Debian и Ubuntu ожидают имя. Например:"
+
+#: ../../installationguide/packpack.rst:90
+msgid ""
+"Once you enter the appropriate command, go get a coffee while a "
+"ZoneMinder package is built. When the build finished, you can find the "
+"resulting packages under a subfolder called \"build\"."
+msgstr ""
+"После того как вы введете соответствующую команду, возьмите кофе и "
+"подождите, пока будет построен пакет ZoneMinder. Когда сборка будет "
+"завершена, вы сможете найти полученные пакеты в подпапке, называемой "
+"\"build\"."
+
+#: ../../installationguide/packpack.rst:92
+msgid ""
+"Note that this will build packages with x86_64 architecture. This build "
+"method can also build on some distros (debian & ubuntu only at the "
+"moment) using i386 architecture. You can do that by adding \"ARCH=i386\" "
+"parameter."
+msgstr ""
+"Обратите внимание, что это будет строить пакеты с архитектурой x86_64. "
+"Этот метод сборки также может работать на некоторых дистрибутивах (только"
+" debian и ubuntu в настоящее время), используя архитектуру i386. Вы "
+"можете это сделать, добавив параметр \"ARCH=i386\"."
+
+#: ../../installationguide/packpack.rst:98
+msgid ""
+"For advanced users who really want to go out into uncharted waters, it is"
+" theoretically possible to build arm packages as well, as long as the "
+"host architecture is compatible."
+msgstr ""
+"Для продвинутых пользователей, которые действительно хотят выйти в "
+"неизведанные воды, теоретически возможно создание пакетов ARM, при "
+"условии, что архитектура хоста совместима."
+
+#: ../../installationguide/packpack.rst:104
+msgid "Building arm packages in this manner has not been tested by us, however."
+msgstr "Создание пакетов таким образом не было протестировано нами, однако."
+
+#: ../../installationguide/packpack.rst:107
+msgid "Appendix A - Enable Qemu On the Host"
+msgstr "Приложение A - Включение Qemu на хосте"
+
+#: ../../installationguide/packpack.rst:109
+msgid ""
+"If you intend to build ZoneMinder packages for arm on an amd64 host, then"
+" Debian users can following these steps to enable transparent Qemu "
+"emulation:"
+msgstr ""
+"Если вы намерены создать пакеты ZoneMinder для arm на хосте amd64, то "
+"пользователи Debian могут следовать этим шагам, чтобы включить прозрачное"
+" эмуляцию Qemu:"
+
+#: ../../installationguide/packpack.rst:115
+msgid "Verify arm emulation is enabled by issuing:"
+msgstr "Проверьте, что эмуляция ARM включена, выполнив команду:"
+
+#: ../../installationguide/packpack.rst:121
+msgid ""
+"You may get a message stating emulation for this processor is already "
+"enabled."
+msgstr ""
+"Вы можете получить сообщение о том, что эмуляция для этого процессора уже"
+" включена."
+
+#: ../../installationguide/packpack.rst:123
+msgid ""
+"More testing needs to be done for Redhat distros but it appears Fedora "
+"users can just run:"
+msgstr ""
+"Необходимо провести больше тестирования для дистрибутивов Red Hat, но, "
+"похоже, пользователи Fedora могут просто выполнить:"
+
+#: ../../installationguide/packpack.rst:129
+msgid "Todo"
+msgstr "Все"
+
+#: ../../installationguide/packpack.rst:129
+msgid ""
+"Verify the details behind enabling qemu emulation on redhat distros. Pull"
+" requests are welcome."
+msgstr ""
+"Проверьте детали, связанные с включением эмуляции QEMU в дистрибутивах "
+"Red Hat. Приветствуются предложения по улучшению."
+

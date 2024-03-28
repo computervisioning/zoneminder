@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debian &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Redhat" href="redhat.html" />
+    <link rel="prev" title="Ubuntu" href="ubuntu.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="easydocker.html">An Easy To Use Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packpack.html">All Distros - A Docker Way to Build ZoneMinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubuntu.html">Ubuntu</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Debian</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#debian-12-bookworm">Debian 12 (Bookworm)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debian-11-bullseye">Debian 11 (Bullseye)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debian-buster">Debian Buster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debian-stretch">Debian Stretch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="redhat.html">Redhat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="windows_wsl.html">Windows 10+ using WSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiserver.html">Multi-Server Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dedicateddrive.html">Dedicated Drive, Partition, or Network Share</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Installation Guide</a></li>
+      <li class="breadcrumb-item active">Debian</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/installationguide/debian.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="debian">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Debian</a><a class="headerlink" href="#debian" title="Permalink to this heading"></a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#debian" id="id1">Debian</a></p>
+<ul>
+<li><p><a class="reference internal" href="#debian-12-bookworm" id="id2">Debian 12 (Bookworm)</a></p></li>
+<li><p><a class="reference internal" href="#debian-11-bullseye" id="id3">Debian 11 (Bullseye)</a></p></li>
+<li><p><a class="reference internal" href="#debian-buster" id="id4">Debian Buster</a></p></li>
+<li><p><a class="reference internal" href="#debian-stretch" id="id5">Debian Stretch</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="debian-12-bookworm">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Debian 12 (Bookworm)</a><a class="headerlink" href="#debian-12-bookworm" title="Permalink to this heading"></a></h2>
+<p>This procedure will guide you through the installation of ZoneMinder on Debian 12 (Bookworm).</p>
+<p><strong>Step 1:</strong> Setup Sudo (optional but recommended)</p>
+<p>By default Debian does not come with sudo, so you have to install it and configure it manually.
+This step is optional but recommended and the following instructions assume that you have setup sudo.
+If you prefer to setup ZoneMinder as root, do it at your own risk and adapt the following instructions accordingly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">sudo</span>
+<span class="n">usermod</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">G</span> <span class="n">sudo</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span>
+<span class="n">exit</span>
+</pre></div>
+</div>
+<p>Now your terminal session is back under your normal user. You can check that
+you are now part of the sudo group with the command <code class="docutils literal notranslate"><span class="pre">groups</span></code>, “sudo” should
+appear in the list. If not, run <code class="docutils literal notranslate"><span class="pre">newgrp</span> <span class="pre">sudo</span></code> and check again with <code class="docutils literal notranslate"><span class="pre">groups</span></code>.</p>
+<p><strong>Step 2:</strong> Update system</p>
+<p>Run the following commands.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">upgrade</span>
+</pre></div>
+</div>
+<p><strong>Step 3:</strong> Install MariaDB and do initial database configuration</p>
+<p>Run the following commands.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">mariadb</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>Switch into root user and create database and database user</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span>
+<span class="n">mariadb</span>
+<span class="n">CREATE</span> <span class="n">DATABASE</span> <span class="n">zm</span><span class="p">;</span>
+<span class="n">CREATE</span> <span class="n">USER</span> <span class="n">zmuser</span><span class="nd">@localhost</span> <span class="n">IDENTIFIED</span> <span class="n">BY</span> <span class="s1">&#39;zmpass&#39;</span><span class="p">;</span>
+<span class="n">GRANT</span> <span class="n">ALL</span> <span class="n">ON</span> <span class="n">zm</span><span class="o">.*</span> <span class="n">TO</span> <span class="n">zmuser</span><span class="nd">@localhost</span><span class="p">;</span>
+<span class="n">FLUSH</span> <span class="n">PRIVILEGES</span><span class="p">;</span>
+<span class="n">exit</span><span class="p">;</span>
+<span class="n">exit</span>
+</pre></div>
+</div>
+<p>By default MariaDB uses <a class="reference external" href="https://mariadb.com/kb/en/authentication-plugin-unix-socket/">unix socket authentication</a>, so no root user password is required (root MariaDB user access only available to local root Linux user). If you wish, you can set a root MariaDB password (and apply other security tweaks) by running <a class="reference external" href="https://mariadb.com/kb/en/mysql_secure_installation/">mariadb-secure-installation</a>.</p>
+<p><strong>Step 4:</strong> Install zoneminder</p>
+<p>By default Debian will install the version published in Debian (stable). However there may be newer versions by using backports.
+At the time of this writing, bookworm (stable) ships with v.1.36.33.</p>
+<p>To install the version in bookworm stable, just run the following command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p>If instead you prefer to install the newer version using backports, run the following commands.
+The first line will add this bookworm-backports repository.
+The backports repository is deactivated by default, so with the second line we explicitly state we want the backported version of zoneminder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">echo</span> <span class="s1">&#39;deb http://deb.debian.org/debian bookworm-backports main contrib&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="o">-</span><span class="n">t</span> <span class="n">bookworm</span><span class="o">-</span><span class="n">backports</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 5:</strong> Configure database</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mariadb</span> <span class="o">-</span><span class="n">u</span> <span class="n">zmuser</span> <span class="o">-</span><span class="n">p</span> <span class="n">zm</span> <span class="o">&lt;</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">/</span><span class="n">db</span><span class="o">/</span><span class="n">zm_create</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p><strong>Step 6:</strong> Setup permissions for zm.conf</p>
+<p>To make sure zoneminder can read the configuration file, run the following command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">chgrp</span> <span class="o">-</span><span class="n">c</span> <span class="n">www</span><span class="o">-</span><span class="n">data</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">zm</span><span class="o">/</span><span class="n">zm</span><span class="o">.</span><span class="n">conf</span>
+</pre></div>
+</div>
+<p><strong>Step 7:</strong> Tweak Apache configuration</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">zoneminder</span>
+<span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">cgi</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">reload</span> <span class="n">apache2</span><span class="o">.</span><span class="n">service</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">restart</span> <span class="n">zoneminder</span><span class="o">.</span><span class="n">service</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">status</span> <span class="n">zoneminder</span><span class="o">.</span><span class="n">service</span>
+</pre></div>
+</div>
+<p>If the zoneminder.service show to be active and without any errors, you should be able to access zoneminder at <code class="docutils literal notranslate"><span class="pre">http://yourhostname/zm</span></code></p>
+</section>
+<section id="debian-11-bullseye">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Debian 11 (Bullseye)</a><a class="headerlink" href="#debian-11-bullseye" title="Permalink to this heading"></a></h2>
+<p>This procedure will guide you through the installation of ZoneMinder on Debian 11 (Bullseye).</p>
+<p><strong>Step 1:</strong> Setup Sudo (optional but recommended)</p>
+<p>By default Debian does not come with sudo, so you have to install it and configure it manually.
+This step is optional but recommended and the following instructions assume that you have setup sudo.
+If you prefer to setup ZoneMinder as root, do it at your own risk and adapt the following instructions accordingly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">sudo</span>
+<span class="n">usermod</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">G</span> <span class="n">sudo</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span>
+<span class="n">exit</span>
+</pre></div>
+</div>
+<p>Now your terminal session is back under your normal user. You can check that
+you are now part of the sudo group with the command <code class="docutils literal notranslate"><span class="pre">groups</span></code>, “sudo” should
+appear in the list. If not, run <code class="docutils literal notranslate"><span class="pre">newgrp</span> <span class="pre">sudo</span></code> and check again with <code class="docutils literal notranslate"><span class="pre">groups</span></code>.</p>
+<p><strong>Step 2:</strong> Update system</p>
+<p>Run the following commands.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">upgrade</span>
+</pre></div>
+</div>
+<p><strong>Step 3:</strong> Install MariaDB and do initial database configuration</p>
+<p>Run the following commands.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">mariadb</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>Switch into root user and create database and database user</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span>
+<span class="n">mariadb</span>
+<span class="n">CREATE</span> <span class="n">DATABASE</span> <span class="n">zm</span><span class="p">;</span>
+<span class="n">CREATE</span> <span class="n">USER</span> <span class="n">zmuser</span><span class="nd">@localhost</span> <span class="n">IDENTIFIED</span> <span class="n">BY</span> <span class="s1">&#39;zmpass&#39;</span><span class="p">;</span>
+<span class="n">GRANT</span> <span class="n">ALL</span> <span class="n">ON</span> <span class="n">zm</span><span class="o">.*</span> <span class="n">TO</span> <span class="n">zmuser</span><span class="nd">@localhost</span><span class="p">;</span>
+<span class="n">FLUSH</span> <span class="n">PRIVILEGES</span><span class="p">;</span>
+<span class="n">exit</span><span class="p">;</span>
+<span class="n">exit</span>
+</pre></div>
+</div>
+<p>By default MariaDB uses <a class="reference external" href="https://mariadb.com/kb/en/authentication-plugin-unix-socket/">unix socket authentication</a>, so no root user password is required (root MariaDB user access only available to local root Linux user). If you wish, you can set a root MariaDB password (and apply other security tweaks) by running <a class="reference external" href="https://mariadb.com/kb/en/mysql_secure_installation/">mariadb-secure-installation</a>.</p>
+<p><strong>Step 4:</strong> Install zoneminder</p>
+<p>By default Debian will install the version published in Debian (stable). However you also have the option to install a newer version using backports.
+For example, at the time of this writing, bullseye (stable) ships with v.1.34.x and bullseye-backports with v.1.36.x.</p>
+<p>To install the version in bullseye stable, just run the following command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p>If instead you prefer to install the newer version using backports, run the following commands.
+The first line will add bullseye-backports repository.
+The backports repository is deactivated by default, so with the second line we explicitly state we want the backported version of zoneminder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">echo</span> <span class="s1">&#39;deb http://deb.debian.org/debian bullseye-backports main contrib&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">apt</span> <span class="o">-</span><span class="n">t</span> <span class="n">bullseye</span><span class="o">-</span><span class="n">backports</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 5:</strong> Configure database</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mariadb</span> <span class="o">-</span><span class="n">u</span> <span class="n">zmuser</span> <span class="o">-</span><span class="n">p</span> <span class="n">zm</span> <span class="o">&lt;</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">/</span><span class="n">db</span><span class="o">/</span><span class="n">zm_create</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p><strong>Step 6:</strong> Setup permissions for zm.conf</p>
+<p>To make sure zoneminder can read the configuration file, run the following command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">chgrp</span> <span class="o">-</span><span class="n">c</span> <span class="n">www</span><span class="o">-</span><span class="n">data</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">zm</span><span class="o">/</span><span class="n">zm</span><span class="o">.</span><span class="n">conf</span>
+</pre></div>
+</div>
+<p><strong>Step 7:</strong> Tweak Apache configuration</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">zoneminder</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">reload</span> <span class="n">apache2</span><span class="o">.</span><span class="n">service</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">restart</span> <span class="n">zoneminder</span><span class="o">.</span><span class="n">service</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">status</span> <span class="n">zoneminder</span><span class="o">.</span><span class="n">service</span>
+</pre></div>
+</div>
+<p>If the zoneminder.service show to be active and without any errors, you should be able to access zoneminder at <code class="docutils literal notranslate"><span class="pre">http://yourhostname/zm</span></code></p>
+</section>
+<section id="debian-buster">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Debian Buster</a><a class="headerlink" href="#debian-buster" title="Permalink to this heading"></a></h2>
+<p>This procedure will guide you through the installation of ZoneMinder on Debian 10 (Buster).</p>
+<p><strong>Step 1:</strong> Make sure your system is up to date</p>
+<p>Open a console and use <code class="docutils literal notranslate"><span class="pre">su</span></code> command to become root.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">update</span>
+<span class="n">apt</span> <span class="n">upgrade</span>
+</pre></div>
+</div>
+<p><strong>Step 2:</strong> Setup Sudo (optional but recommended)</p>
+<p>By default Debian does not come with sudo, so you have to install it and configure it manually.
+This step is optional but recommended and the following instructions assume that you have setup sudo.
+If you prefer to setup ZoneMinder as root, do it at your own risk and adapt the following instructions accordingly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">sudo</span>
+<span class="n">usermod</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">G</span> <span class="n">sudo</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span>
+<span class="n">exit</span>
+</pre></div>
+</div>
+<p>Now your terminal session is back under your normal user. You can check that
+you are now part of the sudo group with the command <code class="docutils literal notranslate"><span class="pre">groups</span></code>, “sudo” should
+appear in the list. If not, run <code class="docutils literal notranslate"><span class="pre">newgrp</span> <span class="pre">sudo</span></code> and check again with <code class="docutils literal notranslate"><span class="pre">groups</span></code>.</p>
+<p><strong>Step 3:</strong> Install Apache and MySQL</p>
+<p>These are not dependencies for the ZoneMinder package as they could be
+installed elsewhere. If they are not installed yet in your system, you have to
+trigger their installation manually.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">apache2</span> <span class="n">default</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
+<p><strong>Step 4:</strong> Add ZoneMinder’s Package repository to your apt sources</p>
+<p>ZoneMinder’s Debian packages are not included in Debian’s official package
+repositories. To be able to install ZoneMinder with APT, you have to edit the
+list of apt sources and add ZoneMinder’s repository.</p>
+<p>Add the following to the /etc/apt/sources.list.d/zoneminder.list file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ZoneMinder repository</span>
+<span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">zmrepo</span><span class="o">.</span><span class="n">zoneminder</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="n">release</span><span class="o">-</span><span class="mf">1.36</span> <span class="n">buster</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>You can do this using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;deb https://zmrepo.zoneminder.com/debian/release-1.36 buster/&quot;</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">.</span><span class="n">list</span>
+</pre></div>
+</div>
+<p>Because ZoneMinder’s package repository provides a secure connection through HTTPS, apt must be enabled for HTTPS.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">apt</span><span class="o">-</span><span class="n">transport</span><span class="o">-</span><span class="n">https</span>
+</pre></div>
+</div>
+<p>Ensure you have gnupg installed before importing the apt key in the following step.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">gnupg</span>
+</pre></div>
+</div>
+<p>Finally, download the GPG key for ZoneMinder’s repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">zmrepo</span><span class="o">.</span><span class="n">zoneminder</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="n">archive</span><span class="o">-</span><span class="n">keyring</span><span class="o">.</span><span class="n">gpg</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="o">-</span>
+</pre></div>
+</div>
+<p><strong>Step 5:</strong> Install ZoneMinder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 6:</strong> Read the Readme</p>
+<p>The rest of the install process is covered in the README.Debian, so feel free to have
+a read.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zcat</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">/</span><span class="n">README</span><span class="o">.</span><span class="n">Debian</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<p><strong>Step 7:</strong> Enable ZoneMinder service</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">zoneminder</span><span class="o">.</span><span class="n">service</span>
+</pre></div>
+</div>
+<p><strong>Step 8:</strong> Configure Apache</p>
+<p>The following commands will setup the default /zm virtual directory and configure
+required apache modules.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">zoneminder</span>
+<span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">rewrite</span> <span class="c1"># this is enabled by default</span>
+<span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">cgi</span> <span class="c1"># this is done automatically when installing the package. Redo this command manually only for troubleshooting.</span>
+</pre></div>
+</div>
+<p><strong>Step 9:</strong> Edit Timezone in PHP</p>
+<p>Automated way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">sed</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;s/;date.timezone =/date.timezone = $(sed &#39;s/\//</span><span class="se">\\</span><span class="s2">\//&#39; /etc/timezone)/g&quot;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="mf">7.</span><span class="o">*/</span><span class="n">apache2</span><span class="o">/</span><span class="n">php</span><span class="o">.</span><span class="n">ini</span>
+</pre></div>
+</div>
+<p>Manual way</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="mf">7.</span><span class="o">*/</span><span class="n">apache2</span><span class="o">/</span><span class="n">php</span><span class="o">.</span><span class="n">ini</span>
+</pre></div>
+</div>
+<p>Search for [Date] (Ctrl + w then type Date and press Enter) and change
+date.timezone for your time zone. Don’t forget to remove the ; from in front
+of date.timezone.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Date</span><span class="p">]</span>
+<span class="p">;</span> <span class="n">Defines</span> <span class="n">the</span> <span class="n">default</span> <span class="n">timezone</span> <span class="n">used</span> <span class="n">by</span> <span class="n">the</span> <span class="n">date</span> <span class="n">functions</span>
+<span class="p">;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">php</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">date</span><span class="o">.</span><span class="n">timezone</span>
+<span class="n">date</span><span class="o">.</span><span class="n">timezone</span> <span class="o">=</span> <span class="n">America</span><span class="o">/</span><span class="n">New_York</span>
+</pre></div>
+</div>
+<p>CTRL+o then [Enter] to save</p>
+<p>CTRL+x to exit</p>
+<p><strong>Step 10:</strong> Start ZoneMinder</p>
+<p>Reload Apache to enable your changes and then start ZoneMinder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">reload</span> <span class="n">apache2</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p>You are now ready to go with ZoneMinder. Open a browser and type either <code class="docutils literal notranslate"><span class="pre">localhost/zm</span></code> one the local machine or <code class="docutils literal notranslate"><span class="pre">{IP-OF-ZM-SERVER}/zm</span></code> if you connect from a remote computer.</p>
+</section>
+<section id="debian-stretch">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Debian Stretch</a><a class="headerlink" href="#debian-stretch" title="Permalink to this heading"></a></h2>
+<p>This procedure will guide you through the installation of ZoneMinder on Debian 9 (Stretch). This section has been tested with ZoneMinder 1.36 on Debian 9.8.</p>
+<p><strong>Step 1:</strong> Make sure your system is up to date</p>
+<p>Open a console and use <code class="docutils literal notranslate"><span class="pre">su</span></code> command to become Root.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">update</span>
+<span class="n">apt</span> <span class="n">upgrade</span>
+</pre></div>
+</div>
+<p><strong>Step 2:</strong> Setup Sudo (optional but recommended)</p>
+<p>By default Debian does not come with sudo, so you have to install it and configure it manually. This step is optional but recommended and the following instructions assume that you have setup sudo. If you prefer to setup ZoneMinder as root, do it at your own risk and adapt the following instructions accordingly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">sudo</span>
+<span class="n">usermod</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">G</span> <span class="n">sudo</span> <span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span>
+<span class="n">exit</span>
+</pre></div>
+</div>
+<p>Now your terminal session is back under your normal user. You can check that you are now part of the sudo group with the command <code class="docutils literal notranslate"><span class="pre">groups</span></code>, “sudo” should appear in the list. If not, run <code class="docutils literal notranslate"><span class="pre">newgrp</span> <span class="pre">sudo</span></code> and check again with <code class="docutils literal notranslate"><span class="pre">groups</span></code>.</p>
+<p><strong>Step 3:</strong> Install Apache and MySQL</p>
+<p>These are not dependencies for the ZoneMinder package as they could be installed elsewhere. If they are not installed yet in your system, you have to trigger their installation manually.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">apache2</span> <span class="n">mysql</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
+<p><strong>Step 4:</strong> Add ZoneMinder’s Package repository to your apt sources</p>
+<p>ZoneMinder’s Debian packages are not included in Debian’s official package repositories. To be able to install ZoneMinder with APT, you have to edit the list of apt sources and add ZoneMinder’s repository.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span>
+</pre></div>
+</div>
+<p>Add the following to the bottom of the file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ZoneMinder repository</span>
+<span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">zmrepo</span><span class="o">.</span><span class="n">zoneminder</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="n">release</span><span class="o">-</span><span class="mf">1.36</span> <span class="n">stretch</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>CTRL+o and &lt;Enter&gt; to save
+CTRL+x to exit</p>
+<p>Because ZoneMinder’s package repository provides a secure connection through HTTPS, apt must be enabled for HTTPS.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">apt</span><span class="o">-</span><span class="n">transport</span><span class="o">-</span><span class="n">https</span>
+</pre></div>
+</div>
+<p>Finally, download the GPG key for ZoneMinder’s repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">zmrepo</span><span class="o">.</span><span class="n">zoneminder</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="n">archive</span><span class="o">-</span><span class="n">keyring</span><span class="o">.</span><span class="n">gpg</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="o">-</span>
+</pre></div>
+</div>
+<p><strong>Step 5:</strong> Install ZoneMinder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 6:</strong> Read the Readme</p>
+<p>The rest of the install process is covered in the README.Debian, so feel free to have
+a read.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zcat</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">/</span><span class="n">README</span><span class="o">.</span><span class="n">Debian</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<p><strong>Step 7:</strong> Enable ZoneMinder service</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">zoneminder</span><span class="o">.</span><span class="n">service</span>
+</pre></div>
+</div>
+<p><strong>Step 8:</strong> Configure Apache</p>
+<p>The following commands will setup the default /zm virtual directory and configure
+required apache modules.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">zoneminder</span>
+<span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">rewrite</span>
+<span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">cgi</span> <span class="c1"># this is done automatically when installing the package. Redo this command manually only for troubleshooting.</span>
+</pre></div>
+</div>
+<p><strong>Step 9:</strong> Edit Timezone in PHP</p>
+<p>Automated way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">sed</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;s/;date.timezone =/date.timezone = $(sed &#39;s/\//</span><span class="se">\\</span><span class="s2">\//&#39; /etc/timezone)/g&quot;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="mf">7.0</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">php</span><span class="o">.</span><span class="n">ini</span>
+</pre></div>
+</div>
+<p>Manual way</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">php</span><span class="o">/</span><span class="mf">7.0</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">php</span><span class="o">.</span><span class="n">ini</span>
+</pre></div>
+</div>
+<p>Search for [Date] (Ctrl + w then type Date and press Enter) and change
+date.timezone for your time zone. Don’t forget to remove the ; from in front
+of date.timezone.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Date</span><span class="p">]</span>
+<span class="p">;</span> <span class="n">Defines</span> <span class="n">the</span> <span class="n">default</span> <span class="n">timezone</span> <span class="n">used</span> <span class="n">by</span> <span class="n">the</span> <span class="n">date</span> <span class="n">functions</span>
+<span class="p">;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">php</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">date</span><span class="o">.</span><span class="n">timezone</span>
+<span class="n">date</span><span class="o">.</span><span class="n">timezone</span> <span class="o">=</span> <span class="n">America</span><span class="o">/</span><span class="n">New_York</span>
+</pre></div>
+</div>
+<p>CTRL+o then [Enter] to save</p>
+<p>CTRL+x to exit</p>
+<p><strong>Step 10:</strong> Start ZoneMinder</p>
+<p>Reload Apache to enable your changes and then start ZoneMinder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">reload</span> <span class="n">apache2</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p>You are now ready to go with ZoneMinder. Open a browser and type either <code class="docutils literal notranslate"><span class="pre">localhost/zm</span></code> one the local machine or <code class="docutils literal notranslate"><span class="pre">{IP-OF-ZM-SERVER}/zm</span></code> if you connect from a remote computer.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ubuntu.html" class="btn btn-neutral float-left" title="Ubuntu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="redhat.html" class="btn btn-neutral float-right" title="Redhat" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

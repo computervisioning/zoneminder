@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../userguide/options/options_users.rst:2
+msgid "Options - Users"
+msgstr "Опции - Пользователи"
+
+#: ../../userguide/options/options_users.rst:6
+msgid ""
+"In this section you will see a list of the current users defined on the "
+"system. You can also add or delete users from here. It is recommended you"
+" do not delete the admin user unless you have created another fully "
+"privileged user to take over the same role. Each user is defined with a "
+"name and password (which is hidden) as well as an enabled setting which "
+"you can use to temporarily enable or disable users, for example a guest "
+"user for limited time access. As well as that there is a language setting"
+" that allows you to define user specific languages. Setting a language "
+"here that is different than the system language will mean that when that "
+"user logs in they will have the web interface presented in their own "
+"language rather than the system default, if it is available."
+msgstr ""
+"В этом разделе вы увидите список текущих пользователей, определенных в "
+"системе. Вы также можете добавить или удалить пользователей здесь. "
+"Рекомендуется не удалять пользователя администратора, если вы не создали "
+"другого полностью привилегированного пользователя, чтобы взять на себя ту"
+" же роль. Каждый пользователь определен именем и паролем (который скрыт),"
+" а также параметром включения/выключения, который вы можете использовать "
+"для временного включения или отключения пользователей, например, "
+"гостевого пользователя для ограниченного доступа. Кроме того, есть "
+"настройка языка, которая позволяет определить язык пользователя. "
+"Установка языка здесь, отличного от системного языка, означает, что при "
+"входе этого пользователя веб-интерфейс будет представлен на его "
+"собственном языке, а не на системном по умолчанию, если он доступен."
+
+#: ../../userguide/options/options_users.rst:8
+msgid ""
+"This screen allows you to configure various permissions on a per user "
+"basis. The permissions as of today are defined as follows:"
+msgstr ""
+"Этот экран позволяет вам настроить различные разрешения для каждого "
+"пользователя. На сегодняшний день разрешения определяются следующим "
+"образом:"
+
+#: ../../userguide/options/options_users.rst:10
+msgid ""
+"Streams - None: the user has no access to view live streams from the "
+"defined monitors - View: the user has access to only view live streams "
+"from the defined monitors - Edit: the user has access to edit live "
+"streams from the defined monitors"
+msgstr ""
+"Струи - Ничто: пользователь не имеет доступа к просмотру прямых "
+"трансляций с определенных мониторов - Просмотр: у пользователя есть "
+"доступ только к просмотру прямых трансляций с определенных мониторов - "
+"Редактирование: у пользователя есть доступ к редактированию прямых "
+"трансляций с определенных мониторов"
+
+#: ../../userguide/options/options_users.rst:15
+msgid ""
+"Events - These permissions relate to the ability to view events from the "
+"defined monitors. The permission levels are the same as the Streams "
+"permissions, except that they apply to recorded events"
+msgstr ""
+"События - Эти разрешения относятся к возможности просмотра событий из "
+"определенных мониторов. Уровни разрешений такие же, как и для потоков, за"
+" исключением того, что они применяются к записанным событиям"
+
+#: ../../userguide/options/options_users.rst:18
+msgid ""
+"Control - These permissions relate to the ability to control "
+"Pan/Tilt/Zoom (PTZ) of the defined monitors. The permission levels are "
+"the same as the Streams permissions, except that they apply to PTZ"
+msgstr ""
+"Управление - Эти разрешения относятся к возможности управления "
+"панорамированием/наклоном/зумом (PTZ) определенных мониторов. Уровни "
+"разрешений такие же, как и для потоков, за исключением того, что они "
+"применяются к PTZ"
+
+#: ../../userguide/options/options_users.rst:21
+msgid ""
+"Monitors - specifies whether a user can see the current monitor settings "
+"and change them. The permissions levels are the same as the Streams "
+"permissions, except that they apply to monitor settings"
+msgstr ""
+"Мониторы - определяет, может ли пользователь видеть текущие настройки "
+"монитора и изменять их. Уровни разрешений такие же, как и для разрешений "
+"потоков, за исключением того, что они применяются к настройкам монитора"
+
+#: ../../userguide/options/options_users.rst:24
+msgid ""
+"Groups - specifies whether a user can see monitor groups and change them."
+" The permissions levels are the same as the Streams permissions, except "
+"that they apply to groups"
+msgstr ""
+"Группы - определяет, может ли пользователь видеть группы мониторов и "
+"изменять их. Уровни разрешений такие же, как и для разрешений потоков, за"
+" исключением того, что они применяются к группам"
+
+#: ../../userguide/options/options_users.rst:27
+msgid ""
+"System - Determines whether a user can view or modify the system settings"
+" as a whole, such as options and users or controlling the running of the "
+"system as a whole. The permissions levels are the same as the Streams "
+"permissions, except that they apply to groups."
+msgstr ""
+"Система - определяет, может ли пользователь просматривать или изменять "
+"системные настройки в целом, такие как опции и пользователи или "
+"управление работой системы в целом. Уровни разрешений такие же, как и "
+"разрешения для потоков, за исключением того, что они применяются к "
+"группам."
+
+#: ../../userguide/options/options_users.rst:30
+msgid ""
+"if you are using zmNinja, users are required to have 'View' access to "
+"system because multi-server information is only available as part of this"
+" permission"
+msgstr ""
+"Если вы используете ZMNinja, пользователям требуется доступ 'View' к "
+"системе, поскольку информация о нескольких серверах доступна только в "
+"рамках этой привилегии"
+
+#: ../../userguide/options/options_users.rst:32
+msgid ""
+"Bandwidth - Specifies the maximum bandwidth that this user can configure "
+"(Low, Medium or High)"
+msgstr ""
+"Ширина канала - определяет максимальную ширину канала, которую этот "
+"пользователь может настроить (Низкая, Средняя или Высокая)"
+
+#: ../../userguide/options/options_users.rst:35
+msgid ""
+"API enabled - Specifies if the ZoneMinder API is enabled for this user "
+"(needs to be on, if you are using a mobile app such as zmNinja)"
+msgstr ""
+"API включено - Указывает, включена ли для этого пользователя API "
+"ZoneMinder (должна быть включена, если вы используете мобильное "
+"приложение, такое как zmNinja)"
+
+#: ../../userguide/options/options_users.rst:38
+msgid ""
+"Finally, you can specify a list of monitors this user is allowed to "
+"access using the 'Restriced Monitors' list. You can select multiple "
+"monitors by shift+click(or command+click) on multiple monitors. If a user"
+" with ‘Monitors’ edit privileges is limited to specific monitors here "
+"they will not be able to add or delete monitors but only change the "
+"details of those they have access to. If a user has ‘System’ privileges "
+"then the ‘Monitors Ids’ setting is ignored and has no effect."
+msgstr ""
+"Наконец, вы можете указать список мониторов, к которым пользователь имеет"
+" право получать доступ, используя список «Ограниченные мониторы». Вы "
+"можете выбрать несколько мониторов, удерживая нажатой клавишу Shift (или "
+"Command) и щелкнув мышью на нескольких мониторах. Если пользователь с "
+"правами «Редактирование мониторов» ограничен определенными мониторами "
+"здесь, он не сможет добавлять или удалять мониторы, но только изменять "
+"детали тех, к которым у него есть доступ. Если у пользователя есть права "
+"«Система», то настройка «Идентификаторы мониторов» игнорируется и не "
+"оказывает никакого влияния."
+
+#: ../../userguide/options/options_users.rst:41
+msgid "Here is an example of a restricted user, for example:"
+msgstr "Вот пример пользователя с ограниченными правами, например:"
+
+#: ../../userguide/options/options_users.rst:45
+msgid ""
+"This user \"home\" is enabled, can view live streams and events, but only"
+" from \"DoorBell\" and \"DeckCamera\". This user also cannot control PTZ."
+msgstr ""
+"Этот пользователь \"домашняя\" опция включена, может просматривать прямые"
+" трансляции и события, но только из \"DoorBell\" и \"DeckCamera\". Этот "
+"пользователь также не может управлять PTZ."
+

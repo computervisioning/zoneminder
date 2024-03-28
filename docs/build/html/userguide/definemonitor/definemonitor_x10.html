@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X10 Tab &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Misc Tab" href="definemonitor_misc.html" />
+    <link rel="prev" title="Control Tab" href="definemonitor_control.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../definemonitor.html">Defining Monitors</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_add.html">Adding Monitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_general.html">General Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_source.html">Source Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_analysis.html">Analysis Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_recording.html">Recording Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_viewing.html">Viewing Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_onvif.html">ONVIF Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_timestamp.html">Timestamp Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_buffers.html">Buffers Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_control.html">Control Tab</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">X10 Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_misc.html">Misc Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor_mqtt.html">MQTT Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">User Guide</a></li>
+          <li class="breadcrumb-item"><a href="../definemonitor.html">Defining Monitors</a></li>
+      <li class="breadcrumb-item active">X10 Tab</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/userguide/definemonitor/definemonitor_x10.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="x10-tab">
+<h1>X10 Tab<a class="headerlink" href="#x10-tab" title="Permalink to this heading"></a></h1>
+<blockquote>
+<div><p>The X10 tab configures options for X10 Home Automation. This tab and its options will only appear if you have enabled X10 support in <span class="guilabel">Options</span> -&gt; <span class="guilabel">X10</span> -&gt; <strong>OPT_X10</strong>.</p>
+</div></blockquote>
+<figure class="align-default" id="id1">
+<img alt="../../_images/define-monitor-x10.png" src="../../_images/define-monitor-x10.png" />
+<figcaption>
+<p><span class="caption-text">X10 Tab</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p><strong>X10 Activation String</strong>: The contents of this field determine when a monitor starts and/or stops being active when running in ‘Triggered’ mode and with X10 triggers. The format of this string is as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>n</strong>: If you simply enter a number then the monitor will be activated when an X10 ON signal for that unit code is detected and will be deactivated when an OFF signal is detected.</p></li>
+<li><p><strong>!n</strong>: This inverts the previous mode, e.g. !5 means that the monitor is activated when an OFF signal for unit code 5 is detected and deactivated by an ON.</p></li>
+<li><p><strong>n+</strong>: Entering a unit code followed by + means that the monitor is activated on receipt of a ON signal for that unit code but will ignore the OFF signal and as such will not be deactivated by this instruction. If you prepend a ‘!’ as per the previous definition it similarly inverts the mode, i.e. the ON signal deactivates the monitor.</p></li>
+<li><p><strong>n+&lt;seconds&gt;</strong>: As per the previous mode except that the monitor will deactivate itself after the given number of seconds.</p></li>
+<li><p><strong>n-</strong>: Entering a unit code followed by - means that the monitor is deactivated on receipt of a OFF signal for that unit code but will ignore the ON signal and as such will not be activated by this instruction. If you prepend a ‘!’ as per the previous definition it similarly inverts the mode, i.e. the OFF signal activates the monitor.</p></li>
+<li><p><strong>n-&lt;seconds&gt;</strong>: As per the previous mode except that the monitor will activate itself after the given number of seconds.</p></li>
+<li><p>You can also combine several of these expressions to by separating them with a comma to create multiple circumstances of activation. However for now leave this blank.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>X10 Input Alarm String</strong>: This has the same format as the previous field but instead of activating the monitor this will cause a forced alarm to be generated and an event recorded if the monitor is Active. The same definition as above applies except that for activated read alarmed and for deactivated read unalarmed(!). Again leave this blank for now.</p></li>
+<li><p><strong>X10 Output Alarm String</strong>: This X10 string also has the same format as the two above options. However it works in a slightly different way. Instead of ZoneMinder reacting to X10 events this option controls how ZoneMinder emits X10 signals when the current monitor goes into or comes out of the alarm state. Thus just entering a number will cause the ON signal for that unit code to be sent when going into alarm state and the OFF signal when coming out of alarm state. Similarly 7+30 will send the unit code 7 ON signal when going into alarm state and the OFF signal 30 seconds later regardless of state. The combination of the X10 instruction allows ZoneMinder to react intelligently to, and also assume control of, other devices when necessary. However the indiscriminate use of the Input Alarm and Output Alarm signals can cause some horrendous race conditions such as a light going on in response to an alarm which then causes an alarm itself and so on. Thus some circumspection is required here. Leave this blank for now.</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="definemonitor_control.html" class="btn btn-neutral float-left" title="Control Tab" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="definemonitor_misc.html" class="btn btn-neutral float-right" title="Misc Tab" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

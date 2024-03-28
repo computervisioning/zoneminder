@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubuntu &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Debian" href="debian.html" />
+    <link rel="prev" title="All Distros - A Docker Way to Build ZoneMinder" href="packpack.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="easydocker.html">An Easy To Use Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packpack.html">All Distros - A Docker Way to Build ZoneMinder</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-22-04-jammy">Ubuntu 22.04 (Jammy)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-18-04-bionic">Ubuntu 18.04 (Bionic)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#harder-way-build-package-from-source-discouraged">Harder Way: Build Package From Source (Discouraged)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hints">Hints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#make-sure-zoneminder-and-apis-work-with-security">Make sure ZoneMinder and APIs work with security</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#socket-sendto-or-no-live-streaming">Socket_sendto or no live streaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changed-default-db-user">Changed Default DB User</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="debian.html">Debian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="redhat.html">Redhat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="windows_wsl.html">Windows 10+ using WSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiserver.html">Multi-Server Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dedicateddrive.html">Dedicated Drive, Partition, or Network Share</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Installation Guide</a></li>
+      <li class="breadcrumb-item active">Ubuntu</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/installationguide/ubuntu.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ubuntu">
+<h1><a class="toc-backref" href="#id3" role="doc-backlink">Ubuntu</a><a class="headerlink" href="#ubuntu" title="Permalink to this heading"></a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ubuntu" id="id3">Ubuntu</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ubuntu-22-04-jammy" id="id4">Ubuntu 22.04 (Jammy)</a></p></li>
+<li><p><a class="reference internal" href="#ubuntu-18-04-bionic" id="id5">Ubuntu 18.04 (Bionic)</a></p></li>
+<li><p><a class="reference internal" href="#harder-way-build-package-from-source-discouraged" id="id6">Harder Way: Build Package From Source (Discouraged)</a></p></li>
+<li><p><a class="reference internal" href="#hints" id="id7">Hints</a></p>
+<ul>
+<li><p><a class="reference internal" href="#make-sure-zoneminder-and-apis-work-with-security" id="id8">Make sure ZoneMinder and APIs work with security</a></p></li>
+<li><p><a class="reference internal" href="#socket-sendto-or-no-live-streaming" id="id9">Socket_sendto or no live streaming</a></p></li>
+<li><p><a class="reference internal" href="#changed-default-db-user" id="id10">Changed Default DB User</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="ubuntu-22-04-jammy">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Ubuntu 22.04 (Jammy)</a><a class="headerlink" href="#ubuntu-22-04-jammy" title="Permalink to this heading"></a></h2>
+<p>These instructions are for a brand new ubuntu 22.04 LTS system which does not have ZM installed.</p>
+<p><strong>Step 1:</strong> Update system</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">apt</span> <span class="n">upgrade</span> <span class="o">-</span><span class="n">y</span>
+</pre></div>
+</div>
+<p><strong>Step 2:</strong> Update repositories (Optional)</p>
+<p>ZoneMinder is part of the current standard Ubuntu repository, but sometimes the official repository can lag behind.
+To find out check our <a class="reference external" href="https://github.com/ZoneMinder/zoneminder/releases">releases page</a> for the latest release.</p>
+<p>Alternatively, the ZoneMinder project team maintains a <a class="reference external" href="https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them">PPA</a>, which is updated immediately following a new release of ZoneMinder.
+To use this repository instead of the official Ubuntu repository, enter the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">software</span><span class="o">-</span><span class="n">properties</span><span class="o">-</span><span class="n">common</span>
+<span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">iconnor</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">-</span><span class="mf">1.36</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+</pre></div>
+</div>
+<p><strong>Step 3:</strong> Install Zoneminder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 4:</strong> Configure Apache correctly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">rewrite</span>
+<span class="n">sudo</span> <span class="n">a2enconf</span> <span class="n">zoneminder</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">restart</span> <span class="n">apache2</span>
+</pre></div>
+</div>
+<p><strong>Step 5:</strong> Enable and start zoneminder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">zoneminder</span>
+<span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 6:</strong> Open Zoneminder</p>
+<p>Open up a browser and go to <code class="docutils literal notranslate"><span class="pre">http://hostname_or_ip/zm</span></code> to open the ZoneMinder Console.</p>
+</section>
+<section id="ubuntu-18-04-bionic">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Ubuntu 18.04 (Bionic)</a><a class="headerlink" href="#ubuntu-18-04-bionic" title="Permalink to this heading"></a></h2>
+<p>These instructions are for a brand new ubuntu 18.04 system which does not have ZM
+installed.</p>
+<p>It is recommended that you use an Ubuntu Server install and select the LAMP option
+during install to install Apache, MySQL and PHP. If you failed to do this you can
+achieve the same result by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">tasksel</span>
+<span class="n">sudo</span> <span class="n">tasksel</span> <span class="n">install</span> <span class="n">lamp</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>Installing LAMP is not ZoneMinder specific so you will find plenty of resources to
+guide you with a quick search.</p>
+<p><strong>Step 1:</strong> Either run commands in this install using sudo or use the below to become root</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">-</span><span class="n">i</span>
+</pre></div>
+</div>
+<p><strong>Step 2:</strong> Update Repos</p>
+<aside class="topic">
+<p class="topic-title">Latest Release</p>
+<p>ZoneMinder is now part of the current standard Ubuntu repository, but
+sometimes the official repository can lag behind. To find out check our
+<a class="reference external" href="https://github.com/ZoneMinder/zoneminder/releases">releases page</a> for
+the latest release.</p>
+<p>Alternatively, the ZoneMinder project team maintains a <a class="reference external" href="https://askubuntu.com/questions/4983/what-are-ppas-and-how-do-i-use-them">PPA</a>, which is updated immediately
+following a new release of ZoneMinder. To use this repository instead of the
+official Ubuntu repository, enter the following from the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">iconnor</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">-</span><span class="mf">1.36</span>
+</pre></div>
+</div>
+</aside>
+<p>Update repo and upgrade.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>      <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">dist</span><span class="o">-</span><span class="n">upgrade</span>
+</pre></div>
+</div>
+<p><strong>Step 3:</strong> Configure MySQL</p>
+<aside class="sidebar">
+<p class="sidebar-title">Note</p>
+<p>The MySQL default configuration file (/etc/mysql/mysql.cnf) is read through
+several symbolic links beginning with /etc/mysql/my.cnf as follows:</p>
+<div class="line-block">
+<div class="line">/etc/mysql/my.cnf -&gt; /etc/alternatives/my.cnf</div>
+<div class="line">/etc/alternatives/my.cnf -&gt; /etc/mysql/mysql.cnf</div>
+<div class="line">/etc/mysql/mysql.cnf is a basic file</div>
+</div>
+</aside>
+<p>Certain new defaults in MySQL 5.7 cause some issues with ZoneMinder &lt; 1.32.0,
+the workaround is to modify the sql_mode setting of MySQL. Please note that these
+changes are NOT required for ZoneMinder 1.32+ and some people have reported them
+causing problems in 1.32.0.</p>
+<p>To better manage the MySQL server it is recommended to copy the sample config file and
+replace the default my.cnf symbolic link.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rm</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">my</span><span class="o">.</span><span class="n">cnf</span>  <span class="p">(</span><span class="n">this</span> <span class="n">removes</span> <span class="n">the</span> <span class="n">current</span> <span class="n">symbolic</span> <span class="n">link</span><span class="p">)</span>
+<span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">mysql</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">mysqld</span><span class="o">.</span><span class="n">cnf</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">my</span><span class="o">.</span><span class="n">cnf</span>
+</pre></div>
+</div>
+<p>To change MySQL settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="n">my</span><span class="o">.</span><span class="n">cnf</span>
+</pre></div>
+</div>
+<p>In the [mysqld] section add the following</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sql_mode</span> <span class="o">=</span> <span class="n">NO_ENGINE_SUBSTITUTION</span>
+</pre></div>
+</div>
+<p>CTRL+o then [Enter] to save</p>
+<p>CTRL+x to exit</p>
+<p>Restart MySQL</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">restart</span> <span class="n">mysql</span>
+</pre></div>
+</div>
+<p><strong>Step 4:</strong> Install ZoneMinder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p><strong>Step 5:</strong> Configure the ZoneMinder Database</p>
+<p>This step should not be required on ZoneMinder 1.32.0.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">-</span><span class="n">uroot</span> <span class="o">-</span><span class="n">p</span> <span class="o">&lt;</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">zoneminder</span><span class="o">/</span><span class="n">db</span><span class="o">/</span><span class="n">zm_create</span><span class="o">.</span><span class="n">sql</span>
+<span class="n">mysql</span> <span class="o">-</span><span class="n">uroot</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;grant lock tables,alter,drop,select,insert,update,delete,create,index,alter routine,create routine, trigger,execute,references on zm.* to &#39;zmuser&#39;@localhost identified by &#39;zmpass&#39;;&quot;</span>
+</pre></div>
+</div>
+<p><strong>Step 6:</strong> Set permissions</p>
+<p>Set /etc/zm/zm.conf to root:www-data 740 and www-data access to content</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="mi">740</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">zm</span><span class="o">/</span><span class="n">zm</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">chown</span> <span class="n">root</span><span class="p">:</span><span class="n">www</span><span class="o">-</span><span class="n">data</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">zm</span><span class="o">/</span><span class="n">zm</span><span class="o">.</span><span class="n">conf</span>
+</pre></div>
+</div>
+<p><strong>Step 7:</strong> Configure Apache correctly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2enmod</span> <span class="n">cgi</span>
+<span class="n">a2enmod</span> <span class="n">rewrite</span>
+<span class="n">a2enconf</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p>You may also want to enable to following modules to improve caching performance</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2enmod</span> <span class="n">expires</span>
+<span class="n">a2enmod</span> <span class="n">headers</span>
+</pre></div>
+</div>
+<p><strong>Step 8:</strong> Enable and start Zoneminder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">enable</span> <span class="n">zoneminder</span>
+<span class="n">systemctl</span> <span class="n">start</span> <span class="n">zoneminder</span>
+</pre></div>
+</div>
+<p>CTRL+o then [Enter] to save</p>
+<p>CTRL+x to exit</p>
+<p><strong>Step 10:</strong> Reload Apache service</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">reload</span> <span class="n">apache2</span>
+</pre></div>
+</div>
+<p><strong>Step 11:</strong> Making sure ZoneMinder works</p>
+<ol class="arabic">
+<li><p>Open up a browser and go to <code class="docutils literal notranslate"><span class="pre">http://hostname_or_ip/zm</span></code> - should bring up ZoneMinder Console</p></li>
+<li><p>(Optional API Check)Open up a tab in the same browser and go to <code class="docutils literal notranslate"><span class="pre">http://hostname_or_ip/zm/api/host/getVersion.json</span></code></p>
+<blockquote>
+<div><p>If it is working correctly you should get version information similar to the example below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.34.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;apiversion&quot;</span><span class="p">:</span> <span class="s2">&quot;1.34.0.1&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p><strong>Congratulations</strong>  Your installation is complete</p>
+<p>PPA install may need some tweaking of ZMS_PATH in ZoneMinder options. <a class="reference internal" href="#socket-sendto-or-no-live-streaming">Socket_sendto or no live streaming</a></p>
+</section>
+<section id="harder-way-build-package-from-source-discouraged">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Harder Way: Build Package From Source (Discouraged)</a><a class="headerlink" href="#harder-way-build-package-from-source-discouraged" title="Permalink to this heading"></a></h2>
+<p>Historically, installing ZoneMinder onto your system required building from source code by issuing the traditional configure, make, make install commands. To get ZoneMinder to build, all of its dependencies had to be determined and installed beforehand. Init and logrotate scripts had to be manually copied into place following the build. Optional packages such as jscalendar and Cambozola had to be manually installed. Uninstalls could leave stale files around, which could cause problems during an upgrade. Speaking of upgrades, when it comes time to upgrade all these manual steps must be repeated again.</p>
+<p>Better methods exist today that do much of this for you. The current development team, along with other volunteers, have taken great strides in providing the resources necessary to avoid building from source.</p>
+<p>(These instructions assume installation from source on a ubuntu 15.x+ system)</p>
+<p><strong>Step 1:</strong> Grab the package installer script</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ZoneMinder</span><span class="o">/</span><span class="n">ZoneMinder</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">utils</span><span class="o">/</span><span class="n">do_debian_package</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">chmod</span> <span class="n">a</span><span class="o">+</span><span class="n">x</span> <span class="n">do_debian_package</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p><strong>Step 2:</strong> Update the system</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+</pre></div>
+</div>
+<p><strong>Step 3</strong> Create the package</p>
+<p>To build the latest master snapshot:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">do_debian_package</span><span class="o">.</span><span class="n">sh</span> <span class="o">--</span><span class="n">snapshot</span><span class="o">=</span><span class="n">NOW</span> <span class="o">--</span><span class="n">branch</span><span class="o">=</span><span class="n">master</span> <span class="o">--</span><span class="nb">type</span><span class="o">=</span><span class="n">local</span>
+</pre></div>
+</div>
+<p>To build the latest stable release:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">do_debian_package</span><span class="o">.</span><span class="n">sh</span> <span class="o">--</span><span class="n">snapshot</span><span class="o">=</span><span class="n">stable</span> <span class="o">--</span><span class="nb">type</span><span class="o">=</span><span class="n">local</span>
+</pre></div>
+</div>
+<p>Note that the distribution will be guessed using <code class="docutils literal notranslate"><span class="pre">lsb_release</span> <span class="pre">-a</span> <span class="pre">2&gt;/dev/null</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">Codename</span> <span class="pre">|</span> <span class="pre">awk</span> <span class="pre">'{print</span> <span class="pre">$2}'</span></code>
+which simply extracts your distribution name - like “bionic”, “hirsute” etc. You
+can always specify it using –distro=your distro name if you know it. As far as the script
+goes, it checks if your distro is “trusty” in which case it pulls in pre-systemd
+release configurations and if its not “trusty” it assumes its based on systemd
+and pulls in systemd related config files.</p>
+<p>(At the end the script will ask if you want to retain the checked out version of
+ZoneMinder. If you are a developer and are making local changes, make sure you
+select “y” so that the next time you do the build process mentioned here, it
+keeps your changes. Selecting any other value than “y” or “Y” will delete the
+checked out code and only retain the package)</p>
+<p>This should now create a bunch of .deb files</p>
+<p><strong>Step 4:</strong> Install the package</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">gdebi</span> <span class="n">zoneminder_</span><span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">arch</span><span class="o">&gt;.</span><span class="n">deb</span>
+<span class="p">(</span><span class="n">example</span> <span class="n">sudo</span> <span class="n">gdebi</span> <span class="n">zoneminder_1</span><span class="mf">.34.0</span><span class="o">-</span><span class="n">bionic</span><span class="o">-</span><span class="mi">2021020801</span><span class="n">_amd64</span><span class="o">.</span><span class="n">deb</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>This will report DB errors - ignore - you need to configure the DB and some other stuff</strong></p>
+<p><strong>Step 5:</strong> Post install configuration</p>
+<p>Now that you have installed from your own package you can resume following the
+standard install guide for your version, start at the step after Install Zoneminder.</p>
+</section>
+<section id="hints">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Hints</a><a class="headerlink" href="#hints" title="Permalink to this heading"></a></h2>
+<section id="make-sure-zoneminder-and-apis-work-with-security">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Make sure ZoneMinder and APIs work with security</a><a class="headerlink" href="#make-sure-zoneminder-and-apis-work-with-security" title="Permalink to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Enable OPT_AUTH in ZoneMinder</p></li>
+<li><p>Log out of ZoneMinder in browser</p></li>
+<li><p>Open a new tab in the <em>same browser</em> (important) and go to
+<code class="docutils literal notranslate"><span class="pre">http://localhost/zm/api/host/getVersion.json</span></code> - should give you “Unauthorized”
+along with a lot more of text</p></li>
+<li><p>Go to another tab in the SAME BROWSER (important) and log into ZM</p></li>
+<li><p>Repeat step 3 and it should give you the ZM and API version</p></li>
+</ol>
+</section>
+<section id="socket-sendto-or-no-live-streaming">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Socket_sendto or no live streaming</a><a class="headerlink" href="#socket-sendto-or-no-live-streaming" title="Permalink to this heading"></a></h3>
+<p>After you have setup your camera make sure you can view Monitor streams, if not
+check some of the common causes:</p>
+<ul>
+<li><p>Check Apache cgi module is enabled.</p></li>
+<li><p>Check Apache /etc/apache2/conf-enabled/zoneminder.conf ScriptAlias matches PATH_ZMS.</p>
+<blockquote>
+<div><p>ScriptAlias <strong>/zm/cgi-bin</strong> /usr/lib/zoneminder/cgi-bin</p>
+<p>From console go to <code class="docutils literal notranslate"><span class="pre">Options-&gt;Path</span></code> and make sure PATH_ZMS is set to <strong>/zm/cgi-bin/</strong>nph-zms.</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="changed-default-db-user">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Changed Default DB User</a><a class="headerlink" href="#changed-default-db-user" title="Permalink to this heading"></a></h3>
+<p>If you have changed your DB login/password from zmuser/zmpass, you need to
+update these values in zm.conf.</p>
+<ol class="arabic simple">
+<li><p>Edit zm.conf to change ZM_DB_USER and ZM_DB_PASS to the values you used.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="packpack.html" class="btn btn-neutral float-left" title="All Distros - A Docker Way to Build ZoneMinder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="debian.html" class="btn btn-neutral float-right" title="Debian" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

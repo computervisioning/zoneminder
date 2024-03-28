@@ -1,0 +1,978 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../userguide/gettingstarted.rst:2
+msgid "Getting Started"
+msgstr "Начало работы"
+
+#: ../../userguide/gettingstarted.rst:4
+msgid ""
+"The intent of this section is to provide a simplified introduction to "
+"some of the basic configuration tasks that most ZoneMinder servers will "
+"require. This will include setting your Timezone, enabling "
+"Authentication, adding a Monitor (camera), adding a Zone and changing the"
+" web display Theme. Detailed explanations about each particular item can "
+"be found in their respective sections of the ZoneMinder documentation."
+msgstr ""
+"Цель этого раздела - предоставить упрощенное введение в некоторые "
+"основные задачи конфигурации, которые большинство серверов ZoneMinder "
+"потребует. Это будет включать настройку вашего часового пояса, включение "
+"аутентификации, добавление монитора (камеры), добавление зоны и изменение"
+" темы веб-вывода. Подробные объяснения по каждому конкретному вопросу "
+"можно найти в соответствующих разделах документации ZoneMinder."
+
+#: ../../userguide/gettingstarted.rst:6
+msgid ""
+"Having followed the :doc:`/installationguide/index` for your distribution"
+" you should now be able to load the ZoneMinder web interface which can be"
+" found at ``http://hostname-or-ip/zm``. The image below shows an example "
+"of the ZoneMinder Console which is displayed after starting. The "
+"ZoneMinder Console is the central location from which all ZoneMinder "
+"configuration and functionality can be accessed."
+msgstr ""
+"После того как вы выполнили инструкцию по установке "
+":doc:`/installationguide/index` для вашей версии, вы должны теперь быть в"
+" состоянии загрузить веб-интерфейс ZoneMinder, который можно найти по "
+"адресу ``http://hostname-or-ip/zm``. Изображение ниже показывает пример "
+"консоли ZoneMinder, которая отображается после запуска. Консоль "
+"ZoneMinder - это центральное место, откуда можно получить доступ ко всем "
+"настройкам и функциональности ZoneMinder."
+
+#: ../../userguide/gettingstarted.rst:10
+msgid "ZoneMinder Console"
+msgstr "ЗонаМиндер Консоль"
+
+#: ../../userguide/gettingstarted.rst:14
+msgid ""
+"Please note that in this guide the notation of :guilabel:`Link` means "
+"that you click on the specified link on the web interface to perform the "
+"specified action."
+msgstr ""
+"Обратите внимание, что в этом руководстве обозначение `:guilabel:`Link` "
+"означает, что вы нажимаете на указанную ссылку на веб-интерфейсе для "
+"выполнения указанного действия."
+
+#: ../../userguide/gettingstarted.rst:19
+msgid "Setting Timezone"
+msgstr "Установка часового пояса"
+
+#: ../../userguide/gettingstarted.rst:21
+msgid ""
+"ZoneMinder allows you to specify the Timezone in the web interface. "
+"Please set up before moving forward so that your saved events, logfiles "
+"and timestamp overlays contain correct time information. The Timezone can"
+" be changed using the following steps."
+msgstr ""
+"ЗонаМиндер позволяет вам указать часовой пояс в веб-интерфейсе. "
+"Пожалуйста, настройте его перед продолжением, чтобы ваши сохраненные "
+"события, журналы и временные метки содержали правильную информацию о "
+"времени. Часовой пояс можно изменить, выполнив следующие шаги."
+
+#: ../../userguide/gettingstarted.rst:23
+msgid "At the top of Console display click on the :guilabel:`Options` menu link."
+msgstr ""
+"В верхней части дисплея консоли щелкните по ссылке меню "
+":guilabel:`Options`."
+
+#: ../../userguide/gettingstarted.rst:24
+msgid ""
+"The Options window opens. Locate and click the :guilabel:`System` tab "
+"link."
+msgstr ""
+"Окно \"Параметры\" открывается. Найдите и щелкните по ссылке \"Система\" "
+"вкладки \"Гипертекст\"."
+
+#: ../../userguide/gettingstarted.rst:25
+msgid ""
+"Locate the **TIMEZONE** parameter and use the pulldown menu to locate "
+"your Timezone."
+msgstr ""
+"Найдите параметр **TIMEZONE** и используйте выпадающее меню, чтобы найти "
+"свой часовой пояс."
+
+#: ../../userguide/gettingstarted.rst:30
+msgid "Enabling Authentication"
+msgstr "Включение аутентификации"
+
+#: ../../userguide/gettingstarted.rst:32
+msgid ""
+"We strongly recommend enabling authentication during initial setup of "
+"ZoneMinder. There are some situations where certain users don't enable "
+"authentication, such as instances where the server is in a LAN not "
+"directly exposed to the Internet. In most cases authentication should be "
+"enabled. Follow the steps below."
+msgstr ""
+"Мы настоятельно рекомендуем включить аутентификацию при первоначальной "
+"настройке ZoneMinder. Есть некоторые ситуации, когда определенные "
+"пользователи не включают аутентификацию, например, случаи, когда сервер "
+"находится в локальной сети, которая не непосредственно подвержена "
+"интернету. В большинстве случаев аутентификация должна быть включена. "
+"Следуйте шагам ниже."
+
+#: ../../userguide/gettingstarted.rst:34 ../../userguide/gettingstarted.rst:59
+msgid "Click on the :guilabel:`Options` link in the top bar of the web interface."
+msgstr "Нажмите на ссылку :guilabel:`Options` в верхней панели веб-интерфейса."
+
+#: ../../userguide/gettingstarted.rst:35
+msgid ""
+"You will now be presented with a sidebar full of Option tabs. Click on "
+"the :guilabel:`System` tab and scroll down to the section containing "
+"authentication parameters."
+msgstr ""
+"Сейчас вы увидите боковую панель с вкладками опций. Нажмите на вкладку "
+":guilabel:`Система` и прокрутите вниз до раздела, содержащего параметры "
+"аутентификации."
+
+#: ../../userguide/gettingstarted.rst:39
+msgid "Authentication Parameters in System Tab"
+msgstr "Параметры аутентификации в системной вкладке"
+
+#: ../../userguide/gettingstarted.rst:41
+msgid ""
+"**OPT_USE_AUTH:** Enable by checking the box. This enables user "
+"authentication."
+msgstr ""
+"**OPT_USE_AUTH:** Включить, отметив галочкой. Это включает аутентификацию"
+" пользователя."
+
+#: ../../userguide/gettingstarted.rst:42
+msgid ""
+"**AUTH_HASH_SECRET:** Enter a random string. This makes authentication "
+"logic more secure."
+msgstr ""
+"**SECRET_HASH_AUTH:** Введите случайную строку. Это делает логику "
+"аутентификации более безопасной."
+
+#: ../../userguide/gettingstarted.rst:43
+msgid "Remaining items should be left as default."
+msgstr "Оставшиеся элементы должны оставаться по умолчанию."
+
+#: ../../userguide/gettingstarted.rst:44
+msgid ""
+"Click on :guilabel:`Save` at the top of list and that's it! The next time"
+" you refresh that page, you will now be presented with a login screen as "
+"shown below. Job well done!"
+msgstr ""
+"Нажмите на :guilabel:`Сохранить` в верхней части списка, и все готово! В "
+"следующий раз, когда вы обновите эту страницу, вы увидите экран входа, "
+"как показано ниже. Отличная работа!"
+
+#: ../../userguide/gettingstarted.rst:-1
+msgid "Note"
+msgstr "Заметка"
+
+#: ../../userguide/gettingstarted.rst:52
+msgid ""
+"For initial login authentication the default username is **admin** and "
+"default password is **admin**."
+msgstr ""
+"Для первоначальной аутентификации по умолчанию имя пользователя - "
+"**admin**, а пароль - **admin**."
+
+#: ../../userguide/gettingstarted.rst:55
+msgid "Establish Login Password"
+msgstr "Установить пароль для входа"
+
+#: ../../userguide/gettingstarted.rst:57
+msgid ""
+"ZoneMinder defines a default user with username of **admin** and password"
+" of **admin**. Use these credentials to login to ZoneMinder for the first"
+" time. This is not very secure for a server so let's change this before "
+"continuing setting up ZoneMinder. The password for the admin user can be "
+"changed by following the steps below."
+msgstr ""
+"ЗонаМиндер определяет пользователя по умолчанию с именем пользователя "
+"**admin** и паролем **admin**. Используйте эти учетные данные для входа в"
+" ЗонаМиндер в первый раз. Это не очень безопасно для сервера, поэтому "
+"давайте изменим это перед продолжением настройки ЗонаМиндера. Пароль для "
+"пользователя администратора можно изменить, выполнив следующие шаги."
+
+#: ../../userguide/gettingstarted.rst:60
+msgid "Locate and click on the :guilabel:`Users` tab link."
+msgstr "Найдите и щелкните по ссылке на вкладку :guilabel:`Пользователи`."
+
+#: ../../userguide/gettingstarted.rst:61
+msgid "Select and click on user :guilabel:`admin` to open the edit window."
+msgstr ""
+"Выберите и щелкните по пользователю :guilabel:`admin`, чтобы открыть окно"
+" редактирования."
+
+#: ../../userguide/gettingstarted.rst:65
+msgid "Changing Password in Users Tab"
+msgstr "Изменение пароля в разделе \"Пользователи\""
+
+#: ../../userguide/gettingstarted.rst:67
+msgid ""
+"Enter new password in :guilabel:`New Password` and :guilabel:`Confirm "
+"Password` boxes."
+msgstr ""
+"Введите новый пароль в поле :gui:`Новый пароль` и поле "
+":gui:`Подтверждение пароля`."
+
+#: ../../userguide/gettingstarted.rst:68
+msgid "Click :guilabel:`Save` to update password."
+msgstr "Нажмите :guilabel:`Сохранить`, чтобы обновить пароль."
+
+#: ../../userguide/gettingstarted.rst:69
+msgid ""
+"Additional users can be created with flexible levels of access. Refer to "
+":doc:`/userguide/options/options_users`."
+msgstr ""
+"Дополнительные пользователи могут быть созданы с гибкими уровнями "
+"доступа. Обратитесь к :doc:`/userguide/options/options_users`."
+
+#: ../../userguide/gettingstarted.rst:72
+msgid "Understanding the Web Console"
+msgstr "Понимание консоли браузера"
+
+#: ../../userguide/gettingstarted.rst:74
+msgid ""
+"Before we proceed, let's spend a few minutes understanding the key "
+"functions of the web Console. At any time you can return to the Console "
+"by clicking the :guilabel:`Console` link. For the sake of illustration, "
+"we are going to use an existing ZoneMinder server already configured with"
+" several Monitors and showing recorded events."
+msgstr ""
+"Перед тем как продолжить, давайте потратим несколько минут на понимание "
+"основных функций консоли веб-страницы. В любое время вы можете вернуться "
+"к консоли, щелкнув по ссылке :guilabel:`Console`. Для иллюстрации мы "
+"будем использовать существующий сервер ZoneMinder, уже настроенный с "
+"несколькими мониторами и отображающий записанные события."
+
+#: ../../userguide/gettingstarted.rst:78
+msgid "ZoneMinder Console for Existing Configured Server"
+msgstr "Консоль ZoneMinder для существующего сервера с конфигурацией"
+
+#: ../../userguide/gettingstarted.rst:80
+msgid ""
+"This is the Console window in ZoneMinder and shows a summary of your "
+"Monitors, associated events, Zones, server status and links to other "
+"available functionality. A brief description of many of these items is "
+"given below. Each section has a much more detailed description contained "
+"in the ZoneMinder documentation."
+msgstr ""
+"Это окно консоли в ZoneMinder и отображает сводку ваших мониторов, "
+"связанных событий, зон, состояния сервера и ссылки на другую доступную "
+"функциональность. Краткое описание многих из этих элементов приведено "
+"ниже. Каждая секция имеет гораздо более подробное описание, содержащееся "
+"в документации ZoneMinder."
+
+#: ../../userguide/gettingstarted.rst:82
+msgid "[A] Options"
+msgstr "[A] Варианты"
+
+#: ../../userguide/gettingstarted.rst:83
+msgid ""
+"The Options menu lets you configure many aspects of ZoneMinder. Refer to "
+":doc:`options`."
+msgstr ""
+"Меню \"Опции\" позволяет настроить многие аспекты ZoneMinder. Обратитесь "
+"к :doc:`options`."
+
+#: ../../userguide/gettingstarted.rst:84
+msgid "[B] Log"
+msgstr "[B] Лог"
+
+#: ../../userguide/gettingstarted.rst:85
+msgid ""
+"This brings up a color coded log window that shows various system and "
+"component level logs. This window is useful if you are trying to diagnose"
+" issues. Refer to :doc:`logging`."
+msgstr ""
+"Это вызывает появление цветного окна журнала, которое отображает "
+"различные системные и компонентые журналы. Это окно полезно, если вы "
+"пытаетесь диагностировать проблемы. Обратитесь к :doc:`logging`."
+
+#: ../../userguide/gettingstarted.rst:86
+msgid "[C] Groups"
+msgstr "[C] Группы"
+
+#: ../../userguide/gettingstarted.rst:87
+msgid ""
+"ZoneMinder allows you to group Monitors for logical separation. This "
+"option lets you create new groups, associate Monitors to them and "
+"edit/delete existing groups."
+msgstr ""
+"ЗонаМиндер позволяет группировать Мониторы для логического разделения. "
+"Эта опция позволяет создавать новые группы, ассоциировать Мониторы с ними"
+" и редактировать/удалять существующие группы."
+
+#: ../../userguide/gettingstarted.rst:88
+msgid "[D] Filters"
+msgstr "[D] Фильтры"
+
+#: ../../userguide/gettingstarted.rst:89
+msgid ""
+"Filters are a powerful mechanism to perform actions when certain "
+"conditions are met. ZoneMinder comes with some preset filters that keep a"
+" tab of disk space and others. Many users create their own filters for "
+"more advanced actions like sending emails when certain events occur and "
+"more. Refer to :doc:`filterevents`."
+msgstr ""
+"Фильтры - это мощный механизм для выполнения действий при соблюдении "
+"определенных условий. ZoneMinder поставляется с некоторыми "
+"предустановленными фильтрами, которые отслеживают использование дискового"
+" пространства и другие параметры. Многие пользователи создают свои "
+"собственные фильтры для более сложных действий, таких как отправка "
+"электронных писем при возникновении определенных событий и многое другое."
+" Обратитесь к :doc:`filterevents`."
+
+#: ../../userguide/gettingstarted.rst:90
+msgid "[E] Cycle"
+msgstr "[C] Круг"
+
+#: ../../userguide/gettingstarted.rst:91
+msgid ""
+"The Cycle option allows you to rotate between live views of each "
+"configured Monitor."
+msgstr ""
+"Опция \"Цикл\" позволяет переключаться между живыми просмотрами каждого "
+"настроенного Монитора."
+
+#: ../../userguide/gettingstarted.rst:92
+msgid "[F] Montage"
+msgstr "[F] Монтаж"
+
+#: ../../userguide/gettingstarted.rst:93
+msgid ""
+"The Montage option shows a collage of your Monitors. You can customize "
+"the placement size and location on the web interface."
+msgstr ""
+"Опция \"Коллаж\" отображает коллаж из ваших мониторов. Вы можете "
+"настроить размер и расположение на веб-интерфейсе."
+
+#: ../../userguide/gettingstarted.rst:94
+msgid "[G] Montage Review"
+msgstr "[G] Обзор сборки"
+
+#: ../../userguide/gettingstarted.rst:95
+msgid ""
+"Allows you to simultaneously view past events for different Monitors. "
+"Note that this is a very resource intensive page and its performance will"
+" vary based on your system capabilities."
+msgstr ""
+"Позволяет одновременно просматривать прошлые события для разных "
+"мониторов. Обратите внимание, что это очень ресурсоемкая страница, и ее "
+"производительность будет зависеть от возможностей вашей системы."
+
+#: ../../userguide/gettingstarted.rst:96
+msgid "[H] Audit Events Report"
+msgstr "[H] Отчет о событиях аудита"
+
+#: ../../userguide/gettingstarted.rst:97
+msgid ""
+"This is more of a power user feature. This option looks for recording "
+"gaps in events and recording issues in mp4 files."
+msgstr ""
+"Это больше функция для продвинутых пользователей. Эта опция ищет пропуски"
+" в записях событий и проблемы с записью в файлах mp4."
+
+#: ../../userguide/gettingstarted.rst:98
+msgid "[I] Current User"
+msgstr "[I] Текущий пользователь"
+
+#: ../../userguide/gettingstarted.rst:99
+msgid "This shows the currently logged in user."
+msgstr "Это показывает текущего пользователя, вошедшего в систему."
+
+#: ../../userguide/gettingstarted.rst:101
+msgid "[J] Run State"
+msgstr "[J] Состояние выполнения"
+
+#: ../../userguide/gettingstarted.rst:101
+msgid ""
+"ZoneMinder allows you to maintain 'Run States'. A Run State is "
+"essentially a snapshot that records the state of each Monitor and you can"
+" switch between states easily. For example, you might have a Run State "
+"defined that switches all monitors the 'None' Record mode while another "
+"state that sets some of the monitors to the 'On Motion' Record mode. Why "
+"would you want this? A great example is to disable recording when you are"
+" at home and enable when you are away, based on time of day or other "
+"triggers. You can switch states by selecting an appropriate state "
+"manually, or do it automatically via cron jobs, for example. An example "
+"of using a cron job to automatically switch is provided in the :ref:`FAQ "
+"<runstate_cron_example>`. If you click on the :guilabel:`RUNNING` link, "
+"ZoneMinder displays a popup that allows you to select or define "
+"additional Run States. ZoneMinder provides a few pre-defined Run States "
+"and you can also add your own Run States here."
+msgstr ""
+"Зонеминдер позволяет вам поддерживать \"Состояния работы\". Состояние "
+"работы - это по сути снимок, который записывает состояние каждого "
+"монитора, и вы можете легко переключаться между состояниями. Например, у "
+"вас может быть определено состояние работы, которое переключает все "
+"мониторы в режим записи \"Ничего\", в то время как другое состояние "
+"устанавливает некоторые из мониторов в режим записи \"При движении\". "
+"Почему бы вам этого хотелось? Великолепным примером является отключение "
+"записи, когда вы находитесь дома, и включение, когда вы отсутствуете, в "
+"зависимости от времени суток или других триггеров. Вы можете переключать "
+"состояния, выбирая соответствующее состояние вручную, или делать это "
+"автоматически с помощью задач cron, например. Примером использования "
+"задачи cron для автоматического переключения является пример, приведенный"
+" в :ref:`FAQ <runstate_cron_example>`. Если вы нажмете на ссылку "
+":guilabel:`ВЫПОЛНЯЕТСЯ`, ZoneMinder отобразит всплывающее окно, "
+"позволяющее выбрать или определить дополнительные состояния работы. "
+"ZoneMinder предоставляет несколько предварительно определенных состояний "
+"работы, и вы также можете добавить свои собственные состояния здесь."
+
+#: ../../userguide/gettingstarted.rst:-1
+msgid "Run States"
+msgstr "Состояния выполнения"
+
+#: ../../userguide/gettingstarted.rst:110
+msgid ""
+"ZoneMinder Run States window allows selection of pre-defined Run States "
+"or entry of new Run States. ZoneMinder comes with pre-defined Run States "
+"of default, Stop and Restart."
+msgstr ""
+"Окно \"Состояния работы ZoneMinder\" позволяет выбрать заранее "
+"определенные состояния работы или ввод новых состояний работы. В "
+"ZoneMinder предусмотрены предварительно определенные состояния работы по "
+"умолчанию, остановка и перезапуск."
+
+#: ../../userguide/gettingstarted.rst:112
+msgid "[K] System Info"
+msgstr "[K] Система Информации"
+
+#: ../../userguide/gettingstarted.rst:113
+msgid "This section shows information about the ZoneMinder server hardware."
+msgstr "Этот раздел показывает информацию о серверном оборудовании ZoneMinder."
+
+#: ../../userguide/gettingstarted.rst:114
+msgid "[L] Function"
+msgstr "[L] Функция"
+
+#: ../../userguide/gettingstarted.rst:115
+msgid ""
+"This shows how ZoneMinder deals with Monitor stream capture, analysis and"
+" recording. The current state of each Monitor capture, analysis and "
+"recording settings is summarized here."
+msgstr ""
+"Это показывает, как ZoneMinder обрабатывает потоковую запись монитора, "
+"анализ и запись. Состояние каждого текущего захвата монитора, анализа и "
+"записи здесь суммируется."
+
+#: ../../userguide/gettingstarted.rst:116
+msgid "[M] Source"
+msgstr "[M] Источник"
+
+#: ../../userguide/gettingstarted.rst:117
+msgid ""
+"This is the Source column that tells you the type of the camera - if its "
+"an IP camera, a USB camera or more. In this example, they are all IP "
+"cameras. Green means the monitor is running. Red means there is something"
+" wrong with that camera."
+msgstr ""
+"Это столбец \"Источник\", который сообщает вам о типе камеры - если это "
+"IP-камера, USB-камера или что-то еще. В этом примере они все IP-камеры. "
+"Зеленый цвет означает, что монитор работает. Красный цвет означает, что с"
+" этой камерой что-то не так."
+
+#: ../../userguide/gettingstarted.rst:118
+msgid "[N] Events"
+msgstr "[N] События"
+
+#: ../../userguide/gettingstarted.rst:119
+msgid ""
+"This is the core of ZoneMinder - recording events. It gives you a count "
+"of how many events were recorded over the hour, day, week, month."
+msgstr ""
+"Это ядро ZoneMinder - запись событий. Он дает вам подсчет того, сколько "
+"событий было записано за час, день, неделю, месяц."
+
+#: ../../userguide/gettingstarted.rst:120
+msgid "[O] Zones"
+msgstr "[O] Зоны"
+
+#: ../../userguide/gettingstarted.rst:121
+msgid ""
+"This indicates number of Zones defined. Click in this link to define "
+"Zones for your monitor. Zones are areas within the camera that you mark "
+"as 'hotspots' for motion detection. Simply put, when you first configure "
+"your Monitors (cameras), by default ZoneMinder uses the entire field of "
+"view of the camera to detect motion. You may not want this. You may want "
+"to create Zones specifically for detecting motion and ignore others. For "
+"example, lets consider a room with a fan that spins. You surely don't "
+"want to consider the fan moving continuously a reason for triggering a "
+"record? Probably not - in that case, you'd leave the fan out while making"
+" your zones. Refer to :doc:`definezone`."
+msgstr ""
+"Это указывает количество зон, определенных. Нажмите на эту ссылку, чтобы "
+"определить зоны для вашего монитора. Зоны - это области в камере, которые"
+" вы отмечаете как \"горячие точки\" для обнаружения движения. Просто "
+"говоря, когда вы впервые настраиваете свои мониторы (камеры), по "
+"умолчанию ZoneMinder использует весь обзор камеры для обнаружения "
+"движения. Возможно, вы не хотите этого. Возможно, вы хотите создать зоны "
+"специально для обнаружения движения и игнорировать другие. Например, "
+"давайте рассмотрим комнату с вентилятором, который вращается. Конечно, вы"
+" не хотите, чтобы постоянное вращение вентилятора было причиной запуска "
+"записи? Вероятно, нет - в этом случае вы оставите вентилятор вне зоны "
+"определения. Обратитесь к :doc:`definezone`."
+
+#: ../../userguide/gettingstarted.rst:123
+msgid "[P] Console Filter"
+msgstr "[P] Консольный фильтр"
+
+#: ../../userguide/gettingstarted.rst:123
+msgid ""
+"This is a visual filter which lets you filter the console display based "
+"on text you enter. While this may not be particularly useful for small "
+"systems, ZoneMinder is also used in larger installations with well over "
+"200+ cameras and this visual filter helps reduce the monitors you are "
+"viewing at one time."
+msgstr ""
+"Это визуальный фильтр, который позволяет фильтровать отображение консоли "
+"на основе текста, который вы вводите. Хотя это может быть не особенно "
+"полезно для небольших систем, ZoneMinder также используется в крупных "
+"установках с более чем 200+ камерами, и этот визуальный фильтр помогает "
+"уменьшить количество мониторов, которые вы просматриваете одновременно."
+
+#: ../../userguide/gettingstarted.rst:126
+msgid "Adding Monitors"
+msgstr "Добавление мониторов"
+
+#: ../../userguide/gettingstarted.rst:128
+msgid ""
+"Now that we have a basic understanding of the Console web interface, lets"
+" go about adding a new Monitor. In ZoneMinder the source of a video "
+"stream is called a Monitor and this can come from many types of sources, "
+"most commonly from an IP camera."
+msgstr ""
+"Теперь, когда у нас есть базовое понимание веб-интерфейса консоли, "
+"давайте перейдем к добавлению нового Монитора. В ZoneMinder источник "
+"видеопотока называется Монитором, и он может поступать из многих типов "
+"источников, чаще всего из IP-камеры."
+
+#: ../../userguide/gettingstarted.rst:132
+msgid ""
+"This is meant to be a simple example. For a more detailed explanation of "
+"other options available when creating a monitor, please see "
+":doc:`/userguide/definemonitor`"
+msgstr ""
+"Это должно быть простым примером. Для более подробного объяснения других "
+"опций, доступных при создании монитора, см. "
+":doc:`/userguide/definemonitor`"
+
+#: ../../userguide/gettingstarted.rst:134
+msgid ""
+"Prior to adding Monitors in ZoneMinder you will need the following "
+"information at minimum: URL to access the video stream, authentication "
+"user/password, IP address, video resolution in pixels, frames per second "
+"(FPS) and the video stream protocol."
+msgstr ""
+"Перед добавлением мониторов в ZoneMinder вам потребуется следующая "
+"информация как минимум: URL для доступа к потоку видео, учетные данные "
+"для аутентификации пользователя/пароль, IP-адрес, разрешение видео в "
+"пикселях, количество кадров в секунду (FPS) и протокол потокового видео."
+
+#: ../../userguide/gettingstarted.rst:136
+msgid ""
+"The generic camera we are using as an example here has the following "
+"characteristics: URL of "
+"``rtsp://username:password@ipaddress:port/videoMain``, resolution of "
+"1280x960 pixels, 5 frames per second (FPS), RTSP protocol using TCP and "
+"an h.264 encoded stream. The specific information for your cameras will "
+"be different, of course."
+msgstr ""
+"Камера, которую мы используем в качестве примера здесь, обладает "
+"следующими характеристиками: URL \"rtsp://имя "
+"пользователя:пароль@ip-адрес:порт/видеоMain\", разрешение 1280x960 "
+"пикселей, 5 кадров в секунду (FPS), протокол RTSP, использующий TCP, и "
+"поток, закодированный в формате h.264. Конечно, информация для ваших "
+"камер будет отличаться."
+
+#: ../../userguide/gettingstarted.rst:138
+msgid ""
+"Determining camera characteristics is one of the challenging aspects of "
+"ZoneMinder configuration. There are several ways to find camera "
+"information. The primary way would be the camera user manual or "
+"manufacturer product support website. The ZoneMinder community also has a"
+" frequently updated list `here "
+"<https://wiki.zoneminder.com/index.php/Hardware_Compatibility_List>`__ "
+"that lists information about many cameras. If you don't find your camera "
+"there and can't seem to find it elsewhere, feel free to register and ask "
+"in the `user forums <https://forums.zoneminder.com/>`__."
+msgstr ""
+"Определение характеристик камеры является одной из сложных задач "
+"конфигурации ZoneMinder. Существует несколько способов найти информацию о"
+" камере. Основным способом будет руководство пользователя камеры или "
+"веб-сайт поддержки продукта производителя. Сообщество ZoneMinder также "
+"имеет часто обновляемый список `здесь "
+"<https://wiki.zoneminder.com/index.php/Hardware_Compatibility_List>`__ , "
+"который содержит информацию о многих камерах. Если вы не найдете свою "
+"камеру там и не сможете найти ее где-либо еще, не стесняйтесь "
+"зарегистрироваться и задать вопрос в `форумах пользователей "
+"<https://forums.zoneminder.com/>`__."
+
+#: ../../userguide/gettingstarted.rst:140
+msgid "Click on the :guilabel:`+ADD` button in Console window as shown below:"
+msgstr "Нажмите на кнопку :guilabel:`+ADD` в окне консоли, как показано ниже:"
+
+#: ../../userguide/gettingstarted.rst:144
+msgid "This brings up an empty Monitor entry window starting on the General tab:"
+msgstr ""
+"Это вызывает пустое окно элемента \"Монитор\", начинающееся на вкладке "
+"\"Общие\":"
+
+#: ../../userguide/gettingstarted.rst:148
+msgid "Configuring Monitor - General Tab"
+msgstr "Настройка Монитора - Общие Таблицы"
+
+#: ../../userguide/gettingstarted.rst:150
+msgid ""
+"**Name**: Anything can be entered here but a description of location or "
+"area is generally useful. This camera is located in a garage so let's "
+"call this 'Garage'."
+msgstr ""
+"**Имя**: Здесь можно ввести все что угодно, но описание местоположения "
+"или области обычно полезно. Эта камера расположена в гараже, поэтому "
+"давайте назовем это 'Гараж'."
+
+#: ../../userguide/gettingstarted.rst:151
+msgid ""
+"**Source Type:** FFmpeg is the recommended source type for most modern IP"
+" cameras and also the default value in ZoneMinder. For this example, "
+"FFmpeg is the appropriate choice. There are many choices for Source Type "
+"in ZoneMinder. For a detailed description of them please see "
+":doc:`definemonitor`."
+msgstr ""
+"**Source Type:** FFmpeg рекомендуется для большинства современных "
+"IP-камер и является по умолчанию в ZoneMinder. Для этого примера FFmpeg "
+"является подходящим выбором. Существует множество вариантов выбора типа "
+"источника в ZoneMinder. Подробное описание их можно найти в "
+":doc:`definemonitor`."
+
+#: ../../userguide/gettingstarted.rst:152
+msgid ""
+"We are done with the General tab. Move to the next tab by clicking on "
+":guilabel:`Source`."
+msgstr ""
+"Мы закончили с вкладкой \"Общие\". Перейдите к следующей вкладке, щелкнув"
+" по :guilabel:`Источник`."
+
+#: ../../userguide/gettingstarted.rst:156
+msgid "Configuring Monitor - Source Tab"
+msgstr "Настройка Монитора - Таблица Источника"
+
+#: ../../userguide/gettingstarted.rst:158
+msgid ""
+"**Source Path**: Enter the URL for the camera stream you identified "
+"earlier. Note that if your URL contains camera authentication these may "
+"be automatically populated into the Username and Password fields."
+msgstr ""
+"**Путь к источнику**: Введите URL для потокового видео камеры, который вы"
+" определили ранее. Обратите внимание, что если ваш URL содержит "
+"аутентификацию камеры, эти данные могут автоматически заполняться в полях"
+" Имя пользователя и Пароль."
+
+#: ../../userguide/gettingstarted.rst:159
+msgid ""
+"**Capture Resolution:** Enter the resolution of the camera stream you are"
+" using. This example uses 1280x960 pixel resolution. The pulldown menu "
+"for this contains many commonly used camera resolutions or you can enter "
+"the horizontal and vertical resolution manually."
+msgstr ""
+"**Разрешение захвата:** Введите разрешение потока камеры, который вы "
+"используете. Этот пример использует разрешение 1280x960 пикселей. Меню со"
+" списком содержит многие распространенные разрешения камер или вы можете "
+"ввести горизонтальное и вертикальное разрешение вручную."
+
+#: ../../userguide/gettingstarted.rst:160
+msgid "Other options can be left as the default settings."
+msgstr "Другие варианты можно оставить в качестве стандартных настроек."
+
+#: ../../userguide/gettingstarted.rst:161
+msgid ""
+"We are done with the Source tab. Move to the next tab by clicking on "
+":guilabel:`Recording` tab link."
+msgstr ""
+"Мы закончили с вкладкой \"Источник\". Перейдите к следующей вкладке, "
+"щелкнув по ссылке на вкладку \"Запись\":"
+
+#: ../../userguide/gettingstarted.rst:165
+msgid "Configuring Monitor - Recording Tab"
+msgstr "Настройка Монитора - Записьная Таблица"
+
+#: ../../userguide/gettingstarted.rst:167
+msgid ""
+"**Recording:** For this example we want to only record events when motion"
+" is detected. Select :guilabel:`On Motion / Trigger / etc` from the "
+"dropdown menu."
+msgstr ""
+"**Запись:** Для этого примера мы хотим записывать только события, когда "
+"обнаруживается движение. Выберите :guilabel:`On Motion / Trigger / etc` "
+"из выпадающего меню."
+
+#: ../../userguide/gettingstarted.rst:168
+msgid "**Storage Area:** Select :guilabel:`Default`."
+msgstr "**Секция хранения:** Выберите :guilabel:`По умолчанию`."
+
+#: ../../userguide/gettingstarted.rst:169
+msgid ""
+"This completes a very simplified Monitor setup. Click on "
+":guilabel:`Save`. As one can see there are a substantial number of "
+"configuration options available. Some additional configuration parameters"
+" beyond this simple Getting Started may be needed for your specific "
+"camera and hardware setup. Many of these options are discussed in detail "
+"later in the Documentation."
+msgstr ""
+"Это завершает очень упрощенную настройку монитора. Нажмите на "
+":guilabel:`Сохранить`. Как можно видеть, доступно значительное количество"
+" настроек конфигурации. Некоторые дополнительные параметры конфигурации, "
+"выходящие за рамки этого простого начала, могут потребоваться для вашей "
+"конкретной камеры и аппаратного обеспечения. Многие из этих параметров "
+"обсуждаются более подробно позже в документации."
+
+#: ../../userguide/gettingstarted.rst:170
+msgid ""
+"You now have a configured monitor as seen below in the Console. To see if"
+" everything works, click on the :guilabel:`Garage` monitor you just added"
+" and you should be able to see the live feed. If you don't, inspect your "
+"ZoneMinder logs to debug."
+msgstr ""
+"Теперь у вас есть настроенный монитор, как показано ниже в консоли. Чтобы"
+" увидеть, все ли работает, щелкните по монитору :guilabel:`Гараж`, "
+"который вы только что добавили, и вы должны увидеть прямую трансляцию. "
+"Если нет, проверьте журналы ZoneMinder для отладки."
+
+#: ../../userguide/gettingstarted.rst:174
+msgid "Console with Configured Monitor"
+msgstr "Консоль с настроенным монитором"
+
+#: ../../userguide/gettingstarted.rst:177
+msgid "Adding Zones"
+msgstr "Добавление зон"
+
+#: ../../userguide/gettingstarted.rst:179
+msgid ""
+"After adding a Monitor the next step is to define Zones which will be "
+"used for image analysis. By default each added Monitor has one zone "
+"defined which covers the full area captured by the camera. In most cases "
+"this is not very useful, especially if you intend to capture specific "
+"events such as a door opening or an object entering a specific area. "
+"Let's define a new Zone appropriate for this Monitor. This new Zone will "
+"help to reduce the number of events captured and space required on your "
+"storage system."
+msgstr ""
+"После добавления Монитора следующим шагом является определение Зон, "
+"которые будут использоваться для анализа изображений. По умолчанию каждый"
+" добавленный Монитор имеет одну зону, которая покрывает всю область, "
+"захваченную камерой. В большинстве случаев это не очень полезно, особенно"
+" если вы хотите захватить конкретные события, такие как открытие двери "
+"или вход объекта в определенную область. Давайте определим новую Зону, "
+"подходящую для этого Монитора. Эта новая Зона поможет уменьшить "
+"количество событий, захваченных и пространство, необходимое на вашей "
+"системе хранения."
+
+#: ../../userguide/gettingstarted.rst:181
+msgid ""
+"Referring to the Console image above, click on the :guilabel:`1` on the "
+"right side of the Garage Monitor row. This brings up the Zones window for"
+" the Garage Monitor shown below."
+msgstr ""
+"Обращаясь к изображению консоли выше, щелкните по метке :guilabel:`1` "
+"справа от строки Garage Monitor. Это открывает окно Зон для Garage "
+"Monitor, показанное ниже."
+
+#: ../../userguide/gettingstarted.rst:185
+msgid "Configuring Zones - Zone List"
+msgstr "Настройка зон - список зон"
+
+#: ../../userguide/gettingstarted.rst:187
+msgid "Click on :guilabel:`+ADD NEW ZONE` to define a new Zone for this Monitor."
+msgstr ""
+"Нажмите на :guilabel:`+ADD NEW ZONE`, чтобы определить новую зону для "
+"этого монитора."
+
+#: ../../userguide/gettingstarted.rst:191
+msgid "Configuring Zones - Defining Zone Analysis and Zone Area"
+msgstr "Настройка зон - Определение анализа зоны и зоны области"
+
+#: ../../userguide/gettingstarted.rst:193
+msgid ""
+"**Name:** Enter a descriptive name for this specific Zone. In this "
+"example we want to limit the analysis to the driveway so let's use that "
+"as its name. Having well defined Zone names can be helpful when filtering"
+" events or reviewing logfiles."
+msgstr ""
+"**Имя:** Введите описательное имя для этой конкретной Зоны. В этом "
+"примере мы хотим ограничить анализ дорожкой, поэтому давайте используем "
+"это как ее имя. Хорошо определенные имена зон могут быть полезны при "
+"фильтрации событий или просмотре лог-файлов."
+
+#: ../../userguide/gettingstarted.rst:194
+msgid ""
+"**Preset:** For new users of ZoneMinder it is best to start with the "
+"available Presets and make changes from there. Zone definition and proper"
+" setting of the available parameters to optimize each unique camera "
+"stream takes some time to learn. From the Preset pulldown menu, select "
+":guilabel:`Best, High Sensitivity` for this Zone example."
+msgstr ""
+"**Пресет:** Для новых пользователей ZoneMinder лучше всего начать с "
+"доступных пресетов и внести изменения оттуда. Определение зоны и "
+"правильная настройка доступных параметров для оптимизации каждого "
+"уникального потокового видео требует некоторого времени для изучения. Из "
+"выпадающего меню \"Пресет\" выберите: `Лучший, Высокая чувствительность` "
+"для этого примера зоны."
+
+#: ../../userguide/gettingstarted.rst:195
+msgid ""
+"**Points:** You can either drag the corner vertex points as required or "
+"enter the X and Y coordinates directly in the table. Additional points "
+"can be added by clicking the :guilabel:`+` on any existing point."
+msgstr ""
+"**Пояснения:** Вы можете либо перемещать угловые вершины точек по мере "
+"необходимости, либо вводить координаты X и Y непосредственно в таблицу. "
+"Дополнительные точки можно добавить, щелкнув на любую существующую точку "
+"на кнопке :guilabel:`+`."
+
+#: ../../userguide/gettingstarted.rst:196
+msgid "Click :guilabel:`Save` to complete the definition for the Driveway Zone."
+msgstr ""
+"Нажмите :guilabel:`Сохранить`, чтобы завершить определение зоны "
+"подъездной дороги."
+
+#: ../../userguide/gettingstarted.rst:200
+msgid "Configuring Zones - Deleting the Default All Zone"
+msgstr "Настройка зон - удаление основной зоны по умолчанию"
+
+#: ../../userguide/gettingstarted.rst:202
+msgid ""
+"Delete the initial default 'All' Zone by selecting the :guilabel:`Mark` "
+"checkbox in the 'All' Zone row. Click :guilabel:`Delete` to remove the "
+"Zone."
+msgstr ""
+"Удалите начальную зону по умолчанию \"Все\" путем установки флажка "
+":guilabel:`Mark` в строке \"Все\" зоны. Нажмите :guilabel:`Delete`, чтобы"
+" удалить зону."
+
+#: ../../userguide/gettingstarted.rst:203
+msgid ""
+"Congratulations! You have now defined a Monitor and appropriate Zone for "
+"a typical use case."
+msgstr ""
+"Поздравляю! Теперь вы определили Монитор и соответствующую Зону для "
+"типичного случая использования."
+
+#: ../../userguide/gettingstarted.rst:207
+msgid "A Fully Configured Zone"
+msgstr "Полностью настроенная зона"
+
+#: ../../userguide/gettingstarted.rst:210
+msgid "Selecting Themes"
+msgstr "Выбор тем"
+
+#: ../../userguide/gettingstarted.rst:212
+msgid ""
+"When you first install ZoneMinder, the web interface uses what is called "
+"the Base theme. It is worthwhile to note that ZoneMinder has Base, "
+"Classic and Dark themes available. These themes are controlled by the "
+"Skin and CSS settings found in the Options menu."
+msgstr ""
+"Когда вы впервые устанавливаете ZoneMinder, веб-интерфейс использует так "
+"называемую тему База. Стоит отметить, что ZoneMinder имеет темы База, "
+"Классическая и Темная. Эти темы контролируются настройками Шкурки и CSS, "
+"которые находятся в меню Настройки."
+
+#: ../../userguide/gettingstarted.rst:214
+msgid ""
+"Click on the :guilabel:`Options` link on the top of the web interface "
+"Console."
+msgstr ""
+"Нажмите на ссылку :guilabel:`Options` в верхней части веб-интерфейса "
+"Консоль."
+
+#: ../../userguide/gettingstarted.rst:215
+msgid ""
+"This will bring you to the Options window as shown below. Click on the "
+":guilabel:`System` tab to access the available CSS themes. Changes "
+"applied here will remain after you end the session. Note that the theme "
+"for the current session will not change, see the next steps to change the"
+" theme immediately for the current session."
+msgstr ""
+"Это приведет вас к окну \"Параметры\", как показано ниже. Нажмите на "
+"вкладку :guilabel:`Система`, чтобы получить доступ к доступным темам CSS."
+" Изменения, внесенные здесь, останутся после окончания сеанса. Обратите "
+"внимание, что тема для текущей сессии не изменится, см. следующие шаги "
+"для изменения темы немедленно для текущей сессии."
+
+#: ../../userguide/gettingstarted.rst:224
+msgid ""
+"Click :guilabel:`Save` at the bottom if you decide to change the default "
+"theme."
+msgstr ""
+"Нажмите :guilabel:`Сохранить` в нижней части, если вы решите изменить "
+"тему по умолчанию."
+
+#: ../../userguide/gettingstarted.rst:226
+msgid ""
+"Now, switch to the :guilabel:`Display` tab. Changes applied here will "
+"only remain until you end the current session. This allows you to try out"
+" the different CSS themes available."
+msgstr ""
+"Теперь переключитесь на вкладку :guilabel:`Отображение`. Изменения, "
+"внесенные здесь, останутся в силе только до конца текущей сессии. Это "
+"позволяет вам опробовать различные доступные темы CSS."
+
+#: ../../userguide/gettingstarted.rst:235
+msgid ""
+"Click :guilabel:`Save` at the bottom if you decide to change the session "
+"theme."
+msgstr ""
+"Нажмите :guilabel:`Сохранить` в нижней части, если вы решите изменить "
+"тему сеанса."
+
+#: ../../userguide/gettingstarted.rst:239
+msgid "Example of Base Theme Console"
+msgstr "Пример темы базового консольного интерфейса"
+
+#: ../../userguide/gettingstarted.rst:243
+msgid "Example of Dark Theme Console"
+msgstr "Пример темной темы консоли"
+
+#: ../../userguide/gettingstarted.rst:247
+msgid "Example of Classic Theme Console"
+msgstr "Пример классической консольной темы"
+
+#: ../../userguide/gettingstarted.rst:250
+msgid "Conclusion"
+msgstr "Заключение"
+
+#: ../../userguide/gettingstarted.rst:252
+msgid ""
+"This was a quick Getting Started guide where you were introduced to the "
+"very basics of how to set your Timezone, setup Authentication, add a "
+"Monitor (camera), define a Zone and change the ZoneMinder display Theme. "
+"We've skipped many details to keep this concise. Please refer to "
+":doc:`options` for details about setting the various Options, "
+":doc:`definemonitor` for details about setting up Monitors and finally "
+":doc:`definezone` for details about setting up Zones."
+msgstr ""
+"Это был быстрый путеводитель по началу работы, где вы были представлены "
+"самым основам того, как установить свой часовой пояс, настроить "
+"аутентификацию, добавить монитор (камеру), определить зону и изменить "
+"тему ZoneMinder. Мы пропустили многие детали, чтобы сделать это кратким. "
+"Пожалуйста, обратитесь к :doc:`options` для получения подробной "
+"информации о настройке различных опций, :doc:`definemonitor` для "
+"получения подробной информации о настройке мониторов и наконец "
+":doc:`definezone` для получения подробной информации о настройке зон."
+

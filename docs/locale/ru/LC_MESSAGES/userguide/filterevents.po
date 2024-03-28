@@ -1,0 +1,1079 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../userguide/filterevents.rst:2
+msgid "Filtering Events"
+msgstr "Фильтрация событий"
+
+#: ../../userguide/filterevents.rst:4
+msgid ""
+"Filters allow you to define complex conditions with associated actions in"
+" ZoneMinder. Examples could include:"
+msgstr ""
+"Фильтры позволяют вам определять сложные условия с связанными действиями "
+"в ZoneMinder. Примеры могут включать:"
+
+#: ../../userguide/filterevents.rst:6
+msgid "Send an email each time a new event occurs for a specific monitor"
+msgstr ""
+"Отправляйте электронное письмо каждый раз, когда происходит новое событие"
+" для конкретного монитора"
+
+#: ../../userguide/filterevents.rst:7
+msgid "Delete events that are more than 10 days old"
+msgstr "Удалите события, которые старше 10 дней"
+
+#: ../../userguide/filterevents.rst:9
+msgid "And many more."
+msgstr "И многое другое."
+
+#: ../../userguide/filterevents.rst:11
+msgid "The filter window can be accessed by tapping on the top level filter menu"
+msgstr "Фильтр окна можно открыть, коснувшись верхнего уровня меню фильтра"
+
+#: ../../userguide/filterevents.rst:13
+msgid ""
+"You can use the filter window to create your own filters or to modify "
+"existing ones. You can even save your favourite filters to re-use at a "
+"future date. Filtering itself is fairly simple; you first choose how many"
+" expressions you'd like your filter to contain. Changing this value will "
+"cause the window to redraw with a corresponding row for each expression. "
+"You then select what you want to filter on and how the expressions relate"
+" by choosing whether they are 'and' or 'or' relationships. For filters "
+"comprised of many expressions you will also get the option to bracket "
+"parts of the filter to ensure you can express it as desired. Then if you "
+"like choose how you want your results sorted and whether you want to "
+"limit the amount of events displayed."
+msgstr ""
+"Вы можете использовать окно фильтра для создания собственных фильтров или"
+" для изменения существующих. Вы даже можете сохранить свои любимые "
+"фильтры для повторного использования в будущем. Фильтрация сама по себе "
+"довольно проста; сначала вы выбираете, сколько выражений вы хотите, чтобы"
+" ваш фильтр содержал. Изменение этого значения приведет к тому, что окно "
+"перерисуется с соответствующей строкой для каждого выражения. Затем вы "
+"выбираете, что хотите отфильтровать, и как связаны выражения, выбрав, "
+"являются ли они \"и\" или \"или\" отношениями. Для фильтров, состоящих из"
+" многих выражений, у вас также будет возможность заключить части фильтра "
+"в скобки, чтобы вы могли выразить его так, как вам нравится. Затем, если "
+"хотите, выберите, как вы хотите сортировать результаты, и хотите ли вы "
+"ограничить количество событий, отображаемых."
+
+#: ../../userguide/filterevents.rst:16
+msgid "Here is what the filter window looks like"
+msgstr "Вот как выглядит окно фильтра"
+
+#: ../../userguide/filterevents.rst:21
+#, python-format
+msgid ""
+"*A*: This is a dropdown list where you can select pre-defined filters. "
+"You will notice that ZoneMinder comes with a PurgeWhenFull filter that is"
+" configured to delete events if you reach 95% of disk space."
+msgstr ""
+"Это выпадающий список, в котором вы можете выбрать заранее определенные "
+"фильтры. Вы заметите, что ZoneMinder поставляется с фильтром "
+"PurgeWhenFull, который настроен на удаление событий, если вы достигнете "
+"95% дискового пространства."
+
+#: ../../userguide/filterevents.rst:22
+msgid ""
+"*B*: If you are creating a new filter, you can type in a name for your "
+"filter here"
+msgstr ""
+"*B*: Если вы создаете новый фильтр, вы можете ввести здесь имя для своего"
+" фильтра"
+
+#: ../../userguide/filterevents.rst:23
+msgid ""
+"*C*: This is where you specify conditions that need to match before the "
+"filter is executed. You use the \"+\" and \"-\" buttons to add/delete "
+"conditions"
+msgstr ""
+"*C*: Здесь вы указываете условия, которые должны соответствовать перед "
+"выполнением фильтра. Вы используете кнопки \"+\" и \"-\", чтобы "
+"добавить/удалить условия"
+
+#: ../../userguide/filterevents.rst:24
+msgid ""
+"*D*: This allows you to perform sorting and limiting operations on the "
+"output before you take an action"
+msgstr ""
+"*D*: Это позволяет вам выполнять операции сортировки и ограничения на "
+"выходных данных перед тем, как предпринять какие-либо действия"
+
+#: ../../userguide/filterevents.rst:25
+msgid ""
+"*E*: This is where you specify what needs to happen when the conditions "
+"match:"
+msgstr "*E*: Здесь вы указываете, что должно произойти, когда условия совпадают:"
+
+#: ../../userguide/filterevents.rst:27
+msgid ""
+"Archive all matches: sets the archive field to 1 in the Database for the "
+"matched events. Think of 'archiving' as grouping them under a special "
+"category - you can view archived events later and also make sure archived"
+" events don't get deleted, for example"
+msgstr ""
+"Заархивировать все матчи: установить поле архива в 1 в базе данных для "
+"событий, которые были заданы. Представьте себе \"архивирование\" как "
+"группировку их под специальной категорией - вы можете просматривать "
+"архивные события позже и также убедитесь, что архивные события не "
+"удаляются, например"
+
+#: ../../userguide/filterevents.rst:31
+msgid "Todo"
+msgstr "Все"
+
+#: ../../userguide/filterevents.rst:32
+msgid ""
+"For the \"create video\" filter, put in more details on how it works, any"
+" dependencies etc."
+msgstr ""
+"Для фильтра \"создание видео\" добавьте больше деталей о том, как он "
+"работает, любые зависимости и т.д."
+
+#: ../../userguide/filterevents.rst:34
+msgid ""
+"Update used disk space: calculates how much disk space is currently taken"
+" by the event and updates the db record."
+msgstr ""
+"Обновить используемое дисковое пространство: вычисляет, сколько дискового"
+" пространства в настоящее время используется событием, и обновляет запись"
+" в базе данных."
+
+#: ../../userguide/filterevents.rst:35
+msgid ""
+"Create video for all matches: creates a video file of all the events that"
+" match"
+msgstr ""
+"Создать видео для всех матчей: создать видеофайл со всеми событиями, "
+"которые соответствуют"
+
+#: ../../userguide/filterevents.rst:38
+msgid ""
+"Create video for all matches: ffmpeg will be used to create a video file "
+"(mp4) out of all the stored jpgs if using jpeg storage."
+msgstr ""
+"Создать видео для всех матчей: будет использоваться ffmpeg для создания "
+"видеофайла (mp4) из всех сохраненных jpg, если используется хранилище "
+"jpeg."
+
+#: ../../userguide/filterevents.rst:37
+msgid ""
+"Execute command on all matches: Allows you to execute any arbitrary "
+"command on the matched events. You can use replacement tokens as "
+"subsequent arguments to the command, the last argument will be the "
+"absolute path to the event, preceded by replacement arguments. eg: "
+"/usr/bin/script.sh %MN% will execute as /usr/bin/script.sh MonitorName "
+"/path/to/event. Please note that urls may contain characters like & that "
+"need quoting. So you may need to put quotes around them like "
+"/usr/bin/scrupt.sh \"%MN%\"."
+msgstr ""
+"Выполнить команду для всех совпадений: позволяет выполнить любую "
+"произвольную команду для совпавших событий. Вы можете использовать "
+"замещающие маркеры как последующие аргументы к команде, последний "
+"аргумент будет абсолютным путем к событию, предшествуемым замещающими "
+"аргументами. например: /usr/bin/script.sh %MN% будет выполнено как "
+"/usr/bin/script.sh MonitorName /path/to/event. Пожалуйста, обратите "
+"внимание, что URL могут содержать символы, такие как & , которые требуют "
+"экранирования. Поэтому вам может потребоваться заключить их в кавычки, "
+"например /usr/bin/scrupt.sh \"%MN%\"."
+
+#: ../../userguide/filterevents.rst:38
+msgid "Delete all matches: Deletes all the matched events."
+msgstr "Удалить все совпадения: удаляет все совпавшие события."
+
+#: ../../userguide/filterevents.rst:39
+msgid ""
+"Email details of all matches: Sends an email to the configured address "
+"with details about the event."
+msgstr ""
+"Укажите детали всех матчей: отправьте электронное письмо по указанному "
+"адресу с подробностями о мероприятии."
+
+#: ../../userguide/filterevents.rst:40
+msgid ""
+"Copy all matches: copies the event files to another location, specified "
+"in the Copy To dropdown.  The other location must be setup in the Storage"
+" Tab under options."
+msgstr ""
+"Скопировать все совпадения: копирует файлы событий в другое место, "
+"указанное в выпадающем списке \"Копировать в\". Другое место должно быть "
+"настроено в разделе \"Хранилище\" в настройках."
+
+#: ../../userguide/filterevents.rst:41
+msgid ""
+"Message details of all matches: Uses an email to SMS gateway to send an "
+"SMS message for each match."
+msgstr ""
+"Детали сообщений о всех матчах: Использует электронную почту для отправки"
+" SMS-сообщения для каждого матча."
+
+#: ../../userguide/filterevents.rst:42
+msgid ""
+"Move all matches: copies the event files to another location, specified "
+"in the Move To dropdown.  The other location must be setup in the Storage"
+" Tab under options. The files will be delete from the original location."
+msgstr ""
+"Переместить все совпадения: копирует файлы событий в другое место, "
+"указанное в раскрывающемся списке \"В другую\". Другое место должно быть "
+"настроено в разделе \"Хранилище\" под опциями. Файлы будут удалены из "
+"исходного места."
+
+#: ../../userguide/filterevents.rst:43
+msgid ""
+"Run filter in background:  When checked, ZoneMinder will make sure the "
+"filter is checked regularly. For example, if you want to be notified of "
+"new events by email, you should make sure this is checked. Filters that "
+"are configured to run in the background have a “*” next to it."
+msgstr ""
+"Запустить фильтр в фоновом режиме: Когда выбрано, Zoneminder будет "
+"регулярно проверять наличие фильтра. Например, если вы хотите получать "
+"уведомления о новых событиях по электронной почте, убедитесь, что это "
+"выбрано. Фильтры, которые настроены на работу в фоновом режиме, имеют "
+"звездочку рядом с ними."
+
+#: ../../userguide/filterevents.rst:44
+msgid ""
+"Run filter concurrently: Allows this filter to run in its own thread "
+"thereby letting other filters run in parallel."
+msgstr ""
+"Запустить фильтр параллельно: позволяет этому фильтру запускаться в своем"
+" собственном потоке, тем самым позволяя другим фильтрам запускаться "
+"параллельно."
+
+#: ../../userguide/filterevents.rst:46
+msgid ""
+"*F*: Use 'List Matches' to 'test' your matching conditions. This will "
+"just match and show you what filters match. Use 'Execute' to actually "
+"execute the action after matching your conditions. Use 'Save' to save the"
+" filter for future use and 'Reset' to clear your settings"
+msgstr ""
+"*F*: Используйте 'Найти совпадения', чтобы 'проверить' ваши условия "
+"совпадения. Это просто найдет и покажет вам, какие фильтры соответствуют "
+"условиям. Используйте 'Выполнить', чтобы фактически выполнить действие "
+"после совпадения ваших условий. Используйте 'Сохранить', чтобы сохранить "
+"фильтр для будущего использования и 'Сброс', чтобы очистить настройки"
+
+#: ../../userguide/filterevents.rst:48
+msgid "More details on filter conditions:"
+msgstr "Более подробная информация о фильтрах условий:"
+
+#: ../../userguide/filterevents.rst:50
+msgid ""
+"There are several different elements to an event that you can filter on, "
+"some of which require further explanation. These are as follows, * "
+"'Date/Time' which must evaluate to a date and a time together, * 'Date' "
+"and 'Time' which are variants which may only contain the relevant subsets"
+" of this, * 'Weekday' which as expected is a day of the week."
+msgstr ""
+"Есть несколько различных элементов для события, которые вы можете "
+"фильтровать, некоторые из которых требуют дальнейшего объяснения. Вот "
+"они: * 'Дата/Время', которое должно оцениваться как дата и время вместе, "
+"* 'Дата' и 'Время', которые являются вариантами, которые могут содержать "
+"только соответствующие подмножества этого, * 'День недели', который, как "
+"и ожидалось, является днем недели."
+
+#: ../../userguide/filterevents.rst:55
+msgid ""
+"All of the preceding elements take a very flexible free format of dates "
+"and time based on the PHP strtotime function "
+"(https://www.php.net/manual/en/function.strtotime.php). This allows "
+"values such as 'last Wednesday' etc to be entered. We recommend "
+"acquainting yourself with this function to see what the allowed formats "
+"are. However automated filters are run in perl and so are parsed by the "
+"Date::Manip package. Not all date formats are available in both so if you"
+" are saved your filter to do automatic deletions or other tasks you "
+"should make sure that the date and time format you use is compatible with"
+" both methods. The safest type of format to use is ‘-3 day’ or similar "
+"with easily parseable numbers and units are in English."
+msgstr ""
+"Все предыдущие элементы принимают очень гибкий свободный формат дат и "
+"времени, основанный на функции strtotime на PHP "
+"(https://www.php.net/manual/en/function.strtotime.php). Это позволяет "
+"вводить значения, такие как 'прошлая среда' и т. д. Мы рекомендуем "
+"ознакомиться с этой функцией, чтобы увидеть, какие допустимые форматы "
+"существуют. Однако автоматические фильтры выполняются на Perl, и поэтому "
+"они обрабатываются пакетом Date::Manip. Не все форматы даты доступны в "
+"обоих, поэтому, если вы сохраняете свой фильтр для выполнения "
+"автоматического удаления или других задач, убедитесь, что формат даты и "
+"времени, который вы используете, совместим с обоими методами. Безопаснее "
+"всего использовать формат типа '-3 дня' или аналогичный с легко читаемыми"
+" числами и единицами измерения на английском языке."
+
+#: ../../userguide/filterevents.rst:57
+msgid ""
+"The other things you can filter on are all fairly self explanatory, "
+"except perhaps for 'Archived' which you can use to include or exclude "
+"Archived events. In general you'll probably do most filtering on un-"
+"archived events. There are also two elements, Disk Blocks and Disk "
+"Percent which don’t directly relate to the events themselves but to the "
+"disk partition on which the events are stored. These allow you to specify"
+" an amount of disk usage either in blocks or in percentage as returned by"
+" the ‘df’ command. They relate to the amount of disk space used and not "
+"the amount left free. Once your filter is specified, clicking 'submit' "
+"will filter the events according to your specification. As the disk based"
+" elements are not event related directly if you create a filter and "
+"include the term ‘DiskPercent > 95’ then if your current disk usage is "
+"over that amount when you submit the filter then all events will be "
+"listed whereas if it is less then none at all will. As such the disk "
+"related terms will tend to be used mostly for automatic filters (see "
+"below). If you have created a filter you want to keep, you can name it "
+"and save it by clicking 'Save'."
+msgstr ""
+"Другие вещи, которые вы можете фильтровать, в основном понятны, за "
+"исключением, возможно, \"Архивированный\", который вы можете использовать"
+" для включения или исключения архивных событий. В общем, вы, вероятно, "
+"будете делать большинство фильтрации по неархивированным событиям. Также "
+"есть два элемента, Дисковые блоки и Дисковый процент, которые не прямо "
+"связаны с самими событиями, но с дисковым разделом, на котором хранятся "
+"события. Они позволяют указать количество дискового использования либо в "
+"блоках, либо в процентах, как возвращаемое командой \"df\". Они относятся"
+" к количеству дискового пространства, используемого, а не к количеству "
+"свободного места. После того, как вы установили фильтр, нажатие "
+"\"отправить\" отфильтрует события в соответствии с вашими требованиями. "
+"Поскольку дисковые элементы не являются напрямую связанными с событиями, "
+"если вы создадите фильтр и включите термин \"DiskPercent > 95\", то если "
+"текущее использование диска превышает это значение при отправке фильтра, "
+"все события будут отображаться, а если оно меньше, то ни одного не будет."
+" Таким образом, термины, связанные с диском, будут в основном "
+"использоваться для автоматических фильтров (см. ниже). Если вы создали "
+"фильтр, который хотите сохранить, вы можете назвать его и сохранить, "
+"щелкнув \"Сохранить\"."
+
+#: ../../userguide/filterevents.rst:59
+msgid ""
+"If you do this then the subsequent dialog will also allow you specify "
+"whether you want this filter automatically applied in order to delete "
+"events or upload events via ftp to another server and mail notifications "
+"of events to one or more email accounts. Emails and messages (essentially"
+" small emails intended for mobile phones or pagers) have a format defined"
+" in the Options screen, and may include a variety of tokens that can be "
+"substituted for various details of the event that caused them. This "
+"includes links to the event view or the filter as well as the option of "
+"attaching images or videos to the email itself. Be aware that tokens that"
+" represent links may require you to log in to access the actual page, and"
+" sometimes may function differently when viewed outside of the general "
+"ZoneMinder context. The tokens you can use are as follows."
+msgstr ""
+"Если вы сделаете это, то последующий диалог также позволит вам указать, "
+"хотите ли вы, чтобы этот фильтр автоматически применялся для удаления "
+"событий или загрузки событий через ftp на другой сервер и отправки "
+"уведомлений о событиях на один или несколько адресов электронной почты. "
+"Электронные письма и сообщения (фактически небольшие электронные письма, "
+"предназначенные для мобильных телефонов или пейджеров) имеют формат, "
+"определенный на экране опций, и могут включать в себя различные токены, "
+"которые можно заменить различными деталями события, которое вызвало их. "
+"Это включает в себя ссылки на просмотр события или фильтра, а также "
+"возможность прикрепления изображений или видео к самому электронному "
+"письму. Обратите внимание, что токены, представляющие ссылки, могут "
+"потребовать от вас входа в систему для доступа к реальной странице, и "
+"иногда они могут работать по-разному, когда их просматривают вне общего "
+"контекста ZoneMinder. Токены, которые вы можете использовать, следующие."
+
+#: ../../userguide/filterevents.rst:61
+#, python-format
+msgid "%EI%       Id of the event"
+msgstr "%EI% - идентификатор события"
+
+#: ../../userguide/filterevents.rst:62
+#, python-format
+msgid "%EID%      Id of the event"
+msgstr "%EID% - идентификатор события"
+
+#: ../../userguide/filterevents.rst:63
+#, python-format
+msgid "%EN%       Name of the event"
+msgstr "%RU%   Название мероприятия"
+
+#: ../../userguide/filterevents.rst:64
+#, python-format
+msgid "%EC%       Cause of the event"
+msgstr "%EC% Причина события"
+
+#: ../../userguide/filterevents.rst:65
+#, python-format
+msgid "%ED%       Event description"
+msgstr "%ED% - описание события"
+
+#: ../../userguide/filterevents.rst:66
+#, python-format
+msgid "%ET%       Time of the event"
+msgstr "%ET%   Время события"
+
+#: ../../userguide/filterevents.rst:67
+#, python-format
+msgid "%EL%       Length of the event"
+msgstr "%EL%   Длина события"
+
+#: ../../userguide/filterevents.rst:68
+#, python-format
+msgid "%EF%       Number of frames in the event"
+msgstr "%EF% Количество кадров в событии"
+
+#: ../../userguide/filterevents.rst:69
+#, python-format
+msgid "%EFA%      Number of alarm frames in the event"
+msgstr "%EFA% - Количество тревожных кадров в событии"
+
+#: ../../userguide/filterevents.rst:70
+#, python-format
+msgid "%EST%      Total score of the event"
+msgstr "%EST%    Итоговый счет мероприятия"
+
+#: ../../userguide/filterevents.rst:71
+#, python-format
+msgid "%ESA%      Average score of the event"
+msgstr "%ESA%    Средний балл мероприятия"
+
+#: ../../userguide/filterevents.rst:72
+#, python-format
+msgid "%ESM%      Maximum score of the event"
+msgstr "%ESM%      Максимальный балл события"
+
+#: ../../userguide/filterevents.rst:73
+#, python-format
+msgid "%EP%       Path to the event"
+msgstr "%EP% Путь к событию"
+
+#: ../../userguide/filterevents.rst:74
+#, python-format
+msgid "%EPS%      Path to the event stream"
+msgstr "%EPS% - Путь к потоку событий"
+
+#: ../../userguide/filterevents.rst:75
+#, python-format
+msgid "%EPF1%     Path to the frame view for the first alarmed event image"
+msgstr "%EPF1% - Путь к видовому окну для первого изображения события тревоги"
+
+#: ../../userguide/filterevents.rst:76
+#, python-format
+msgid ""
+"%EPFM%     Path to the frame view for the (first) event image with the "
+"highest score"
+msgstr ""
+"%EPFM% - Путь к видовому окну для изображения первого события с наивысшим"
+" рейтингом"
+
+#: ../../userguide/filterevents.rst:77
+#, python-format
+msgid "%EPFMOD%   Path to image containing object detection, in frame view"
+msgstr ""
+"%EPFMOD% - Путь к изображению, содержащему объект обнаружения, в режиме "
+"просмотра кадра"
+
+#: ../../userguide/filterevents.rst:78
+#, python-format
+msgid ""
+"%EPFMODG%  Path to image containing object detection animated gif "
+"version, in frame view"
+msgstr ""
+"%EPFMODG% - Путь к изображению, содержащему анимированную версию объекта "
+"обнаружения, в режиме просмотра кадров"
+
+#: ../../userguide/filterevents.rst:79
+#, python-format
+msgid "%EPI%      Path to the event images"
+msgstr "%EPI% - Путь к изображениям событий"
+
+#: ../../userguide/filterevents.rst:80
+#, python-format
+msgid ""
+"%EPI1%     Path to the first alarmed event image, suitable for use in img"
+" tags"
+msgstr ""
+"%EPI1% - Путь к первому изображению события тревоги, подходящий для "
+"использования в тегах img"
+
+#: ../../userguide/filterevents.rst:81
+#, python-format
+msgid ""
+"%EPIM%     Path to the (first) event image with the highest score, "
+"suitable for use in img tags"
+msgstr ""
+"%EPIM% - Путь к (первому) изображению события с наивысшим рейтингом, "
+"подходящему для использования в тегах img"
+
+#: ../../userguide/filterevents.rst:82
+#, python-format
+msgid ""
+"%EPIMOD%   Path to image containing object detection, suitable for use in"
+" img tags"
+msgstr ""
+"%EPIMOD%   Путь к изображению, содержащему объект обнаружения, подходящий"
+" для использования в тегах img"
+
+#: ../../userguide/filterevents.rst:83
+#, python-format
+msgid ""
+"%EPIMODG%  Path to image containing object detection animated gif "
+"version, suitable for use in img tags"
+msgstr ""
+"%EPIMODG% - Путь к изображению, содержащему анимированную версию объекта "
+"обнаружения, подходящую для использования в тегах img"
+
+#: ../../userguide/filterevents.rst:84
+#, python-format
+msgid ""
+"%EPISNAP%  Path to the snapshot image, which should be the frame with the"
+" most motion"
+msgstr ""
+"%EPISNAP% - путь к изображению снимка, который должен быть кадром с "
+"наибольшим движением"
+
+#: ../../userguide/filterevents.rst:85
+#, python-format
+msgid "%EI1%      Attach first alarmed event image"
+msgstr "%EI1%      Прикрепите первое изображение события тревоги"
+
+#: ../../userguide/filterevents.rst:86
+#, python-format
+msgid "%EI1A%     Attach first alarmed event analysis image"
+msgstr "%EI1A%    Прикрепите первый анализ изображения события тревоги"
+
+#: ../../userguide/filterevents.rst:87
+#, python-format
+msgid "%EIM%      Attach (first) event image with the highest score"
+msgstr ""
+"%EIM%      Прикрепите (первый) событие изображение с самым высоким "
+"рейтингом"
+
+#: ../../userguide/filterevents.rst:88
+#, python-format
+msgid "%EIMA%     Attach (first) event analysis image with the highest score"
+msgstr ""
+"%EIMA%    Прикрепите (первый) анализ события изображения с наивысшим "
+"рейтингом"
+
+#: ../../userguide/filterevents.rst:89
+#, python-format
+msgid "%EIMOD%    Attach image containing object detection"
+msgstr "%EIMOD%    Прикрепите изображение, содержащее обнаружение объекта"
+
+#: ../../userguide/filterevents.rst:90
+#, python-format
+msgid "%EIMODG%   Attach image containing object detection animated gif version"
+msgstr ""
+"%EIMODG%   Прикрепите изображение, содержащее анимированную версию "
+"объекта обнаружения"
+
+#: ../../userguide/filterevents.rst:91
+#, python-format
+msgid ""
+"%EISNAP%   Attach the snapshot image, which should be the frame with the "
+"most motion"
+msgstr ""
+"%EISNAP%   Прикрепите изображение снимка экрана, которое должно быть "
+"кадром с наибольшим движением"
+
+#: ../../userguide/filterevents.rst:92
+#, python-format
+msgid "%EV%       Attach event mpeg video"
+msgstr "%EV% - Прикрепите видео в формате MPEG"
+
+#: ../../userguide/filterevents.rst:93
+#, python-format
+msgid "%EVM%      Attach event mpeg video in phone format"
+msgstr "%EVM%      Прикрепите видео в формате mpeg-видео к телефону"
+
+#: ../../userguide/filterevents.rst:94
+msgid "%MID%      Monitor Id"
+msgstr "%MID%      Монитор Id"
+
+#: ../../userguide/filterevents.rst:95
+msgid "%MN%       Name of the monitor"
+msgstr "%MN%   Название монитора"
+
+#: ../../userguide/filterevents.rst:96
+msgid "%MET%      Total number of events for the monitor"
+msgstr "%MET%      Общее количество событий для монитора"
+
+#: ../../userguide/filterevents.rst:97
+msgid "%MEH%      Number of events for the monitor in the last hour"
+msgstr "%MEH% - Количество событий для монитора за последнюю час"
+
+#: ../../userguide/filterevents.rst:98
+msgid "%MED%      Number of events for the monitor in the last day"
+msgstr "%MED%      Количество событий для монитора за последний день"
+
+#: ../../userguide/filterevents.rst:99
+msgid "%MEW%      Number of events for the monitor in the last week"
+msgstr "%MEW% - Количество событий для монитора за последнюю неделю"
+
+#: ../../userguide/filterevents.rst:100
+msgid "%MEM%      Number of events for the monitor in the last month"
+msgstr "%MEM%      Количество событий для монитора за последний месяц"
+
+#: ../../userguide/filterevents.rst:101
+msgid "%MEA%      Number of archived events for the monitor"
+msgstr "%MEA%      Количество архивных событий для монитора"
+
+#: ../../userguide/filterevents.rst:102
+msgid "%MP%       Path to the monitor window"
+msgstr "%MP% - Путь к окну монитора"
+
+#: ../../userguide/filterevents.rst:103
+msgid "%MPS%      Path to the monitor stream"
+msgstr "%MPS% - Путь к потоку монитора"
+
+#: ../../userguide/filterevents.rst:104
+msgid "%MPI%      Path to the monitor recent image"
+msgstr "%MPI% - Путь к изображению недавнего мониторинга"
+
+#: ../../userguide/filterevents.rst:105
+#, python-format
+msgid "%FID%      Id of the current filter that matched"
+msgstr "%FID% - идентификатор текущего фильтра, который соответствует"
+
+#: ../../userguide/filterevents.rst:106
+#, python-format
+msgid "%FN%       Name of the current filter that matched"
+msgstr "%FN%   Имя текущего фильтра, который совпал"
+
+#: ../../userguide/filterevents.rst:107
+#, python-format
+msgid "%FP%       Path to the current filter that matched"
+msgstr "%FP% - путь к текущему фильтру, который совпал"
+
+#: ../../userguide/filterevents.rst:108
+msgid "%ZP%       Path to your ZoneMinder console"
+msgstr "%ZP% - Путь к вашей консоли ZoneMinder"
+
+#: ../../userguide/filterevents.rst:110
+msgid ""
+"Finally you can also specify a script which is run on each matched event."
+" This script should be readable and executable by your web server user. "
+"It will get run once per event and the relative path to the directory "
+"containing the event in question. Normally this will be of the form "
+"<MonitorName>/<EventId> so from this path you can derive both the monitor"
+" name and event id and perform any action you wish. Note that arbitrary "
+"commands are not allowed to be specified in the filter, for security the "
+"only thing it may contain is the full path to an executable. What that "
+"contains is entirely up to you however."
+msgstr ""
+"Наконец вы также можете указать скрипт, который выполняется при каждом "
+"совпадении события. Этот скрипт должен быть читаемым и исполняемым "
+"пользователем вашего веб-сервера. Он будет выполняться один раз на каждое"
+" событие, и относительный путь к директории, содержащей событие, о "
+"котором идет речь. Обычно это будет иметь форму \"<Имя "
+"монитора>/<Идентификатор события>\", поэтому из этого пути вы можете "
+"извлечь как имя монитора, так и идентификатор события и выполнить любое "
+"действие, которое вы пожелаете. Обратите внимание, что произвольные "
+"команды не разрешены в фильтре, для безопасности в нем может находиться "
+"только полный путь к исполняемому файлу. Что именно находится внутри, "
+"полностью зависит от вас."
+
+#: ../../userguide/filterevents.rst:112
+msgid ""
+"Filtering is a powerful mechanism you can use to eliminate events that "
+"fit a certain pattern however in many cases modifying the zone settings "
+"will better address this. Where it really comes into its own is generally"
+" in applying time filters, so for instance events that happen during "
+"weekdays or at certain times of the day are highlighted, uploaded or "
+"deleted. Additionally using disk related terms in your filters means you "
+"can automatically create filters that delete the oldest events when your "
+"disk gets full. Be warned however that if you use this strategy then you "
+"should limit the returned results to the amount of events you want "
+"deleted in each pass until the disk usage is at an acceptable level. If "
+"you do not do this then the first pass when the disk usage is high will "
+"match, and then delete, all events unless you have used other criteria "
+"inside of limits. ZoneMinder ships with a sample filter already "
+"installed, though disabled. The PurgeWhenFull filter can be used to "
+"delete the oldest events when your disk starts filling up. To use it you "
+"should select and load it in the filter interface, modify it to your "
+"requirements, and then save it making you sure you check the ‘Delete all "
+"matches’ option. This will then run in the background and ensure that "
+"your disk does not fill up with events."
+msgstr ""
+"Фильтрация - это мощный механизм, который вы можете использовать для "
+"устранения событий, соответствующих определенному шаблону. Однако в "
+"большинстве случаев изменение настроек зоны лучше всего подходит для "
+"решения этой проблемы. Там, где он действительно проявляет себя, это "
+"обычно при применении фильтров по времени, так что, например, события, "
+"происходящие в рабочие дни или в определенное время дня, выделяются, "
+"загружаются или удаляются. Кроме того, использование терминов, связанных "
+"с диском, в ваших фильтрах означает, что вы можете автоматически "
+"создавать фильтры, которые удаляют самые старые события, когда диск "
+"заполняется. Однако имейте в виду, что если вы используете эту стратегию,"
+" вам следует ограничить количество возвращаемых результатов до количества"
+" событий, которое вы хотите удалить за один проход, пока дисковое "
+"пространство не достигнет приемлемого уровня. Если вы этого не сделаете, "
+"первый проход, когда дисковое пространство высоко, совпадет и затем "
+"удалит все события, за исключением тех случаев, когда вы использовали "
+"другие критерии внутри ограничений. ZoneMinder поставляется с "
+"предустановленным фильтром уже установленным, хотя и отключенным. Фильтр "
+"\"Очистка при полном диске\" может быть использован для удаления самых "
+"старых событий, когда диск начинает заполняться. Чтобы использовать его, "
+"вы должны выбрать и загрузить его в интерфейсе фильтра, изменить его в "
+"соответствии с вашими требованиями и сохранить его, убедившись, что вы "
+"выбрали опцию \"Удалить все совпадения\". Это будет работать в фоновом "
+"режиме и обеспечит, что ваш диск не заполнится событиями."
+
+#: ../../userguide/filterevents.rst:116
+msgid "Saving filters"
+msgstr "Сохранение фильтров"
+
+#: ../../userguide/filterevents.rst:118
+msgid ""
+"When saving filters, if you want the filter to run in the background make"
+" sure you select the \"Run filter in background\" option. When checked, "
+"ZoneMinder will make sure the filter is checked regularly. For example, "
+"if you want to be notified of new events by email, you should make sure "
+"this is checked. Filters that are configured to run in the background "
+"have a \"*\" next to it."
+msgstr ""
+"При сохранении фильтров, если вы хотите, чтобы фильтр работал в фоновом "
+"режиме, убедитесь, что вы выбрали опцию \"Запустить фильтр в фоновом "
+"режиме\". Когда эта опция отмечена, ZoneMinder будет регулярно проверять "
+"наличие фильтра. Например, если вы хотите получать уведомления о новых "
+"событиях по электронной почте, убедитесь, что эта опция отмечена. "
+"Фильтры, которые настроены на работу в фоновом режиме, имеют звездочку "
+"рядом с ними."
+
+#: ../../userguide/filterevents.rst:122
+msgid "How filters actually work"
+msgstr "Как фильтры работают на самом деле"
+
+#: ../../userguide/filterevents.rst:123
+msgid ""
+"It is useful to know how filters actually work behind the scenes in "
+"ZoneMinder, in the event you find your filter not functioning as "
+"intended:"
+msgstr ""
+"Полезно знать, как работают фильтры на самом деле за кулисами ZoneMinder,"
+" если вы обнаружите, что ваш фильтр не работает так, как предполагалось:"
+
+#: ../../userguide/filterevents.rst:125
+msgid ""
+"Each filter set to run in the background will be run in it's own process "
+"called ``zmfilter.pl`` which retrieves filters from the Filters database "
+"table"
+msgstr ""
+"Каждый фильтр, установленный на выполнение в фоновом режиме, будет "
+"выполняться в собственном процессе под названием ``zmfilter.pl``, который"
+" извлекает фильтры из таблицы базы данных \"Фильтры\""
+
+#: ../../userguide/filterevents.rst:126
+msgid ""
+"zmfilter.pl runs every FILTER_EXECUTE_INTERVAL seconds (default is 20s, "
+"can be changed in Options->System)"
+msgstr ""
+"zmfilter.pl запускается каждые FILTER_EXECUTE_INTERVAL секунд (по "
+"умолчанию это 20 секунд, это можно изменить в меню \"Опции->Система\")"
+
+#: ../../userguide/filterevents.rst:127
+msgid ""
+"after each interval the filter will query the database and apply the "
+"action to each matching event."
+msgstr ""
+"После каждого интервала фильтр будет запрашивать базу данных и применять "
+"действие к каждому соответствующему событию."
+
+#: ../../userguide/filterevents.rst:128
+msgid ""
+"zmfilter.pl also reloads the filter every FILTER_RELOAD_DELAY seconds "
+"(default is 300s/5mins, can be changed in Options->System)"
+msgstr ""
+"Также zmfilter.pl перезагружает фильтр каждые FILTER_RELOAD_DELAY секунд "
+"(по умолчанию это 300 секунд/5 минут, которые можно изменить в меню "
+"\"Настройки->Система\")"
+
+#: ../../userguide/filterevents.rst:129
+msgid ""
+"In previous versions of ZoneMinder filter changes would not take "
+"immediate effect, but now the web ui will start/stop/restart filters as "
+"appropriate upon editing a filter."
+msgstr ""
+"В предыдущих версиях ZoneMinder изменения фильтров не вступали в силу "
+"немедленно, но теперь веб-интерфейс будет "
+"начинать/останавливать/перезапускать фильтры при редактировании фильтра."
+
+#: ../../userguide/filterevents.rst:133
+msgid "Relative items in date strings"
+msgstr "Предметы, связанные с датами в строках"
+
+#: ../../userguide/filterevents.rst:135
+msgid ""
+"Relative items adjust a date (or the current date if none) forward or "
+"backward. The effects of relative items accumulate. Here are some "
+"examples:"
+msgstr ""
+"Релятивные элементы изменяют дату (или текущую дату, если таковая "
+"отсутствует). Эффекты релятивных элементов накапливаются. Вот несколько "
+"примеров:"
+
+#: ../../userguide/filterevents.rst:144
+msgid ""
+"The unit of time displacement may be selected by the string ‘year’ or "
+"‘month’ for moving by whole years or months. These are fuzzy units, as "
+"years and months are not all of equal duration. More precise units are "
+"‘fortnight’ which is worth 14 days, ‘week’ worth 7 days, ‘day’ worth 24 "
+"hours, ‘hour’ worth 60 minutes, ‘minute’ or ‘min’ worth 60 seconds, and "
+"‘second’ or ‘sec’ worth one second. An ‘s’ suffix on these units is "
+"accepted and ignored."
+msgstr ""
+"Единица времени смещения может быть выбрана с помощью строки ‘год’ или "
+"‘месяц’ для перемещения по целым годам или месяцам. Это нечеткие единицы,"
+" поскольку годы и месяцы не имеют одинаковой продолжительности. Более "
+"точные единицы - это ‘неделя’, которая стоит 14 дней, ‘неделя’, которая "
+"стоит 7 дней, ‘день’, который стоит 24 часа, ‘час’, который стоит 60 "
+"минут, ‘минута’ или ‘мин’, которая стоит 60 секунд, и ‘секунда’ или "
+"‘сек’, которая стоит одну секунду. Суффикс ‘s’ на этих единицах "
+"принимается и игнорируется."
+
+#: ../../userguide/filterevents.rst:146
+msgid ""
+"The unit of time may be preceded by a multiplier, given as an optionally "
+"signed number. Unsigned numbers are taken as positively signed. No number"
+" at all implies 1 for a multiplier. Following a relative item by the "
+"string ‘ago’ is equivalent to preceding the unit by a multiplier with "
+"value -1."
+msgstr ""
+"Единица времени может быть предварительно обозначена множителем, который "
+"представляется в виде опционально подписанного числа. Неотрицательные "
+"числа принимаются как положительно подписанные. Отсутствие числа вообще "
+"эквивалентно использованию множителя со значением 1. После относительного"
+" элемента следует строка «назад», что эквивалентно предшествованию "
+"единицы множителем со значением -1."
+
+#: ../../userguide/filterevents.rst:148
+msgid ""
+"The string ‘tomorrow’ is worth one day in the future (equivalent to "
+"‘day’), the string ‘yesterday’ is worth one day in the past (equivalent "
+"to ‘day ago’)."
+msgstr ""
+"Строка \"завтра\" стоит один день в будущем (эквивалентно \"день\"), "
+"строка \"вчера\" стоит один день в прошлом (эквивалентно \"день назад\")."
+
+#: ../../userguide/filterevents.rst:150
+msgid ""
+"The strings ‘now’ or ‘today’ are relative items corresponding to zero-"
+"valued time displacement, these strings come from the fact a zero-valued "
+"time displacement represents the current time when not otherwise changed "
+"by previous items. They may be used to stress other items, like in ‘12:00"
+" today’. The string ‘this’ also has the meaning of a zero-valued time "
+"displacement, but is preferred in date strings like ‘this thursday’."
+msgstr ""
+"Строки «сейчас» или «сегодня» являются относительными элементами, "
+"соответствующими нулевому смещению времени, эти строки происходят из "
+"факта, что нулевое смещение времени представляет текущее время, если оно "
+"не изменяется предыдущими элементами. Они могут использоваться для "
+"подчеркивания других элементов, например, в «12:00 сегодня». Строка «это»"
+" также имеет смысл нулевого смещения времени, но предпочтительна в "
+"строках даты, таких как «это четверг»."
+
+#: ../../userguide/filterevents.rst:152
+msgid ""
+"When a relative item causes the resulting date to cross a boundary where "
+"the clocks were adjusted, typically for daylight saving time, the "
+"resulting date and time are adjusted accordingly."
+msgstr ""
+"Когда относительный элемент вызывает дату, пересекающую границу, где были"
+" скорректированы часы, обычно для летнего времени, дата и время "
+"корректируются соответствующим образом."
+
+#: ../../userguide/filterevents.rst:154
+msgid ""
+"The fuzz in units can cause problems with relative items. For example, "
+"‘2003-07-31 -1 month’ might evaluate to 2003-07-01, because 2003-06-31 is"
+" an invalid date. To determine the previous month more reliably, you can "
+"ask for the month before the 15th of the current month. For example:"
+msgstr ""
+"Затухание в единицах может вызвать проблемы с относительными элементами. "
+"Например, «2003-07-31 -1 месяц» может оцениваться как 2003-07-01, потому "
+"что 2003-06-31 является недопустимой датой. Чтобы определить предыдущий "
+"месяц более надежно, вы можете запросить месяц до 15-го числа текущего "
+"месяца. Например:"
+
+#: ../../userguide/filterevents.rst:172
+msgid ""
+"As this applies to ZoneMinder filters, you might want to search  for "
+"events in a period of time, or maybe for example create a purge filter "
+"that removes events older than 30 days. For the later you would want at "
+"least two lines in your filter. The first line should be:"
+msgstr ""
+"Как это относится к фильтрам ZoneMinder, вы можете захотеть поискать "
+"события за определенный период времени или, например, создать фильтр "
+"очистки, который удаляет события старше 30 дней. Для последнего вам "
+"потребуется как минимум две строки в вашем фильтре. Первая строка должна "
+"быть:"
+
+#: ../../userguide/filterevents.rst:175
+msgid "[<Archive Status> <equal to> <Unarchived Only>]"
+msgstr "[<Статус архива> <равно> <Только разархивировано>]"
+
+#: ../../userguide/filterevents.rst:177
+msgid "as you don't want to delete your archived events."
+msgstr "как вы не хотите удалять свои архивные события."
+
+#: ../../userguide/filterevents.rst:179
+msgid "Your second line to find events older than 30 days would be:"
+msgstr "Ваша вторая строка для поиска событий старше 30 дней будет:"
+
+#: ../../userguide/filterevents.rst:181
+msgid "[and <Date><less than> -30 days]"
+msgstr "[и <Дата><менее чем> -30 дней]"
+
+#: ../../userguide/filterevents.rst:183
+msgid ""
+"You use \"less than\" to indicate that you want to match events before "
+"the specified date, and you specify \"-30 days\" to indicate a date 30 "
+"days before the time the filter is run. Of course you could use 30 days "
+"ago as well(?)."
+msgstr ""
+"Вы используете \"меньше чем\" для указания того, что вы хотите "
+"сопоставить события до указанной даты, и вы указываете \"-30 дней\", "
+"чтобы указать дату за 30 дней до времени выполнения фильтра. Конечно, вы "
+"также можете использовать \"30 дней назад\" (?)"
+
+#: ../../userguide/filterevents.rst:185
+msgid ""
+"You should always test your filters before enabling any actions based on "
+"them to make sure they consistently return the results you want. You can "
+"use the submit button to see what events are returned by your query."
+msgstr ""
+"Вы всегда должны тестировать свои фильтры перед тем, как разрешать "
+"какие-либо действия на их основе, чтобы убедиться, что они постоянно "
+"возвращают результаты, которые вы хотите. Вы можете использовать кнопку "
+"\"Отправить\" для просмотра событий, возвращаемых вашим запросом."
+
+#: ../../userguide/filterevents.rst:191
+msgid "Caveat with Relative items"
+msgstr "Предупреждение о связанных элементах"
+
+#: ../../userguide/filterevents.rst:193
+msgid ""
+"One thing to remember if you specify relative dates like \"now\" or \"1 "
+"minute ago\", etc, they are converted to a specific date and time by "
+"Zoneminder's filtering process (zmfilter.pl) when the filters are loaded."
+" They are _NOT_ recomputed each time the filter runs. Filters are re-"
+"loaded depending on the value specified by FILTER_RELOAD_DELAY variable "
+"in  the Zoneminder Web Console->Options->System"
+msgstr ""
+"Одно из того, что следует помнить, если вы указываете относительные даты,"
+" такие как \"сейчас\" или \"1 минута назад\", и т.д., они преобразуются в"
+" конкретную дату и время процессом фильтрации Zoneminder (zmfilter.pl) "
+"при загрузке фильтров. Они НЕ пересчитываются каждый раз, когда "
+"запускается фильтр. Фильтры перезагружаются в зависимости от значения, "
+"указанного в переменной FILTER_RELOAD_DELAY в веб-консоли "
+"Zoneminder->Настройки->Система"
+
+#: ../../userguide/filterevents.rst:195
+msgid ""
+"This may cause confusion in the following cases, for example: Let's say a"
+" user specifies that he wants to be notified of events via email the "
+"moment the event \"DateTime\" is \"less than\" \"now\" as a filter "
+"criteria. When the filter first gets loaded by zmfilter.pl, this will "
+"translate to \"Match events where Start Time < \" + localtime() where "
+"local time is the time that is resolved when this filter gets loaded. Now"
+" till the time the filter gets reloaded after FILTER_RELOAD_DELAY seconds"
+" (which is usually set to 300 seconds, or 5 minutes), that time does not "
+"get recomputed, so the filter will not process any new events that occur "
+"after that computed date till another 5 minutes, which is probably not "
+"what you want."
+msgstr ""
+"Это может вызвать путаницу в следующих случаях, например: Предположим, "
+"пользователь указывает, что он хочет быть проинформирован о событиях по "
+"электронной почте в момент возникновения события \"DateTime\", если оно "
+"\"менее чем\" \"сейчас\" в качестве фильтра. Когда фильтр впервые "
+"загружается с помощью zmfilter.pl, это будет означать \"Найти события, "
+"где Начало времени < \" + localtime(), где локальное время - это время, "
+"которое определяется при загрузке этого фильтра. Пока фильтр не будет "
+"перезагружен через FILTER_RELOAD_DELAY секунд (обычно установлено на 300 "
+"секунд, или 5 минут), это время не пересчитывается, поэтому фильтр не "
+"будет обрабатывать новые события, которые происходят после этого "
+"рассчитанной даты до другого 5-минутного периода, что, вероятно, не "
+"является тем, что вы хотите."
+
+#: ../../userguide/filterevents.rst:199
+msgid "Troubleshooting tips"
+msgstr "Советы по устранению неполадок"
+
+#: ../../userguide/filterevents.rst:201
+msgid "If your filter is not working, here are some useful tips:"
+msgstr "Если ваш фильтр не работает, вот несколько полезных советов:"
+
+#: ../../userguide/filterevents.rst:203
+msgid "Look at Info and Debug logs in Zoneminder"
+msgstr "Посмотрите информацию и журналы отладки в ZoneMinder"
+
+#: ../../userguide/filterevents.rst:204
+msgid ""
+"Run ``sudo zmfilter.pl -f <yourfiltername>`` from command line and see "
+"the log output"
+msgstr ""
+"Выполните команду ``sudo zmfilter.pl -f <yourfiltername>`` из командной "
+"строки и посмотрите вывод журнала"
+
+#: ../../userguide/filterevents.rst:205
+msgid ""
+"Check how long your action is taking - zmfilter.pl will wait for the "
+"action to complete before it checks again"
+msgstr ""
+"Проверьте, сколько времени занимает ваше действие - zmfilter.pl будет "
+"ждать завершения действия, прежде чем проверить снова"
+
+#: ../../userguide/filterevents.rst:206
+msgid ""
+"If you are using relative times like 'now' or '1 year ago' etc. remember "
+"that zmfilter converts that relative time to an absolute date only when "
+"it reloads filters, which is dictated by the FILTER_RELOAD_DELAY "
+"duration. So, for example, if you are wondering why your events are not "
+"being detected before intervals of 5 minutes and you have used such a "
+"relative condition, this is why"
+msgstr ""
+"Если вы используете относительные временные выражения, такие как 'сейчас'"
+" или '1 год назад', и т.д., помните, что zmfilter преобразует это "
+"относительное время в абсолютную дату только при перезагрузке фильтров, "
+"что определяется длительностью FILTER_RELOAD_DELAY. Таким образом, "
+"например, если вы задаетесь вопросом, почему ваши события не "
+"обнаруживаются до интервалов в 5 минут, и вы использовали такое "
+"относительное условие, вот почему"
+
+#: ../../userguide/filterevents.rst:207
+msgid ""
+"In the event that you see your new filter is working great when you try "
+"it out from the Web Console (using the Submit or Execute button) but does"
+" not seem to work when its running in background mode, you might have "
+"just chanced upon a compatibility issue between how Perl and PHP "
+"translate free form text to dates/times. When you test it via the "
+"\"Submit\" or \"Execute\" button, you are invoking a PHP function for "
+"time conversion. When the filter runs in background mode, zmfilter.pl "
+"calls a perl equivalent function. In some cases, depending on the version"
+" of Perl and PHP you have, the results may vary. If you face this "
+"situation, the best thing to do is to run ``sudo zmfilter.pl -f "
+"<yourfiltername>`` from a terminal to make sure the filter actually works"
+" in Perl as well."
+msgstr ""
+"Если вы видите, что новый фильтр работает отлично, когда вы тестируете "
+"его через Веб-консоль (с помощью кнопки \"Отправить\" или \"Выполнить\"),"
+" но он не работает, когда он находится в фоновом режиме, возможно, вы "
+"столкнулись с проблемой совместимости между тем, как Perl и PHP "
+"преобразуют свободный текст в даты/время. Когда вы тестируете его с "
+"помощью кнопки \"Отправить\" или \"Выполнить\", вы вызываете функцию PHP "
+"для преобразования времени. Когда фильтр работает в фоновом режиме, "
+"zmfilter.pl вызывает эквивалентную функцию на Perl. В некоторых случаях, "
+"в зависимости от версии Perl и PHP, результаты могут различаться. Если вы"
+" сталкиваетесь с этой ситуацией, лучшее решение - запустить \"sudo "
+"zmfilter.pl -f <вашеимяфильтра>\" из терминала, чтобы убедиться, что "
+"фильтр действительно работает на Perl."
+

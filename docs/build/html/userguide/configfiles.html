@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuration Files &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API" href="../api.html" />
+    <link rel="prev" title="Logging" href="logging.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuration Files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-path-configurations">System Path Configurations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#timezone-configuration">Timezone Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#database-specific-configuration">Database Specific Configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">User Guide</a></li>
+      <li class="breadcrumb-item active">Configuration Files</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/configfiles.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuration-files">
+<h1>Configuration Files<a class="headerlink" href="#configuration-files" title="Permalink to this heading"></a></h1>
+<p>This section describes configuration files that ZoneMinder uses beyond the various Web UI options.</p>
+<section id="system-path-configurations">
+<span id="replacement-for-options-path"></span><h2>System Path Configurations<a class="headerlink" href="#system-path-configurations" title="Permalink to this heading"></a></h2>
+<p>At one point of time, ZoneMinder stored various system path configurations under the Web UI (<code class="docutils literal notranslate"><span class="pre">Options-&gt;Paths</span></code>). This was removed a few versions ago and now resides in a configuration file. The motivation for this change can be read in <a class="reference external" href="https://github.com/ZoneMinder/zoneminder/pull/1908">this discussion</a>.</p>
+<p>Typically, path configurations now reside in <code class="docutils literal notranslate"><span class="pre">/etc/zm</span></code>.</p>
+<p>Here is an example of the file hierarchy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/etc/zm
+├── conf.d
+│   ├── 01-system-paths.conf
+│   ├── 02-multiserver.conf
+|   ├── 03-custom.conf #optional
+│   └── README
+├── objectconfig.ini # optional
+├── zm.conf
+└── zmeventnotification.ini #optional
+</pre></div>
+</div>
+<p>The roles of the files are as follows:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">zm.conf</span></code> contains various base configuration entries. You should not edit this file as it may be overwritten on an upgrade.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zmeventnotification.ini</span></code> is only present if you have installed the ZoneMinder Event Notification Server.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">objectconfig.ini</span></code> is only present if you have installed the machine learning hooks for the Event Notification Server.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conf.d</span></code> contains additional configuration items as follows:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">01-system-paths.conf</span></code> contains all the paths that were once part of <code class="docutils literal notranslate"><span class="pre">Options-&gt;Paths</span></code> in the Web UI. You should not edit this file as it may be overwritten on an upgrade</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">02-multiserver.conf</span></code> file consists of custom variables if you are deploying ZoneMinder in a multi-server configuration (see <a class="reference internal" href="../installationguide/multiserver.html"><span class="doc">Multi-Server Install</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">03-custom.conf</span></code> is an  custom config file that I created to override specific variables in the path files. <strong>This is the recommended way to customize entries</strong>. Anything that you want to change should be in a new file inside <code class="docutils literal notranslate"><span class="pre">conf.d</span></code>. Note that ZoneMinder will sort all the files alphabetically and run their contents in ascending order. So it doesn’t really matter what you name them, as long as you make sure your changes are not overwritten by another file in the sorting sequence. It is therefore good practice to prefix your file names by <code class="docutils literal notranslate"><span class="pre">nn-</span></code> where <code class="docutils literal notranslate"><span class="pre">nn</span></code> is a monotonically increasing numerical sequence <code class="docutils literal notranslate"><span class="pre">01-</span></code> <code class="docutils literal notranslate"><span class="pre">02-</span></code> <code class="docutils literal notranslate"><span class="pre">03-</span></code> and so forth, so you know the order they will be processed.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="timezone-configuration">
+<h2>Timezone Configuration<a class="headerlink" href="#timezone-configuration" title="Permalink to this heading"></a></h2>
+<p>Earlier versions of ZoneMinder relied on <code class="docutils literal notranslate"><span class="pre">php.ini</span></code> to set Date/Time Zone. This is no longer the case. You can (and must) set the Timezone via the Web UI, starting ZoneMinder version 1.34. See <a class="reference internal" href="gettingstarted.html#timezone-config"><span class="std std-ref">here</span></a>.</p>
+</section>
+<section id="database-specific-configuration">
+<h2>Database Specific Configuration<a class="headerlink" href="#database-specific-configuration" title="Permalink to this heading"></a></h2>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>do we really need to have this section? Not sure if its generic and not specific to ZM</p>
+</div>
+<p>While the ZoneMinder specific database config entries reside in <code class="docutils literal notranslate"><span class="pre">/etc/zm/zm.conf</span></code> and related customizations discussed above, general database configuration items can be tweaked in <code class="docutils literal notranslate"><span class="pre">/etc/mysql</span></code> (or whichever path your DB server is installed)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="logging.html" class="btn btn-neutral float-left" title="Logging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../api.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

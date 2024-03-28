@@ -1,0 +1,430 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../installationguide/debian.rst:2
+msgid "Debian"
+msgstr "Debian"
+
+#: ../../installationguide/debian.rst:4
+msgid "Contents"
+msgstr "Содержимое"
+
+#: ../../installationguide/debian.rst:7
+msgid "Debian 12 (Bookworm)"
+msgstr "Debian 12 (Bookworm)"
+
+#: ../../installationguide/debian.rst:9
+msgid ""
+"This procedure will guide you through the installation of ZoneMinder on "
+"Debian 12 (Bookworm)."
+msgstr "Этот процесс поможет вам установить ZoneMinder на Debian 12 (Bookworm)."
+
+#: ../../installationguide/debian.rst:11 ../../installationguide/debian.rst:113
+msgid "**Step 1:** Setup Sudo (optional but recommended)"
+msgstr "**Шаг 1:** Настройка sudo (необязательно, но рекомендуется)"
+
+#: ../../installationguide/debian.rst:13 ../../installationguide/debian.rst:115
+#: ../../installationguide/debian.rst:225
+#: ../../installationguide/debian.rst:377
+msgid ""
+"By default Debian does not come with sudo, so you have to install it and "
+"configure it manually. This step is optional but recommended and the "
+"following instructions assume that you have setup sudo. If you prefer to "
+"setup ZoneMinder as root, do it at your own risk and adapt the following "
+"instructions accordingly."
+msgstr ""
+"По умолчанию Debian не поставляется с sudo, поэтому вам необходимо "
+"установить его и настроить вручную. Этот шаг является опциональным, но "
+"рекомендуется, и следующие инструкции предполагают, что вы уже настроили "
+"sudo. Если вы предпочитаете настроить ZoneMinder как root, сделайте это "
+"на свой страх и риск и адаптируйте следующие инструкции соответствующим "
+"образом."
+
+#: ../../installationguide/debian.rst:23 ../../installationguide/debian.rst:125
+#: ../../installationguide/debian.rst:235
+#: ../../installationguide/debian.rst:385
+msgid ""
+"Now your terminal session is back under your normal user. You can check "
+"that you are now part of the sudo group with the command ``groups``, "
+"\"sudo\" should appear in the list. If not, run ``newgrp sudo`` and check"
+" again with ``groups``."
+msgstr ""
+"Теперь ваша сессия терминала снова находится под вашим обычным "
+"пользователем. Вы можете проверить, что теперь вы являетесь частью группы"
+" \"sudo\", с помощью команды \"groups\", \"sudo\" должно появиться в "
+"списке. Если нет, выполните \"newgrp sudo\" и снова проверьте с помощью "
+"\"groups\"."
+
+#: ../../installationguide/debian.rst:27 ../../installationguide/debian.rst:129
+msgid "**Step 2:** Update system"
+msgstr "**Шаг 2:** Обновите систему"
+
+#: ../../installationguide/debian.rst:29 ../../installationguide/debian.rst:38
+#: ../../installationguide/debian.rst:131
+#: ../../installationguide/debian.rst:140
+msgid "Run the following commands."
+msgstr "Выполните следующие команды."
+
+#: ../../installationguide/debian.rst:36 ../../installationguide/debian.rst:138
+msgid "**Step 3:** Install MariaDB and do initial database configuration"
+msgstr ""
+"**Шаг 3:** Установите MariaDB и выполните первоначальную конфигурацию "
+"базы данных"
+
+#: ../../installationguide/debian.rst:44 ../../installationguide/debian.rst:146
+msgid "Switch into root user and create database and database user"
+msgstr ""
+"Войдите в пользователя root и создайте базу данных и пользователя базы "
+"данных"
+
+#: ../../installationguide/debian.rst:57 ../../installationguide/debian.rst:159
+msgid ""
+"By default MariaDB uses `unix socket authentication`_, so no root user "
+"password is required (root MariaDB user access only available to local "
+"root Linux user). If you wish, you can set a root MariaDB password (and "
+"apply other security tweaks) by running `mariadb-secure-installation`_."
+msgstr ""
+"По умолчанию MariaDB использует аутентификацию по сокету Unix_, поэтому "
+"пароль администратора root не требуется (доступ к учетной записи "
+"администратора MariaDB доступен только локальному корневому пользователю "
+"Linux). Если вы хотите, вы можете установить пароль администратора "
+"MariaDB (и применить другие меры безопасности) путем запуска `mariadb-"
+"secure-installation`_."
+
+#: ../../installationguide/debian.rst:59 ../../installationguide/debian.rst:161
+msgid "**Step 4:** Install zoneminder"
+msgstr "**Шаг 4:** Установите zoneminder"
+
+#: ../../installationguide/debian.rst:61
+msgid ""
+"By default Debian will install the version published in Debian (stable). "
+"However there may be newer versions by using backports. At the time of "
+"this writing, bookworm (stable) ships with v.1.36.33."
+msgstr ""
+"По умолчанию Debian установит версию, опубликованную в Debian "
+"(стабильная). Однако можно использовать обновления для получения более "
+"новых версий. На момент написания этого текста, книгоед (стабильный) "
+"поставляется с версией v.1.36.33."
+
+#: ../../installationguide/debian.rst:64
+msgid "To install the version in bookworm stable, just run the following command."
+msgstr ""
+"Для установки версии в стабильном книгоеде, просто выполните следующую "
+"команду."
+
+#: ../../installationguide/debian.rst:71
+msgid ""
+"If instead you prefer to install the newer version using backports, run "
+"the following commands. The first line will add this bookworm-backports "
+"repository. The backports repository is deactivated by default, so with "
+"the second line we explicitly state we want the backported version of "
+"zoneminder."
+msgstr ""
+"Если вместо этого вы предпочитаете установить более новую версию, "
+"используя backports, выполните следующие команды. Первая строка добавит "
+"репозиторий bookworm-backports. Репозиторий backports по умолчанию "
+"отключен, поэтому со второй строкой мы явно заявляем, что хотим версию "
+"Zoneminder из backports."
+
+#: ../../installationguide/debian.rst:82 ../../installationguide/debian.rst:183
+msgid "**Step 5:** Configure database"
+msgstr "**Шаг 5:** Настройка базы данных"
+
+#: ../../installationguide/debian.rst:88 ../../installationguide/debian.rst:189
+msgid "**Step 6:** Setup permissions for zm.conf"
+msgstr "**Шаг 6:** Настройте разрешения для файла zm.conf"
+
+#: ../../installationguide/debian.rst:90 ../../installationguide/debian.rst:191
+msgid ""
+"To make sure zoneminder can read the configuration file, run the "
+"following command."
+msgstr ""
+"Чтобы убедиться, что ZoneMinder может читать конфигурационный файл, "
+"выполните следующую команду."
+
+#: ../../installationguide/debian.rst:96 ../../installationguide/debian.rst:197
+msgid "**Step 7:** Tweak Apache configuration"
+msgstr "**Шаг 7:** Подстройка конфигурации Apache"
+
+#: ../../installationguide/debian.rst:106
+#: ../../installationguide/debian.rst:206
+msgid ""
+"If the zoneminder.service show to be active and without any errors, you "
+"should be able to access zoneminder at ``http://yourhostname/zm``"
+msgstr ""
+"Если сервис ZoneMinder показывает, что он активен и без ошибок, вы должны"
+" иметь возможность получить доступ к ZoneMinder по адресу "
+"\"http://ваш_хост/zm\""
+
+#: ../../installationguide/debian.rst:109
+msgid "Debian 11 (Bullseye)"
+msgstr "Debian 11 (Бычок)"
+
+#: ../../installationguide/debian.rst:111
+msgid ""
+"This procedure will guide you through the installation of ZoneMinder on "
+"Debian 11 (Bullseye)."
+msgstr "Этот процесс поможет вам установить ZoneMinder на Debian 11 (Bullseye)."
+
+#: ../../installationguide/debian.rst:163
+msgid ""
+"By default Debian will install the version published in Debian (stable). "
+"However you also have the option to install a newer version using "
+"backports. For example, at the time of this writing, bullseye (stable) "
+"ships with v.1.34.x and bullseye-backports with v.1.36.x."
+msgstr ""
+"По умолчанию Debian установит версию, опубликованную в Debian "
+"(стабильная). Однако у вас также есть возможность установить более новую "
+"версию, используя бэкпорты. Например, на момент написания этого текста, "
+"булли (стабильный) поставляется с v.1.34.x и булли-бэкпортами с v.1.36.x."
+
+#: ../../installationguide/debian.rst:166
+msgid "To install the version in bullseye stable, just run the following command."
+msgstr ""
+"Для установки версии в стабильной bullseye просто выполните следующую "
+"команду."
+
+#: ../../installationguide/debian.rst:173
+msgid ""
+"If instead you prefer to install the newer version using backports, run "
+"the following commands. The first line will add bullseye-backports "
+"repository. The backports repository is deactivated by default, so with "
+"the second line we explicitly state we want the backported version of "
+"zoneminder."
+msgstr ""
+"Если вместо этого вы предпочитаете установить более новую версию, "
+"используя бэкпорты, выполните следующие команды. Первая строка добавит "
+"репозиторий bullseye-backports. Репозиторий бэкпортов по умолчанию "
+"отключен, поэтому во второй строке мы явно указываем, что хотим версию "
+"zoneminder с бэкпортами."
+
+#: ../../installationguide/debian.rst:209
+msgid "Debian Buster"
+msgstr "Debian Buster"
+
+#: ../../installationguide/debian.rst:211
+msgid ""
+"This procedure will guide you through the installation of ZoneMinder on "
+"Debian 10 (Buster)."
+msgstr "Этот процесс поможет вам установить ZoneMinder на Debian 10 (Buster)."
+
+#: ../../installationguide/debian.rst:213
+#: ../../installationguide/debian.rst:365
+msgid "**Step 1:** Make sure your system is up to date"
+msgstr "**Шаг 1:** Убедитесь, что ваша система обновлена"
+
+#: ../../installationguide/debian.rst:215
+msgid "Open a console and use ``su`` command to become root."
+msgstr ""
+"Откройте консоль и используйте команду `su`, чтобы стать "
+"суперпользователем."
+
+#: ../../installationguide/debian.rst:223
+#: ../../installationguide/debian.rst:375
+msgid "**Step 2:** Setup Sudo (optional but recommended)"
+msgstr "**Шаг 2:** Настройка sudo (необязательно, но рекомендуется)"
+
+#: ../../installationguide/debian.rst:240
+#: ../../installationguide/debian.rst:388
+msgid "**Step 3:** Install Apache and MySQL"
+msgstr "**Шаг 3:** Установите Apache и MySQL"
+
+#: ../../installationguide/debian.rst:242
+#: ../../installationguide/debian.rst:390
+msgid ""
+"These are not dependencies for the ZoneMinder package as they could be "
+"installed elsewhere. If they are not installed yet in your system, you "
+"have to trigger their installation manually."
+msgstr ""
+"Эти зависимости не являются зависимостями для пакета ZoneMinder, так как "
+"их можно установить в другом месте. Если они еще не установлены в вашей "
+"системе, вам придется вручную запустить их установку."
+
+#: ../../installationguide/debian.rst:250
+#: ../../installationguide/debian.rst:396
+msgid "**Step 4:** Add ZoneMinder's Package repository to your apt sources"
+msgstr "**Шаг 4:** Добавьте репозиторий пакета ZoneMinder в источники apt "
+
+#: ../../installationguide/debian.rst:252
+#: ../../installationguide/debian.rst:398
+msgid ""
+"ZoneMinder's Debian packages are not included in Debian's official "
+"package repositories. To be able to install ZoneMinder with APT, you have"
+" to edit the list of apt sources and add ZoneMinder's repository."
+msgstr ""
+"Пакеты ZoneMinder для Debian не включены в официальные репозитории "
+"Debian. Чтобы установить ZoneMinder с помощью APT, вам нужно "
+"отредактировать список источников APT и добавить репозиторий ZoneMinder."
+
+#: ../../installationguide/debian.rst:256
+msgid "Add the following to the /etc/apt/sources.list.d/zoneminder.list file"
+msgstr "Добавить следующее в файл /etc/apt/sources.list.d/zoneminder.list"
+
+#: ../../installationguide/debian.rst:263
+msgid "You can do this using:"
+msgstr "Вы можете сделать это, используя:"
+
+#: ../../installationguide/debian.rst:269
+#: ../../installationguide/debian.rst:414
+msgid ""
+"Because ZoneMinder's package repository provides a secure connection "
+"through HTTPS, apt must be enabled for HTTPS. ::"
+msgstr ""
+"Поскольку пакетный репозиторий ZoneMinder обеспечивает безопасное "
+"соединение через HTTPS, для HTTPS должен быть включен apt."
+
+#: ../../installationguide/debian.rst:274
+msgid ""
+"Ensure you have gnupg installed before importing the apt key in the "
+"following step. ::"
+msgstr ""
+"Убедитесь, что у вас установлен gnupg перед импортом ключа apt в "
+"следующем шаге. ::"
+
+#: ../../installationguide/debian.rst:280
+#: ../../installationguide/debian.rst:419
+msgid "Finally, download the GPG key for ZoneMinder's repository: ::"
+msgstr "Наконец, загрузите ключ GPG для репозитория ZoneMinder: ::"
+
+#: ../../installationguide/debian.rst:286
+#: ../../installationguide/debian.rst:425
+msgid "**Step 5:** Install ZoneMinder"
+msgstr "**Шаг 5:** Установите ZoneMinder"
+
+#: ../../installationguide/debian.rst:293
+#: ../../installationguide/debian.rst:432
+msgid "**Step 6:** Read the Readme"
+msgstr "**Шаг 6:** Прочитайте README"
+
+#: ../../installationguide/debian.rst:295
+#: ../../installationguide/debian.rst:434
+msgid ""
+"The rest of the install process is covered in the README.Debian, so feel "
+"free to have a read."
+msgstr ""
+"Остальная часть процесса установки описана в README.Debian, поэтому не "
+"стесняйтесь прочитать это."
+
+#: ../../installationguide/debian.rst:303
+#: ../../installationguide/debian.rst:442
+msgid "**Step 7:** Enable ZoneMinder service"
+msgstr "**Шаг 7:** Включить службу ZoneMinder"
+
+#: ../../installationguide/debian.rst:309
+#: ../../installationguide/debian.rst:448
+msgid "**Step 8:** Configure Apache"
+msgstr "**Шаг 8:** Настройка Apache"
+
+#: ../../installationguide/debian.rst:311
+#: ../../installationguide/debian.rst:450
+msgid ""
+"The following commands will setup the default /zm virtual directory and "
+"configure required apache modules."
+msgstr ""
+"Следующие команды настроят по умолчанию виртуальную директорию /zm и "
+"конфигурируют необходимые модули Apache."
+
+#: ../../installationguide/debian.rst:321
+#: ../../installationguide/debian.rst:460
+msgid "**Step 9:** Edit Timezone in PHP"
+msgstr "**Шаг 9:** Измените часовой пояс в PHP"
+
+#: ../../installationguide/debian.rst:323
+#: ../../installationguide/debian.rst:462
+msgid "Automated way: ::"
+msgstr "Автоматизированный способ: ::"
+
+#: ../../installationguide/debian.rst:328
+#: ../../installationguide/debian.rst:467
+msgid "Manual way ::"
+msgstr "Ручной способ ::"
+
+#: ../../installationguide/debian.rst:333
+#: ../../installationguide/debian.rst:472
+msgid ""
+"Search for [Date] (Ctrl + w then type Date and press Enter) and change "
+"date.timezone for your time zone. Don't forget to remove the ; from in "
+"front of date.timezone."
+msgstr ""
+"Поиск [Дата] (Ctrl + w затем введите Дата и нажмите Enter) и измените "
+"дату.времязон для вашего часового пояса. Не забудьте удалить ; перед "
+"датой.времязон."
+
+#: ../../installationguide/debian.rst:344
+#: ../../installationguide/debian.rst:483
+msgid "CTRL+o then [Enter] to save"
+msgstr "!CTRL+o затем [Ввод] для сохранения"
+
+#: ../../installationguide/debian.rst:346
+#: ../../installationguide/debian.rst:485
+msgid "CTRL+x to exit"
+msgstr "CTRL+x для выхода"
+
+#: ../../installationguide/debian.rst:349
+#: ../../installationguide/debian.rst:488
+msgid "**Step 10:** Start ZoneMinder"
+msgstr "**Шаг 10:** Запустите ZoneMinder"
+
+#: ../../installationguide/debian.rst:351
+#: ../../installationguide/debian.rst:490
+msgid "Reload Apache to enable your changes and then start ZoneMinder."
+msgstr ""
+"Перезагрузите Apache, чтобы применить ваши изменения, а затем запустите "
+"ZoneMinder."
+
+#: ../../installationguide/debian.rst:358
+#: ../../installationguide/debian.rst:497
+msgid ""
+"You are now ready to go with ZoneMinder. Open a browser and type either "
+"``localhost/zm`` one the local machine or ``{IP-OF-ZM-SERVER}/zm`` if you"
+" connect from a remote computer."
+msgstr ""
+"Вы теперь готовы работать с ZoneMinder. Откройте браузер и введите либо "
+"``localhost/zm`` на локальной машине, либо ``{IP-OF-ZM-SERVER}/zm``, если"
+" вы подключаетесь с удаленного компьютера."
+
+#: ../../installationguide/debian.rst:361
+msgid "Debian Stretch"
+msgstr "Debian Stretch"
+
+#: ../../installationguide/debian.rst:363
+msgid ""
+"This procedure will guide you through the installation of ZoneMinder on "
+"Debian 9 (Stretch). This section has been tested with ZoneMinder 1.36 on "
+"Debian 9.8."
+msgstr ""
+"Этот процесс поможет вам установить ZoneMinder на Debian 9 (Stretch). "
+"Этот раздел был протестирован с ZoneMinder 1.36 на Debian 9.8."
+
+#: ../../installationguide/debian.rst:367
+msgid "Open a console and use ``su`` command to become Root."
+msgstr "Откройте консоль и используйте команду `su`, чтобы стать root."
+
+#: ../../installationguide/debian.rst:404
+msgid "Add the following to the bottom of the file"
+msgstr "!добавить следующее в конец файла"
+
+#: ../../installationguide/debian.rst:411
+msgid "CTRL+o and <Enter> to save CTRL+x to exit"
+msgstr "!CTRL+o и <Enter> для сохранения CTRL+x для выхода"
+

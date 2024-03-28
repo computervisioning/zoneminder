@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../installationguide/easydocker.rst:2
+msgid "An Easy To Use Docker Image"
+msgstr ""
+
+#: ../../installationguide/easydocker.rst:3
+msgid ""
+"If you are interested in trying out ZoneMinder quickly, user Dan Landon "
+"maintains an easy to use docker image for ZoneMinder. With a few simple "
+"configuration changes, it also provides complete Event Notification "
+"Server and Machine Learning hook support. Please follow instructions in "
+"his repository. He maintains two repositories:"
+msgstr ""
+
+#: ../../installationguide/easydocker.rst:5
+msgid ""
+"If you want to run the latest stable release, please use his `zoneminder "
+"machine learning repository "
+"<https://github.com/dlandon/zoneminder.machine.learning>`__."
+msgstr ""
+
+#: ../../installationguide/easydocker.rst:6
+msgid ""
+"If you want to run the latest zoneminder master, please use his "
+"`zoneminder master repository <https://github.com/dlandon/zoneminder"
+".master-docker>`__."
+msgstr ""
+
+#: ../../installationguide/easydocker.rst:8
+msgid "In both cases, instructions are provided in the repo README files."
+msgstr ""
+
+#: ../../installationguide/easydocker.rst:10
+msgid ""
+"If you are looking at building your own native (non docker) binary "
+"packages of ZoneMinder for your distro, please refer to the distro "
+"specific install guides or  :doc:`packpack`."
+msgstr ""
+

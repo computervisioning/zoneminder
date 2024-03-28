@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Server Install &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dedicated Drive, Partition, or Network Share" href="dedicateddrive.html" />
+    <link rel="prev" title="Windows 10+ using WSL" href="windows_wsl.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="easydocker.html">An Easy To Use Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packpack.html">All Distros - A Docker Way to Build ZoneMinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubuntu.html">Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debian.html">Debian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="redhat.html">Redhat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="windows_wsl.html">Windows 10+ using WSL</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Multi-Server Install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#topology-design-notes">Topology Design Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-installs">New installs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dedicateddrive.html">Dedicated Drive, Partition, or Network Share</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Installation Guide</a></li>
+      <li class="breadcrumb-item active">Multi-Server Install</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/installationguide/multiserver.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="multi-server-install">
+<h1>Multi-Server Install<a class="headerlink" href="#multi-server-install" title="Permalink to this heading"></a></h1>
+<p>It is possible to run multiple ZoneMinder servers and manage them from a single interface. To achieve this each zoneminder server is connected to a single shared database server and shares file storage for event data.</p>
+<img alt="../_images/zm-multiserver.png" src="../_images/zm-multiserver.png" />
+<section id="topology-design-notes">
+<h2>Topology Design Notes<a class="headerlink" href="#topology-design-notes" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Device symbols represent separate logical functions, not necessarily separate hardware. For example, the Database Server and a ZoneMinder Server, can reside on the same physical hardware.</p></li>
+<li><p>Configure each ZoneMinder Server to use the same, remote Database Server (Green).</p></li>
+<li><p>The Storage Server (Red) represents shared storage, accessible by all ZoneMinder Servers, mounted under each server’s events folder.</p></li>
+<li><p>Create at least two networks for best performance. Dedicate a Storage LAN for communication with the Storage and Database Servers. Make use of multipath and jumbo frames if possible. Keep all other traffic off the Storage LAN! Dedicate the second LAN, called the Video LAN in the diagram, for all other traffic.</p></li>
+</ol>
+</section>
+<section id="new-installs">
+<h2>New installs<a class="headerlink" href="#new-installs" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Follow the normal instructions for your distro for installing ZoneMinder onto all the ZoneMinder servers in the normal fashion. Only a single database will be needed either as standalone, or on one of the ZoneMinder Servers.</p></li>
+</ol>
+<aside class="sidebar">
+<p class="sidebar-title">Note</p>
+<p>For systemd based linux distros, inspect the zoneminder service file, typically found under /lib/systemd/system. Changes may be required for multiserver to function correctly. For example, the service file may check for a running instance of mysql or mariadb running locally on the server. This check will need to be removed. Rather than edit the service file directly, copy the service file to /etc/systemd/system and edit the file in that location.</p>
+</aside>
+<ol class="arabic simple" start="2">
+<li><p>On each ZoneMinder server, edit zm.conf. Find the ZM_DB_HOST variable and set it to the name or ip address of your Database Server. Find the ZM_SERVER_HOST and enter a name for this ZoneMinder server. Use a name easily recognizable by you. This name is not used by ZoneMinder for dns or any other form of network connectivity.</p></li>
+<li><p>Copy the file /usr/share/zoneminder/db/zm_create.sql from one of the ZoneMinder Servers to the machine targeted as the Database Server.</p></li>
+<li><p>Install mysql/mariadb server onto the Database Server.</p></li>
+<li><p>It is advised to run “mysql_secure_installation” to help secure the server.</p></li>
+<li><p>Using the password for the root account set during the previous step, create the ZoneMinder database and configure a database account for ZoneMinder to use:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">zm_create</span><span class="o">.</span><span class="n">sql</span>
+<span class="n">mysql</span> <span class="o">-</span><span class="n">uroot</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;grant all on zm.* to &#39;zmuser&#39;@localhost identified by &#39;zmpass&#39;;&quot;</span>
+<span class="n">mysqladmin</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span> <span class="n">reload</span>
+</pre></div>
+</div>
+<p>The database account credentials, zmuser/zmpass, are arbitrary. Set them to anything that suits your environment.
+Note that these commands are just an example and might not be secure enough for your environment.</p>
+<ol class="arabic simple" start="7">
+<li><p>If you have chosen to change the ZoneMinder database account credentials to something other than zmuser/zmpass, you must now update zm.conf on each ZoneMinder Server. Change ZM_DB_USER and ZM_DB_PASS to the values you created in the previous step.</p></li>
+<li><p>All ZoneMinders Servers must share a common events folder. This can be done in any manner supported by the underlying operating system. From the Storage Server, share/export a folder to be used for ZoneMinder events.</p></li>
+<li><p>From each ZoneMinder Server, mount the shared events folder on the Storage Server to the events folder on the local ZoneMinder Server.</p></li>
+</ol>
+<aside class="sidebar">
+<p class="sidebar-title">Note</p>
+<p>The location of the ZoneMinder events folder varies by distro. This folder is often found under “/var/lib/zoneminder/events” for RedHat based distros and “/var/cache/zoneminder/events” for Debian based distros. This folder is NOT a Symbolic Link!</p>
+</aside>
+<ol class="arabic simple" start="10">
+<li><p>Open your browser and point it to the web console on any of the ZoneMinder Servers (they will all be the same). Open Options, click the Servers tab,and populate this screen with all of your ZoneMinder Servers. Each server has a field for its name and its hostname. The name is what you used for ZM_SERVER_HOST in step 2. The hostname is the network name or ip address ZoneMinder should use.</p></li>
+<li><p>When creating a new Monitor, remember to select the server the camera will be assigned to from the Server drop down box.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="windows_wsl.html" class="btn btn-neutral float-left" title="Windows 10+ using WSL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dedicateddrive.html" class="btn btn-neutral float-right" title="Dedicated Drive, Partition, or Network Share" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

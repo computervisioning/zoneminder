@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:2
+msgid "Misc Tab"
+msgstr "Таблица \"Прочее\""
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:4
+msgid ""
+"The Misc tab contains settings related to saving events such as section "
+"lengths, frame skipping, FPS logging, and handling EXIF data."
+msgstr ""
+"Закладка \"Прочее\" содержит настройки сохранения событий, таких как "
+"длина разделов, пропуск кадров, запись FPS, обработка данных EXIF."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:8
+msgid "Monitor Misc Tab"
+msgstr "Таблица \"Прочие\""
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:10
+msgid ""
+"**Event Prefix**: By default events are named ‘Event-<event id>’, where "
+"'Event-' is the prefix. This option lets you modify the event prefix to "
+"be a value of your choice so that events are named differently when they "
+"are generated. This allows you to name events according to which monitor "
+"generated them."
+msgstr ""
+"**Префикс события**: По умолчанию события называются «Event-<event id>», "
+"где 'Event-' - это префикс. Эта опция позволяет вам изменить префикс "
+"события на значение по вашему выбору, так что события называются "
+"по-разному при их генерации. Это позволяет называть события в "
+"соответствии с тем монитором, который их сгенерировал."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:11
+msgid ""
+"**Section Length**: This specifies the length (in seconds) of any fixed "
+"length events produced when the Monitor Recording is set to 'Always' or "
+"'On Motion / Trigger / etc'. Otherwise it is ignored. This should not be "
+"so long that events are difficult to navigate nor so short that too many "
+"events are generated. A length of between 300 and 900 seconds is "
+"recommended but should be set appropriately for each server."
+msgstr ""
+"**Длина раздела**: Это определяет длительность (в секундах) любых событий"
+" фиксированной длины, которые генерируются при установке режима записи "
+"монитора на 'Всегда' или 'При движении / триггере / и т. д.'. В противном"
+" случае он игнорируется. Он не должен быть настолько длинным, чтобы "
+"события было трудно просмотреть, и не настолько коротким, чтобы "
+"генерировалось слишком много событий. Рекомендуется значение от 300 до "
+"900 секунд, но оно должно быть установлено соответствующим образом для "
+"каждого сервера."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:12
+msgid ""
+"**Minimum Section Length**: This specifies the minimum length (in "
+"seconds) of events which will be recorded."
+msgstr ""
+"**Минимальная длина раздела**: Это определяет минимальную длительность (в"
+" секундах) событий, которые будут записаны."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:13
+msgid ""
+"**Frame Skip**: This setting also applies only to the 'Always' Monitor "
+"record functions and specifies how many frames should be skipped in the "
+"recorded events. The default setting of zero results in every captured "
+"frame being saved. Using a value of one would mean that one frame is "
+"skipped between each saved, two means that two frames are skipped between"
+" each saved frame etc. An alternate way of thinking is that one in every "
+"‘Frame Skip + 1’ frames is saved. The point of this is to ensure that "
+"saved events do not take up too much space unnecessarily whilst still "
+"allowing the camera to capture at a fairly high frame rate. The alternate"
+" approach is to limit the capture frame rate which will obviously affect "
+"the rate at which frames are saved."
+msgstr ""
+"**Пропуск кадров**: Этот параметр также применяется только к функциям "
+"записи монитора в режиме \"Всегда\" и определяет, сколько кадров следует "
+"пропустить в событиях записи. Значение по умолчанию, равное нулю, "
+"означает, что сохраняется каждый захваченный кадр. Использование значения"
+" один означает, что пропускается один кадр между каждым сохраненным, два "
+"означают, что пропускаются два кадра между каждым сохраненным кадром и т."
+" д. Другой способ мышления заключается в том, что один из каждых "
+"\"Пропуск кадров + 1\" кадров сохраняется. Цель этого - обеспечить, чтобы"
+" события, которые были сохранены, не занимали слишком много места без "
+"необходимости, при этом позволяя камере захватывать кадры с относительно "
+"высокой частотой кадров. Альтернативный подход - ограничить частоту "
+"захвата кадров, что, очевидно, повлияет на скорость, с которой "
+"сохраняются кадры."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:14
+msgid ""
+"**Motion Frame Skip**: This has similar behavior as Frame Skip but is "
+"only used for 'On Motion / Trigger / etc' Monitor record function."
+msgstr ""
+"**Метод пропуска кадров**: Это имеет такое же поведение, как и пропуск "
+"кадров, но используется только для функции записи монитора \"В движении /"
+" по триггеру / и т. д.\"."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:15
+msgid "**Analysis Update Delay**: Undocumented parameter"
+msgstr "**Обновление анализа задержка**: Недокументированный параметр"
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:16
+msgid ""
+"**FPS Report Interval**: How often the current performance in terms of "
+"Frames Per Second is output to the system log and updated in the Monitor "
+"Status table. A lower value can cause excess logging and has a slight "
+"database performance penalty. The default value of 100 is likely fine for"
+" most systems during setup. At 10fps this will cause an update every 10 "
+"seconds. Once the system is configured and stable a higher number can be "
+"used to reduce logfile clutter."
+msgstr ""
+"**Периодичность отчета FPS**: Как часто текущая производительность в "
+"терминах кадров в секунду выводится в системный журнал и обновляется в "
+"таблице состояния монитора. Более низкое значение может вызвать "
+"избыточную запись в журнал и имеет незначительное влияние на "
+"производительность базы данных. Значение по умолчанию 100, вероятно, "
+"хорошо для большинства систем при настройке. При 10 кадрах в секунду это "
+"вызовет обновление каждые 10 секунд. После того как система будет "
+"настроена и стабильна, можно использовать более высокое значение, чтобы "
+"уменьшить засорение файла журнала."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:17
+msgid "**Signal Check Points**: Undocumented parameter"
+msgstr "**Точки проверки сигнала**: Незадокументированный параметр"
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:18
+msgid "**Signal Check Colour**: Undocumented parameter"
+msgstr "**Проверка сигнала Цвет**: Недокументированный параметр"
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:19
+msgid ""
+"**Web Colour**: Some elements of ZoneMinder now use colours to identify "
+"monitors on certain views. You can select which colour is used for each "
+"monitor here. Any specification that is valid for HTML colours is valid "
+"here, e.g. ‘red’ or ‘#ff0000’. A small swatch next to the input box "
+"displays the colour you have chosen."
+msgstr ""
+"**Веб-цвет**: Некоторые элементы ZoneMinder теперь используют цвета для "
+"идентификации мониторов на определенных просмотрах. Вы можете выбрать, "
+"какой цвет используется для каждого монитора здесь. Любое спецификация, "
+"которое является действительным для HTML-цветов, является действительным "
+"здесь, например, «красный» или «#ff0000». Небольшой образец рядом с полем"
+" ввода отображает выбранный вами цвет."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:20
+msgid ""
+"**Embed EXIF data into image**: Select this to embed EXIF data into each "
+"JPEG frame."
+msgstr ""
+"**Встроить данные EXIF в изображение**: Выберите это, чтобы встроить "
+"данные EXIF в каждый кадр JPEG."
+
+#: ../../userguide/definemonitor/definemonitor_misc.rst:21
+msgid ""
+"**Importance**: Available options are Normal, Less Important and Not "
+"Important."
+msgstr "**Важность**: Доступные варианты - Нормальный, Менее важный и Неважный."
+

@@ -1,0 +1,650 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../installationguide/redhat.rst:2
+msgid "Redhat"
+msgstr "Red Hat"
+
+#: ../../installationguide/redhat.rst:4
+msgid "Contents"
+msgstr "Содержимое"
+
+#: ../../installationguide/redhat.rst:6
+msgid ""
+"These instructions apply to all Redhat distros and their clones, "
+"including but not limited to: Fedora, RHEL, Rocky Linux, Alma Linux, and "
+"others. While the installation instructions are the same for each distro,"
+" the reason why one might use one distro over the other is different. A "
+"short description follows, which is intended to help you chose what "
+"distro best fits your needs."
+msgstr ""
+"Эти инструкции применяются ко всем дистрибутивам Red Hat и их клонам, "
+"включая, но не ограничиваясь: Fedora, RHEL, Rocky Linux, Alma Linux и "
+"другие. Хотя инструкции по установке одинаковы для каждого дистрибутива, "
+"причина, по которой один человек может использовать один дистрибутив "
+"вместо другого, различна. Краткое описание следует, которое предназначено"
+" для того, чтобы помочь вам выбрать, какой дистрибутив лучше всего "
+"соответствует вашим потребностям."
+
+#: ../../installationguide/redhat.rst:9
+msgid "Background: RHEL, Rocky Linux, and Clones"
+msgstr "!перевод Background: RHEL, Rocky Linux, and Clones"
+
+#: ../../installationguide/redhat.rst:11
+msgid ""
+"These distributions are classified as enterprise operating systems and "
+"have a long operating lifetime of many years. By design, they will not "
+"have the latest and greatest versions of any package. Instead, stable "
+"packages are the emphasis."
+msgstr ""
+"Эти распределения классифицируются как корпоративные операционные системы"
+" и имеют долгий срок службы в несколько лет. По замыслу, они не будут "
+"иметь последних и лучших версий любого пакета. Вместо этого акцент "
+"делается на стабильных пакетах."
+
+#: ../../installationguide/redhat.rst:13
+msgid ""
+"Replacing any core package in these distributions with a newer package "
+"from a third party is expressly verboten. The ZoneMinder development team"
+" will not do this, and neither should you. If you have the perception "
+"that you've got to have a newer version of php, mysql, gnome, apache, "
+"etc. then, rather than upgrade these packages, you should instead "
+"consider using a different distribution such as Fedora."
+msgstr ""
+"Замена любого основного пакета в этих дистрибутивах на более новый пакет "
+"от третьей стороны строго запрещена. Команда разработчиков ZoneMinder "
+"этого не сделает, и вам тоже не следует. Если у вас сложилось "
+"впечатление, что вам нужна более новая версия PHP, MySQL, GNOME, Apache и"
+" т. д., то вместо обновления этих пакетов лучше рассмотреть использование"
+" другого дистрибутива, такого как Fedora."
+
+#: ../../installationguide/redhat.rst:15
+msgid ""
+"The ZoneMinder team will not provide support for systems which have had "
+"any core package replaced with a package from a third party."
+msgstr ""
+"Команда ZoneMinder не будет оказывать поддержку системам, в которых были "
+"заменены любые основные пакеты на пакеты от третьей стороны."
+
+#: ../../installationguide/redhat.rst:18
+msgid "Background: Fedora"
+msgstr "!привет"
+
+#: ../../installationguide/redhat.rst:20
+msgid ""
+"One can think of Fedora as RHEL Beta. This is, in fact, what it is. "
+"Fedora is primarily geared towards development and testing of newer, "
+"sometimes bleeding edge, packages. The ZoneMinder team uses this distro "
+"to determine the interoperability of ZoneMinder with the latest and "
+"greatest versions of packages like mysql, apache, systemd, and others. If"
+" a problem is detected, it will be addressed long before it makes it way "
+"into RHEL."
+msgstr ""
+"Можно рассматривать Fedora как бета-версию RHEL. Это, по сути, то, чем "
+"она является. Fedora в первую очередь ориентирована на разработку и "
+"тестирование новых, иногда передовых пакетов. Команда ZoneMinder "
+"использует эту дистрибутивную версию для определения совместимости "
+"ZoneMinder с последними и лучшими версиями пакетов, таких как MySQL, "
+"Apache, systemd и других. Если обнаруживается проблема, она будет "
+"устранена задолго до того, как попадет в RHEL."
+
+#: ../../installationguide/redhat.rst:22
+msgid ""
+"Fedora has a short life-cycle of just 6 months. Fedora 36 is the last "
+"release supporting armv7 architecture, and consequently Raspberry Pis "
+"earlier than the Raspberry Pi 2 v 1.2. F36 is end-of-life in May 2023."
+msgstr ""
+"Жизненный цикл Fedora составляет всего 6 месяцев. Fedora 36 - это "
+"последний выпуск, поддерживающий архитектуру armv7, и, следовательно, "
+"Raspberry Pis, выпущенные до Raspberry Pi 2 v 1.2. F36 снята с "
+"производства в мае 2023 года."
+
+#: ../../installationguide/redhat.rst:24
+msgid ""
+"If you desire newer packages than what is available in RHEL or its "
+"clones, you should consider using Fedora."
+msgstr ""
+"Если вы хотите использовать пакеты, более новые, чем те, которые доступны"
+" в RHEL или его клонах, вам следует рассмотреть возможность использования"
+" Fedora."
+
+#: ../../installationguide/redhat.rst:27
+msgid "How To Avoid Known Installation Problems"
+msgstr "Как Избежать Известных Проблем Установки"
+
+#: ../../installationguide/redhat.rst:29
+msgid ""
+"The following notes are based on real problems which have occurred by "
+"those who came before you:"
+msgstr ""
+"Следующие заметки основаны на реальных проблемах, которые возникли у тех,"
+" кто пришел до вас:"
+
+#: ../../installationguide/redhat.rst:31
+msgid ""
+"Zmrepo assumes you have installed the underlying distribution **using the"
+" official installation media for that distro**. Third party \"Spins\" may"
+" not work correctly."
+msgstr ""
+"Zmrepo предполагает, что у вас установлена базовая распределение **с "
+"использованием официальных средств установки для этой дистрибуции**. "
+"Третьи стороны \"Spins\" могут не работать корректно."
+
+#: ../../installationguide/redhat.rst:33
+msgid ""
+"ZoneMinder is intended to be installed in an environment dedicated to "
+"ZoneMinder. While ZoneMinder will play well with many applications, some "
+"invariably will not. Asterisk is one such example."
+msgstr ""
+"ЗондЗеймер предназначен для установки в среде, специально выделенной для "
+"ЗондЗеймера. Хотя ЗондЗеймер будет хорошо работать со многими "
+"приложениями, некоторые из них неизбежно не будут. Астериск - один из "
+"таких примеров."
+
+#: ../../installationguide/redhat.rst:35
+msgid ""
+"Be advised that you need to start with a clean system before installing "
+"ZoneMinder."
+msgstr ""
+"Обратите внимание, что перед установкой ZoneMinder вам необходимо начать "
+"с чистой системы."
+
+#: ../../installationguide/redhat.rst:37
+msgid ""
+"If you have previously installed ZoneMinder from-source, then your system"
+" is **NOT** clean. You must manually search for and delete all ZoneMinder"
+" related files first (look under /usr/local). Issuing a \"make "
+"uninstall\" helps, but it will not do this for you correctly. You "
+"**WILL** have problems if you ignore this step."
+msgstr ""
+"Если вы ранее установили ZoneMinder из исходников, то ваша система **НЕ**"
+" чистая. Вам необходимо вручную искать и удалять все связанные с "
+"ZoneMinder файлы (посмотрите в /usr/local). Выполнение команды \"make "
+"uninstall\" помогает, но она не сделает это за вас правильно. У вас "
+"**БУДЕТ** проблемы, если вы проигнорируете этот шаг."
+
+#: ../../installationguide/redhat.rst:39
+msgid ""
+"Unlike Debian/Ubuntu distros, it is not necessary, and not recommended, "
+"to install a LAMP stack ahead of time."
+msgstr ""
+"В отличие от дистрибутивов Debian/Ubuntu, нет необходимости и не "
+"рекомендуется устанавливать стеки LAMP заранее."
+
+#: ../../installationguide/redhat.rst:41
+msgid ""
+"Disable any other third party repos and uninstall any of ZoneMinder's "
+"third party dependencies, which might already be on the system, "
+"especially ffmpeg and vlc. Attempting to install dependencies yourself "
+"often causes problems."
+msgstr ""
+"Отключить любые другие репозитории сторонних разработчиков и удалить "
+"любые зависимости ZoneMinder от сторонних разработчиков, которые уже "
+"могут быть установлены на системе, особенно ffmpeg и vlc. Попытка "
+"установить зависимости самостоятельно часто приводит к проблемам."
+
+#: ../../installationguide/redhat.rst:43
+msgid ""
+"Each ZoneMinder rpm includes a README file under /usr/share/doc. You must"
+" follow all the steps in this README file, precisely, each and every time"
+" ZoneMinder is installed or upgraded. **Failure to do so is guaranteed to"
+" result in a non-functional system.**"
+msgstr ""
+"Каждый пакет ZoneMinder включает файл README под /usr/share/doc. Вам "
+"необходимо выполнить все шаги этого файла README точно, каждый раз при "
+"установке или обновлении ZoneMinder. **Несоблюдение этого гарантированно "
+"приведет к неработоспособности системы.**"
+
+#: ../../installationguide/redhat.rst:46
+msgid "How to Install ZoneMinder"
+msgstr "Как установить ZoneMinder"
+
+#: ../../installationguide/redhat.rst:48
+msgid ""
+"ZoneMinder releases are hosted at RPM Fusion. New users should navigate "
+"to the `RPM Fusion site <https://rpmfusion.org>`__ then follow the "
+"instructions to enable that repo."
+msgstr ""
+"Выпуски ZoneMinder размещаются на RPM Fusion. Новые пользователи должны "
+"перейти на сайт `RPM Fusion <https://rpmfusion.org>`__ и следовать "
+"инструкциям по включению этого репозитория."
+
+#: ../../installationguide/redhat.rst:50
+msgid ""
+"In addition to `RPM Fusion <https://rpmfusion.org>`__, RHEL users must "
+"enable the EPEL repo:"
+msgstr ""
+"Кроме `RPM Fusion <https://rpmfusion.org>`__, пользователи RHEL должны "
+"включить репозиторий EPEL:"
+
+#: ../../installationguide/redhat.rst:56
+msgid "RHEL 8 users must also enable the powertools repo:"
+msgstr "Пользователям RHEL 8 также следует включить репозиторий powertools:"
+
+#: ../../installationguide/redhat.rst:63
+msgid "RHEL 9 users must also enable the crb repo:"
+msgstr "Пользователям RHEL 9 также следует включить репозиторий crb:"
+
+#: ../../installationguide/redhat.rst:70
+msgid ""
+"Once the additional repos are enabled, install ZoneMinder from the "
+"commandline. Choose the package that matches the desired web server."
+msgstr ""
+"После активации дополнительных репозиториев установите ZoneMinder из "
+"командной строки. Выберите пакет, соответствующий желаемому веб-серверу."
+
+#: ../../installationguide/redhat.rst:72
+msgid "Install ZoneMinder for Apache web server:"
+msgstr "Установите ZoneMinder для веб-сервера Apache:"
+
+#: ../../installationguide/redhat.rst:-1
+msgid "Note"
+msgstr "Заметка"
+
+#: ../../installationguide/redhat.rst:76
+msgid ""
+"A virtual package called zoneminder exists. This package contains no "
+"files and will pull in the zoneminder-httpd package for backwards "
+"compatibility."
+msgstr ""
+"Существует виртуальная упаковка под названием ZoneMinder. Эта упаковка не"
+" содержит файлов и будет подтягивать упаковку ZoneMinder-httpd для "
+"обратной совместимости."
+
+#: ../../installationguide/redhat.rst:82
+msgid "Install ZoneMinder for Nginx web server:"
+msgstr "Установите ZoneMinder для веб-сервера Nginx:"
+
+#: ../../installationguide/redhat.rst:89
+msgid ""
+"Once ZoneMinder has been installed, you **must** read the README file to "
+"complete the installation. Fedora users can find the README under "
+"/usr/share/doc/zoneminder-common. RHEL users can find the README under "
+"/usr/share/doc/zoneminder-common-x.xx where x.xx is the version of "
+"zoneminder."
+msgstr ""
+"После установки ZoneMinder вам необходимо прочитать файл README для "
+"завершения установки. Пользователи Fedora могут найти README в "
+"/usr/share/doc/zoneminder-common. Пользователи RHEL могут найти README в "
+"/usr/share/doc/zoneminder-common-x.xx, где x.xx - это версия ZoneMinder."
+
+#: ../../installationguide/redhat.rst:91
+msgid ""
+"**ZoneMinder will NOT run without completing the steps shown in the "
+"README!**"
+msgstr "**ЗонаМинер не будет работать без выполнения шагов, описанных в README!**"
+
+#: ../../installationguide/redhat.rst:94
+msgid "How to Install Nightly Development Builds"
+msgstr "Как установить ночные сборки разработки"
+
+#: ../../installationguide/redhat.rst:96
+msgid ""
+"ZoneMinder development packages, which represent the most recent build "
+"from our master branch, are available from `zmrepo "
+"<https://www.zoneminder.com>`_."
+msgstr ""
+"Пакеты разработки ZoneMinder, представляющие последнюю сборку из нашей "
+"ветки мастеров, доступны с `zmrepo <https://www.zoneminder.com>`."
+
+#: ../../installationguide/redhat.rst:98
+msgid ""
+"The feedback we get from those who use these development packages is "
+"extremely helpful. However, please understand these packages are intended"
+" for testing the latest master branch only. They are not intended to be "
+"used on any production system. There will be new bugs, and new features "
+"may not be documented. This is bleeding edge, and there might be "
+"breakage. Please keep that in mind when using this repo. We know from our"
+" user forum that this can't be stated enough."
+msgstr ""
+"Обратная связь, которую мы получаем от тех, кто использует эти пакеты "
+"разработки, чрезвычайно полезна. Однако, пожалуйста, поймите, что эти "
+"пакеты предназначены только для тестирования последней ветки мастер. Они "
+"не предназначены для использования на любой производственной системе. "
+"Будут новые ошибки, и новые функции могут не быть документированы. Это "
+"передний край, и может быть повреждение. Пожалуйста, учтите это, когда "
+"используете этот репозиторий. Мы знаем из нашего форума пользователей, "
+"что это нельзя сказать достаточно."
+
+#: ../../installationguide/redhat.rst:101
+msgid "How to Build Your Own ZoneMinder Package"
+msgstr "Как создать собственный пакет ZoneMinder"
+
+#: ../../installationguide/redhat.rst:103
+msgid ""
+"If you are looking to do development or the available packages just don't"
+" suit you, then you can follow these steps to build your own ZoneMinder "
+"RPM."
+msgstr ""
+"Если вы хотите заняться разработкой или имеющиеся пакеты просто не "
+"подходят вам, то вы можете следовать этим шагам для создания собственного"
+" пакета ZoneMinder RPM."
+
+#: ../../installationguide/redhat.rst:106
+msgid "Background"
+msgstr "!привет"
+
+#: ../../installationguide/redhat.rst:107
+msgid ""
+"The following method documents how to build ZoneMinder into an RPM "
+"package, for Fedora, Redhat, Rocky Linux, and other compatible clones. "
+"This is exactly how the RPMS in zmrepo are built."
+msgstr ""
+"Следующий метод описывает, как собрать ZoneMinder в пакет RPM для Fedora,"
+" Red Hat, Rocky Linux и других совместимых клонов. Это именно так, как "
+"строятся пакеты в zmrepo."
+
+#: ../../installationguide/redhat.rst:109
+msgid "The method documented below was chosen because:"
+msgstr "Метод, описанный ниже, был выбран потому, что:"
+
+#: ../../installationguide/redhat.rst:111
+msgid ""
+"All of ZoneMinder's dependencies are downloaded and installed "
+"automatically"
+msgstr "Все зависимости ZoneMinder загружаются и устанавливаются автоматически"
+
+#: ../../installationguide/redhat.rst:113
+msgid ""
+"Cross platform capable. The build host does not have to be the same "
+"distro or release version as the target."
+msgstr ""
+"Кросс-платформенная совместимость. Компьютер для сборки не должен быть "
+"той же версией дистрибутива или выпуска, что и цель."
+
+#: ../../installationguide/redhat.rst:115
+msgid ""
+"Once your build environment is set up, few steps are required to run the "
+"build again in the future."
+msgstr ""
+"После того как ваша среда для сборки будет настроена, потребуется "
+"выполнить несколько шагов, чтобы запустить сборку снова в будущем."
+
+#: ../../installationguide/redhat.rst:117
+msgid ""
+"Troubleshooting becomes easier if we are all building ZoneMinder the same"
+" way."
+msgstr ""
+"Диагностика становится проще, если мы все строим ZoneMinder одним и тем "
+"же способом."
+
+#: ../../installationguide/redhat.rst:119
+msgid ""
+"***IMPORTANT*** Certain commands in these instructions require root "
+"privileges while other commands do not. Pay close attention to this. If "
+"the instructions below state to issue a command without a “sudo” prefix, "
+"then you should *not* be root while issuing the command. Getting this "
+"incorrect will result in a failed build, or worse a broken system."
+msgstr ""
+"***ВАЖНО*** Некоторые команды в этих инструкциях требуют привилегий "
+"суперпользователя, в то время как другие команды их не требуют. Обратите "
+"на это особое внимание. Если в инструкциях ниже указано выдать команду "
+"без префикса «sudo», то вам не следует быть суперпользователем при выдаче"
+" этой команды. Неправильное выполнение этого может привести к неудачной "
+"сборке, а в худшем случае - к повреждению системы."
+
+#: ../../installationguide/redhat.rst:123
+msgid "Set Up Your Environment"
+msgstr "Настройте свою среду"
+
+#: ../../installationguide/redhat.rst:124
+msgid ""
+"Before you begin, set up an rpmbuild environment by following `this guide"
+" <https://wiki.centos.org/HowTos/SetupRpmBuildEnvironment>`_ by the "
+"CentOS developers. These instructions apply to Rocky Linux and clones as "
+"well."
+msgstr ""
+"Перед началом работы настройте среду rpmbuild, следуя руководству `CentOS"
+" developers <https://wiki.centos.org/HowTos/SetupRpmBuildEnvironment>`_. "
+"Эти инструкции применимы к Rocky Linux и его клонам."
+
+#: ../../installationguide/redhat.rst:126
+msgid ""
+"In addition, make sure RPM Fusion is enabled as described in the previous"
+" section `How to Install ZoneMinder`_."
+msgstr ""
+"Кроме того, убедитесь, что RPM Fusion включен так, как описано в "
+"предыдущем разделе `Как установить ZoneMinder`_."
+
+#: ../../installationguide/redhat.rst:128
+msgid "With RPM Fusion enabled, issue the following command:"
+msgstr "С RPM Fusion включенным, выполните следующую команду:"
+
+#: ../../installationguide/redhat.rst:135
+msgid "Add your user account to the group mock:"
+msgstr "Добавьте учетную запись пользователя в группу mock:"
+
+#: ../../installationguide/redhat.rst:142
+msgid "Your build environment is now set up."
+msgstr "Ваша среда разработки теперь настроена."
+
+#: ../../installationguide/redhat.rst:145
+msgid "Build from SRPM"
+msgstr "Собрано из RPM"
+
+#: ../../installationguide/redhat.rst:146
+msgid ""
+"To continue, you need a ZoneMinder SRPM. If you wish to rebuild a "
+"ZoneMinder release, then browse the `RPM Fusion site "
+"<https://rpmfusion.org/>`__. If instead you wish to rebuild the latest "
+"source rpm from our master branch then browse the `Zmrepo site "
+"<http://zmrepo.zoneminder.com/>`_."
+msgstr ""
+"Для продолжения вам потребуется пакет ZoneMinder SRPM. Если вы хотите "
+"пересобрать выпуск ZoneMinder, то перейдите на сайт `RPM Fusion "
+"<https://rpmfusion.org/>`. Если же вы хотите пересобрать последний "
+"rpm-пакет от нашей мастер-ветки, то перейдите на сайт `Zmrepo "
+"<http://zmrepo.zoneminder.com/>`."
+
+#: ../../installationguide/redhat.rst:148
+msgid "For this example, I'll use one of the source rpms from zmrepo:"
+msgstr "Для этого примера я использую один из исходных rpm-файлов из zmrepo:"
+
+#: ../../installationguide/redhat.rst:155
+msgid "Now comes the fun part. To build ZoneMinder, issue the following command:"
+msgstr ""
+"Теперь начинается веселая часть. Для создания ZoneMinder выполните "
+"следующую команду:"
+
+#: ../../installationguide/redhat.rst:162
+msgid ""
+"Want to build ZoneMinder for Fedora, instead of RHEL, from the same host?"
+"  Once you download the Fedora SRPM, issue the following:"
+msgstr ""
+"Хотите построить ZoneMinder для Fedora, а не для RHEL, с того же хоста? "
+"Как только вы загрузите пакет Fedora SRPM, выполните следующее:"
+
+#: ../../installationguide/redhat.rst:168
+msgid "Notice that the mock tool requires the following parameters:"
+msgstr "Обратите внимание, что инструмент-симулятор требует следующих параметров:"
+
+#: ../../installationguide/redhat.rst:174
+msgid "The list of available Mock config files are available here:"
+msgstr "Список доступных файлов конфигурации Mock доступен здесь:"
+
+#: ../../installationguide/redhat.rst:181
+msgid ""
+"You choose the config file based on the desired distro (e.g. el7, f29, "
+"f30) and basearch (e.g. x86, x86_64, arhmhfp). Notice that, when "
+"specifying the Mock config as a commandline parameter, you should leave "
+"off the \".cfg\" filename extension."
+msgstr ""
+"Вы выбираете файл конфигурации, исходя из желаемой дистрибуции (например,"
+" el7, f29, f30) и базового архитектуры (например, x86, x86_64, armhfp). "
+"Обратите внимание, что, указывая конфигурацию Mock в качестве параметра "
+"командной строки, вы должны опустить расширение имени файла \".cfg\"."
+
+#: ../../installationguide/redhat.rst:184
+msgid "Installation"
+msgstr "Установка"
+
+#: ../../installationguide/redhat.rst:185
+msgid ""
+"Once the build completes, you will be presented with a message stating "
+"where the newly built rpms can be found. It will look similar to this:"
+msgstr ""
+"После завершения сборки вам будет представлен сообщение, указывающее, где"
+" можно найти новые rpm-файлы. Оно будет выглядеть примерно так:"
+
+#: ../../installationguide/redhat.rst:191
+msgid ""
+"Copy the newly built ZoneMinder RPMs to the desired system, enable RPM "
+"Fusion as described in `How to Install ZoneMinder`_, and then install the"
+" rpm by issuing the appropriate yum/dnf install command. Finish the "
+"installation by following the zoneminder setup instructions in the distro"
+" specific readme file, named README.{distroname}, which will be installed"
+" into the /usr/share/doc/zoneminder* folder."
+msgstr ""
+"Скопируйте только что построенные пакеты ZoneMinder на желаемую систему, "
+"активируйте RPM Fusion, как описано в \"Как установить ZoneMinder\"_, и "
+"затем установите rpm, выдав соответствующую команду yum/dnf install. "
+"Завершите установку, следуя инструкциям по настройке ZoneMinder в файле "
+"справки дистрибутива, название которого будет README.{distroname}, "
+"который будет установлен в папку /usr/share/doc/zoneminder*."
+
+#: ../../installationguide/redhat.rst:193
+msgid ""
+"Finally, you may want to consider editing the rpmfusion repo file under "
+"/etc/yum.repos.d and placing an “exclude=zoneminder*” line into the "
+"config file.  This will prevent your system from overwriting your "
+"manually built RPM with the ZoneMinder RPM found in the repo."
+msgstr ""
+"Наконец, вы можете рассмотреть возможность редактирования файла "
+"репозитория rpmfusion под /etc/yum.repos.d и добавления строки "
+"\"exclude=zoneminder*\" в конфигурационный файл. Это предотвратит "
+"перезапись вашей вручную построенного RPM с RPM ZoneMinder, найденным в "
+"репозитории."
+
+#: ../../installationguide/redhat.rst:196
+msgid "How to Create Your Own Source RPM"
+msgstr "Как Создать Собственный Исходный RPM"
+
+#: ../../installationguide/redhat.rst:197
+msgid ""
+"In the previous section we described how to rebuild an existing "
+"ZoneMinder SRPM. The instructions which follow show how to build the "
+"ZoneMinder git source tree into a source rpm, which can be used in the "
+"previous section to build an rpm."
+msgstr ""
+"В предыдущем разделе мы описали, как пересобрать существующий пакет "
+"ZoneMinder SRPM. Следующие инструкции показывают, как построить исходный "
+"репозиторий Git ZoneMinder в источник RPM, который можно использовать в "
+"предыдущем разделе для создания RPM."
+
+#: ../../installationguide/redhat.rst:199
+msgid "Make sure git and rpmdevtools are installed:"
+msgstr "Убедитесь, что установлены git и rpmdevtools:"
+
+#: ../../installationguide/redhat.rst:206
+msgid "Now clone the ZoneMinder git repository from your home folder:"
+msgstr "Теперь клонируйте репозиторий Git ZoneMinder из вашей домашней папки:"
+
+#: ../../installationguide/redhat.rst:214
+msgid ""
+"This will create a sub-folder called zoneminder, which will contain the "
+"latest development source code."
+msgstr ""
+"Это создаст подпапку с названием ZoneMinder, которая будет содержать "
+"последнюю версию исходного кода разработки."
+
+#: ../../installationguide/redhat.rst:216
+msgid ""
+"If you have previously cloned the ZoneMinder git repo and wish to update "
+"it to the most recent, then issue these commands instead:"
+msgstr ""
+"Если вы ранее клонировали репозиторий ZoneMinder с помощью git и хотите "
+"обновить его до последней версии, выполните следующие команды:"
+
+#: ../../installationguide/redhat.rst:223
+msgid "Get the crud submodule tarball:"
+msgstr "Получите архив подмодуля CRUD:"
+
+#: ../../installationguide/redhat.rst:229
+msgid "Get the cakephp-enum-behavior submodule tarball:"
+msgstr "Получите архив подмодуля cakephp-enum-behavior:"
+
+#: ../../installationguide/redhat.rst:236
+msgid "Get the Rtsp-Server submodule tarball:"
+msgstr "Получите архив с подмодулем Rtsp-сервера:"
+
+#: ../../installationguide/redhat.rst:242
+msgid ""
+"At this point, you can make changes to the source code. Depending on what"
+" you want to do with those changes, you generally want to create a new "
+"branch first:"
+msgstr ""
+"На данном этапе вы можете вносить изменения в исходный код. В зависимости"
+" от того, что вы хотите делать с этими изменениями, обычно вам следует "
+"сначала создать новую ветку:"
+
+#: ../../installationguide/redhat.rst:249
+msgid ""
+"Again, depending on what you want to do with those changes, you may want "
+"to commit your changes:"
+msgstr ""
+"Опять же, в зависимости от того, что вы хотите делать с этими "
+"изменениями, вам может потребоваться сохранить свои изменения:"
+
+#: ../../installationguide/redhat.rst:257
+msgid ""
+"Once you have made your changes, it is time to turn your work into a new "
+"tarball, but first we need to look in the rpm specfile:"
+msgstr ""
+"После того как вы внесли изменения, пришло время преобразовать вашу "
+"работу в новый tarball, но сначала нам нужно взглянуть на файл "
+"спецификации rpm:"
+
+#: ../../installationguide/redhat.rst:263
+msgid ""
+"Scroll down until you see the Version field. Note the value, which will "
+"be in the format x.xx.x. Now create the tarball with the following "
+"command:"
+msgstr ""
+"Прокрутите вниз до поля \"Версия\", обратите внимание на значение, "
+"которое будет в формате x.xx.x. Затем создайте архив с помощью следующей "
+"команды:"
+
+#: ../../installationguide/redhat.rst:270
+msgid "Replace \"1.33.4\" with the Version shown in the rpm specfile."
+msgstr "Замените \"1.33.4\" на версию, указанную в файле спецификации rpm."
+
+#: ../../installationguide/redhat.rst:272
+msgid "From the root of the local ZoneMinder git repo, execute the following:"
+msgstr "Из корневой директории репозитория Git ZoneMinder выполните следующее:"
+
+#: ../../installationguide/redhat.rst:279
+msgid ""
+"This step will create a source rpm and it will tell you where it was "
+"saved. For example:"
+msgstr ""
+"Этот шаг создаст исходный RPM-файл и сообщит вам, где он был сохранен. "
+"Например:"
+
+#: ../../installationguide/redhat.rst:285
+msgid ""
+"Now follow the previous instructions `Build from SRPM`_ which describe "
+"how to build that source rpm into an rpm."
+msgstr ""
+"Теперь следуйте предыдущим инструкциям «Постройка из SRPM», которые "
+"описывают, как построить этот исходный RPM в RPM."
+

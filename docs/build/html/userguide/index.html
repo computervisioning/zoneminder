@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide &mdash; ZoneMinder  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/zmstyle.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction" href="introduction.html" />
+    <link rel="prev" title="Dedicated Drive, Partition, or Network Share" href="../installationguide/dedicateddrive.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ZoneMinder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installationguide/index.html">Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor.html">Defining Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html">Defining Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html">Viewing Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html">Filtering Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#filtering-with-tags">Filtering with Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html">Mobile Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html">Configuration Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZoneMinder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">User Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components.html">Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="components.html#system-overview">System Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#binaries">Binaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#php">PHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#perl">Perl</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#setting-timezone">Setting Timezone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#enabling-authentication">Enabling Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#establish-login-password">Establish Login Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#understanding-the-web-console">Understanding the Web Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#adding-monitors">Adding Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#adding-zones">Adding Zones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#selecting-themes">Selecting Themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="definemonitor.html">Defining Monitors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_add.html">Adding Monitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_general.html">General Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_source.html">Source Tab</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#common-source-parameters">Common Source Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#source-tab-for-ffmpeg">Source Tab for FFmpeg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#source-tab-for-libvlc">Source Tab for libVLC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#source-tab-for-remote">Source Tab for Remote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#source-tab-for-local">Source Tab for Local</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#source-tab-for-file">Source Tab for File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definemonitor/definemonitor_source.html#source-tab-for-web-site">Source Tab for Web Site</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_analysis.html">Analysis Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_recording.html">Recording Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_viewing.html">Viewing Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_onvif.html">ONVIF Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_timestamp.html">Timestamp Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_buffers.html">Buffers Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_control.html">Control Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_x10.html">X10 Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_misc.html">Misc Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definemonitor/definemonitor_mqtt.html">MQTT Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="definezone.html">Defining Zones</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html#zone-view">Zone View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html#zone-parameters">Zone Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html#zone-regions">Zone Regions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definezone.html#other-information">Other Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="viewmonitors.html">Viewing Monitors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html#monitor-view">Monitor View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html#cycle">Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html#montage">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html#montage-review">Montage Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewmonitors.html#monitor-events">Monitor Events</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="filterevents.html">Filtering Events</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html#saving-filters">Saving filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html#how-filters-actually-work">How filters actually work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html#relative-items-in-date-strings">Relative items in date strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html#caveat-with-relative-items">Caveat with Relative items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filterevents.html#troubleshooting-tips">Troubleshooting tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="viewevents.html">Viewing Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tags.html">Tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#creating-new-tags">Creating New Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#adding-existing-tags-to-an-event">Adding Existing Tags to an Event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#removing-tags-from-an-event">Removing Tags from an Event</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tags.html#filtering-with-tags">Filtering with Tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#current-limitations">Current Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="options.html">Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="options/options_display.html">Options - Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_system.html">Options - System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_config.html">Options - Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_api.html">Options - API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_servers.html">Options - Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_storage.html">Options - Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_storage.html#s3-storage-setup">S3 storage setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_web.html">Options - Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_images.html">Options - Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_logging.html">Options - Logging</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="options/options_logging.html#logging-example">Logging example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options/options_logging.html#a-more-comprehensive-explanation-of-the-various-log-options">A more comprehensive explanation of the various log options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_network.html">Options - Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_email.html">Options - Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_upload.html">Options - Upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_x10.html">Options - X10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_bw.html">Options - High, Medium and Low B/W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="options/options_users.html">Options - Users</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cameracontrol.html">Camera Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cameracontrol.html#controlling-monitors">Controlling Monitors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#control-flow">Control Flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#control-capabilities">Control Capabilities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#main-tab">Main Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#move-tab">Move Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#pan-tab">Pan Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#tilt-tab">Tilt Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#zoom-tab">Zoom Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#focus-tab">Focus Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#white-tab">White Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#iris-tab">Iris Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cameracontrol.html#presets-tab">Presets Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cameracontrol.html#control-scripts">Control Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mobile.html">Mobile Devices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html#third-party-mobile-clients">Third party mobile clients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html#using-the-existing-web-console">Using the existing web console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobile.html#discontinued-clients">Discontinued clients</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logging.html#customizing-logging-properly-in-zoneminder">Customizing logging properly in ZoneMinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html#other-notes">Other Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configfiles.html">Configuration Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html#system-path-configurations">System Path Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html#timezone-configuration">Timezone Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configfiles.html#database-specific-configuration">Database Specific Configuration</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../installationguide/dedicateddrive.html" class="btn btn-neutral float-left" title="Dedicated Drive, Partition, or Network Share" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014, https://github.com/ZoneMinder/ZoneMinder/graphs/contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

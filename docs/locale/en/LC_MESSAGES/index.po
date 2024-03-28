@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../index.rst:2
+msgid "ZoneMinder Documentation"
+msgstr ""
+
+#: ../../index.rst:13
+msgid ""
+"Welcome to ZoneMinder's documentation. Please navigate to one of the "
+"links below."
+msgstr ""
+
+#: ../../index.rst:15
+msgid ""
+"If you are facing issues that are not covered in the documentation, "
+"please feel free to check the `ZoneMinder Forums "
+"<https://forums.zoneminder.com/viewforum.php?f=26>`__ or join the "
+"`ZoneMinder-Chat Slack channel <https://join.slack.com/t/zoneminder-"
+"chat/shared_invite/enQtNTU0NDkxMDM5NDQwLTdhZmQ5Y2M2NWQyN2JkYTBiN2ZkMzIzZGQ0MDliMTRmM2FjZWRlYzUwYTQ2MjMwMTVjMzQ1NjYxOTdmMjE2MTE>`__"
+" if you prefer real time interaction."
+msgstr ""
+
+#: ../../index.rst:18
+msgid ":doc:`installationguide/index`"
+msgstr ""
+
+#: ../../index.rst:18
+msgid ""
+"Many distribution repos only hold older versions of ZoneMinder, current "
+"versions contain many bug fixes and updated functionality. Instructions "
+"here for installing updated packages or compiling from source."
+msgstr ""
+
+#: ../../index.rst:21
+msgid ":doc:`userguide/index`"
+msgstr ""
+
+#: ../../index.rst:21
+msgid ""
+"Guide to setting up ZoneMinder for the first time and detailed guides for"
+" using the ZoneMinder front end."
+msgstr ""
+
+#: ../../index.rst:24
+msgid ":doc:`api`"
+msgstr ""
+
+#: ../../index.rst:24
+msgid "Information on using the CakePHP based API for interfacing to ZoneMinder"
+msgstr ""
+
+#: ../../index.rst:27
+msgid ":doc:`faq`"
+msgstr ""
+
+#: ../../index.rst:27
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../index.rst:30
+msgid ":doc:`contributing`"
+msgstr ""
+
+#: ../../index.rst:30
+msgid ""
+"How to contribute to ZoneMinder. As a community project we always need "
+"help, you don't need to be a coder to test or update documentation."
+msgstr ""
+
+#: ../../index.rst:35
+msgid ""
+"`Event Notification Server and Machine Learning hooks "
+"<https://zmeventnotification.readthedocs.io/en/latest/index.html>`__"
+msgstr ""
+
+#: ../../index.rst:33
+msgid ""
+"Documentation for the 3rd party Event Notification Server and Machine "
+"Learning for Object/People/Face detection."
+msgstr ""
+
+#: ../../index.rst:38
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../index.rst:40
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:41
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../index.rst:42
+msgid ":ref:`search`"
+msgstr ""
+

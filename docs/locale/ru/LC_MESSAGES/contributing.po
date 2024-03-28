@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../contributing.rst:2
+msgid "Contributing"
+msgstr "Участие"
+
+#: ../../contributing.rst:3
+msgid ""
+"Source hosted at `GitHub <https://github.com/ZoneMinder/ZoneMinder/>`__ "
+"Report issues/questions/feature requests on `GitHub Issues "
+"<https://github.com/ZoneMinder/ZoneMinder/issues>`__"
+msgstr ""
+"Источник доступен на `GitHub "
+"<https://github.com/ZoneMinder/ZoneMinder/>`__. Сообщайте о "
+"проблемах/вопросах/запросах на новую функциональность на `GitHub Issues "
+"<https://github.com/ZoneMinder/ZoneMinder/issues>`__."
+
+#: ../../contributing.rst:6
+msgid ""
+"Pull requests are very welcome! If you would like to contribute, please "
+"follow the following steps."
+msgstr ""
+"Привет! Очень приветствуются предложения по улучшению! Если вы хотите "
+"внести свой вклад, пожалуйста, следуйте следующим шагам."
+
+#: ../../contributing.rst:8
+msgid "Fork the repo"
+msgstr "Fork the repo"
+
+#: ../../contributing.rst:9
+msgid ""
+"Open an issue at our `GitHub Issues Tracker "
+"<https://github.com/ZoneMinder/ZoneMinder/issues>`__. Describe the bug "
+"that you've found, or the feature which you're asking for. Jot down the "
+"issue number (e.g. 456)"
+msgstr ""
+"Откройте проблему в нашем трекере проблем GitHub "
+"<https://github.com/ZoneMinder/ZoneMinder/issues>. Опишите проблему, "
+"которую вы обнаружили, или функцию, которую вы запрашиваете. Запишите "
+"номер проблемы (например, 456)"
+
+#: ../../contributing.rst:10
+msgid "Create your feature branch (``git checkout -b 456-my-new-feature``)"
+msgstr "Создайте свою ветку функций (`git checkout -b 456-my-new-feature`)"
+
+#: ../../contributing.rst:11
+msgid ""
+"Commit your changes (``git commit -m 'Added some feature'``) It is "
+"preferred that you 'commit early and often' instead of bunching all "
+"changes into a single commit."
+msgstr ""
+"Примените ваши изменения (`git commit -m 'Добавлена новая функция'`) "
+"Предпочтительно, чтобы вы 'сохраняли часто и регулярно', а не "
+"группировали все изменения в одну коммитацию."
+
+#: ../../contributing.rst:12
+msgid ""
+"Push your branch to your fork on github (``git push origin 456-my-new-"
+"feature``)"
+msgstr ""
+"Поместите свою ветку в вашу копию на Github (`git push origin 456-my-new-"
+"feature`)"
+
+#: ../../contributing.rst:13
+msgid "Create new Pull Request"
+msgstr "Создать новый запрос на pull"
+
+#: ../../contributing.rst:14
+msgid "The team will then review, discuss and hopefully merge your changes."
+msgstr "Затем команда рассмотрит, обсудит и, возможно, объединит ваши изменения."
+

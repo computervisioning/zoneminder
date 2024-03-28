@@ -1,0 +1,445 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014,
+# https://github.com/ZoneMinder/ZoneMinder/graphs/contributors
+# This file is distributed under the same license as the ZoneMinder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZoneMinder \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-26 18:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../userguide/options/options_email.rst:2
+msgid "Options - Email"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:6
+msgid ""
+"OPT_EMAIL - In ZoneMinder you can create event filters that specify "
+"whether events that match certain criteria should have their details "
+"emailed to you at a designated email address. This will allow you to be "
+"notified of events as soon as they occur and also to quickly view the "
+"events directly. This option specifies whether this functionality should "
+"be available. The email created with this option can be any size and is "
+"intended to be sent to a regular email reader rather than a mobile "
+"device."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:8
+msgid ""
+"EMAIL_ADDRESS - This option is used to define the email address that any "
+"events that match the appropriate filters will be sent to."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:10
+msgid ""
+"EMAIL_SUBJECT - This option is used to define the subject of the email "
+"that is sent for any events that match the appropriate filters."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:12
+msgid ""
+"EMAIL_BODY - This option is used to define the content of the email that "
+"is sent for any events that match the appropriate filters."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:14
+msgid "Todo"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:15
+msgid "check if any other tags have been added"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:18
+msgid "Token"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:18
+msgid "Description"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:20
+#, python-format
+msgid "%EI%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:20
+msgid "Id of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:22
+#, python-format
+msgid "%EN%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:22
+msgid "Name of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:24
+#, python-format
+msgid "%EC%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:24
+msgid "Cause of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:26
+#, python-format
+msgid "%ED%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:26
+msgid "Event description"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:28
+#, python-format
+msgid "%ET%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:28
+msgid "Time of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:30
+#, python-format
+msgid "%EL%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:30
+msgid "Length of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:32
+#, python-format
+msgid "%EF%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:32
+msgid "Number of frames in the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:34
+#, python-format
+msgid "%EFA%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:34
+msgid "Number of alarm frames in the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:36
+#, python-format
+msgid "%EST%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:36
+msgid "Total score of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:38
+#, python-format
+msgid "%ESA%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:38
+msgid "Average score of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:40
+#, python-format
+msgid "%ESM%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:40
+msgid "Maximum score of the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:42
+#, python-format
+msgid "%EP%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:42
+msgid "Path to the event"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:44
+#, python-format
+msgid "%EPS%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:44
+msgid "Path to the event stream"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:46
+#, python-format
+msgid "%EPI%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:46
+msgid "Path to the event images"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:48
+#, python-format
+msgid "%EPI1%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:48
+msgid "Path to the first alarmed event image"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:50
+#, python-format
+msgid "%EPIM%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:50
+msgid "Path to the (first) event image with the highest score"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:52
+#, python-format
+msgid "%EI1%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:52
+msgid "Attach first alarmed event image"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:54
+#, python-format
+msgid "%EIM%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:54
+msgid "Attach (first) event image with the highest score"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:56
+#, python-format
+msgid "%EIMOD%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:56
+msgid ""
+"Attach image of object detected. Requires event notfn. server setup and "
+"machine learning hooks"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:59
+#, python-format
+msgid "%EV%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:59
+msgid "Attach event mpeg video"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:61
+msgid "%MN%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:61
+msgid "Name of the monitor"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:63
+msgid "%MET%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:63
+msgid "Total number of events for the monitor"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:65
+msgid "%MEH%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:65
+msgid "Number of events for the monitor in the last hour"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:67
+msgid "%MED%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:67
+msgid "Number of events for the monitor in the last day"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:69
+msgid "%MEW%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:69
+msgid "Number of events for the monitor in the last week"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:71
+msgid "%MEM%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:71
+msgid "Number of events for the monitor in the last month"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:73
+msgid "%MEA%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:73
+msgid "Number of archived events for the monitor"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:75
+msgid "%MP%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:75
+msgid "Path to the monitor window"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:77
+msgid "%MPS%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:77
+msgid "Path to the monitor stream"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:79
+msgid "%MPI%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:79
+msgid "Path to the monitor recent image"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:81
+#, python-format
+msgid "%FN%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:81
+msgid "Name of the current filter that matched"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:83
+#, python-format
+msgid "%FP%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:83
+msgid "Path to the current filter that matched"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:85
+msgid "%ZP%"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:85
+msgid "Path to your ZoneMinder console"
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:88
+msgid ""
+"OPT_MESSAGE - In ZoneMinder you can create event filters that specify "
+"whether events that match certain criteria should have their details sent"
+" to you at a designated short message email address. This will allow you "
+"to be notified of events as soon as they occur. This option specifies "
+"whether this functionality should be available. The email created by this"
+" option will be brief and is intended to be sent to an SMS gateway or a "
+"minimal mail reader such as a mobile device or phone rather than a "
+"regular email reader."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:90
+msgid ""
+"MESSAGE_ADDRESS - This option is used to define the short message email "
+"address that any events that match the appropriate filters will be sent "
+"to."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:92
+msgid ""
+"MESSAGE_SUBJECT - This option is used to define the subject of the "
+"message that is sent for any events that match the appropriate filters."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:94
+msgid ""
+"MESSAGE_BODY - This option is used to define the content of the message "
+"that is sent for any events that match the appropriate filters."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:96
+msgid ""
+"NEW_MAIL_MODULES - Traditionally ZoneMinder has used the MIME::Entity "
+"perl module to construct and send notification emails and messages. Some "
+"people have reported problems with this module not being present at all "
+"or flexible enough for their needs. If you are one of those people this "
+"option allows you to select a new mailing method using MIME::Lite and "
+"Net::SMTP instead. This method was contributed by Ross Melin and should "
+"work for everyone but has not been extensively tested so currently is not"
+" selected by default."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:98
+msgid ""
+"EMAIL_HOST - If you have chosen SMTP as the method by which to send "
+"notification emails or messages then this option allows you to choose "
+"which SMTP server to use to send them. The default of localhost may work "
+"if you have the sendmail, exim or a similar daemon running however you "
+"may wish to enter your ISP's SMTP mail server here."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:100
+msgid ""
+"FROM_EMAIL - The emails or messages that will be sent to you informing "
+"you of events can appear to come from a designated email address to help "
+"you with mail filtering etc. An address of something like "
+"ZoneMinder\\@your.domain is recommended."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:102
+msgid ""
+"URL - The emails or messages that will be sent to you informing you of "
+"events can include a link to the events themselves for easy viewing. If "
+"you intend to use this feature then set this option to the url of your "
+"installation as it would appear from where you read your email, e.g. "
+"``http://host.your.domain/zm/index.php``."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:104
+msgid ""
+"SSMTP_MAIL - SSMTP is a lightweight and efficient method to send email. "
+"The SSMTP application is not installed by default. NEW_MAIL_MODULES must "
+"also be enabled. Please visit the ZoneMinder `SSMTP Wiki page "
+"<https://wiki.zoneminder.com/How_to_get_ssmtp_working_with_Zoneminder>`__"
+" for setup and configuration help."
+msgstr ""
+
+#: ../../userguide/options/options_email.rst:106
+msgid ""
+"SSMTP_PATH - The path to the SSMTP application. If path is not defined. "
+"Zoneminder will try to determine the path via shell command. Example "
+"path: /usr/sbin/ssmtp."
+msgstr ""
+
