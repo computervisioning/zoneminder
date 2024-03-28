@@ -47,7 +47,7 @@ msgid ""
 "guide will explain how to go about installing an Ubuntu ZM image on "
 "Windows 10+."
 msgstr ""
-"Зонеминдер теперь работает на системах Windows 10+, которые имеют "
+"ZoneMinder теперь работает на системах Windows 10+, которые имеют "
 "включенную WSL. Этот учебник объяснит, как установить образ Ubuntu ZM на "
 "Windows 10+."
 

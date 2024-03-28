@@ -100,7 +100,7 @@ msgid ""
 "**Always**: This is the normal mode of operation.  A ZoneMinder Capture "
 "daemon (zmc) will run and constantly capture video."
 msgstr ""
-"**Всегда**: Это обычный режим работы. ЗонаМиндер Капчер даймон (zmc) "
+"**Всегда**: Это обычный режим работы. ZoneMinder Капчер даймон (zmc) "
 "будет работать и постоянно записывать видео."
 
 #: ../../userguide/definemonitor/definemonitor_source.rst:29
@@ -325,7 +325,7 @@ msgid ""
 "Look for the camera in the `ZoneMinder Hardware Compatibility wiki "
 "<https://wiki.zoneminder.com/Hardware_Compatibility_List>`__"
 msgstr ""
-"Ищите камеру в разделе `ЗонаМиндер совместимость с оборудованием wiki "
+"Ищите камеру в разделе `ZoneMinder совместимость с оборудованием wiki "
 "<https://wiki.zoneminder.com/Hardware_Compatibility_List>`__"
 
 #: ../../userguide/definemonitor/definemonitor_source.rst:68
