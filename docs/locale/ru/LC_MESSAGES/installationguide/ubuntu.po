@@ -326,7 +326,7 @@ msgid ""
 "`Socket_sendto or no live streaming`_"
 msgstr ""
 "Установка PPA может потребовать некоторой настройки ZMS_PATH в настройках"
-" ZoneMinder. `Сокет_отправить или нет живого потокового вещания`"
+" ZoneMinder. `Socket_sendto or no live streaming`_"
 
 #: ../../installationguide/ubuntu.rst:230
 msgid "Harder Way: Build Package From Source (Discouraged)"
