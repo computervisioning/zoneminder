@@ -31,7 +31,7 @@ msgid ""
 "Report issues/questions/feature requests on `GitHub Issues "
 "<https://github.com/ZoneMinder/ZoneMinder/issues>`__"
 msgstr ""
-"Источник доступен на `GitHub "
+"Исходный ко доступен на `GitHub "
 "<https://github.com/ZoneMinder/ZoneMinder/>`__. Сообщайте о "
 "проблемах/вопросах/запросах на новую функциональность на `GitHub Issues "
 "<https://github.com/ZoneMinder/ZoneMinder/issues>`__."
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../contributing.rst:8
 msgid "Fork the repo"
-msgstr "Fork the repo"
+msgstr "Форкните репозиторий"
 
 #: ../../contributing.rst:9
 msgid ""
@@ -55,14 +55,14 @@ msgid ""
 "that you've found, or the feature which you're asking for. Jot down the "
 "issue number (e.g. 456)"
 msgstr ""
-"Откройте проблему в нашем трекере проблем GitHub "
-"<https://github.com/ZoneMinder/ZoneMinder/issues>. Опишите проблему, "
+"Откройте issue в нашем `трекере на GitHub "
+"<https://github.com/ZoneMinder/ZoneMinder/issues>`__. Опишите проблему, "
 "которую вы обнаружили, или функцию, которую вы запрашиваете. Запишите "
 "номер проблемы (например, 456)"
 
 #: ../../contributing.rst:10
 msgid "Create your feature branch (``git checkout -b 456-my-new-feature``)"
-msgstr "Создайте свою ветку функций (`git checkout -b 456-my-new-feature`)"
+msgstr "Создайте свою ветку (`git checkout -b 456-my-new-feature`)"
 
 #: ../../contributing.rst:11
 msgid ""
@@ -70,23 +70,23 @@ msgid ""
 "preferred that you 'commit early and often' instead of bunching all "
 "changes into a single commit."
 msgstr ""
-"Примените ваши изменения (`git commit -m 'Добавлена новая функция'`) "
-"Предпочтительно, чтобы вы 'сохраняли часто и регулярно', а не "
-"группировали все изменения в одну коммитацию."
+"Сделайте коммит ваших правок (`git commit -m 'Added some feature'`). "
+"Предпочтительно, чтобы вы 'коммитили часто и регулярно', а не "
+"группировали все изменения в один коммит."
 
 #: ../../contributing.rst:12
 msgid ""
 "Push your branch to your fork on github (``git push origin 456-my-new-"
 "feature``)"
 msgstr ""
-"Поместите свою ветку в вашу копию на Github (`git push origin 456-my-new-"
+"Сделайте пуш своей ветки в ваш форк на Github (`git push origin 456-my-new-"
 "feature`)"
 
 #: ../../contributing.rst:13
 msgid "Create new Pull Request"
-msgstr "Создать новый запрос на pull"
+msgstr "Создайте новый Pull Request"
 
 #: ../../contributing.rst:14
 msgid "The team will then review, discuss and hopefully merge your changes."
-msgstr "Затем команда рассмотрит, обсудит и, возможно, объединит ваши изменения."
+msgstr "Команда рассмотрит, обсудит и, возможно, сделает merge ваших правок."
 

@@ -30,8 +30,8 @@ msgid ""
 "Welcome to ZoneMinder's documentation. Please navigate to one of the "
 "links below."
 msgstr ""
-"Добро пожаловать в документацию ZoneMinder. Пожалуйста, выберите одну из "
-"следующих ссылок."
+"Добро пожаловать в документацию ZoneMinder на русском. Пожалуйста, "
+"выберите одну из следующих ссылок."
 
 #: ../../index.rst:15
 msgid ""
@@ -59,9 +59,9 @@ msgid ""
 "versions contain many bug fixes and updated functionality. Instructions "
 "here for installing updated packages or compiling from source."
 msgstr ""
-"Многие репозитории для распространения содержат только более старые "
-"версии ZoneMinder, текущие версии включают множество исправлений ошибок и"
-" обновленной функциональности. Инструкции здесь для установки обновленных"
+"Многие дистрибутивы содержат в репозиториях только старые "
+"версии ZoneMinder; в то время как текущая версия включает множество исправлений ошибок и"
+" обновленный функционал. Здесь вы найдете инструкции для установки обновленных"
 " пакетов или компиляции из исходного кода."
 
 #: ../../index.rst:21
@@ -83,7 +83,7 @@ msgstr ":doc:`api`"
 #: ../../index.rst:24
 msgid "Information on using the CakePHP based API for interfacing to ZoneMinder"
 msgstr ""
-"Информация о использовании API, основанного на CakePHP, для "
+"Информация о использовании API на CakePHP для "
 "взаимодействия с ZoneMinder"
 
 #: ../../index.rst:27
@@ -103,7 +103,7 @@ msgid ""
 "How to contribute to ZoneMinder. As a community project we always need "
 "help, you don't need to be a coder to test or update documentation."
 msgstr ""
-"Как внести вклад в ZoneMinder. Как открытый проект мы всегда нуждаемся "
+"Как внести вклад в ZoneMinder. Как открытый проект, мы всегда нуждаемся "
 "в помощи, вам не нужно быть программистом, чтобы тестировать или "
 "обновлять документацию."
 

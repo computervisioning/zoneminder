@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../faq.rst:11
 msgid "How can I stop ZoneMinder filling up my disk?"
-msgstr "Как мне остановить заполнение диска ZoneMinder?"
+msgstr "Как мне прекратить переполнение диска ZoneMinder-ом?"
 
 #: ../../faq.rst:13
 msgid ""
