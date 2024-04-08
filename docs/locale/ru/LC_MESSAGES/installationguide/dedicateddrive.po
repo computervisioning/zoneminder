@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../installationguide/dedicateddrive.rst:10
 msgid "**Step 1:** Stop ZoneMinder ::"
-msgstr "**Шаг 1:** Остановить ZoneMinder ::"
+msgstr "**Шаг 1:** Остановите ZoneMinder ::"
 
 #: ../../installationguide/dedicateddrive.rst:15
 msgid ""

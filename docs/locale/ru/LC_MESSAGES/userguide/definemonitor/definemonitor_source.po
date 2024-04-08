@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../userguide/definemonitor/definemonitor_source.rst:5
 msgid "Source Tab"
-msgstr "!перевод"
+msgstr "Source Tab"
 
 #: ../../userguide/definemonitor/definemonitor_source.rst:7
 msgid ""

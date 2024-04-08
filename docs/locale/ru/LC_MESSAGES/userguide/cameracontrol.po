@@ -423,7 +423,7 @@ msgstr ""
 
 #: ../../userguide/cameracontrol.rst:68
 msgid "Can Move Mapped"
-msgstr "Можно Переместить Сгенерированное"
+msgstr "Можно переместить сгенерированное"
 
 #: ../../userguide/cameracontrol.rst:69
 msgid ""
@@ -624,7 +624,7 @@ msgstr "Минимальная и максимальная скорость зу
 
 #: ../../userguide/cameracontrol.rst:118
 msgid "Focus Tab"
-msgstr "Перевод: Сосредоточьтесь на вкладке"
+msgstr "Вкладка Фокус"
 
 #: ../../userguide/cameracontrol.rst:119
 msgid ""
@@ -654,7 +654,7 @@ msgstr ""
 
 #: ../../userguide/cameracontrol.rst:129
 msgid "Iris Tab"
-msgstr "Ирис Таб"
+msgstr "Iris Tab"
 
 #: ../../userguide/cameracontrol.rst:130
 msgid "Definition of Iris Control capabilities, fields as for ‘Focus’ tab."
@@ -662,11 +662,11 @@ msgstr "Определение возможностей управления И�
 
 #: ../../userguide/cameracontrol.rst:133
 msgid "Presets Tab"
-msgstr "Закладка Пресеты"
+msgstr "Presets Tab"
 
 #: ../../userguide/cameracontrol.rst:135
 msgid "Has Presets"
-msgstr "Есть Пресеты"
+msgstr "Has Presets"
 
 #: ../../userguide/cameracontrol.rst:136
 msgid "The camera supports preset positions."
@@ -674,7 +674,7 @@ msgstr "Камера поддерживает предустановленные
 
 #: ../../userguide/cameracontrol.rst:137
 msgid "Num Presets"
-msgstr "!перевод: Настройки\n"
+msgstr "Num Presets"
 
 #: ../../userguide/cameracontrol.rst:138
 msgid ""
@@ -687,8 +687,8 @@ msgstr ""
 "разумное число, 20 или меньше рекомендуется."
 
 #: ../../userguide/cameracontrol.rst:139
-msgid "Has Home Preset"
-msgstr "Есть предустановка Дома"
+msgid ""
+msgstr "Has Home Preset"
 
 #: ../../userguide/cameracontrol.rst:140
 msgid ""
@@ -700,7 +700,7 @@ msgstr ""
 
 #: ../../userguide/cameracontrol.rst:142
 msgid "Can Set Presets"
-msgstr "Можно установить предустановки"
+msgstr "Can Set Presets"
 
 #: ../../userguide/cameracontrol.rst:142
 msgid "The camera supports setting preset locations via its control protocol."

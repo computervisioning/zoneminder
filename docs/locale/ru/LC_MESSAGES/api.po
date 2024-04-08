@@ -643,7 +643,7 @@ msgstr "Эта команда добавит новый HTTP-монитор."
 
 #: ../../api.rst:278
 msgid "Edit monitor 1"
-msgstr "!перевод: отредактировать монитор 1"
+msgstr "Редактировать монитор 1"
 
 #: ../../api.rst:280
 msgid "This command will change the 'Name' field of Monitor 1 to 'test1'"
@@ -709,7 +709,7 @@ msgstr "Получить событие с идентификатором 1000"
 
 #: ../../api.rst:356
 msgid "Edit event 1"
-msgstr "!перевод: Редактировать событие 1"
+msgstr "Редактировать событие 1"
 
 #: ../../api.rst:358
 msgid "This command will change the 'Name' field of Event 1 to 'Seek and Destroy'"

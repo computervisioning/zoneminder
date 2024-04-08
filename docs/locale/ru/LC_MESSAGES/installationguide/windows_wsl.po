@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../installationguide/windows_wsl.rst:9
 msgid "Todo"
-msgstr "Все"
+msgstr "TODO"
 
 #: ../../installationguide/windows_wsl.rst:9
 msgid "Isaac to add instructions."

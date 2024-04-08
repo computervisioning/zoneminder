@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../userguide/options/options_display.rst:2
 msgid "Options - Display"
-msgstr "!перевод: Опции - Отображение"
+msgstr "Options - Display"
 
 #: ../../userguide/options/options_display.rst:4
 msgid ""

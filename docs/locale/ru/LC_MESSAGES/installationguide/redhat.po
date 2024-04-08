@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../installationguide/redhat.rst:9
 msgid "Background: RHEL, Rocky Linux, and Clones"
-msgstr "!перевод Background: RHEL, Rocky Linux, and Clones"
+msgstr "Бэкграунд: RHEL, Rocky Linux и клоны"
 
 #: ../../installationguide/redhat.rst:11
 msgid ""
@@ -57,7 +57,7 @@ msgid ""
 "have the latest and greatest versions of any package. Instead, stable "
 "packages are the emphasis."
 msgstr ""
-"Эти распределения классифицируются как корпоративные операционные системы"
+"Эти дистрибутивы классифицируются как корпоративные операционные системы"
 " и имеют долгий срок службы в несколько лет. По замыслу, они не будут "
 "иметь последних и лучших версий любого пакета. Вместо этого акцент "
 "делается на стабильных пакетах."
@@ -75,7 +75,7 @@ msgstr ""
 "от третьей стороны строго запрещена. Команда разработчиков ZoneMinder "
 "этого не сделает, и вам тоже не следует. Если у вас сложилось "
 "впечатление, что вам нужна более новая версия PHP, MySQL, GNOME, Apache и"
-" т. д., то вместо обновления этих пакетов лучше рассмотреть использование"
+" т.д., то вместо обновления этих пакетов лучше рассмотреть использование"
 " другого дистрибутива, такого как Fedora."
 
 #: ../../installationguide/redhat.rst:15
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../installationguide/redhat.rst:27
 msgid "How To Avoid Known Installation Problems"
-msgstr "Как Избежать Известных Проблем Установки"
+msgstr "Как избежать известных проблем установки"
 
 #: ../../installationguide/redhat.rst:29
 msgid ""
@@ -399,7 +399,7 @@ msgstr ""
 "***ВАЖНО*** Некоторые команды в этих инструкциях требуют привилегий "
 "суперпользователя, в то время как другие команды их не требуют. Обратите "
 "на это особое внимание. Если в инструкциях ниже указано выдать команду "
-"без префикса «sudo», то вам не следует быть суперпользователем при выдаче"
+"без префикса ``sudo``, то вам не следует быть суперпользователем при выдаче"
 " этой команды. Неправильное выполнение этого может привести к неудачной "
 "сборке, а в худшем случае - к повреждению системы."
 
@@ -440,7 +440,7 @@ msgstr "Ваша среда разработки теперь настроена
 
 #: ../../installationguide/redhat.rst:145
 msgid "Build from SRPM"
-msgstr "Собрано из RPM"
+msgstr "Сборка из RPM"
 
 #: ../../installationguide/redhat.rst:146
 msgid ""
@@ -471,7 +471,7 @@ msgid ""
 "Want to build ZoneMinder for Fedora, instead of RHEL, from the same host?"
 "  Once you download the Fedora SRPM, issue the following:"
 msgstr ""
-"Хотите построить ZoneMinder для Fedora, а не для RHEL, с того же хоста? "
+"Хотите построить ZoneMinder для Fedora, а не для RHEL, на том же хосте? "
 "Как только вы загрузите пакет Fedora SRPM, выполните следующее:"
 
 #: ../../installationguide/redhat.rst:168
@@ -537,7 +537,7 @@ msgstr ""
 
 #: ../../installationguide/redhat.rst:196
 msgid "How to Create Your Own Source RPM"
-msgstr "Как Создать Собственный Исходный RPM"
+msgstr "Как создать собственный пакет Source RPM"
 
 #: ../../installationguide/redhat.rst:197
 msgid ""

@@ -71,9 +71,9 @@ msgid ""
 msgstr ""
 "Теперь ваша сессия терминала снова находится под вашим обычным "
 "пользователем. Вы можете проверить, что теперь вы являетесь частью группы"
-" \"sudo\", с помощью команды \"groups\", \"sudo\" должно появиться в "
-"списке. Если нет, выполните \"newgrp sudo\" и снова проверьте с помощью "
-"\"groups\"."
+" \"sudo\", с помощью команды ``groups``, \"sudo\" должно появиться в "
+"списке. Если нет, выполните ``newgrp sudo`` и снова проверьте с помощью "
+"``groups``."
 
 #: ../../installationguide/debian.rst:27 ../../installationguide/debian.rst:129
 msgid "**Step 2:** Update system"
@@ -178,7 +178,7 @@ msgstr ""
 
 #: ../../installationguide/debian.rst:109
 msgid "Debian 11 (Bullseye)"
-msgstr "Debian 11 (Бычок)"
+msgstr "Debian 11 (Bullseye)"
 
 #: ../../installationguide/debian.rst:111
 msgid ""

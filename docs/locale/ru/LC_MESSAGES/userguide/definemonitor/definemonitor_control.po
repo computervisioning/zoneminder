@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../userguide/definemonitor/definemonitor_control.rst:2
 msgid "Control Tab"
-msgstr "!перевод Control Tab: \"Табуляция управления\""
+msgstr "Control Tab"
 
 #: ../../userguide/definemonitor/definemonitor_control.rst:4
 msgid ""

@@ -27,7 +27,7 @@ msgstr "Руководство по установке"
 
 #: ../../installationguide/index.rst:4
 msgid "Todo"
-msgstr "Все"
+msgstr "TODO"
 
 #: ../../installationguide/index.rst:4
 msgid "This entire guide needs to be checked/updated as needed"
