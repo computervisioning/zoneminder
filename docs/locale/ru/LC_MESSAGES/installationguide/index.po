@@ -31,7 +31,7 @@ msgstr "TODO"
 
 #: ../../installationguide/index.rst:4
 msgid "This entire guide needs to be checked/updated as needed"
-msgstr "Весь этот справочник должен быть проверен/обновлен по мере необходимости"
+msgstr "Всё это руководство должно быть проверено/обновлено по мере необходимости"
 
 #: ../../installationguide/index.rst:6
 msgid "Contents:"

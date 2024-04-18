@@ -92,9 +92,9 @@ msgid ""
 "database will be needed either as standalone, or on one of the ZoneMinder"
 " Servers."
 msgstr ""
-"Следуйте обычным инструкциям для вашей дистрибуции для установки "
+"Следуйте обычным инструкциям для вашего дистрибутива для установки "
 "ZoneMinder на все серверы ZoneMinder в обычном порядке. Только одна база "
-"данных потребуется, либо как автономная, либо на одном из серверов "
+"данных потребуется, либо автономная, либо на одном из серверов "
 "ZoneMinder."
 
 #: ../../installationguide/multiserver.rst:-1

@@ -2249,7 +2249,7 @@ msgstr "Что-то в вашем вопросе меня смущает. Мож
 
 #: ../../faq.rst:503
 msgid "I upgraded by distribution and ZM stopped working"
-msgstr "Я обновил свою дистрибуцию, и ZM перестала работать."
+msgstr "Я обновил свой дистрибутив, и ZM перестал работать."
 
 #: ../../faq.rst:504
 msgid ""
